@@ -1,8 +1,8 @@
-# ReEngine
+# Project_Zarathustra
 
 ## 概要
 
-Re:Journey の汎用ノベルゲームエンジンを作ります
+AlsoSprach
 
 ## ブランチの指針
 
