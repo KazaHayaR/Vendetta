@@ -1,4 +1,4 @@
-# Project_Zarathustra
+# Project_Zarathustra
 
 ## 概要
 
