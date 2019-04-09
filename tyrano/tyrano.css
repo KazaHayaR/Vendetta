@@ -508,7 +508,9 @@ body{
 }
 .message_inner {
 	line-height: 38px!important;
+	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif!important;
 }
 .chara_name_area {
 	transition: 1s all 0s;
+	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif!important;
 }
