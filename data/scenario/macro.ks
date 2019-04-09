@@ -10,19 +10,19 @@
 
 ; ----------------------------------------------------------
 ; [set_message_window]
-[macro name="set_message_window"]
+;[macro name="set_message_window"]
 
 ; [position]
 ; メッセージレイヤーのウィンドウの位置や画像、内余白などを調整します。
-[position left="0" top="440" width="960" height="200" frame="window0/_frame.png"]
-[position margint="50" marginl="25" marginr="25" marginb="10"]
+;[position left="0" top="440" width="960" height="200" frame="window0/_frame.png"]
+;[position margint="50" marginl="25" marginr="25" marginb="10"]
 
 ; [free] chara_name_areaという名前の文字オブジェクトががすでにメッセージレイヤー0番に存在していた場合、
 ; それを削除します。(存在していなければこのタグでは何も起こりません。)
-[free  name="chara_name_area" layer="message0"]
+;[free  name="chara_name_area" layer="message0"]
 
 ; [clearfix] fixボタンを消します。
-[clearfix]
+; [clearfix]
 
 ; ※ 補足 ※
 ; 上の[free][clearfix]はリセットのため。
@@ -32,15 +32,15 @@
 ; [ptext][chara_config]
 ; 新規にchara_name_areaという名前のptextオブジェクトをメッセージレイヤー0番に出して、
 ; それが発言者欄用のptextであることをティラノスクリプトに教えてあげます。
-[ptext name="chara_name_area"  layer="message0" zindex="102" size="32" face="ロゴたいぷゴシック,メイリオ,sans-serif" x="36" y="445" color="0xffffff" edge="0x000000"]
-[chara_config ptext="chara_name_area"]
+; [ptext name="chara_name_area"  layer="message0" zindex="102" size="32" face="ロゴたいぷゴシック,メイリオ,sans-serif" x="36" y="445" color="0xffffff" edge="0x000000"]
+; [chara_config ptext="chara_name_area"]
 
 ; [deffont][resetfont]
 ; フォントのデフォルト設定を行います。
 ; サイズは40px、フォントはロゴたいぷゴシック、文字色は白、縁取り色は黒です。
-[deffont size="40" face="ロゴたいぷゴシック,メイリオ,sans-serif" color="0xffffff" edge="0x000000"]
-[resetfont]
-[endmacro]
+; [deffont size="40" face="ロゴたいぷゴシック,メイリオ,sans-serif" color="0xffffff" edge="0x000000"]
+; [resetfont]
+; [endmacro]
 
 ; ※ 補足 ※
 ; ロゴたいぷゴシックをティラノスクリプト上で使えるようにするために、
@@ -98,4 +98,149 @@
 [layopt layer="message0" visible="false"]
 [layopt layer="message1" visible="false"]
 [stop_bgmovie wait="1"]
+[endmacro]
+
+
+; ----------------------------------------------------------
+;               re:journey macros
+; ----------------------------------------------------------
+; @maki: [set_default_message_window]
+;        多分デフォで入ってた[set_message_window]の改変。
+;        上のコメントアウトしてある元設定に一杯コメントついてるから動作原理はそっち参照。
+
+[macro name="set_default_message_window"]
+[position left="42" top="471" width="1190" height="200"]
+[position margint="34" marginl="143" marginr="138" marginb="46"]
+[free  name="chara_name_area" layer="message0"]
+[clearfix]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="ヒラギノ角ゴシック" x="189" y="480" color="0xffffff" edge="0x000000"]
+[chara_config ptext="chara_name_area"]
+[deffont size="26" face="ヒラギノ角ゴシック" color="0xffffff" edge="0x000000"]
+[resetfont]
+; @maki: tyrano.cssに書くと読み込み時おかしな挙動をするためここに。
+; 			 .message_innerは別のmessage_windowマクロから移動させるときに挙動がおかしくなるため分からせしてます。
+[iscript]
+$(".message_outer").css({
+	"background": "linear-gradient(to left, #361413, #000000, #361413)",
+	"opacity": "0.6",
+	"border-radius": "10px",
+	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
+	"transition": "500ms all 0s"
+});
+$(".message_inner").css({
+	"width": "907px",
+	"height": "112px",
+	"top": "471px",
+	"left": "42px",
+	"padding-top": "34px",
+	"padding-left": "143px",
+	"line-height": "38px"
+});
+[endscript]
+[role_open]
+[wait time="500"]
+[endmacro]
+
+
+; @maki: [set_center_message_window]
+;        中央キャラ用メッセージウインドウ。
+[macro name="set_center_message_window"]
+[position left="170" top="456" width="938" height="194"]
+[position margint="32.5" marginl="60" marginr="60" marginb="46"]
+[free  name="chara_name_area" layer="message0"]
+[clearfix]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="ヒラギノ角ゴシック" x="230" y="470" color="0xffffff" edge="0x000000"]
+[chara_config ptext="chara_name_area"]
+[deffont size="26" face="ヒラギノ角ゴシック" color="0xffffff" edge="0x000000"]
+[resetfont]
+; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
+[iscript]
+$(".message_outer").css({
+	"background": "linear-gradient(to left, #361413, #000000, #361413)",
+	"opacity": "0.6",
+	"border-radius": "10px",
+	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
+	"transition": "500ms all 0s"
+});
+$(".message_inner").css({
+	"width": "665px",
+	"height": "88px",
+	"top": "456px",
+	"left": "170px",
+	"padding-top": "40px",
+	"padding-left": "60px",
+	"line-height": "44px"
+});
+[endscript]
+[role_open]
+[wait time="500"]
+[endmacro]
+
+; @maki: [set_right_message_window]
+;        右キャラ用メッセージウインドウ。
+[macro name="set_right_message_window"]
+[position left="297" top="456" width="938" height="194"]
+[position margint="32.5" marginl="60" marginr="60" marginb="46"]
+[free  name="chara_name_area" layer="message0"]
+[clearfix]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="ヒラギノ角ゴシック" x="357" y="470" color="0xffffff" edge="0x000000"]
+[chara_config ptext="chara_name_area"]
+[deffont size="26" face="ヒラギノ角ゴシック" color="0xffffff" edge="0x000000"]
+[resetfont]
+; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
+[iscript]
+$(".message_outer").css({
+	"background": "linear-gradient(to left, #361413, #000000, #361413)",
+	"opacity": "0.6",
+	"border-radius": "10px",
+	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
+	"transition": "500ms all 0s"
+});
+$(".message_inner").css({
+	"width": "665px",
+	"height": "88px",
+	"top": "456px",
+	"left": "297px",
+	"padding-top": "40px",
+	"padding-left": "60px",
+	"line-height": "44px"
+});
+[endscript]
+[role_open]
+[wait time="500"]
+[endmacro]
+
+
+; @maki: [set_left_message_window]
+;        左キャラ用メッセージウインドウ。
+[macro name="set_left_message_window"]
+[position left="45" top="456" width="938" height="194"]
+[position margint="32.5" marginl="60" marginr="60" marginb="46"]
+[free  name="chara_name_area" layer="message0"]
+[clearfix]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="ヒラギノ角ゴシック" x="105" y="470" color="0xffffff" edge="0x000000"]
+[chara_config ptext="chara_name_area"]
+[deffont size="26" face="ヒラギノ角ゴシック" color="0xffffff" edge="0x000000"]
+[resetfont]
+; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
+[iscript]
+$(".message_outer").css({
+	"background": "linear-gradient(to left, #361413, #000000, #361413)",
+	"opacity": "0.6",
+	"border-radius": "10px",
+	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
+	"transition": "500ms all 0s"
+});
+$(".message_inner").css({
+	"width": "665px",
+	"height": "88px",
+	"top": "456px",
+	"left": "45px",
+	"padding-top": "40px",
+	"padding-left": "60px",
+	"line-height": "44px"
+});
+[endscript]
+[role_open]
+[wait time="500"]
 [endmacro]

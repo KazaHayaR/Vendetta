@@ -480,3 +480,35 @@ body{
 #alertify{
     z-index:9999999;
 }
+
+/*
+*****************
+* re:journy css *
+*****************
+*/
+
+/* .message_outer {
+	background: linear-gradient(to left, #361413, #000000, #361413);
+	opacity: 0.6!important;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px rgba(119, 119, 119, .75);
+}
+*/
+/* .message_outer {
+	transition: 1s all 0s;
+} */
+/* .message_default {
+	background: linear-gradient(to left, #361413, #000000, #361413);
+	opacity: 0.6!important;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px rgba(119, 119, 119, .75);
+} */
+.message_inner p {
+	padding: 0;
+}
+.message_inner {
+	line-height: 38px!important;
+}
+.chara_name_area {
+	transition: 1s all 0s;
+}
