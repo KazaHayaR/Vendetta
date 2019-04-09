@@ -100,7 +100,6 @@
 [stop_bgmovie wait="1"]
 [endmacro]
 
-
 ; ----------------------------------------------------------
 ;               re:journey macros
 ; ----------------------------------------------------------
@@ -113,9 +112,9 @@
 [position margint="34" marginl="143" marginr="138" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
 [clearfix]
-[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" x="189" y="480" color="0xffffff" edge="0x000000"]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="189" y="480" color="0xffffff" edge="0x000000"]
 [chara_config ptext="chara_name_area"]
-[deffont size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" color="0xffffff" edge="0x000000"]
+[deffont size="26" color="0xffffff" edge="0x000000"]
 [resetfont]
 ; @maki: tyrano.cssに書くと読み込み時おかしな挙動をするためここに。
 ; 			 .message_innerは別のmessage_windowマクロから移動させるときに挙動がおかしくなるため分からせしてます。
@@ -149,9 +148,9 @@ $(".message_inner").css({
 [position margint="32.5" marginl="60" marginr="60" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
 [clearfix]
-[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" x="230" y="470" color="0xffffff" edge="0x000000"]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="230" y="470" color="0xffffff" edge="0x000000"]
 [chara_config ptext="chara_name_area"]
-[deffont size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" color="0xffffff" edge="0x000000"]
+[deffont size="26" color="0xffffff" edge="0x000000"]
 [resetfont]
 ; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
 [iscript]
@@ -183,9 +182,9 @@ $(".message_inner").css({
 [position margint="32.5" marginl="60" marginr="60" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
 [clearfix]
-[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" x="357" y="470" color="0xffffff" edge="0x000000"]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="357" y="470" color="0xffffff" edge="0x000000"]
 [chara_config ptext="chara_name_area"]
-[deffont size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" color="0xffffff" edge="0x000000"]
+[deffont size="26" color="0xffffff" edge="0x000000"]
 [resetfont]
 ; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
 [iscript]
@@ -218,9 +217,9 @@ $(".message_inner").css({
 [position margint="32.5" marginl="60" marginr="60" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
 [clearfix]
-[ptext name="chara_name_area" layer="message0" zindex="102" size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" x="105" y="470" color="0xffffff" edge="0x000000"]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="105" y="470" color="0xffffff" edge="0x000000"]
 [chara_config ptext="chara_name_area"]
-[deffont size="26" face="Yu Gothic Medium, 游ゴシック Medium, YuGothic, 游ゴシック体, ヒラギノ角ゴ Pro W3, メイリオ, sans-serif" color="0xffffff" edge="0x000000"]
+[deffont size="26" color="0xffffff" edge="0x000000"]
 [resetfont]
 ; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
 [iscript]
