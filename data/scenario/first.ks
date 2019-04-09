@@ -4,7 +4,7 @@
 ;初期化処理
 ;--------------
 ;プラグインの導入
-; [plugin name="message_edge" edge="true" edge_color="0x1A237E" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
+[plugin name="message_edge" edge="true" edge_color="0x000000" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
 [plugin name=manpu]
 [plugin name="kanimMacro"]
 [plugin name="glyph"]
