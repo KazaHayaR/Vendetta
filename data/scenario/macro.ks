@@ -112,7 +112,7 @@
 [position margint="34" marginl="143" marginr="138" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
 [clearfix]
-[ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="189" y="480" color="0xffffff" edge="0x000000"]
+[ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="185" y="480" color="0xffffff" edge="0x000000"]
 [chara_config ptext="chara_name_area"]
 [deffont size="26" color="0xffffff" edge="0x000000"]
 [resetfont]
