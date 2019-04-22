@@ -4,7 +4,7 @@
 ;初期化処理
 ;--------------
 ;プラグインの導入
-[plugin name="message_edge" edge="true" edge_color="0x1A237E" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
+[plugin name="message_edge" edge="true" edge_color="0x000000" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
 [plugin name=manpu]
 [plugin name="kanimMacro"]
 [plugin name="glyph"]
@@ -14,14 +14,16 @@
 ;マクロ呼出し
 [call storage="macro.ks"]
 
+
 ;テキストレイヤーの配置
-[position left=0 top=526 width=1280 height=194]
-[position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
-[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
-[chara_config ptext="chara_name_area"]
+; [position left=0 top=526 width=1280 height=194]
+; [position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
+; [ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+; [chara_config ptext="chara_name_area"]
+[set_default_message_window]
 
 ;ロールボタン等の配置
-[role_open]
+; [role_open]
 
 ;--------------
 ;本文
@@ -76,8 +78,8 @@
 どうぞ、ご静聴あれ。[lrcm]
 私はこれからこう語るのだ。[lrcm]
 ;ロゴ
-Also Sprach[lrcm]
-(学校の駐輪場—校庭等、背景は柔軟に—遅刻する)[lrcm]
+;Also Sprach
+;(学校の駐輪場—校庭等、背景は柔軟に—遅刻する)
 
 自転車の運転は一度覚えたら忘れないと言われるが、あれは嘘だった。[lrcm]
 
@@ -90,7 +92,7 @@ Also Sprach[lrcm]
 
 [bg layer=base storage=room.jpg time="1"]
 
-遅れて入る教室には謎の緊張感がある。)[lrcm]
+遅れて入る教室には謎の緊張感がある。[lrcm]
 できるだけ音を立てないように扉をあけるが、授業中の静寂とあっては、やはり目立たざるを得ない。[lrcm]
 
 #【要】
@@ -109,53 +111,57 @@ Also Sprach[lrcm]
 [chara_show name="akane"]
 
 クラスでおれと共に図書委員をやっている辻さんだった。[lrcm]
-
+[set_center_message_window]
 #【切慧】
 「……」[lrcm]
-
+[set_default_message_window]
+#
 辻さんはすぐに目を逸してしまったか委員会の仕事でもあっただろうか。[lrcm]
 特に何もなかったと思うが……[lrcm]
+
+[chara_hide name="akane"]
 
 そのまま教師の声を聞き流して授業は終わり昼休みとなった。[lrcm]
 
 
-（SE:チャイム音、高橋・坂口立ち絵登場、モブ用の使い回しで可）
+;（SE:チャイム音、高橋・坂口立ち絵登場、モブ用の使い回しで可）
 
-
+[set_right_message_window]
 #【坂口】
 「来栖お前遅刻とかやるなぁ」[lrcm]
-
+[set_left_message_window]
 #【高橋】
 「不良か？　不良なのか？」[lrcm]
-
+[set_default_message_window]
 #【要】
 「いや普通に寝坊だから」[lrcm]
-
+#
 おれの座席へ学校ではよくつるむ友人、高橋と川上がやってきた。[lrcm]
-
+[set_left_message_window]
 #【高橋】
 「お前寝坊とかするキャラだっけ？」[lrcm]
-
+[set_default_message_window]
 #【要】
 「キャラとか関係なく寝坊くらい誰だってするだろ」[lrcm]
-
+[set_left_message_window]
 #【高橋】
 「ほんとは寝坊じゃないんだろ？」[lrcm]
-
+[set_right_message_window]
 #【坂口】
 「お？　学校サボってどこで遊んでたんだ？」[lrcm]
-
+[set_default_message_window]
 #【要】
 「いや、そんなら学校来ないで一日休むわ」[lrcm]
-
+[set_right_message_window]
 #【坂口】
 「そりゃそうか」[lrcm]
-
+[set_left_message_window]
 #【高橋】
 「でもお前、普段は真面目な風を装ってるけど、たまにすっげー何も考えてない顔でフラフラとどっかに消えてたりするよな」[lrcm]
-
+[set_right_message_window]
 #【坂口】
 「修学旅行の話はやめてやれ」[lrcm]
-
+[set_default_message_window]
 #【要】
 「てか真面目を装ってって何だよ。普通に普通だろ、おれは」[lrcm]
+#
