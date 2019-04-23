@@ -30,7 +30,7 @@
 ;--------------
 
 ;プロローグに移動
-;@jump storage=hosifuri_Plolog.ks target=*plolog 
+@jump storage=plolog.ks target=*plolog 
 
 ;初期化処理
 /*
