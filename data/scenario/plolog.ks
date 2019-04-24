@@ -5,6 +5,18 @@
 [call storage="macro.ks"]
 
 *plolog
+;特殊テキストレイヤ
+ [position left=270 top=250 width=720 height=300 opacity=0]
+;[position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
+ [ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+ [chara_config ptext="chara_name_area"]
+ [layopt layer=0 visible=true]
+
+[image  layer="2" time="1" storage="bg.jpg" visible="true"]
+[bg layer=base cross="true" storage="whit.jpg"]
+[layermode_movie video="hibana.webm" time="1" wait=true loop="true"]
+[freeimage  layer="2" time=500]
+
 #
 ああ、いかに私が叫んだとして、いかなる天使が遥かな高みからそれを聞くのか[lrcm]
 #

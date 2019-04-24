@@ -4,7 +4,7 @@
 ;初期化処理
 ;--------------
 ;プラグインの導入
-[plugin name="message_edge" edge="true" edge_color="0x000000" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
+[plugin name="message_edge" edge="true" edge_color="0x1c0b0a" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
 [plugin name=manpu]
 [plugin name="kanimMacro"]
 [plugin name="glyph"]
@@ -14,6 +14,9 @@
 ;マクロ呼出し
 [call storage="macro.ks"]
 
+
+;プロローグに移動
+@jump storage=plolog.ks target=*plolog
 
 ;テキストレイヤーの配置
 ; [position left=0 top=526 width=1280 height=194]
@@ -28,10 +31,6 @@
 ;--------------
 ;本文
 ;--------------
-
-;プロローグに移動
-@jump storage=plolog.ks target=*plolog 
-
 ;初期化処理
 /*
 *hoshifuri_1st
@@ -61,6 +60,7 @@
 私はそのより烈しい存在に焼かれて滅びるだろう[lrcm]
 #
 なぜなら美は、怖るべきものの始まりに他なるのだから[lrcm]
+#
 過去に詩人はこう言った。[lrcm]
 よろしい。全くもって正しかろう。[lrcm]
 この熾烈な正しさを、この過剰な動揺を。[lrcm]
@@ -77,6 +77,7 @@
 諸君らの道徳に期待を込めて、彼女らの噺を贈ろう。[lrcm]
 どうぞ、ご静聴あれ。[lrcm]
 私はこれからこう語るのだ。[lrcm]
+
 ;ロゴ
 ;Also Sprach
 ;(学校の駐輪場—校庭等、背景は柔軟に—遅刻する)
@@ -123,9 +124,7 @@
 
 そのまま教師の声を聞き流して授業は終わり昼休みとなった。[lrcm]
 
-
 ;（SE:チャイム音、高橋・坂口立ち絵登場、モブ用の使い回しで可）
-
 [set_right_message_window]
 #【坂口】
 「来栖お前遅刻とかやるなぁ」[lrcm]
