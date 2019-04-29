@@ -52,6 +52,8 @@
 ;[manpu layer="1" type="bikkuri" x="500" y="200" width="80"]
 ;[odoroku layer="0"]
 
+
+[mtext layer="message0" text="ふえええええええええええええええ" size="30" x="100" y="100" color="blue" in_effect="fadeIn"]
 #
 ああ、いかに私が叫んだとして、いかなる天使が遥かな高みからそれを聞くのか[lrcm]
 #
@@ -118,8 +120,8 @@
 [set_default_message_window]
 #
 辻さんはすぐに目を逸してしまったか委員会の仕事でもあっただろうか。[lrcm]
-特に何もなかったと思うが……[lrcm]
-
+特に何もなかったと思うが……[lrcm
+]
 [chara_hide name="akane"]
 
 そのまま教師の声を聞き流して授業は終わり昼休みとなった。[lrcm]

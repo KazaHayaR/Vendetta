@@ -227,7 +227,7 @@ $(".message_outer").css({
 	"background": "linear-gradient(to left, #361413, #000000, #361413)",
 	"opacity": "0.7",
 	"border-radius": "10px",
-	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
+	"box-shadow": "3spx 3px 10px rgba(119, 119, 119, .75)",
 	"transition": "500ms all 0s"
 });
 $(".message_inner").css({
