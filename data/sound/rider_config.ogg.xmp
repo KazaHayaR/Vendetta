@@ -1,5 +1,5 @@
 <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c143 79.161210, 2017/08/11-10:28:36        " rdfhash="1C78C5E90E1A5869ED45FB5215DCB232" merged="0">
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c145 79.163499, 2018/08/13-16:40:22        " rdfhash="84EEDC62828FDBA4222736789DDCB465" merged="0">
  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about=""
     xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
@@ -8,13 +8,15 @@
     xmlns:xmp="http://ns.adobe.com/xap/1.0/"
     xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmpMM:InstanceID="xmp.iid:e50f0348-81cf-4db8-98b8-0b05756502ee"
-   xmpMM:DocumentID="0b872cfe-36c1-7d4d-773d-c45d0000003d"
-   xmpMM:OriginalDocumentID="xmp.did:8fb3ebc3-fe8b-49ef-895b-d238857907d0"
-   xmp:MetadataDate="2018-05-24T10:54:15+09:00"
-   xmp:ModifyDate="2018-05-24T10:54:15+09:00"
-   xmp:CreateDate="2018-05-24T10:53:45+09:00"
-   xmpDM:genre="Other"
+   xmpMM:InstanceID="xmp.iid:0ee793e9-f9cd-4634-b059-1182f1d6fb5f"
+   xmpMM:DocumentID="e0c951d6-1c04-8671-ed50-9de40000004f"
+   xmpMM:OriginalDocumentID="xmp.did:00d1ac45-1fbe-4c99-b234-4fb15d56e0e9"
+   xmp:MetadataDate="2019-04-29T23:18:40+09:00"
+   xmp:ModifyDate="2019-04-29T23:18:40+09:00"
+   xmp:CreateDate="2019-04-29T23:18:10+09:00"
+   xmpDM:artist="DOVA-SYNDROME"
+   xmpDM:genre="SE"
+   xmpDM:composer="稿屋 隆"
    xmpDM:audioSampleRate="44100"
    xmpDM:audioSampleType="Compressed"
    xmpDM:audioChannelType="Stereo"
@@ -25,43 +27,48 @@
     <rdf:Seq>
      <rdf:li
       stEvt:action="saved"
-      stEvt:instanceID="ea8a5204-8c05-450e-2d00-dfec0000006a"
-      stEvt:when="2018-05-24T10:54:15+09:00"
-      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2018.0 (Macintosh)"
+      stEvt:instanceID="a0236651-cd47-8dbe-88fe-595d0000007c"
+      stEvt:when="2019-04-29T23:18:40+09:00"
+      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2019.0 (Macintosh)"
       stEvt:changed="/"/>
      <rdf:li
       stEvt:action="saved"
-      stEvt:instanceID="c8b66600-2416-b0f9-96e1-acf70000006a"
-      stEvt:when="2018-05-24T10:54:02+09:00"
-      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2018.0 (Macintosh)"
+      stEvt:instanceID="5b202b66-dd01-80df-8b01-d3e400000078"
+      stEvt:when="2019-04-29T23:18:34+09:00"
+      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2019.0 (Macintosh)"
       stEvt:changed="/"/>
      <rdf:li
       stEvt:action="saved"
-      stEvt:instanceID="xmp.iid:f96d7913-77b8-4f3f-b132-3673d452ac96"
-      stEvt:when="2018-05-24T10:54:15+09:00"
-      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2018.0 (Macintosh)"
+      stEvt:instanceID="xmp.iid:ebb90955-61aa-4377-8a03-c83cb501773b"
+      stEvt:when="2019-04-29T23:18:40+09:00"
+      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2019.0 (Macintosh)"
       stEvt:changed="/"/>
      <rdf:li
       stEvt:action="saved"
-      stEvt:instanceID="xmp.iid:e50f0348-81cf-4db8-98b8-0b05756502ee"
-      stEvt:when="2018-05-24T10:54:15+09:00"
-      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2018.0 (Macintosh)"
+      stEvt:instanceID="xmp.iid:0ee793e9-f9cd-4634-b059-1182f1d6fb5f"
+      stEvt:when="2019-04-29T23:18:40+09:00"
+      stEvt:softwareAgent="Adobe Adobe Media Encoder CC 2019.0 (Macintosh)"
       stEvt:changed="/metadata"/>
     </rdf:Seq>
    </xmpMM:History>
    <xmpMM:DerivedFrom
-    stRef:instanceID="c8b66600-2416-b0f9-96e1-acf70000006a"
-    stRef:documentID="c67f5c0a-5717-f26a-0e4e-ef760000003d"
-    stRef:originalDocumentID="xmp.did:2cd690d8-13be-4fd5-96fc-b7d4edda08f5"/>
+    stRef:instanceID="5b202b66-dd01-80df-8b01-d3e400000078"
+    stRef:documentID="682bc911-9a12-2c5e-6c39-c1c50000004b"
+    stRef:originalDocumentID="xmp.did:094540c6-2297-4bf2-84da-9346f4343893"/>
    <xmpDM:startTimecode
     xmpDM:timeFormat="2997DropTimecode"
     xmpDM:timeValue="00;00;00;00"/>
    <xmpDM:duration
-    xmpDM:value="908"
+    xmpDM:value="872"
     xmpDM:scale="1001/30000"/>
    <xmpDM:altTimecode
     xmpDM:timeValue="00;00;00;00"
     xmpDM:timeFormat="2997DropTimecode"/>
+   <dc:title>
+    <rdf:Alt>
+     <rdf:li xml:lang="x-default">炎上</rdf:li>
+    </rdf:Alt>
+   </dc:title>
   </rdf:Description>
  </rdf:RDF>
 </x:xmpmeta>
