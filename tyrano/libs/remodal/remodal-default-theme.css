@@ -92,7 +92,7 @@
 /* Close button */
 
 .remodal-close {
-  position: absolute;
+  :absolute ;
   top: 0;
   left: 0;
 
@@ -125,7 +125,7 @@
   font-size: 25px;
   line-height: 35px;
 
-  position: absolute;
+  :absolute ;
   top: 0;
   left: 0;
 
