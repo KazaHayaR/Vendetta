@@ -11,6 +11,16 @@
 }
 
 @font-face {
+  font-family: "web_noto_el";
+  src: url("../data/others/NotoSansCJKjp-DemiLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "web_noto_l";
+  src: url("../data/others/NotoSansCJKjp-Light.otf") format("opentype");
+}
+
+@font-face {
   font-family: "web_noto_m";
   src: url("../data/others/NotoSansCJKjp-Medium.otf") format("opentype");
 }

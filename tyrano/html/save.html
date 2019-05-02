@@ -1,59 +1,315 @@
-<div>
-	<div class='menu_item' style='float:right;'><img class="menu_close" src='tyrano/images/system/menu_button_close.png' /></div>
-	
-	<div style='clear:both'></div>
-	
-	<img class="button_arrow_up button_smart"   src='tyrano/images/system/arrow_up.png' style='cursor:pointer;left:670px;top:20px;position:absolute;'>
-    <img class="button_arrow_down button_smart" src='tyrano/images/system/arrow_down.png' style='cursor:pointer;left:760px;top:15px;position:absolute;'>
-
-	<div class="area_save_list" style="margin-top:50px;overflow:auto">
-	
-		<ul class='save_list'>
-			{{for array_save}}
-				<li class='save_display_area save_list_item' data-num='{{:num}}'>
-					<span class='save_list_item_thumb'>
-					{{if img_data != ""}}
-						<img style="width:100px" src="{{:img_data}}">
-					{{/if}}
-					</span>
-					
-					<span class='save_list_item_area'>
-						<span class='save_list_item_date'>{{:save_date}}</span>
-						<span class='save_list_item_text'>{{:title}}</span>
-					</span>
-				</li>
-			{{/for}}
-		</ul>
-	
+<style>
+	.display_save {
+		height: 100%;
+		width: 100%;
+		background-image: url(./data/image/save_bg.png);
+		background-size: cover;	
+		position: relative;
+	}
+	/* ヘッダ */
+	.mini-header::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.mini-header {
+		height: 74px;
+		background-image: linear-gradient(270deg, #361413, #262626, #361413);
+	}
+	.mh-title {
+		height: 74px;
+		float: left;
+		color: #fff;
+		font-weight: bold;
+		font-size: 46px;
+	}
+	.mh-title img:nth-child(1) {
+		box-sizing: border-box;
+		height: 74px;
+		padding: 0 0 0 45px;
+	}
+	.mh-title img:nth-child(2) {
+		box-sizing: border-box;
+		height: 74px;
+		padding: 30px 0 21px 0;
+		object-fit: contain;
+	}
+	.mh-links {
+		box-sizing: border-box;
+		float: right;
+		height: 74px;
+		padding: 29px 44px;
+	}
+	.mh-links::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.mh-links a {
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		height: 100%;
+		margin-left: 10px;
+	}
+	.mh-links a img {
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+	/* slots select */
+	.slot {
+		box-sizing: border-box;
+		height: 86px;
+		width: 100%;
+		padding: 32px 69px 16px 0;
+	}
+	.slot::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.slot img {
+		box-sizing: border-box;
+		height: 120%;
+		padding-top: 10px;
+		object-fit: contain;
+		float: right;
+	}
+	.slot ul {
+		float: right;
+		display: block;
+	}
+	.slot ul li {
+		display: inline-block;
+		padding-left: 5px;
+	}
+	.num-block {
+		display: block;
+		height: 37px;
+		width: 37px;
+		border-radius: 3px;
+		background-color: #361413;
+		text-decoration: none;
+	}
+	.num-block .num {
+		font-family: Helvetica;
+		font-weight: lighter;
+		color: #fff;
+		font-size: 20px;
+		line-height: 37px;
+	}
+	/* save slider */
+	.al {
+		position: absolute;
+		height: 34.2px;
+		object-fit: contain;
+		top: 385px;
+		left: 15px;
+	}
+	.ar {
+		position: absolute;
+		height: 34.2px;
+		object-fit: contain;
+		top: 385px;
+		right: 15px;
+	}
+	.save-list {
+		box-sizing: border-box;
+		width: auto;
+		height: 531px;
+		margin: 0 47px;
+		border: 7px solid #361413;
+		border-radius: 25px;
+		overflow: hidden;
+		background-color: transparent;
+		position: relative;
+	}
+	.slider {
+		height:100%;
+		width: 300%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: left 1s ease 0;
+	}
+	.slider::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.slide {
+		box-sizing: border-box;
+		height: 517px;
+		width: 1172px;
+		padding: 32.5px 10px;
+		float: left;
+	}
+	/* save slot */
+	.save-item {
+		height: 209.5px;
+		width: 207.7px;
+		float: left;
+		border-radius: 10px;
+		background-color: #F0F0F0;
+		border: 3px solid #361413;
+		margin: 8.25px 8.35px;
+		position: relative;
+	}
+	.save-item-num {
+		height: 48px;
+		width: 32px;
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-family: Helvetica;
+		line-height: 48px;
+		font-size: 20.5px;
+		color: #fff;
+		background-color: #361413;
+		font-weight: lighter;
+	}
+	.save-item-thumb {
+		height: 104px;
+		width: 181px;
+		margin: 15px 13px;
+	}
+	.save-item-thumb img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.save-item-info {
+		padding: 0 12px 0;
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.save-item-text {
+		height: 30px;
+		width: 100%;
+		text-align: justify;
+		font-family: 'web_noto_l';
+	}
+	.save-item-text span {
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		-webkit-line-clamp: 2;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		font-family: 'web_noto_l';
+	}
+	.date-wrapper {
+		margin-top: 16px;
+		width: 100%;
+	}
+	.date-wrapper::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.date-wrapper img {
+		float: left;
+		display: block;
+		height: 16px;
+		object-fit: contain;
+		margin-right: 5px;
+	}
+	.save-item-date {
+		font-family: 'web_noto_l';
+		line-height: 14.5px;
+		float: left;
+	}
+	/*  */
+</style>
+<!--background-imageで背景指定してるけど、画面遷移が微妙かも。一枚背景にしてimgでだすか？-->
+<div class="display_save">
+	<div class="mini-header">
+		<div class="mh-title">
+			<img src="data/image/LOGO_SAVE.svg">
+			<img src="data/image/SUB_LOGO_SAVE.svg">
+		</div>
+		<div class="mh-links">
+			<a href="javascript:void(0)" onclick="TYRANO.kag.layer.getMenuLayer().empty();TYRANO.kag.layer.getMenuLayer().css('background-image','url(./data/image/save_bg.png)');TYRANO.kag.menu.displayLoad();"><img src="data/image/LOAD.svg"></a>
+			<a href="javascript:void(0)" onclick="location.href = './index.html'"><img src="data/image/TITLE.svg"></a>
+			<a href="javascript:void(0)"><img src="data/image/BACK.svg" class="menu_close"></a>
+			<a href="javascript:void(0)" onclick="window.close()"><img src="data/image/EXIT.svg"></a>
+		</div>
 	</div>
-	
-	<img class="img_label img_label_save" src='tyrano/images/system/label_save.png' style='left:0;top:0;position:absolute;'>
-	<img class="img_bg_base" src='tyrano/images/system/bg_base.png' style='z-index:-1;left:0;top:0;width:100%;height:100%;position:absolute;'>
-
+	<div class="slot">
+		<ul>
+			<li>
+				<a class="num-block" href="javascript:void(0)" onclick="$('.slider').css('left', '0px');">
+					<span class="num">1</span>
+				</a>
+			</li>
+			<li>
+				<a class="num-block" href="javascript:void(0)" onclick="$('.slider').css('left', '-1172px');">
+					<span class="num">2</span>
+				</a>
+			</li>
+			<li>
+				<a class="num-block" href="javascript:void(0)" onclick="$('.slider').css('left', '-2344px');">
+					<span class="num">3</span>
+				</a>
+			</li>
+		</ul>
+		<img src="data/image/Slot.svg">
+	</div>
+	<a class="al" href="javascript:void(0)" onclick="al();"><img src="./data/image/arrow_left.svg"></a>
+	<a class="ar" href="javascript:void(0)" onclick="ar();"><img src="./data/image/arrow_right.svg"></a>
+	<div class="save-list">
+		<div class="slider">
+			{{for array_save}}
+				{{if #index % 10 == 0}}
+					<div class="slide">
+				{{/if}}
+				<div class='save-item save_list_item save_display_area' data-num='{{:num}}'>
+					<div class="save-item-num">
+						{{>(#index + 1)}}
+					</div>
+					<div class='save-item-thumb'>
+					{{if img_data == ""}}
+						<img src="data/image/default_thumbnail.png">
+					{{else}}
+						<img src="{{:img_data}}">
+					{{/if}}
+					</div>
+					
+					<div class='save-item-info'>
+						<div class='save-item-text'>{{:title}}</div>
+						<div class="date-wrapper">
+							<img src="data/image/icon_clock.svg">
+							<div class='save-item-date'>{{:save_date}}</div>
+						</div>
+					</div>
+				</div>
+				{{if #index % 10 == 9}}
+					</div>
+				{{/if}}
+			{{/for}}
+		</div>
+	</div>
 	<script>
 	setTimeout(function(){
 		var save_list_height = parseInt($(".tyrano_base").outerHeight()) - parseInt($(".save_list").get(0).offsetTop) ;
 		$(".area_save_list").css("height",save_list_height);
 	},30);
+	function ar() {
+		var nowLeft = $('.slider').css('left');
+		if(nowLeft == '-2344px') {
+			$('.slider').css('left', 0);
+		} else {
+			$('.slider').css('left', '-=1172');
+		}
+	}
+	function al() {
+		var nowLeft = $('.slider').css('left');
+		if(nowLeft == '0px') {
+			$('.slider').css('left', '-2344px');
+		} else {
+			$('.slider').css('left', '+=1172');
+		}
+	}
 	</script>
-	
-	<style>
-	
-	/*両方共通（はみ出したらスクロールさせる）*/
-		.area_save_list::-webkit-scrollbar{ 
-		    width: 15px;
-		}
-		.area_save_list::-webkit-scrollbar-thumb{ 
-		    background: #6495ED;
-		    border-radius: 10px;
-		}
-		.area_save_list::-webkit-scrollbar-track-piece:start{
-		    background: gray;
-		}
-		.area_save_list::-webkit-scrollbar-track-piece:end{
-		    background: #fff;
-		}
-	</style>
-	
-
 </div>

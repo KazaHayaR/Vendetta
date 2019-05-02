@@ -119,11 +119,15 @@
 
         var nowdate = new Date();
 
-        var h = nowdate.getHours();
-        var m = nowdate.getMinutes();
-        var s = nowdate.getSeconds();
+        // var h = nowdate.getHours();
+        // var m = nowdate.getMinutes();
+        // var s = nowdate.getSeconds();
 
-        return h + "：" + m + "：" + s;
+        var h = ("0" + nowdate.getHours()).slice(-2);
+        var m = ("0" + nowdate.getMinutes()).slice(-2);
+        var s = ("0" + nowdate.getSeconds()).slice(-2);
+
+        return h + ":" + m + ":" + s;
 
     };
 
