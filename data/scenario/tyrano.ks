@@ -13,7 +13,6 @@
 
 [endmacro]
 
-
 ;キャラクターを表示、そして設定
 [macro name="charaset"]
 
