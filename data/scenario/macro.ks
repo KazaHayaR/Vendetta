@@ -69,7 +69,6 @@
 [chara_config ptext="chara_name_area"]
 [endmacro]
 
-
 ; [destroy]
 ; すべてのレイヤーの画像やテキスト、ボタンなどを破壊し、
 ; ゲーム画面を更地に戻します。
@@ -162,7 +161,7 @@ $(".message_outer").css({
 	"transition": "500ms all 0s"
 });
 $(".message_inner").css({
-	"width": "665px",
+	"width": "818px",
 	"height": "88px",
 	"top": "456px",
 	"left": "170px",
@@ -196,7 +195,7 @@ $(".message_outer").css({
 	"transition": "500ms all 0s"
 });
 $(".message_inner").css({
-	"width": "665px",
+	"width": "818px",
 	"height": "88px",
 	"top": "456px",
 	"left": "297px",
@@ -231,7 +230,7 @@ $(".message_outer").css({
 	"transition": "500ms all 0s"
 });
 $(".message_inner").css({
-	"width": "665px",
+	"width": "818px",
 	"height": "88px",
 	"top": "456px",
 	"left": "45px",

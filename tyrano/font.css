@@ -15,7 +15,7 @@
   src: url("../data/others/NotoSansCJKjp-Medium.otf") format("opentype");
 }
 
-@font-face {
+@font-face 
   font-family: "web_notos_r";
   src: url("../data/others/NotoSerifCJKjp-Regular.ttf") format("truetype");
 }
