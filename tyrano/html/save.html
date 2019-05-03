@@ -297,18 +297,24 @@
 	},30);
 	function ar() {
 		var nowLeft = $('.slider').css('left');
-		if(nowLeft == '-2344px') {
-			$('.slider').css('left', 0);
+		nowLeft = parseInt(nowLeft);
+		if (nowLeft >= 0) {
+			$('.slider').css('left', '-1172px');
+		} else if (nowLeft < -1172) {
+			$('.slider').css('left', '0px');
 		} else {
-			$('.slider').css('left', '-=1172');
+			$('.slider').css('left', '-2344px');
 		}
 	}
 	function al() {
 		var nowLeft = $('.slider').css('left');
-		if(nowLeft == '0px') {
+		nowLeft = parseInt(nowLeft);
+		if (nowLeft <= -2344) {
+			$('.slider').css('left', '-1172px');
+		} else if(nowLeft > -1172) {
 			$('.slider').css('left', '-2344px');
 		} else {
-			$('.slider').css('left', '+=1172');
+			$('.slider').css('left', '0px');
 		}
 	}
 	</script>
