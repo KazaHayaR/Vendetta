@@ -15,9 +15,7 @@
 [call storage="macro.ks"]
 
 ;プロローグに移動
-;@jump storage=plolog.ks target=*plolog
-;@jump storage=1-1.ks target=*1-1
-@jump storage=2-4.ks target=*2-4
+@jump storage=plolog.ks target=*plolog
 
 
 
