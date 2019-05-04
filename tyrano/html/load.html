@@ -313,5 +313,30 @@
 				$('.slider').css('left', '0px');
 			}
 		}
+		$(window).keydown( function(e) {
+			var code = e.keyCode;
+			if (code === 37) { // arrow left
+				var nowLeft = $('.slider').css('left');
+				nowLeft = parseInt(nowLeft);
+				if (nowLeft <= -2344) {
+					$('.slider').css('left', '-1172px');
+				} else if(nowLeft > -1172) {
+					$('.slider').css('left', '-2344px');
+				} else {
+					$('.slider').css('left', '0px');
+				}
+			}
+			if (code === 39) { // arrow right
+				var nowLeft = $('.slider').css('left');
+				nowLeft = parseInt(nowLeft);
+				if (nowLeft >= 0) {
+					$('.slider').css('left', '-1172px');
+				} else if (nowLeft < -1172) {
+					$('.slider').css('left', '0px');
+				} else {
+					$('.slider').css('left', '-2344px');
+				}
+			}
+		});
 		</script>
 	</div>
