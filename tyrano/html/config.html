@@ -1,0 +1,94 @@
+<style>
+  .display_save {
+    height: 100%;
+    width: 100%;
+    background-image: url(./data/image/save_bg.png);
+    background-size: cover;	
+    position: relative;
+  }
+  /* ヘッダ */
+  .mini-header::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .mini-header {
+    height: 74px;
+    background-image: linear-gradient(270deg, #361413, #262626, #361413);
+  }
+  .mh-title {
+    height: 74px;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 46px;
+  }
+  .mh-title img:nth-child(1) {
+    box-sizing: border-box;
+    height: 74px;
+    padding: 0 0 0 45px;
+  }
+  .mh-title img:nth-child(2) {
+    box-sizing: border-box;
+    height: 74px;
+    padding: 30px 0 21px 0;
+    object-fit: contain;
+  }
+  .mh-links {
+    box-sizing: border-box;
+    float: right;
+    height: 74px;
+    padding: 29px 44px;
+  }
+  .mh-links::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .mh-links a {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 100%;
+    margin-left: 10px;
+  }
+  .mh-links a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  /* save slider */
+  .save-list {
+    box-sizing: border-box;
+    width: auto;
+    height: 570px;
+    margin: 40px 43.5px;
+    padding: 82.5px 68px;
+    border: 7px solid #361413;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+  }
+  /*  */
+</style>
+<div class="display_save">
+  <div class="mini-header">
+    <div class="mh-title">
+      <img src="data/image/LOGO_CONFIG.svg">
+      <img src="data/image/SUB_LOGO_CONFIG.svg">
+    </div>
+    <div class="mh-links">
+      <a href="javascript:void(0)" onclick="TYRANO.kag.layer.getMenuLayer().empty();TYRANO.kag.layer.getMenuLayer().css('background-image','url(./data/image/save_bg.png)');TYRANO.kag.menu.displaySave();"><img src="data/image/SAVE.svg"></a>
+      <a href="javascript:void(0)" onclick="location.href = './index.html'"><img src="data/image/TITLE.svg"></a>
+      <a href="javascript:void(0)"><img src="data/image/BACK.svg" class="menu_close"></a>
+      <a href="javascript:void(0)" onclick="window.close()"><img src="data/image/EXIT.svg"></a>
+    </div>
+  </div>
+  <div class="save-list">
+    
+  </div>
+  <script>
+  
+  </script>
+</div>

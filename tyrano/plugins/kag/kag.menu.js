@@ -57,6 +57,13 @@ tyrano.plugin.kag.menu = {
           },
           function () {})
       });
+      // @maki: 多分動くんちゃう？
+      layer_menu.find(".menu_config").click(function (e) {
+        if (button_clicked == true) return;
+        button_clicked = true;
+        that.displayConfig();
+        e.stopPropagation()
+      });
       $.preloadImgCallback(j_menu, function () {
         layer_menu.fadeIn(300);
         $(".button_menu").hide()
@@ -124,6 +131,7 @@ tyrano.plugin.kag.menu = {
       data.save_date = $.getNowDate() + " " + $.getNowTime();
       array_save.data[num] = data;
       $.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave)
+      // @maki: ここにthat.displaySave()噛ませればうまくいくんじゃねと思ったけどそんなことなかった
     })
   },
   setQuickSave: function () {
@@ -486,7 +494,7 @@ tyrano.plugin.kag.menu = {
       layer_menu.find(".menu_close").click(function () {
         layer_menu.fadeOut(300,
           function () {
-            layer_menu.empty()
+            layer_menu.empty();
           });
         if (that.kag.stat.visible_menu_button == true) $(".button_menu").show()
       });
@@ -551,5 +559,19 @@ tyrano.plugin.kag.menu = {
         else elem.msRequestFullscreen()
     }
   },
-  test: function () {}
+  test: function () {},
+  // for config
+  displayConfig: function (cb) {
+    var that = this;
+    this.kag.stat.is_skip = false;
+    var layer_menu = that.kag.layer.getMenuLayer();
+    // 多分ここでHTML呼び出し
+    this.kag.html("config", {}, function (html_str) {
+      // コールバックでHTMLオブジェクトを受け取ってるんじゃないかな？
+      // スクリプト適用ができるみたいだけど面倒なので全部config.htmlでやる
+      var j_save = $(html_str);
+      var layer_menu = that.kag.layer.getMenuLayer();
+      that.setMenu(j_save, cb)
+    })
+  }
 };
