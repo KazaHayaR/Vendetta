@@ -16,6 +16,3 @@
 
 ;プロローグに移動
 @jump storage=plolog.ks target=*plolog
-
-
-
