@@ -31,6 +31,12 @@ tyrano.plugin.kag.menu = {
       layer_menu.find(".menu_close").click(function (e) {
         layer_menu.hide();
         if (that.kag.stat.visible_menu_button == true) $(".button_menu").show();
+        if (TYRANO.kag.tmp.sleep_game != null) {
+          TYRANO.kag.ftag.startTag("awakegame", {
+            variable_over: "true",
+            bgm_over: "true"
+          });
+        }
         e.stopPropagation()
       });
       layer_menu.find(".menu_window_close").click(function (e) {
@@ -61,6 +67,10 @@ tyrano.plugin.kag.menu = {
       layer_menu.find(".menu_config").click(function (e) {
         if (button_clicked == true) return;
         button_clicked = true;
+        if (TYRANO.kag.tmp.sleep_game != null) return false;
+        TYRANO.kag.tmp.sleep_game = {};
+        _pm.next = false;
+        TYRANO.kag.ftag.startTag("sleepgame", _pm);
         that.displayConfig();
         e.stopPropagation()
       });
@@ -446,6 +456,12 @@ tyrano.plugin.kag.menu = {
         layer_menu.empty();
         if (typeof cb == "function") cb()
       });
+      if (TYRANO.kag.tmp.sleep_game != null) {
+        TYRANO.kag.ftag.startTag("awakegame", {
+          variable_over: "true",
+          bgm_over: "true"
+        });
+      }
       if (that.kag.stat.visible_menu_button == true) $(".button_menu").show()
     });
     j_obj.hide();
@@ -496,6 +512,7 @@ tyrano.plugin.kag.menu = {
           function () {
             layer_menu.empty();
           });
+          
         if (that.kag.stat.visible_menu_button == true) $(".button_menu").show()
       });
       layer_menu.find(".button_smart").hide();
