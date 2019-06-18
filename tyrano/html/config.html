@@ -87,7 +87,7 @@
   }
   /* volumes */
   .part {
-    height: 25%;
+    height: 36%;
     width: 100%;
   }
   .part-title {
@@ -167,6 +167,35 @@
     clear: both;
     display: block;
   }
+  .B {
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 33px;
+  }
+  .B>a{
+    display: block;
+    height: 39px;
+    width: 100%;
+    background-color: #361413;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: 500ms;
+  }
+  .B>a>img {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .B.clickable a {
+    background-color: #DCDCDC;
+    transition: 500ms;
+  }
 </style>
 <div class="display_save">
   <div class="mini-header">
@@ -240,11 +269,15 @@
           <img src="data/image/volume_title_skip.svg" alt="">
         </div>
         <div class="buttons">
-          <div class="button-left">
-
+          <div class="B">
+            <a class="button-left" onclick="noReadedSkipOff()" href="javascript:void(0)">
+              <img src="data/image/skip_readed.svg" alt="" srcset="">
+            </a>
           </div>
-          <div class="button-right">
-
+          <div class="B">
+            <a class="button-right" onclick="noReadedSkipOn()" href="javascript:void(0)">
+              <img src="data/image/skip_all.svg" alt="" srcset="">
+            </a>
           </div>
         </div>
       </div>
@@ -470,6 +503,20 @@
       $("#auto_speed>.bar>.amount").animate({width: (vol-1)/4999*401},{duration: 30});
       e.stopPropagation();
     }
+
+    // スキップ部クリック処理
+    function noReadedSkipOff() {
+      tyrano.plugin.kag.config.unReadTextSkip = false;
+      document.getElementsByClassName("B")[0].classList.remove("clickable");
+      document.getElementsByClassName("B")[1].classList.add("clickable");
+      console.log(tyrano.plugin.kag.config.unReadTextSkip)
+    }
+    function noReadedSkipOn() {
+      tyrano.plugin.kag.config.unReadTextSkip = true;
+      document.getElementsByClassName("B")[0].classList.add("clickable");
+      document.getElementsByClassName("B")[1].classList.remove("clickable");
+      console.log(tyrano.plugin.kag.config.unReadTextSkip);
+    }
     // 初期化
     function posCalc(num, selector1, selector2) {
       var position = num/100*401;
@@ -482,7 +529,10 @@
       posCalc(parseInt(tyrano.plugin.kag.config.defaultBgmVolume), "#bgm_volume>.bar>.knob", "#bgm_volume>.bar>.amount");
       posCalc(parseInt(tyrano.plugin.kag.config.defaultSeVolume), "#se_volume>.bar>.knob", "#se_volume>.bar>.amount");   
       posCalc(parseInt(tyrano.plugin.kag.config.chSpeed), "#letter_speed>.bar>.knob", "#letter_speed>.bar>.amount");
-      posCalc(parseInt(tyrano.plugin.kag.config.autoSpeed), "#auto_speed>.bar>.knob", "#auto_speed>.bar>.amount");   
+      posCalc(parseInt(tyrano.plugin.kag.config.autoSpeed), "#auto_speed>.bar>.knob", "#auto_speed>.bar>.amount");  
+      if (tyrano.plugin.kag.config.unReadTextSkip === true) document.getElementsByClassName("B")[0].classList.add("clickable");
+      else document.getElementsByClassName("B")[1].classList.add("clickable");
+      console.log(tyrano.plugin.kag.config.unReadTextSkip)
     }
     init();
   </script>
