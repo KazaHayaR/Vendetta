@@ -408,8 +408,8 @@
       change: function() {
         var left = parseInt($("#letter_speed>.bar>.knob").css("left"), 10);
         var barLength = 401; // bar width - knob width
-        this.value = Math.floor(left / barLength * 99) + 1;
-        tyrano.plugin.kag.ftag.startTag("configdelay", {speed: this.value});
+        this.value = Math.floor(left / barLength * 99);
+        tyrano.plugin.kag.ftag.startTag("configdelay", {speed: 100 - (this.value)});
       }
     }
     $("#letter_speed>.bar").on("click", function(event) {
@@ -433,21 +433,23 @@
       event.stopPropagation();
     });
     function plus_letter_speed(e) {
-      var vol = 100;
-      if (tyrano.plugin.kag.config.chSpeed < 100)
-        var vol = parseInt(tyrano.plugin.kag.config.chSpeed) + 1;
-      tyrano.plugin.kag.ftag.startTag("configdelay", {speed: vol});
-      $("#letter_speed>.bar>.knob").animate({left: (vol-1)/99*401},{duration: 30});
-      $("#letter_speed>.bar>.amount").animate({width: (vol-1)/99*401},{duration: 30});
-      e.stopPropagation();
-    }
-    function minus_letter_speed(e) {
       var vol = 1;
       if (tyrano.plugin.kag.config.chSpeed > 1)
         var vol = parseInt(tyrano.plugin.kag.config.chSpeed) - 1;
       tyrano.plugin.kag.ftag.startTag("configdelay", {speed: vol});
-      $("#letter_speed>.bar>.knob").animate({left: (vol-1)/99*401},{duration: 30});
-      $("#letter_speed>.bar>.amount").animate({width: (vol-1)/99*401},{duration: 30});
+      vol = 100 - vol;
+      $("#letter_speed>.bar>.knob").animate({left: vol/99*401},{duration: 30});
+      $("#letter_speed>.bar>.amount").animate({width: vol/99*401},{duration: 30});
+      e.stopPropagation();
+    }
+    function minus_letter_speed(e) {
+      var vol = 100;
+      if (tyrano.plugin.kag.config.chSpeed < 100)
+        var vol = parseInt(tyrano.plugin.kag.config.chSpeed) + 1;
+      tyrano.plugin.kag.ftag.startTag("configdelay", {speed: vol});
+      vol = 100 - vol;
+      $("#letter_speed>.bar>.knob").animate({left: vol/99*401},{duration: 30});
+      $("#letter_speed>.bar>.amount").animate({width: vol/99*401},{duration: 30});
       e.stopPropagation();
     }
 
@@ -457,8 +459,8 @@
       change: function() {
         var left = parseInt($("#auto_speed>.bar>.knob").css("left"), 10);
         var barLength = 401; // bar width - knob width
-        this.value = Math.floor(left / barLength * 4999) + 1;
-        tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: this.value});
+        this.value = Math.floor(left / barLength * 4999);
+        tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: 5000 - this.value});
         console.log(this.value)
       }
     }
@@ -482,25 +484,27 @@
        event.stopPropagation();
     });
     function plus_auto_speed(e) {
+      var vol = 1;
+      if (tyrano.plugin.kag.config.autoSpeed > 1) {
+        var vol = parseInt(tyrano.plugin.kag.config.autoSpeed) - 50;
+        if (vol < 1) vol = 1;
+      }
+      tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: vol});
+      vol = 5000 - vol
+      $("#auto_speed>.bar>.knob").animate({left: vol/4999*401},{duration: 30});
+      $("#auto_speed>.bar>.amount").animate({width: vol/4999*401},{duration: 30});
+      e.stopPropagation();
+    }
+    function minus_auto_speed(e) {
       var vol = 5000;
       if (tyrano.plugin.kag.config.autoSpeed < 5000) {
         var vol = parseInt(tyrano.plugin.kag.config.autoSpeed) + 50;
         if (vol > 5000) vol = 5000;
       }
       tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: vol});
-      $("#auto_speed>.bar>.knob").animate({left: (vol-1)/4999*401},{duration: 30});
-      $("#auto_speed>.bar>.amount").animate({width: (vol-1)/4999*401},{duration: 30});
-      e.stopPropagation();
-    }
-    function minus_auto_speed(e) {
-      var vol = 1;
-      if (tyrano.plugin.kag.config.autoSpeed > 50) {
-        var vol = parseInt(tyrano.plugin.kag.config.autoSpeed) - 50;
-        if (vol < 1) vol = 1;
-      }
-      tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: vol});
-      $("#auto_speed>.bar>.knob").animate({left: (vol-1)/4999*401},{duration: 30});
-      $("#auto_speed>.bar>.amount").animate({width: (vol-1)/4999*401},{duration: 30});
+      vol = 5000 - vol;
+      $("#auto_speed>.bar>.knob").animate({left: vol/4999*401},{duration: 30});
+      $("#auto_speed>.bar>.amount").animate({width: vol/4999*401},{duration: 30});
       e.stopPropagation();
     }
 
@@ -520,8 +524,8 @@
     // 初期化
     function posCalc(num, selector1, selector2) {
       var position = num/100*401;
-      if(selector1 == "#auto_speed>.bar>.knob") position = (num-1)/4999*401;
-      if(selector1 == "#letter_speed>.bar>.knob") position = (num-1)/99*401;
+      if(selector1 == "#auto_speed>.bar>.knob") position = (5000 - num)/4999*401;
+      if(selector1 == "#letter_speed>.bar>.knob") position = (100 - num)/99*401;
       $(selector1).css("left", position+"px");
       $(selector2).css("width", position+"px");
     }
