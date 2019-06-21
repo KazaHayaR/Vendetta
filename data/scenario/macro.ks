@@ -57,7 +57,7 @@
 [button name="role_button" role="auto"       graphic="lol/auto.png"   enterimg="lol/auto.png"   x="1023" y="682"]
 [button name="role_button" role="skip"       graphic="lol/skip.png"   enterimg="lol/skip.png"   x="1093" y="682"]
 [button name="role_button" role="title"      graphic="lol/title.png"  enterimg="lol/title.png"  x="1155" y="682"]
-[button name="role_button" role="config"     graphic="lol/config.png" enterimg="lol/config2.png" x="1233" y="685"]
+[button name="role_button" role="sleepgame"  graphic="lol/config.png" enterimg="lol/config2.png" x="1233" y="685" storage="config.ks"]
 [endmacro]
 
 
