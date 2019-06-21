@@ -1,0 +1,543 @@
+<style>
+  .display_save {
+    height: 100%;
+    width: 100%;
+    background-image: url(./data/image/save_bg.png);
+    background-size: cover;	
+    position: relative;
+  }
+  /* ヘッダ */
+  .mini-header::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .mini-header {
+    height: 74px;
+    background-image: linear-gradient(270deg, #361413, #262626, #361413);
+  }
+  .mh-title {
+    height: 74px;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 46px;
+  }
+  .mh-title img:nth-child(1) {
+    box-sizing: border-box;
+    height: 74px;
+    padding: 0 0 0 45px;
+  }
+  .mh-title img:nth-child(2) {
+    box-sizing: border-box;
+    height: 74px;
+    padding: 30px 0 21px 0;
+    object-fit: contain;
+  }
+  .mh-links {
+    box-sizing: border-box;
+    float: right;
+    height: 74px;
+    padding: 29px 44px;
+  }
+  .mh-links::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .mh-links a {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 100%;
+    margin-left: 10px;
+  }
+  .mh-links a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  /* save slider */
+  .save-list {
+    box-sizing: border-box;
+    width: auto;
+    height: 570px;
+    margin: 40px 43.5px;
+    padding: 68px 82.5px 40px;
+    border: 7px solid #361413;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    background-color: rgba(255,255,255,.45);
+  }
+  .save-list::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .left-box, .right-box {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+  .right-box {
+    box-sizing: border-box;
+    padding-left: 40px;
+  }
+  /* volumes */
+  .part {
+    height: 36%;
+    width: 100%;
+  }
+  .part-title {
+    height: 21.8px;
+    width: 100%;
+    text-align: left;
+  }
+  .part-title img {
+    object-fit: contain;
+  }
+  .config-slider {
+    height: 23px;
+    width: 100%;
+    padding-top: 21px;
+    margin: 0 auto 0 0;
+    position: relative;
+  }
+  /* config-slider parts */
+  .bar {
+    height: 8px;
+    width: 429px;
+    margin: 7.3px 23px;
+    box-sizing: border-box;
+    background-color: #4D4D4D;
+    border-top: 2px solid #361413;
+    border-bottom: 2px solid #361413;
+    position: relative;
+  }
+  .amount {
+    height: 4px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #41FFAF;
+  }
+  .knob {
+    height: 14px;
+    width: 28px;
+    display: block;
+    position: absolute;
+    top: -5.5px;
+    left: 0px;
+    font-size: 0;
+  }
+  .plus-button, .minus-button {
+    height: 23px;
+    width: 23px;
+    display: block;
+    position: absolute;
+    top: -10px;
+  }
+  .plus-button {
+    right: -23px;
+  }
+  .minus-button {
+    left: -23px;
+  }
+  .plus-button img, .minus-button img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .knob img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  /* others */
+  .buttons {
+    height: 39px;
+    width: 450px;
+    margin-top: 17px;
+  }
+  .buttons::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .B {
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 33px;
+  }
+  .B>a{
+    display: block;
+    height: 39px;
+    width: 100%;
+    background-color: #361413;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: 500ms;
+  }
+  .B>a>img {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .B.clickable a {
+    background-color: #DCDCDC;
+    transition: 500ms;
+  }
+</style>
+<div class="display_save">
+  <div class="mini-header">
+    <div class="mh-title">
+      <img src="data/image/LOGO_CONFIG.svg">
+      <img src="data/image/SUB_LOGO_CONFIG.svg">
+    </div>
+    <div class="mh-links">
+      <a href="javascript:void(0)"><img src="data/image/BACK.svg" class="menu_close"></a>
+      <a href="javascript:void(0)" onclick="window.close()"><img src="data/image/EXIT.svg"></a>
+    </div>
+  </div>
+  <div class="save-list">
+    <div class="left-box">
+      <div class="part">
+        <div class="part-title">
+          <img src="data/image/volume_title_bgm.svg" alt="">
+        </div>
+        <div class="config-slider" id="bgm_volume">
+          <div class="bar">
+            <div class="amount"></div>
+            <div class="knob"><img src="data/image/knob_horizontal.svg" alt=""></div>
+            <a href="javascript:void(0)" class="plus-button" onclick="plus_bgm_volume(event)"><img src="data/image/button_plus.svg" alt=""></a>
+            <a href="javascript:void(0)" class="minus-button" onclick="minus_bgm_volume(event)"><img src="data/image/button_minus.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="part">
+        <div class="part-title">
+          <img src="data/image/volume_title_se.svg" alt="">
+        </div>
+        <div class="config-slider" id="se_volume">
+          <div class="bar">
+            <div class="amount"></div>
+            <div class="knob"><img src="data/image/knob_horizontal.svg" alt=""></div>
+            <a href="javascript:void(0)" class="plus-button" onclick="plus_se_volume(event)"><img src="data/image/button_plus.svg" alt=""></a>
+            <a href="javascript:void(0)" class="minus-button" onclick="minus_se_volume(event)"><img src="data/image/button_minus.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="part">
+        <div class="part-title">
+          <img src="data/image/volume_title_letter.svg" alt="">
+        </div>
+        <div class="config-slider" id="letter_speed">
+          <div class="bar">
+            <div class="amount"></div>
+            <div class="knob"><img src="data/image/knob_horizontal.svg" alt=""></div>
+            <a href="javascript:void(0)" class="plus-button" onclick="plus_letter_speed(event)"><img src="data/image/button_plus.svg" alt=""></a>
+            <a href="javascript:void(0)" class="minus-button" onclick="minus_letter_speed(event)"><img src="data/image/button_minus.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="part">
+        <div class="part-title">
+          <img src="data/image/volume_title_automode.svg" alt="">
+        </div>
+        <div class="config-slider" id="auto_speed">
+          <div class="bar">
+            <div class="amount"></div>
+            <div class="knob"><img src="data/image/knob_horizontal.svg" alt=""></div>
+            <a href="javascript:void(0)" class="plus-button" onclick="plus_auto_speed(event)"><img src="data/image/button_plus.svg" alt=""></a>
+            <a href="javascript:void(0)" class="minus-button" onclick="minus_auto_speed(event)"><img src="data/image/button_minus.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="part">
+        <div class="part-title">
+          <img src="data/image/volume_title_skip.svg" alt="">
+        </div>
+        <div class="buttons">
+          <div class="B">
+            <a class="button-left" onclick="noReadedSkipOff()" href="javascript:void(0)">
+              <img src="data/image/skip_readed.svg" alt="" srcset="">
+            </a>
+          </div>
+          <div class="B">
+            <a class="button-right" onclick="noReadedSkipOn()" href="javascript:void(0)">
+              <img src="data/image/skip_all.svg" alt="" srcset="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // bgm volume
+    var bgm_volume_obj = {
+      value:  parseInt(tyrano.plugin.kag.config.defaultBgmVolume),
+      change: function() {
+        // @maki: クソダサハードコーディング。
+        // @maki: valueを更新。.knobのleftを取得してbarの長さで割って×100して切り上げ。
+        var left = parseInt($("#bgm_volume>.bar>.knob").css("left"), 10);
+        var barLength = 401; // bar width - knob width
+        this.value = Math.floor(left / barLength * 100);
+        tyrano.plugin.kag.ftag.startTag("bgmopt", {volume: this.value});
+      }
+    }
+    $("#bgm_volume>.bar").on("click", function(event) {
+      var thePos;
+      // @maki: クリックした場所にknobの中心が来るように
+      var barWidth = 416;
+      if (event.offsetX > barWidth) {
+        thePos = barWidth;
+      } else {
+        if (event.offsetX > 15) thePos = event.offsetX;
+        else thePos = 15;
+      }
+      $("#bgm_volume>.bar>.knob").animate({"left": thePos-15},{complete: function() {bgm_volume_obj.change();}});
+      $("#bgm_volume>.bar>.amount").animate({width: thePos-15});
+      event.stopPropagation();
+    });
+    $("#bgm_volume>.bar>.knob").on("click", function(event) {
+       event.stopPropagation();
+    });
+    function plus_bgm_volume(e) {
+      var vol = 100;
+      if (tyrano.plugin.kag.config.defaultBgmVolume < 100)
+        var vol = parseInt(tyrano.plugin.kag.config.defaultBgmVolume) + 1;
+      tyrano.plugin.kag.ftag.startTag("bgmopt", {volume: vol});
+      $("#bgm_volume>.bar>.knob").animate({left: vol/100*401},{duration: 30});
+      $("#bgm_volume>.bar>.amount").animate({width: vol/100*401},{duration: 30});
+      e.stopPropagation();
+    }
+    function minus_bgm_volume(e) {
+      var vol = 0;
+      if (tyrano.plugin.kag.config.defaultBgmVolume > 0)
+        var vol = parseInt(tyrano.plugin.kag.config.defaultBgmVolume) - 1;
+      tyrano.plugin.kag.ftag.startTag("bgmopt", {volume: vol});
+      $("#bgm_volume>.bar>.knob").animate({left: vol/100*401},{duration: 30});
+      $("#bgm_volume>.bar>.amount").animate({width: vol/100*401},{duration: 30});
+      e.stopPropagation();
+    }
+    // @maki: 効かん
+    // $(function() {
+    //   $("#bgm_volume>.bar>.knob").draggable({
+    //     axis: "x",
+    //     disabled: false,
+    //     containment: "#bgm_volume>.bar",
+    //     start: function(event, ui) {
+    //       console.log(event);
+    //       console.log(ui);
+    //     },
+    //     drag: function(event, ui) {
+    //       event.preventDefault();  
+    //       event.stopPropagation();
+    //       console.log('now drugging');
+    //     },
+    //     stop: function(event, ui) {
+    //       event.preventDefault();  
+    //       event.stopPropagation();
+    //       console.log('end');
+    //     },
+    //   });
+    // });
+
+    // se volume
+    var se_volume_obj = {
+      value:  parseInt(tyrano.plugin.kag.config.defaultSeVolume),
+      change: function() {
+        // @maki: クソダサハードコーディング。
+        // @maki: valueを更新。.knobのleftを取得してbarの長さで割って×100して切り上げ。
+        var left = parseInt($("#se_volume>.bar>.knob").css("left"), 10);
+        var barLength = 401; // bar width - knob width
+        this.value = Math.floor(left / barLength * 100);
+        tyrano.plugin.kag.ftag.startTag("seopt", {volume: this.value});
+      }
+    }
+    $("#se_volume>.bar").on("click", function(event) {
+      var thePos;
+      // @maki: クリックした場所にknobの中心が来るように
+      var barWidth = 416;
+      if (event.offsetX > barWidth) {
+        thePos = barWidth;
+      } else {
+        if (event.offsetX > 15) thePos = event.offsetX;
+        else thePos = 15;
+      }
+      $("#se_volume>.bar>.knob").animate({"left": thePos-15},{complete: function() {se_volume_obj.change();}});
+      $("#se_volume>.bar>.amount").animate({width: thePos-15});
+      event.stopPropagation();
+    });
+    $("#se_volume>.bar>.knob").on("click", function(event) {
+       event.stopPropagation();
+    });
+    function plus_se_volume(e) {
+      var vol = 100;
+      if (tyrano.plugin.kag.config.defaultSeVolume < 100)
+        var vol = parseInt(tyrano.plugin.kag.config.defaultSeVolume) + 1;
+      tyrano.plugin.kag.ftag.startTag("seopt", {volume: vol});
+      $("#se_volume>.bar>.knob").animate({left: vol/100*401},{duration: 30});
+      $("#se_volume>.bar>.amount").animate({width: vol/100*401},{duration: 30});
+      e.stopPropagation();
+    }
+    function minus_se_volume(e) {
+      var vol = 0;
+      if (tyrano.plugin.kag.config.defaultSeVolume > 0)
+        var vol = parseInt(tyrano.plugin.kag.config.defaultSeVolume) - 1;
+      tyrano.plugin.kag.ftag.startTag("seopt", {volume: vol});
+      $("#se_volume>.bar>.knob").animate({left: vol/100*401},{duration: 30});
+      $("#se_volume>.bar>.amount").animate({width: vol/100*401},{duration: 30});
+      e.stopPropagation();
+    }
+
+    // letter speed 1~100
+    var letter_speed_obj = {
+      value:  parseInt(tyrano.plugin.kag.config.chSpeed),
+      change: function() {
+        var left = parseInt($("#letter_speed>.bar>.knob").css("left"), 10);
+        var barLength = 401; // bar width - knob width
+        this.value = Math.floor(left / barLength * 99);
+        tyrano.plugin.kag.ftag.startTag("configdelay", {speed: 100 - (this.value)});
+      }
+    }
+    $("#letter_speed>.bar").on("click", function(event) {
+      var thePos;
+      var barWidth = 416;
+      if (event.offsetX > barWidth) {
+        thePos = barWidth;
+      } else {
+        if (event.offsetX > 15) thePos = event.offsetX;
+        else thePos = 15;
+      }
+      $("#letter_speed>.bar>.knob").animate({"left": thePos-15},{complete: function() {
+        letter_speed_obj.change();
+        console.log("tyrano.plugin.kag.config.chSpeed: "+tyrano.plugin.kag.config.chSpeed)
+      }});
+      $("#letter_speed>.bar>.amount").animate({width: thePos-15});
+
+      event.stopPropagation();
+    });
+    $("#letter_speed>.bar>.knob").on("click", function(event) {
+      event.stopPropagation();
+    });
+    function plus_letter_speed(e) {
+      var vol = 1;
+      if (tyrano.plugin.kag.config.chSpeed > 1)
+        var vol = parseInt(tyrano.plugin.kag.config.chSpeed) - 1;
+      tyrano.plugin.kag.ftag.startTag("configdelay", {speed: vol});
+      vol = 100 - vol;
+      $("#letter_speed>.bar>.knob").animate({left: vol/99*401},{duration: 30});
+      $("#letter_speed>.bar>.amount").animate({width: vol/99*401},{duration: 30});
+      e.stopPropagation();
+    }
+    function minus_letter_speed(e) {
+      var vol = 100;
+      if (tyrano.plugin.kag.config.chSpeed < 100)
+        var vol = parseInt(tyrano.plugin.kag.config.chSpeed) + 1;
+      tyrano.plugin.kag.ftag.startTag("configdelay", {speed: vol});
+      vol = 100 - vol;
+      $("#letter_speed>.bar>.knob").animate({left: vol/99*401},{duration: 30});
+      $("#letter_speed>.bar>.amount").animate({width: vol/99*401},{duration: 30});
+      e.stopPropagation();
+    }
+
+    // auto speed 1~5000
+    var auto_speed_obj = {
+      value:  parseInt(tyrano.plugin.kag.config.autoSpeed),
+      change: function() {
+        var left = parseInt($("#auto_speed>.bar>.knob").css("left"), 10);
+        var barLength = 401; // bar width - knob width
+        this.value = Math.floor(left / barLength * 4999);
+        tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: 5000 - this.value});
+        console.log(this.value)
+      }
+    }
+    $("#auto_speed>.bar").on("click", function(event) {
+      var thePos;
+      var barWidth = 416;
+      if (event.offsetX > barWidth) {
+        thePos = barWidth;
+      } else {
+        if (event.offsetX > 15) thePos = event.offsetX;
+        else thePos = 15;
+      }
+      $("#auto_speed>.bar>.knob").animate({left: thePos-15},{complete: function() {
+        auto_speed_obj.change();
+        console.log("tyrano.plugin.kag.config.autoSpeed: "+tyrano.plugin.kag.config.autoSpeed)
+      }});
+      $("#auto_speed>.bar>.amount").animate({width: thePos-15});
+      event.stopPropagation();
+    });
+    $("#auto_speed>.bar>.knob").on("click", function(event) {
+       event.stopPropagation();
+    });
+    function plus_auto_speed(e) {
+      var vol = 1;
+      if (tyrano.plugin.kag.config.autoSpeed > 1) {
+        var vol = parseInt(tyrano.plugin.kag.config.autoSpeed) - 50;
+        if (vol < 1) vol = 1;
+      }
+      tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: vol});
+      vol = 5000 - vol
+      $("#auto_speed>.bar>.knob").animate({left: vol/4999*401},{duration: 30});
+      $("#auto_speed>.bar>.amount").animate({width: vol/4999*401},{duration: 30});
+      e.stopPropagation();
+    }
+    function minus_auto_speed(e) {
+      var vol = 5000;
+      if (tyrano.plugin.kag.config.autoSpeed < 5000) {
+        var vol = parseInt(tyrano.plugin.kag.config.autoSpeed) + 50;
+        if (vol > 5000) vol = 5000;
+      }
+      tyrano.plugin.kag.ftag.startTag("autoconfig", {speed: vol});
+      vol = 5000 - vol;
+      $("#auto_speed>.bar>.knob").animate({left: vol/4999*401},{duration: 30});
+      $("#auto_speed>.bar>.amount").animate({width: vol/4999*401},{duration: 30});
+      e.stopPropagation();
+    }
+
+    // スキップ部クリック処理
+    function noReadedSkipOff() {
+      tyrano.plugin.kag.config.unReadTextSkip = false;
+      document.getElementsByClassName("B")[0].classList.remove("clickable");
+      document.getElementsByClassName("B")[1].classList.add("clickable");
+      console.log(tyrano.plugin.kag.config.unReadTextSkip)
+    }
+    function noReadedSkipOn() {
+      tyrano.plugin.kag.config.unReadTextSkip = true;
+      document.getElementsByClassName("B")[0].classList.add("clickable");
+      document.getElementsByClassName("B")[1].classList.remove("clickable");
+      console.log(tyrano.plugin.kag.config.unReadTextSkip);
+    }
+    // 初期化
+    function posCalc(num, selector1, selector2) {
+      var position = num/100*401;
+      if(selector1 == "#auto_speed>.bar>.knob") position = (5000 - num)/4999*401;
+      if(selector1 == "#letter_speed>.bar>.knob") position = (100 - num)/99*401;
+      $(selector1).css("left", position+"px");
+      $(selector2).css("width", position+"px");
+    }
+    function init() {
+      posCalc(parseInt(tyrano.plugin.kag.config.defaultBgmVolume), "#bgm_volume>.bar>.knob", "#bgm_volume>.bar>.amount");
+      posCalc(parseInt(tyrano.plugin.kag.config.defaultSeVolume), "#se_volume>.bar>.knob", "#se_volume>.bar>.amount");   
+      posCalc(parseInt(tyrano.plugin.kag.config.chSpeed), "#letter_speed>.bar>.knob", "#letter_speed>.bar>.amount");
+      posCalc(parseInt(tyrano.plugin.kag.config.autoSpeed), "#auto_speed>.bar>.knob", "#auto_speed>.bar>.amount");  
+      if (tyrano.plugin.kag.config.unReadTextSkip === true) document.getElementsByClassName("B")[0].classList.add("clickable");
+      else document.getElementsByClassName("B")[1].classList.add("clickable");
+      console.log(tyrano.plugin.kag.config.unReadTextSkip)
+    }
+    init();
+  </script>
+</div>
