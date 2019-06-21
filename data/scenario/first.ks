@@ -12,7 +12,7 @@
 [loadcss file="data/others/glink/glink.css"]
 
 ;マクロ呼出し
-;[call storage="macro.ks"]
+[call storage="macro.ks"]
 
 ;テキストレイヤーの配置
 [position left=0 top=526 width=1280 height=194]
