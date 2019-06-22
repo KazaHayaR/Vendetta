@@ -1,4 +1,4 @@
-*2-2
+*2_2
 [call storage="macro.ks"]
 
 ;キャラセットアップ
@@ -498,4 +498,4 @@
 薄れゆく意識のなか、辻さんが動揺している姿を見て、さっきはあんなに勇敢だったのに、と思って、そのまま意識を失ったのだった。[lrcm]
 
 [mask effect="fadeIn"]
-@jump storage=2-3.ks target=*2-3
+@jump storage=2-3.ks target=*2_3

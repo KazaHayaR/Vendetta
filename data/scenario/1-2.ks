@@ -1,4 +1,4 @@
-*1-2
+*1_2
 [call storage="macro.ks"]
 
 ;キャラセットアップ
@@ -200,4 +200,4 @@
 ただ彼女の姿だけが、脳裏に克明に刻まれたのだった。[lrcm]
 [mask effect="fadeIn"]
 
-@jump storage=1-3.ks target=*1-3
+@jump storage=1-3.ks target=*1_3

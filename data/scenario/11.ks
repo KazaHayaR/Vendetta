@@ -3,12 +3,12 @@
 
 ;キャラセットアップ
 ;【切慧】
-[chara_new name="Kirue" storage="./chara/Kirue/D2-8.png" jname="きるえ" width="500"]
-[chara_face name="Kirue" face="embarrass" storage="./chara/Kirue/D2-1.png"]
+;[chara_new name="Kirue" storage="./chara/Kirue/D2-8.png" jname="きるえ" width="500"]
+;[chara_face name="Kirue" face="embarrass" storage="./chara/Kirue/D2-1.png"]
 
 ;暗転解除
 [free_layermode time="0"]
-[current layer="message0"]
+[current layer="message1"]
 [bg layer=base storage=cycle.jpg time="1"]
 [set_default_message_window]
 [mask_off effect="fadeOut" time="3000"]
@@ -314,4 +314,4 @@
 これを放置しているのは流石に教師共の職務怠慢だろう。[lrcm]
 しかし、この惨状を教師に訴え出る度胸も体力も俺にはない。[lrcm]
 とっとと作業を始めて早く帰ろう。[lrcm]
-@jump storage=1-2.ks target=*1_2
+@jump storage=1-2.ks target=*1-2

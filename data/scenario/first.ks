@@ -4,7 +4,7 @@
 ;初期化処理
 ;--------------
 ;プラグインの導入
-[plugin name="message_edge" edge="true" edge_color="0x1A237E" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
+[plugin name="message_edge" edge="true" edge_color="0x333333" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
 [plugin name=manpu]
 [plugin name="kanimMacro"]
 [plugin name="glyph"]
@@ -21,14 +21,13 @@
 [chara_config ptext="chara_name_area"]
 
 ;ロールボタン等の配置
-[role_open]
+;[role_open]
 
 ;--------------
 ;本文
 ;--------------
 ;プロローグに移動
-@jump storage=1-1.ks target=*1-1
-;@jump storage=1-1.ks target=*1-1
+@jump storage=plolog.ks target=*plolog
 
 ;初期化処理
 /*
