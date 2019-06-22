@@ -22,12 +22,12 @@
 
 ;ロールボタン等の配置
 ;[role_open]
-
+@jump storage=title.ks target=*title
 ;--------------
 ;本文
 ;--------------
 ;プロローグに移動
-@jump storage=plolog.ks target=*plolog
+;@jump storage=plolog.ks target=*plolog
 
 ;初期化処理
 /*
