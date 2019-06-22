@@ -9,10 +9,7 @@
 var base = document.getElementById('tyrano_base');
 var div = document.createElement('div');
 div.setAttribute('id', 'title_base');
-var cdiv = document.createElement('div');
-div.setAttribute('id', 'title_buttons');
-var a1 = document.creteElement('a');
-var a1 = document.creteElement('a');
-var a1 = document.creteElement('a');
-var a1 = document.creteElement('a');
+div.setAttribute('style', 'position: absolute;top: 0;right: 0;height: 100%;width: 294px;background: linear-gradient(180deg,rgba(54, 20, 19, .89),rgba(38, 38, 38, .89),rgba(54, 20, 19, .89));');
+base.appendChild(div);
+
 [endscript]
