@@ -31,6 +31,12 @@ tyrano.plugin.kag.menu = {
       layer_menu.find(".menu_close").click(function (e) {
         layer_menu.hide();
         if (that.kag.stat.visible_menu_button == true) $(".button_menu").show();
+        if (TYRANO.kag.tmp.sleep_game != null) {
+          TYRANO.kag.ftag.startTag("awakegame", {
+            variable_over: "true",
+            bgm_over: "true"
+          });
+        }
         e.stopPropagation()
       });
       layer_menu.find(".menu_window_close").click(function (e) {
@@ -56,6 +62,17 @@ tyrano.plugin.kag.menu = {
             location.href = "./index.html"
           },
           function () {})
+      });
+      // @maki: 多分動くんちゃう？
+      layer_menu.find(".menu_config").click(function (e) {
+        if (button_clicked == true) return;
+        button_clicked = true;
+        if (TYRANO.kag.tmp.sleep_game != null) return false;
+        TYRANO.kag.tmp.sleep_game = {};
+        _pm.next = false;
+        TYRANO.kag.ftag.startTag("sleepgame", _pm);
+        that.displayConfig();
+        e.stopPropagation()
       });
       $.preloadImgCallback(j_menu, function () {
         layer_menu.fadeIn(300);
@@ -123,7 +140,32 @@ tyrano.plugin.kag.menu = {
       data = that.snap;
       data.save_date = $.getNowDate() + " " + $.getNowTime();
       array_save.data[num] = data;
-      $.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave)
+      $.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave);
+      // @maki: ここにthat.displaySave()噛ませればうまくいくんじゃねと思ったけどそんなことなかった
+      //　　　　セーブ後ポップ機能
+      var pop = document.createElement('div');
+      var text = document.createTextNode('セーブ完了');
+      var image = document.createElement('img');
+      pop.setAttribute('id', 'save-complated-pop');
+      pop.setAttribute('style', 'transition: right 0.5s linear;position:absolute;top:49px;right:-141px;height:43px;width:141px;background:linear-gradient(180deg, rgba(54, 20, 19, 0.5), rgba(0, 0, 0, 0.4),rgba(52, 20, 19, 0.4));;color:#fff;line-height:43px;')
+      image.setAttribute('src', 'data/image/check.svg');
+      image.setAttribute('style', 'height: 100%;width:16px;object-fit:contain;vertical-align:middle;margin: 0 8px 3px 14px;');
+      pop.appendChild(image);
+      pop.appendChild(text);
+      var layer = document.getElementsByClassName('message0_fore')[0];
+      layer.appendChild(pop);
+      var ele = document.getElementById('save-complated-pop');
+      setTimeout(function() {
+        ele.style.right = '0px';
+      }, 500);
+      console.log('append!')
+      setTimeout(function() {
+        ele.style.right = '-141px';
+      }, 3000)
+      setTimeout(function() {
+        layer.removeChild(ele);
+        console.log('remove!');
+      }, 5000);
     })
   },
   setQuickSave: function () {
@@ -438,6 +480,12 @@ tyrano.plugin.kag.menu = {
         layer_menu.empty();
         if (typeof cb == "function") cb()
       });
+      if (TYRANO.kag.tmp.sleep_game != null) {
+        TYRANO.kag.ftag.startTag("awakegame", {
+          variable_over: "true",
+          bgm_over: "true"
+        });
+      }
       if (that.kag.stat.visible_menu_button == true) $(".button_menu").show()
     });
     j_obj.hide();
@@ -486,8 +534,9 @@ tyrano.plugin.kag.menu = {
       layer_menu.find(".menu_close").click(function () {
         layer_menu.fadeOut(300,
           function () {
-            layer_menu.empty()
+            layer_menu.empty();
           });
+          
         if (that.kag.stat.visible_menu_button == true) $(".button_menu").show()
       });
       layer_menu.find(".button_smart").hide();
@@ -551,5 +600,19 @@ tyrano.plugin.kag.menu = {
         else elem.msRequestFullscreen()
     }
   },
-  test: function () {}
+  test: function () {},
+  // for config
+  displayConfig: function (cb) {
+    var that = this;
+    this.kag.stat.is_skip = false;
+    var layer_menu = that.kag.layer.getMenuLayer();
+    // 多分ここでHTML呼び出し
+    this.kag.html("config", {}, function (html_str) {
+      // コールバックでHTMLオブジェクトを受け取ってるんじゃないかな？
+      // スクリプト適用ができるみたいだけど面倒なので全部config.htmlでやる
+      var j_save = $(html_str);
+      var layer_menu = that.kag.layer.getMenuLayer();
+      that.setMenu(j_save, cb)
+    })
+  }
 };

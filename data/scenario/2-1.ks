@@ -1,4 +1,4 @@
-*2-1
+*2_1
 [call storage="macro.ks"]
 
 ;キャラセットアップ
@@ -637,4 +637,4 @@
 
 [mask effect="fadeIn"]
 
-@jump storage=2-2.ks target=*2-2
+@jump storage=2-2.ks target=*2_2

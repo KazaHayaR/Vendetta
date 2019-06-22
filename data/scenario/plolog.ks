@@ -89,4 +89,4 @@
 [freeimage layer="message1"]
 [cm]
 
-@jump storage=1-1.ks target=*1-1
+@jump storage=1-1.ks target=*1_1

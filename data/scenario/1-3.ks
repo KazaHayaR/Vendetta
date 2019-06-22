@@ -1,4 +1,4 @@
-*1-3
+*1_3
 [call storage="macro.ks"]
 
 ;キャラセットアップ
@@ -441,4 +441,4 @@ DV夫の心理みたいなものなのだろうか。[lrcm]
 
 時間ギリギリまで無心でゴミを拾い集め、おれは教室に戻った。[lrcm]
 [mask effect="fadeIn"]
-@jump storage=1-4.ks target=*1-4
+@jump storage=1-4.ks target=*1_4

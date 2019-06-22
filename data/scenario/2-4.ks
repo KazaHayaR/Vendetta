@@ -1,4 +1,4 @@
-*2-4
+*2_4
 [call storage="macro.ks"]
 
 ;キャラセットアップ

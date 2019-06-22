@@ -1,4 +1,4 @@
-*1-4
+*1_4
 [mask_off effect="fadeOut"]
 [call storage="macro.ks"]
 
@@ -356,4 +356,4 @@
 彼女のもとまで。[lrcm]
 
 [mask effect="fadeIn"]
-@jump storage=1-5.ks target=*1-5
+@jump storage=1-5.ks target=*1_5
