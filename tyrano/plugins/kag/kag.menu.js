@@ -339,6 +339,10 @@ tyrano.plugin.kag.menu = {
     this.loadGameData($.extend(true, {}, array[num]))
   },
   loadGameData: function (data, options) {
+    if (document.getElementById("title_base") != null) {
+      document.getElementById("title_base").remove();
+    }
+    TYRANO.kag.ftag.startTag("freeimage", {layer: "1", wait: true});
     var auto_next = "no";
     if (typeof options == "undefined") options = {
       bgm_over: "false"
