@@ -107,6 +107,7 @@
 ;        上のコメントアウトしてある元設定に一杯コメントついてるから動作原理はそっち参照。
 
 [macro name="set_default_message_window"]
+@layopt layer=message0 visible=true
 [position left="42" top="471" width="1190" height="200"]
 [position margint="34" marginl="143" marginr="138" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
@@ -143,6 +144,7 @@ $(".message_inner").css({
 ; @maki: [set_center_message_window]
 ;        中央キャラ用メッセージウインドウ。
 [macro name="set_center_message_window"]
+@layopt layer=message0 visible=true
 [position left="170" top="456" width="938" height="194"]
 [position margint="32.5" marginl="60" marginr="60" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
@@ -177,6 +179,7 @@ $(".message_inner").css({
 ; @maki: [set_right_message_window]
 ;        右キャラ用メッセージウインドウ。
 [macro name="set_right_message_window"]
+@layopt layer=message0 visible=true
 [position left="297" top="456" width="938" height="194"]
 [position margint="32.5" marginl="60" marginr="60" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
@@ -212,6 +215,7 @@ $(".message_inner").css({
 ; @maki: [set_left_message_window]
 ;        左キャラ用メッセージウインドウ。
 [macro name="set_left_message_window"]
+@layopt layer=message0 visible=true
 [position left="45" top="456" width="938" height="194"]
 [position margint="32.5" marginl="60" marginr="60" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
