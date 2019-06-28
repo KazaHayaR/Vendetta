@@ -11,5 +11,5 @@ TYRANO.kag.menu.displayLoad();
 @jump storage=title.ks target=*title
 
 *plolog
-
+[freeimage layer="1" wait=true]
 @jump storage="plolog.ks" target=*plolog
