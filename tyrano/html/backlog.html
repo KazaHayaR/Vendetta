@@ -6,6 +6,7 @@
     .display_menu {
         background: rgba(0, 0, 0, .54);
     }
+
     .log_parent {
         overflow: hidden;
         width: 900px;
@@ -13,23 +14,30 @@
         width: 934px;
         margin: 125px auto;
     }
+
     .log_body {
-        margin: 0!important;
-        padding: 0!important;
-        height: 100%!important;
-        width: 951px!important;
-        color: white!important;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.66)!important;
-        font-size: 22px!important;
-        line-height: 40px!important;
-        border: none!important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 951px !important;
+        color: white !important;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 1) !important;
+        font-size: 22px !important;
+        line-height: 40px !important;
+        border: none !important;
     }
+
     /* .log_body::-webkit-scrollbar {
         display: none;
     } */
     .backlog_text {
         display: block;
         margin-bottom: 10px;
+    }
+    .menu_item {
+        position: absolute;
+        bottom:0%;
+        right: 0;
     }
 </style>
 <div>
@@ -40,10 +48,27 @@
         </div>
 
         <div class="menu_item" style="float:right">
-            <a href="javascript:void(0)">
+            <a href="javascript:void(0)" onclick="reDisplay()">
                 <img class="menu_close" src="tyrano/images/system/menu_button_close.png">
             </a>
             <div style="clear:both"></div>
         </div>
     </div>
 </div>
+<script>
+    var messageBox = document.getElementsByClassName('message0_fore')[0];
+    messageBox.style.display = 'none';
+    var roleButtons = document.getElementsByClassName('role_button');
+    for (var i = 0; i < roleButtons.length; i += 1) {
+        roleButtons[i].style.display = 'none';
+    }
+
+    function reDisplay() {
+        var messageBox = document.getElementsByClassName('message0_fore')[0];
+        messageBox.style.display = 'block';
+        var roleButtons = document.getElementsByClassName('role_button');
+        for (var i = 0; i < roleButtons.length; i += 1) {
+            roleButtons[i].style.display = 'inline';
+        }
+    }
+</script>
