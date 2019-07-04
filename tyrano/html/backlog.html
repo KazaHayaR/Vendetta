@@ -1,4 +1,15 @@
 <style>
+    .page_logo img{
+        position: absolute;
+    }
+    .page_logo img:nth-child(1){
+        top: 15px;
+        left: 35px;
+    }
+    .page_logo img:nth-child(2){
+        top: 70px;
+        left: 35px;
+    }
     .layer_menu {
         background-image: none !important;
     }
@@ -9,9 +20,8 @@
 
     .log_parent {
         overflow: hidden;
-        width: 900px;
         height: 504px;
-        width: 934px;
+        width: 786px;
         margin: 125px auto;
     }
 
@@ -19,7 +29,7 @@
         margin: 0 !important;
         padding: 0 !important;
         height: 100% !important;
-        width: 951px !important;
+        width: calc(100% + 17px) !important;
         color: white !important;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 1) !important;
         font-size: 22px !important;
@@ -62,29 +72,33 @@
         object-fit: contain;
         margin: 0 auto;
     }
-    .menu_item:nth-child(1) img:nth-child(1) {
+    .menu_item a:nth-child(1) img:nth-child(1) {
         /* width: 62.3px; */
         height: 18px;
-        margin-top: calc( (100% - 27px)/2 )
+        margin-top: calc( (100% - 27px) / 2 )
     }
-    .menu_item:nth-child(1) img:nth-child(2) {
+    .menu_item a:nth-child(1) img:nth-child(2) {
         /* width: 38.29px; */
         height: 9px;
-        margin-bottom: calc( (100% - 27px)/2 )
+        margin-bottom: calc( (100% - 27px) / 2 )
     }
-    .menu_item:nth-child(2) img:nth-child(1) {
+    .menu_item a:nth-child(2) img:nth-child(1) {
         /* width: 55.61px; */
         height: 18px;
-        margin-top: calc( (100% - 27px)/2 )
+        margin-top: calc( (100% - 27px) / 2 )
     }
-    .menu_item:nth-child(2) img:nth-child(2) {
+    .menu_item a:nth-child(2) img:nth-child(2) {
         /* width: 27.99px; */
         height: 9px;
-        margin-bottom: calc( (100% - 27px)/2 )
+        margin-bottom: calc( (100% - 27px) / 2 )
     }
 </style>
 <div>
     <div class="display_menu">
+        <div class="page_logo">
+            <img src="data/image/Backlog.svg" alt="">
+            <img src="data/image/Backlog_s.svg" alt="">
+        </div>
 
         <div class="log_parent">
             <div class="log_body" style="width:90%;height:65%;overflow-y:scroll;margin-top:50px;padding:8px;color:#999;border:1px solid #555;font-weight:normal" align="left"></div>
