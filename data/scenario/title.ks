@@ -30,13 +30,13 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   var a1 = document.createElement('a');
   var mimg1 = document.createElement('img');
   var simg1 = document.createElement('img');
-  div1.setAttribute('style', 'position: relative;padding-top: 70px;');
+  div1.setAttribute('style', 'position: relative;padding-top: 80px;');
   a1.setAttribute('href', "javascript:void(0);");
   a1.setAttribute('onclick', 'document.getElementById("title_base").remove();tyrano.plugin.kag.ftag.startTag("jump", {storage: "first.ks",target: "*plolog"});');
   mimg1.setAttribute('src', 'data/image/mstart.svg');
   simg1.setAttribute('src', 'data/image/sstart.svg');
   mimg1.setAttribute('style', 'margin: 0 calc((100% - 101.11px)/2);width:101.11px;-webkit-filter: drop-shadow(0 0 7px #fff);');
-  simg1.setAttribute('style', 'padding: 0 calc((100% - 57px)/2);position: absolute;top: 104px;left: 0;-webkit-filter: drop-shadow(0 0 7px #fff);width: 100%;box-sizing: border-box;');
+  simg1.setAttribute('style', 'padding: 0 calc((100% - 57px)/2);position: absolute;top: 117px;left: 0;-webkit-filter: drop-shadow(0 0 7px #fff);width: 100%;box-sizing: border-box;');
   a1.appendChild(mimg1);
   a1.appendChild(simg1);
   div1.appendChild(a1);
@@ -46,7 +46,7 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   var a2 = document.createElement('a');
   var mimg2 = document.createElement('img');
   var simg2 = document.createElement('img');
-  div2.setAttribute('style', 'position: relative;margin-top: 60px;');
+  div2.setAttribute('style', 'position: relative;margin-top: 80px;');
   a2.setAttribute('href', "javascript:void(0);");
   a2.setAttribute('onclick', 'tyrano.plugin.kag.ftag.startTag("jump", {storage: "first.ks",target: "*load"});');
   mimg2.setAttribute('src', 'data/image/mload.svg');
@@ -56,7 +56,7 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   a2.appendChild(mimg2);
   a2.appendChild(simg2);
   div2.appendChild(a2);
-
+/*
   // extra
   var div3 = document.createElement('div');
   var a3 = document.createElement('a');
@@ -72,13 +72,13 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   a3.appendChild(mimg3);
   a3.appendChild(simg3);
   div3.appendChild(a3);
-
+*/
   // config
   var div4 = document.createElement('div');
   var a4 = document.createElement('a');
   var mimg4 = document.createElement('img');
   var simg4 = document.createElement('img');
-  div4.setAttribute('style', 'position: relative;margin-top: 60px;');
+  div4.setAttribute('style', 'position: relative;margin-top: 80px;');
   a4.setAttribute('href', "javascript:void(0);");
   a4.setAttribute('onclick', 'TYRANO.kag.layer.getMenuLayer().empty();TYRANO.kag.layer.getMenuLayer().css("background-image","url(./data/image/save_bg.png)");TYRANO.kag.menu.displayConfig();');
   mimg4.setAttribute('src', 'data/image/mconfig.svg');
@@ -94,7 +94,7 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   var a5 = document.createElement('a');
   var mimg5 = document.createElement('img');
   var simg5 = document.createElement('img');
-  div5.setAttribute('style', 'position: relative;margin-top: 60px;');
+  div5.setAttribute('style', 'position: relative;margin-top: 80px;');
   a5.setAttribute('href', "javascript:void(0);");
   a5.setAttribute('onclick', 'document.getElementById("title_base").remove();window.close();');
   mimg5.setAttribute('src', 'data/image/mbye.svg');
@@ -109,7 +109,7 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   cdiv.appendChild(bottomBorder);
   cdiv.appendChild(div1);
   cdiv.appendChild(div2);
-  cdiv.appendChild(div3);
+  // cdiv.appendChild(div3);
   cdiv.appendChild(div4);
   cdiv.appendChild(div5);
   div.appendChild(cdiv);
