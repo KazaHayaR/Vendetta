@@ -11,9 +11,9 @@ window.tyrano_lang = {
         "label":"ラベル",
         "label_double":"は同一シナリオファイル内に重複しています",
         "error_occurred":"エラーが発生しました",
-        "modal_save": "セーブしますか？",
-        "modal_load": "ロードしますか？",
-        "modal_exit": "ゲームを終了してよろしいですか？"
+        "modal_save": "<img src='./data/image/modal_save.svg'>",
+        "modal_load": "<img src='./data/image/modal_load.svg'>",
+        "modal_exit": "<img src='./data/image/modal_exit.svg'>"
     },
 
     novel : {
