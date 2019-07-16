@@ -22,7 +22,7 @@
 /* Default theme styles of the overlay */
 
 .remodal-overlay {
-  background: rgba(43, 46, 56, 0.9);
+  background: transparent;
 }
 
 .remodal-overlay.remodal-is-opening,
@@ -53,15 +53,19 @@
 
 .remodal {
   box-sizing: border-box;
-  width: 100%;
+  width: 516px;
+  height: 252px;
   margin-bottom: 10px;
-  padding: 35px;
+  
 
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 
   color: #2b2e38;
-  background: #fff;
+  background: rgba(255,255,255,.88);
+
+  border: 5px solid #361413;
+  border-radius: 12px;
 }
 
 .remodal.remodal-is-opening,
@@ -92,7 +96,7 @@
 /* Close button */
 
 .remodal-close {
-  :absolute ;
+  position: absolute ;
   top: 0;
   left: 0;
 
@@ -146,15 +150,14 @@
   display: inline-block;
   overflow: visible;
 
-  min-width: 110px;
+  height:53px;
   margin: 0;
-  padding: 12px 0;
+  margin: 43px 23px;
 
   cursor: pointer;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
   text-align: center;
-  vertical-align: middle;
   text-decoration: none;
 
   border: 0;
@@ -163,22 +166,12 @@
 
 .remodal-confirm {
   color: #fff;
-  background: #81c784;
-}
-
-.remodal-confirm:hover,
-.remodal-confirm:focus {
-  background: #66bb6a;
+  background: transparent;
 }
 
 .remodal-cancel {
   color: #fff;
-  background: #e57373;
-}
-
-.remodal-cancel:hover,
-.remodal-cancel:focus {
-  background: #ef5350;
+  background: transparent;
 }
 
 /* Remove inner padding and border in Firefox 4+ for the button tag. */
@@ -189,6 +182,13 @@
   padding: 0;
 
   border: 0;
+}
+.remodal_title {
+  display: block;
+  height: 89px;
+  line-height: 89px;
+  width: 100%;
+  border-bottom: 5px dashed #361413;
 }
 
 /* Keyframes
@@ -315,7 +315,7 @@
    ========================================================================== */
 
 .lt-ie9 .remodal-overlay {
-  background: #2b2e38;
+  background: transparent;
 }
 
 .lt-ie9 .remodal {
