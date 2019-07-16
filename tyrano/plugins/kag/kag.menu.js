@@ -95,15 +95,17 @@ tyrano.plugin.kag.menu = {
       j_save.find(".save_list").css("font-family", that.kag.config.userFace);
       j_save.find(".save_display_area").each(function () {
         $(this).click(function (e) {
-          var num =
-            $(this).attr("data-num");
-          that.snap = null;
-          that.doSave(num);
-          var layer_menu = that.kag.layer.getMenuLayer();
-          layer_menu.hide();
-          layer_menu.empty();
-          if (that.kag.stat.visible_menu_button == true) $(".button_menu").show();
-          if (typeof cb == "function") cb()
+          $.confirm("セーブしてよろしいですか？", function() {
+            var num =
+              $(this).attr("data-num");
+            that.snap = null;
+            that.doSave(num);
+            var layer_menu = that.kag.layer.getMenuLayer();
+            layer_menu.hide();
+            layer_menu.empty();
+            if (that.kag.stat.visible_menu_button == true) $(".button_menu").show();
+            if (typeof cb == "function") cb()
+          })
         })
       });
       j_save.find(".button_smart").hide();
