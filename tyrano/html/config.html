@@ -205,7 +205,7 @@
     </div>
     <div class="mh-links">
       <a href="javascript:void(0)"><img src="data/image/BACK.svg" class="menu_close"></a>
-      <a href="javascript:void(0)" onclick="window.close()"><img src="data/image/EXIT.svg"></a>
+      <a href="javascript:void(0)" onclick="$.confirm('ゲームを終了しますか？',function() {window.close()},function(){})"><img src="data/image/EXIT.svg"></a>
     </div>
   </div>
   <div class="save-list">

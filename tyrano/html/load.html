@@ -233,7 +233,7 @@
 			<a href="javascript:void(0)" onclick="TYRANO.kag.layer.getMenuLayer().empty();TYRANO.kag.layer.getMenuLayer().css('background-image','url(./data/image/save_bg.png)');TYRANO.kag.menu.displaySave();"><img src="data/image/SAVE.svg"></a>
 			<a href="javascript:void(0)" onclick="location.href = './index.html'"><img src="data/image/TITLE.svg"></a>
 			<a href="javascript:void(0)"><img src="data/image/BACK.svg" class="menu_close"></a>
-			<a href="javascript:void(0)" onclick="window.close()"><img src="data/image/EXIT.svg"></a>
+			<a href="javascript:void(0)" onclick="$.confirm('ゲームを終了しますか？',function() {window.close()},function(){})"><img src="data/image/EXIT.svg"></a>
 		</div>
 	</div>
 	<div class="slot">
