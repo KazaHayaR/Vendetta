@@ -306,7 +306,7 @@ tyrano.plugin.kag.tag.text = {
     var chara_name = $.isNull($(".chara_name_area").html());
     if (chara_name != "" && pm.backlog != "join" || chara_name != "" && this.kag.stat.f_chara_ptext ==
       "true") {
-      this.kag.pushBackLog("<b class='backlog_chara_name " + chara_name + "'>" + chara_name + "</b>\uff1a<span class='backlog_text " + chara_name + "'>" + message_str + "</span>", "add");
+      this.kag.pushBackLog("<b class='backlog_chara_name " + chara_name + "'>" + chara_name + "</b><span class='backlog_text " + chara_name + "'>" + message_str + "</span>", "add");
       if (this.kag.stat.f_chara_ptext == "true") {
         this.kag.stat.f_chara_ptext = "false";
         this.kag.stat.log_join = "true"

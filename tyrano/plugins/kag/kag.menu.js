@@ -568,7 +568,7 @@ tyrano.plugin.kag.menu = {
       }
       var log_str = "";
       var array_log = that.kag.variable.tf.system.backlog;
-      for (var i = 0; i < array_log.length; i++) log_str += array_log[i] + "<br />";
+      for (var i = 0; i < array_log.length; i++) log_str += array_log[i] ;//+ "<br />";
       layer_menu.find(".log_body").html(log_str);
       layer_menu.find(".log_body").css("font-family", that.kag.config.userFace);
       $.preloadImgCallback(layer_menu, function () {
