@@ -10,7 +10,10 @@ window.tyrano_lang = {
         "error":"エラーが発生しました。スクリプトを確認して下さい",
         "label":"ラベル",
         "label_double":"は同一シナリオファイル内に重複しています",
-        "error_occurred":"エラーが発生しました"
+        "error_occurred":"エラーが発生しました",
+        "modal_save": "セーブしますか？",
+        "modal_load": "ロードしますか？",
+        "modal_exit": "ゲームを終了してよろしいですか？"
     },
 
     novel : {

@@ -97,7 +97,7 @@ tyrano.plugin.kag.menu = {
         $(this).click(function (e) {
           // modal挿入
           var num = $(this).attr("data-num");
-          $.confirm("セーブしますか？", function() {
+          $.confirm($.lang("modal_save"), function() {
             that.snap = null;
             that.doSave(num);
             var layer_menu = that.kag.layer.getMenuLayer();
@@ -301,7 +301,7 @@ tyrano.plugin.kag.menu = {
         $(this).click(function (e) {
           //modal
           var num = $(this).attr("data-num");
-          $.confirm("ロードしますか？", function() {
+          $.confirm($.lang("modal_load"), function() {
             that.snap = null;
             that.loadGame(num);
             var layer_menu = that.kag.layer.getMenuLayer();
