@@ -2,7 +2,7 @@ window.tyrano_lang = {
 
     word : {
         
-        "go_title":"タイトルに戻ります。よろしいですね？",
+        "go_title":"<img src='./data/image/modal_title.svg'>",
         "exit_game":"ウィンドウを閉じて終了します。よろしいですね？",
         "not_saved":"まだデータがありません",
         "tag":"タグ",
