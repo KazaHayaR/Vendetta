@@ -2,7 +2,7 @@ window.tyrano_lang = {
 
     word : {
         
-        "go_title":"タイトルに戻ります。よろしいですね？",
+        "go_title":"<img src='./data/image/modal_title.svg'>",
         "exit_game":"ウィンドウを閉じて終了します。よろしいですね？",
         "not_saved":"まだデータがありません",
         "tag":"タグ",
@@ -10,7 +10,10 @@ window.tyrano_lang = {
         "error":"エラーが発生しました。スクリプトを確認して下さい",
         "label":"ラベル",
         "label_double":"は同一シナリオファイル内に重複しています",
-        "error_occurred":"エラーが発生しました"
+        "error_occurred":"エラーが発生しました",
+        "modal_save": "<img src='./data/image/modal_save.svg'>",
+        "modal_load": "<img src='./data/image/modal_load.svg'>",
+        "modal_exit": "<img src='./data/image/modal_exit.svg'>"
     },
 
     novel : {

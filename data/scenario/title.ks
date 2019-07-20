@@ -96,7 +96,7 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   var simg5 = document.createElement('img');
   div5.setAttribute('style', 'position: relative;margin-top: 80px;');
   a5.setAttribute('href', "javascript:void(0);");
-  a5.setAttribute('onclick', 'document.getElementById("title_base").remove();window.close();');
+  a5.setAttribute('onclick', '$.confirm($.lang("modal_exit"),function() {document.getElementById("title_base").remove();window.close()},function(){})');
   mimg5.setAttribute('src', 'data/image/mbye.svg');
   simg5.setAttribute('src', 'data/image/sbye.svg');
   mimg5.setAttribute('style', 'margin: 0 calc((100% - 62.5px)/2);width:62.5px;-webkit-filter: drop-shadow(0 0 7px #fff);');
