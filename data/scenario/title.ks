@@ -5,7 +5,7 @@
 ; @maki: bgimage
 [image layer="base" page="fore" storage=rouka.jpg]
 ; @maki: logo image
-[image layer="1" storage="../image/logo_hoshifuri_3.png" width=254 height=144 visible=true top=28 left=32]
+;[image layer="1" storage="../image/logo_hoshifuri_3.png" width=254 height=144 visible=true top=28 left=32]
 
 ; @maki: 考えるのがめんどくさいのでゴリラ
 [iscript]
@@ -18,7 +18,7 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   // 中
   var cdiv = document.createElement('div');
   cdiv.setAttribute('id', 'title_buttons');
-  cdiv.setAttribute('style', 'height: calc(100% - 240px);width: calc(100% - 180px);margin: 137px 90px 103px;position:relative');
+  cdiv.setAttribute('style', 'height: calc(100% - 247px);width: calc(100% - 180px);margin: 127px 90px 120px;position:relative');
   var topBorder = document.createElement('div');
   var bottomBorder = document.createElement('div');
   topBorder.setAttribute('style', 'position:absolute;top:0;bottom:0;width:100%;height:1px;background-color:#fff;box-shadow: 0 0 7px rgba(255,255,255,1);')
@@ -30,13 +30,13 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   var a1 = document.createElement('a');
   var mimg1 = document.createElement('img');
   var simg1 = document.createElement('img');
-  div1.setAttribute('style', 'position: relative;padding-top: 72px;');
+  div1.setAttribute('style', 'position: relative;padding-top: 68px;');
   a1.setAttribute('href', "javascript:void(0);");
   a1.setAttribute('onclick', 'document.getElementById("title_base").remove();tyrano.plugin.kag.ftag.startTag("jump", {storage: "first.ks",target: "*plolog"});');
   mimg1.setAttribute('src', 'data/image/mstart.svg');
   simg1.setAttribute('src', 'data/image/sstart.svg');
   mimg1.setAttribute('style', 'margin: 0 calc((100% - 101.11px)/2);width:101.11px;-webkit-filter: drop-shadow(0 0 7px #fff);');
-  simg1.setAttribute('style', 'padding: 0 calc((100% - 57px)/2);position: absolute;top: 106px;left: 0;-webkit-filter: drop-shadow(0 0 7px #fff);width: 100%;box-sizing: border-box;');
+  simg1.setAttribute('style', 'padding: 0 calc((100% - 57px)/2);position: absolute;top: 102px;left: 0;-webkit-filter: drop-shadow(0 0 7px #fff);width: 100%;box-sizing: border-box;');
   a1.appendChild(mimg1);
   a1.appendChild(simg1);
   div1.appendChild(a1);
