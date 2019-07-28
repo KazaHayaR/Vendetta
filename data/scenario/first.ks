@@ -12,4 +12,4 @@ TYRANO.kag.menu.displayLoad();
 
 *plolog
 [freeimage layer="1" wait=true]
-@jump storage="plolog.ks" target=*plolog
+@jump storage="1-1.ks" target=*1_1
