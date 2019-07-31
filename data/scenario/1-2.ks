@@ -1,203 +1,365 @@
+;ユラギとの出会いから別れまで
 *1_2
-[call storage="macro.ks"]
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="500"]
+[chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
+[chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
+[chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
+[chara_face name="yuragi" face="Smu" storage="/chara/yuragi/C2-4.png"]
+[chara_face name="yuragi" face="Se" storage="/chara/yuragi/C2-5.png"]
+[chara_face name="yuragi" face="Ssekimen" storage="/chara/yuragi/C2-6.png"]
+[chara_face name="yuragi" face="Sodoroki" storage="/chara/yuragi/C2-7.png"]
+[chara_face name="yuragi" face="Semi" storage="/chara/yuragi/C2-8.png"]
+[chara_face name="yuragi" face="def" storage="/chara/yuragi/C1-1.png"]
+[chara_face name="yuragi" face="emi_m" storage="/chara/yuragi/C1-2.png"]
+[chara_face name="yuragi" face="fukigen" storage="/chara/yuragi/C1-3.png"]
+[chara_face name="yuragi" face="mu" storage="/chara/yuragi/C1-4.png"]
+[chara_face name="yuragi" face="e" storage="/chara/yuragi/C1-5.png"]
+[chara_face name="yuragi" face="sekimen" storage="/chara/yuragi/C1-6.png"]
+[chara_face name="yuragi" face="odoroki" storage="/chara/yuragi/C1-7.png"]
+[chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 
-;キャラセットアップ
-;【切慧】
-[chara_new name="Kirue" storage="./chara/Kirue/D2-8.png" jname="きるえ" width="500"]
-[chara_face name="Kirue" face="embarrass" storage="./chara/Kirue/D2-1.png"]
+;背景
 
-;暗転解除
-[current layer="message0"]
-[bg layer=base storage=defimage.jpg time="1"]
-[set_default_message_window]
-[mask_off effect="fadeOut" time="3000"]
-
-;（夜、剣道場）
-[set_default_message_window]
-#【要】
-「……ふう」[lrcm]
+[bg layer=base storage=room.jpg time="1"]
+[chara_show name="yuragi" top="50" face="Sdef" time="0"]
+#【一】
+「……さ、て」[lrcm]
 #
-なんとか片付いた。[lrcm]
-気づけば日は暮れている。[lrcm]
-まさかここまで長引くとは思わなかった。[lrcm]
-しかし、やり残しが発覚すればまた中上たちに絡まれる口実をつくることになるので、丁寧に掃除しなければならなかった。[lrcm]
+静まり返った教室内。[lrcm]
+先程のポルターガイスト現象のおかげも在るが、お陰で自分と、目の前の『幽霊と言われていたもの』と対峙する。[lrcm]
+神職の息子だから……という理由ではないが、自分にはふつうに幽霊が見える。[lrcm]
+だが、本当にくっきり見えてるせいで、気ままにウインドウショッピングをしたりする姿や、隣合わせの廃屋同士で昨日のテレビの話をしているところまで見えてしまう。[lrcm]
+そうなると、恐怖感もなくなるというもので。[lrcm]
+……だが、目の前のこの子は……〝幽霊"とは一線を画していると言える。[lrcm]
 
-#【要】
-「どっかに捨てに行かないとな」[lrcm]
-#
-時計を見たら8時を回っていた。下校時間はとっくに過ぎている。[lrcm]
-学校内に捨てるには時間が遅すぎる。[lrcm]
-
-#【要】
-「近くのコンビニに捨てられるかな……」[lrcm]
-
-;（風圧SE）
-
-#
-それは剣道場を踏み出した一歩目であった。[lrcm]
-地を離れた右足は想定通りに着地せず、もとの位置に押し戻された。[lrcm]
-何によってか。[lrcm]
-風圧である。[lrcm]
-到来した暴風はまとめたゴミを吹き飛ばした。[lrcm]
-どこから吹く風か。[lrcm]
-眼の前、剣道場の前に広がるグラウンドにポツンと立つ二人の人物であった。[lrcm]
-
-;（服部半蔵立ち絵、森可成立ち絵）
-
-#【要】
-「……は……あッ」[lrcm]
-
-#
-おれは目を疑った。目を見開きながら。[lrcm]
-広大なグラウンドの中央で、二人の奇態な服装の人物が対面していた。[lrcm]
-一人は忍者のような装束、もう一人は武士の甲冑を纏っていた。[lrcm]
-忍者は短刀を、武士は槍をそれぞえ手に構え、両者ともに命の獲り時を探っていた。[lrcm]
-命である。それは唐突な殺し合いなのだ。[lrcm]
-そのことが何にも増して強く直感された。[lrcm]
-張り詰めた緊張感が肌を刺し、呼吸が浅くなる。[lrcm]
-おれはその場で、二人に目を奪われていた。[lrcm]
-
-[set_left_message_window]
-#【森】
-「はっ、間者風情がのこのこ出しゃばりやがって。一介の武士ならわからんが、攻めの三左と呼ばれたこの俺だ。生きて帰れるたぁ思ってねえよな？」[lrcm]
-
-[set_right_message_window]
-#【服部】
+#【???】
+『……』[lrcm]
+#【一】
 「……」[lrcm]
-
-[set_default_message_window]
 #
-相対する二人は対照的だ。[lrcm]
-短刀を構える忍者は何者をも寄せ付けない集中力で、槍をふるう武士は相手を誘い込むように、しかし両者とも隙を見せない。[lrcm]
-先に動いたほうが死ぬ……！　[lrcm]
+先程からこちらを見つめているのは、くりくりとした眠そうな眼。[lrcm]
+両手は気だるそうに伸ばしたまま、可愛らしく首を傾げるその仕草は見た目よりもさらに幼さを感じさせる。[lrcm]
+顔立ちは”可愛い”と”綺麗”が8:2で整えられており、その顔はこちらを不思議そうな表情を見つめている。[lrcm]
+[manpu layer=0 name=yuragi type=hatena x="100" y="180" width="80"]
 
-果し合いの間合いにて、交錯するのは互いの眼光のみである。[lrcm]
-瞳は発熱しそうなほどに輝き、その模様は円ではなく円環だった。[lrcm]
-
-[set_left_message_window]
-#【森】
-「どうだバッタ野郎、逃げる算段はついたか？　ついてんなら話は早い。てめえが動く、おれが突く。技量の高いほうが勝ちだ」[lrcm]
-
-[set_default_message_window]
-#
-武士は忍びの視界からそれようと、少しずつ、忍者との距離を保ちながら右回りに移動する。それに合わせて忍者も動く。[lrcm]
-両者の間合いは円を描き、二人はその縁を渡りながら、そこから脱することも踏み出すこともできない。[lrcm]
-均衡が殺気をのせて舞っている。[lrcm]
-よくできた演武であった。[lrcm]
-何者も邪魔しえない、閉じ完結した殺し合いの円環。[lrcm]
-その舞台を転覆せんとする、闖入者がいることに、二人はまだ気づいていない。[lrcm]
-知っているのはおれだけだ。[lrcm]
-
-;(マド立ち絵、できればCGがいい←校庭の奥、要のちょうど対角にある朝礼台で、右足を朝礼台の上でたたみ、左足を無造作にぶら下げ、つまらなそうに忍者と武士を見やる、半開きの目のマド、ぼやけた感じで)
-
-それは清廉なる少女であった。[lrcm]
-朱色の長髪と一回り大きい軍服を背に流し、こちら側の全てを見下すような目で、退屈そうにしている少女。[lrcm]
-武士と忍者は気づかない。[lrcm]
-彼女のあまりに自然すぎる立ち居振る舞いに。[lrcm]
-そこにいて、そこにあって当然であり、世界のありとあらゆるものの抵抗を受けずに、まるで王の道がひとりでに開けていくあの光景のように、君臨する。[lrcm]
-
-;(マド立ち絵orCGアップ)
-
-その射貫くような瞳を除きこんだ瞬間、すべてが逆転していた。[lrcm]
-
-;(風圧SE、打撃音SE)
-
-[set_left_message_window]
-#【森】
-「かっ……！」[lrcm]
-
-[set_right_message_window]
-#【服部】
-「……！？」[lrcm]
-
-[set_default_message_window]
-#【要】
-「あっ…………」[lrcm]
-
-;(CG、マドが服部と森を組み伏せる)]
-#
-敗者は地に臥し、勝者は栄光のもとに屹立する。[lrcm]
-それが道理である。[lrcm]
-しかし、朝礼台に座っていた少女が一瞬にして殺し合いに介入し、二人を組み伏せ、勝者として敗者を屈服させることが、道理であろうか。[lrcm]
-が、大地も空も、月も夜風もなにものも彼女に異を唱えない。[lrcm]
-静寂が賛歌となって王者をたたえているのだ。[lrcm]
-これが真理である、と。[lrcm]
-
-[set_left_message_window]
-#【森】
-「くっ……そっ……」[lrcm]
-
-[set_default_message_window]
-#
-武士は王者を見上げる。[lrcm]
-その眼差しにどれほどの殺気を込めたところで、その刃は届かない。槍は地に突き立てられ墓標のようである。[lrcm]
-[set_center_message_window]
 #【???】
-「あわれな亡霊。未練を残すからそうなるの。オレの手を煩わせないで」[lrcm]
-[set_default_message_window]
+『うーー』[lrcm]
 #
-彼女は右足で武士を造作もなく踏み潰した。[lrcm]
-脳みそと血液が散乱する代わりに、光の埃が舞い上がり武士の身体が粒子となって消失した。[lrcm]
-彼女の体重が僅かに右によった瞬間を逃さず動いたのは忍者だった。[lrcm]
-彼女の左腕を払い除け逃れ出ようとする忍者の尾のようにたれた帯を彼女は再び補足したが、忍びの装束のみがハラリと落ち忍者の姿は消えていた。[lrcm]
-[set_center_message_window]
+疑問形の唸り声と言う不思議な声を上げながら、とてとてとこちらに歩いてくる。[lrcm]
+不思議そうにこちらの顔を見ながら色んな方向からこちらを観察し始める。[lrcm]
+
 #【???】
-「ちっ……　でも厄介な方は潰したし、いいや」[lrcm]
-[set_default_message_window]
+『うーーん？』[lrcm]
 #
-呆気に取られているうちに、平穏が回復された。[lrcm]
-先程までの殺気がウソのような静けさのなか、彼女はこちらを見据えながらやってきた。[lrcm]
-おれは一歩も動けない。[lrcm]
-そのまま、手を伸ばせば触れられるところまで来ても彼女は止まらず、両の腕で抱きすくめることができるほどに接近した。[lrcm]
-あれほどまでの威圧を発揮していた彼女の背は、意外にもおれより低かった。[lrcm]
-だが、彼女の威風が軽減されるわけではない。[lrcm]
+[yure layer="0"]
+ちょろちょろとこちらの周りをぐるぐると巡る姿は、小動物のようで非常に愛らしい。[lrcm]
+何回かぐるぐるした後、少女はこちらのめを見ると。[lrcm]
 
-;（夏に似つかわしくない、重厚な白い軍服のようなものを、袖を通さず肩から提げている。
-
-その下は半袖のセーラー服、袖口から伸びる細腕——とても大の男を組み伏せられるとは思えない——の先に、甲の部分が金属でコーティングされた手袋をはめていた。[lrcm]
-脛よりも少し上まで覆う白いブーツは、土の上を歩行するとは思えないくらいに清潔だ。[lrcm]
-おれは学ランの襟を前からつかまれ、彼女  の顔の前まで引き寄せられた。[lrcm]
-そして彼女は、おれの瞳を至近距離から覗き込んだ。[lrcm]
-瞳と瞳が接触しそうなほどに近い。[lrcm]
-[set_center_message_window]
+[chara_mod name="yuragi" face="Se" time="0"]
 #【???】
-「……なぁあんだ、なんにもないじゃない」[lrcm]
-[set_default_message_window]
-#【要】
-「え……？」[lrcm]
-[set_center_message_window]
-#【???】
-「兆しすら見えないなんて、場違いもいいとこ。早く帰って二度とオレの前に姿を見せないことね」[lrcm]
-[set_default_message_window]
+『じぃ……』[lrcm]
+#【一】
+「……」[lrcm]
 #
-おれは乱暴に突き飛ばされた。[lrcm]
-反動で二、三歩遠ざかる。[lrcm]
-薄紅の長い髪、鋭く傲岸な髪色と同じ瞳、すらりと通った鼻筋、唇。[lrcm]
-落ち着いてみる彼女は、さっきまで苛烈に戦っていたとは思えないくらいに少女だった。[lrcm]
-嫌になる。[lrcm]
+とりあえず黙っておく。[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+幽霊などの『見えないはずの者』と言うのは基本的に絡まれないほうがいいのだ……。[lrcm]
 
-[set_center_message_window]
+
+;横に揺れるエフェクト
+[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
 #【???】
-「何？　人のこと不躾にジロジロと」[lrcm]
-[set_default_message_window]
-#【要】
-「それはこっちの……」[lrcm]
+『ほふぃー』[lrcm]
+[fadeinbgm storage="ユラギ_1_dova.ogg" time="1000" loop="true"]
+#
+急にほっぺたを思いっきり引っ張った。[lrcm]
+ぷにぷにと柔らかそうなほっぺたは柔軟性も高いのか、予想以上に伸びた。[lrcm]
+#【一】
+「ぶふっ……」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+[manpu layer=0 name=yuragi type=waiwai x="200" y="210" width="80"]
+#【???】
+『お、おー、おーっ！ 見えるのかー！？　すごいなーお前！』[lrcm]
+#
+目の前の幽霊少女(仮)が目をキラキラさせてこちらを見た。[lrcm]
+#【一】
+「ええ、見えますよ……何してるんですか、『土地神様』」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【???】
+「おっ……？ ふむ……？」[lrcm]
+#
+驚いた顔でこちらの周りを覗き込む土地神様。[lrcm]
+すんすん、すんすん……と何やらこちらの匂いを嗅ぎ始める。[lrcm]
+一通り嗅ぎ終わると、彼女は納得したように腕を組み、うんうん頷く。[lrcm]
+
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+#【???】
+「あーなるほど！　おまえ神社の次男坊かー。なるほどなー！　だから私のこと神ってわかるのか」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+[manpu layer=0 name=yuragi type=onpu x="50" y="200" width="80"]
+「でもすごいぞー、私のことが見える人間は神職でも数百年ぶりだっ！」[lrcm]
+#
+と、気だるげな声とは正反対なトーンで、キラキラとした目をこちらに向けてくる。[lrcm]
+そして、ちょこちょとここちらの周りをくるくるとし始める。[lrcm]
+#【一】
+「それで？ なんでこんな学校に？　土地神は山にいるんじゃないんですか？」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+;横揺れ
+#【???】
+「おーっと〝土地神〟なんてそんな他人行儀な名前はよせよー。何百年ぶりに人間とはなせるんだぞ～もっとフレンドリーに、愛をこめて～信仰して～？」[lrcm]
+#【一】
+「いや、お家柄信仰はしてますけども……」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#
+土地神様はこちらの膝の上に手をおいて、体を乗り出してくる。[lrcm]
+ふわりと香る、りんごのような甘い香り。[lrcm]
+更に、人差し指をこちらの唇にぴと、と付けて。[lrcm]
+#【一】
+「こら。敬語もだめ。もっとそっけなく、同級生を呼ぶようにタメ語で。神様からの命令だぞー」[lrcm]
+#
+脱力した、ゆったりとした声。[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+だがその瞳は何かを期待するようにキラキラと輝いていて。[lrcm]
+──神様というか、小さな子供のようだ。[lrcm]
+#【一】
+「わかった……ええっとそれじゃあ……なんて呼べばいいんだ？」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+[manpu layer=0 name=yuragi type=onpu x="50" y="200" width="80"]
+#【???】
+「ん～っ。ぐっとな素っ気なさだ。いいじゃないかぁ～」[lrcm]
+#
+ふす～っと満足気に鼻息を鳴らし、少女が立ち上がる。[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+#【ユラギ】
+「私の名はユラギ。何を隠そう、この〝星降島〟の……見守り神……だ！」[lrcm]
+#
+ぺたん……という効果音がぴったりな胸の張り方をする。[lrcm]
+……ん？　星降島……？　ここは、環ノ島だった気がするが……？[lrcm]
+#【一】
+「え、というか……見守り……？」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「うん。見守り」[lrcm]
+#【一】
+「うち的には守護神……守り神として祀ってるんだけど……？」[lrcm]
+[chara_mod name="yuragi" face="Smu" time="0"]
+[manpu layer=0 name=yuragi type=mojamoja x="130" y="200" width="80"]
+#【ユラギ】
+「……だってぇお前んちの主神、木花ちゃんじゃんかー」[lrcm]
+「あの子いれば守護なんて事足りるしぃー。私も一応祀ってもらっては居るけど、依代がこの島なだけだし」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+「信仰もあれば嬉しいなぁ～ぐらいだし？」[lrcm]
+#【一】
+「ええー……」[lrcm]
+#
+いやお前、木花ちゃんってえらくフレンドリーだな……。[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「まーでも安心してほしい。[chara_mod name="yuragi" face="Semi_m" time="0"]わたしは、この島と、この島の人間が好きだからなぁ～。だから見守ってる」[lrcm]
+[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+#
+サムズアップにウィンクをセットでよこしてくれた。[lrcm]
+#【一】
+「はぁ……なるほど。それで、結局こんな学校に何しに来たんだ？」[lrcm]
+[chara_mod name="yuragi" face="Se" time="0"]
+[manpu layer=0 name=yuragi type=mojamoja x="130" y="200" width="80"]
+#【ユラギ】
+「あーうん……濡れ衣を晴らしに、だ」[lrcm]
+#
+ユラギはどこか遠い目をしながらほおをかりかりとしている。[lrcm]
+#【一】
+「濡れ衣……あ、『神隠し』か」[lrcm]
+[chara_mod name="yuragi" face="Smu" time="0"]
+[odoroku layer="0"]
+[manpu layer=0 name=yuragi type=muka2 x="50" y="200" width="80"]
+#【ユラギ】
+「そーだー！  私は何にも隠してないぞー！　[chara_mod name="yuragi" face="Se" time="0"]あいや、ちょっとは隠したことあるけど……」[lrcm]
+#【一】
+「あるのか」[lrcm]
+#【ユラギ】
+「で、でもー、[chara_mod name="yuragi" face="Smu" time="0"]人間隠しても私のこと見えないし、お話すら出来ないからつまんないじゃんかぁ～！」[lrcm]
+「家に帰れないと可愛そうだし、わたし隠したりしないぞっ！」[lrcm]
+#
+なんらか違うものは隠しているということだろうか……。[lrcm]
+[odoroku layer="0"]
+[manpu layer=0 name=yuragi type=muka x="50" y="200" width="80"]
+#【ユラギ】
+「とにかく、私の名を語って人間からのヘイトを私に向けてるふとどきやろーの正体を明かしてやろうと、こうして聞き込み捜査中なんだよー」[lrcm]
+#【一】
+「なるほど、ちなみに、基本誰にも見えないのにぴっちり制服まで来てるのは？」[lrcm]
+[manpu layer=0 name=yuragi type=ase x="90" y="200" width="80"]
+[chara_mod name="yuragi" face="Se" time="0"]
+#【ユラギ】
+「えっ……そ、それは……ほら……その……ほら……郷に入りては郷に従えというか……」[lrcm]
+#【一】
+「……郷の方からは見えてないのに……？」[lrcm]
+[chara_mod name="yuragi" face="Ssekimen" time="0"]
+[odoroku layer="0"]
+#【ユラギ】
+「ぐ…………き、着てみたかったんだよぉ！　わるいかっ！　ここの制服可愛くなったしなぁ！」[lrcm]
+#
+何故か恥ずかしそうに叫ぶユラギ。[lrcm]
+ちなみにここの制服は落ち着いた赤と緑色のチェック柄を基調としているどこか落ち着きながらも人形に着せる服のような愛らしさのあると島の外からも評判である。[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「んん”っ、まあいい。それと今もう一つ、山を降りてきた理由が出来たかなぁ」[lrcm]
+#【一】
+「ん……？」[lrcm]
+#
+ユラギと名乗った少女はこちらの肩に左手を置く。[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+そして、ばっとこちらに乗り出してきた。[lrcm]
+[manpu layer=0 name=yuragi type=kiran x="310" y="130" width="80"]
+#【ユラギ】
+「な、人柱やらない？」[lrcm]
+
+;なんか人拍子ほしいね
+#
+突然、会話の雲行きが怪しくなってきた。[lrcm]
+#【一】
+「人柱って……その、簡単に言うと生贄……だよな……？」[lrcm]
+#
+見た目は学園の制服を着た中学生だが、これは、目をつけられた……？[lrcm]
+[manpu layer=0 name=yuragi type=waiwai x="50" y="210" width="80"]
+#【ユラギ】
+「いやー、よかったよかった。最近この島の”歪み”がまたひどくなって来てさぁ……もうそろそろ私だけじゃ抑えられなくなってねー」[lrcm]
+「たぶん自称”神隠し”もそっから出て来た怪異的なやつかなぁーと」[lrcm]
+#【一】
+「な、なるほど……そ、それと人柱になんの関係が……？」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「要するに歪みを支えるために私と一緒に頑張ろうぜって言うことさ〜！　[chara_mod name="yuragi" face="Semi_m" time="0"]大丈夫、昔みたいに土の中に埋めたりはしないぞ」[lrcm]
+#
+ユラギは大きく手を開いてアピールしている。[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+;横揺れ
+#【ユラギ】
+「ただ、人柱は人間から同意得ないとなれないんだよなー。だから私のこと見える人じゃないとだめなんだー」[lrcm]
+#【一】
+「な、なんだ……同意がないと……はっ」[lrcm]
+#
+つまり、今ここで同意しない場合は山の奥に連れて行かれて永遠と森の中を歩き続かされるとかそういうことか……！？[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+#【ユラギ】
+「でも安心してほしい、今回の人柱は霊体化するけど普通にものは触れるし、他人から認知もされる」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+「しかも、老いもしないし病気にもならない！  [manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]つまーり、実質不老不死になるだけなのだー！」[lrcm]
+#
+にぃーっといたずらっ子のような笑いをして、ユラギがこちらにずんっと、顔を近づけてくる。[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+#【ユラギ】
+「さぁさぁー、なろ〜ぜ、人柱！」[lrcm]
+#【一】
+「……お断りします」[lrcm]
+[chara_mod name="yuragi" face="Sodoroki" time="0"]
+[manpu layer=0 name=yuragi type=nanto x="90" y="150" width="80"]
+#【ユラギ】
+「！　 な、何故……あらゆる人間が一度は思った理想じゃないのか……？」[lrcm]
+#
+驚愕した……！　という表情を取るユラギ。[lrcm]
+気だるげな目だけは変わらないが、表情はコロコロと変わっていくのが少しだけ面白い。[lrcm]
+#【一】
+「いや別に、不老不死になったところでやりたいこともないし……普通に生きて普通に死んで生きたいと思います」[lrcm]
+#【ユラギ】
+「ふ、不老不死だぞ……？  あらゆる人間が求めてやまないと言う不老不死」[lrcm]
+#【一】
+「いや、人柱ってあれだろ？　もともと城とか建てる時に人埋めたっていうやつだし……なった時点で一定の場所から動けないんじゃないか？」[lrcm]
+[chara_mod name="yuragi" face="Se" time="0"]
+[manpu layer=0 name=yuragi type=ase x="90" y="200" width="80"]
+#【ユラギ】
+「んぐっ……い、いやぁ、そんなことはないぞーうん。この島の中ならどこにでもいけるぞーー？」[lrcm]
+#
+ユラギはひゅーひゅーっとならない口笛を吹き始める。[lrcm]
+わかりやすいなーこいつ。[lrcm]
+
+#【一】
+「………この島の外には？」[lrcm]
+#【ユラギ】
+「それはぁー……そのぉーー……」[lrcm]
+#
+だらだらと冷や汗っぽいものを流している。[lrcm]
+
+[chara_mod name="yuragi" face="Semi" time="0"]
+[manpu layer=0 name=yuragi type=kiran x="310" y="130" width="80"]
+#【ユラギ】
+「……島が吹き飛んだら、外に出れるぞっ！」[lrcm]
+#【一】
+「実質出れねーじゃねえか！！」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+#【ユラギ】
+「大丈夫！ 次の大戦はたぶん島ごと消えるなんて余裕だろう！　ワンチャンあるぜ〜！」[lrcm]
+#【一】
+「大戦起こった時点でそれどころじゃねえだろ！」[lrcm]
+[chara_mod name="yuragi" face="Se" time="0"]
+#
+ぐぬぬぬぬ……と眼の前の神様は悔しがっている。[lrcm]
+
+[chara_mod name="yuragi" face="Sdef" time="0"]
+[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+#【ユラギ】
+「はっ……」[lrcm]
 
 #
-咄嗟にでかかる言葉を、睨めつけ首を締めて彼女は封じた。[lrcm]
+名案だ、とばかりに。ポンと手を打った。[lrcm]
 
-[set_center_message_window]
-#【???】
-「今日のことは忘れなさい。その方が身のためよ。わた……オレがいるのは修羅の道、悪鬼羅刹の闊歩する別天地。お前がいるところとはわけが違うわ」[lrcm]
-[set_default_message_window]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+#【ユラギ】
+「そうだ、私をつけようじゃないかぁー」[lrcm]
+#【一】
+「……はい？」[lrcm]
+#【ユラギ】
+「ふふふ、と言うか必然的にそうなるんだけどなー」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+「人柱になったらー、私を好きにしていいぞ～」[lrcm]
+#【一】
+「……好きにって……」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=kiran x="310" y="130" width="80"]
+#【ユラギ】
+「あぁ……どんなプレイでも受け入れよう……！」[lrcm]
+#【一】
+「ぷ、ぷれっい！？」[lrcm]
+[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+#【ユラギ】
+「ふふ、お盛んな年頃だろう？ その欲望が衰えぬまま人柱化！」[lrcm]
+[manpu layer=0 name=yuragi type="heart3" x="50" y="200" width="80"]
+「縛るかー？ 野外とか？ 玩具という手もある！ 叩くのはちょっと痛そうだが……愛があればOK！」[lrcm]
+「お、おまっ……それは……」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+#【ユラギ】
+「ふふー、さすが降山一家……この私でも心が揺らいでいるのが見えるぞーさぁーーめくるめく淫欲の生活に……」[lrcm]
 #
-お前はどこに立っているんだ？[lrcm]
-そういって彼女は闇夜に消えていった。[lrcm]
-今はその姿を見送ることしかできない。[lrcm]
-追うか、留まるか、その選択を迫られている気がした。[lrcm]
-なぜだかは解らない。[lrcm]
-根拠はない。[lrcm]
-ただ彼女の姿だけが、脳裏に克明に刻まれたのだった。[lrcm]
+しだいに詰め寄ってくるユラギ。[lrcm]
+鼻をつく甘ったるい香りと、真正面に迫る眠たそうな中にどこか危機らと[lrcm]
+前かがみになって少し大きめの制服から胸元に余裕の有りすぎ、あと一歩で見えてしまいそうな距離。[lrcm]
+次第に、ゆったりとユラギの手がこちらに伸び……しそて……。[lrcm]
+;se
+[playse storage="チャイムキンコンカンコン_dova.ogg"]
+キーンコーンカーンコーン。[lrcm]
+
+#【一】
+「…………」[lrcm]
+#【ユラギ】
+「…………」[lrcm]
+
+#
+つかの間流れる沈黙。[lrcm]
+
+#【一】
+「……じゃ、帰るわ」[lrcm]
+[chara_mod name="yuragi" face="Sodoroki" time="0"]
+[manpu layer=0 name=yuragi type=nanto x="90" y="150" width="80"]
+#【ユラギ】
+「えっ、ちょっとまっ……ちょっとまってくれええ！」[lrcm]
+
+#
+まさに、触らぬ神に祟りなし。[lrcm]
+おれはさっさと学校を後にした。[lrcm]
 [mask effect="fadeIn"]
+[chara_hide name="yuragi"]
+[fadeoutbgm]
 
-@jump storage=1-3.ks target=*1_3
+@jump storage=1-3.ks target=*1-3

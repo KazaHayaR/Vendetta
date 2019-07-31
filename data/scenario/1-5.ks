@@ -1,544 +1,445 @@
-*1_5
-[call storage="macro.ks"]
-
+*1-5
 ;キャラセットアップ
-;#【切慧】
-[chara_new name="Kirue" storage="./chara/Kirue/D2-8.png" jname="きるえ" width="500"]
-[chara_face name="Kirue" face="embarrass" storage="./chara/Kirue/D2-1.png"]
+;【ユラギ】
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="500"]
+[chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
+[chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
+[chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
+[chara_face name="yuragi" face="Smu" storage="/chara/yuragi/C2-4.png"]
+[chara_face name="yuragi" face="Se" storage="/chara/yuragi/C2-5.png"]
+[chara_face name="yuragi" face="Ssekimen" storage="/chara/yuragi/C2-6.png"]
+[chara_face name="yuragi" face="Sodoroki" storage="/chara/yuragi/C2-7.png"]
+[chara_face name="yuragi" face="Semi" storage="/chara/yuragi/C2-8.png"]
+[chara_face name="yuragi" face="def" storage="/chara/yuragi/C1-1.png"]
+[chara_face name="yuragi" face="emi_m" storage="/chara/yuragi/C1-2.png"]
+[chara_face name="yuragi" face="fukigen" storage="/chara/yuragi/C1-3.png"]
+[chara_face name="yuragi" face="mu" storage="/chara/yuragi/C1-4.png"]
+[chara_face name="yuragi" face="e" storage="/chara/yuragi/C1-5.png"]
+[chara_face name="yuragi" face="sekimen" storage="/chara/yuragi/C1-6.png"]
+[chara_face name="yuragi" face="odoroki" storage="/chara/yuragi/C1-7.png"]
+[chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 
-;暗転解除
-[current layer="message0"]
-[bg layer=base storage=defimage.jpg time="1"]
-[set_default_message_window]
-[mask_off effect="fadeOut"]                                                                             
+[bg layer=base storage=room.jpg time="1"]
+[mask_off effect="fadeOut"]
+[fadeinbgm storage="失った悲しみ_意気消沈.ogg" time="1000" loop="true"]
 
-;[set_default_message_window]
-;[set_center_message_window]
-;[set_left_message_window]
-;[set_right_message_window]
-
-[set_default_message_window]
-#
-平日の駅周辺には独特の活気がある。[lrcm]
-学生の集団、定年をゆうに十年は越してそうな老人、スーツを纏った社会人、その他もろもろ、様々な人種が散見される。[lrcm]
-学校から見て駅の奥に繁華街が広がっており、そこが夏海第二高等学校の生徒らの遊び場になっている。[lrcm]
-もちろん他の学校の生徒もおり、学生間の諍いは絶えず常に問題を生み続けているらしいが、問題を創出するの生徒というものもある程度決まっており、夏海第二高は他校と比べそこまでやんちゃではなく、問題に巻き込まれないよう自衛しなさいと教えられてきたらしいのだが、最近はうちの高校にもトラブルメーカーがいて、教師陣の頭痛の種となっているが、それだけでなく夏海第二高の制服が他校の不良共にも認知されはじめ、繁華街での遊びにはちょっとした緊張感が伴うようになった。[lrcm]
-
-おれがあまり遊び慣れていないから、勝手にそのような緊張を感じているだけかもしれないが。[lrcm]
-普段おれは学校が終わる直帰している。[lrcm]
-駅は通学でしか使わない。[lrcm]
-たまに駅近くの書店で適当に物色してから帰ることはあるが、それも頻繁にというわけではない。[lrcm]
-
-つまり繁華街はほぼ見知らぬ土地であり、なおかつ悪い噂を聞かされて育っているのだ。[lrcm]
-長くいる理由がない。[lrcm]
-誰にも会いませんように。[lrcm]
-半ば走るように繁華街を抜けようとした、その時だった。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「あれぇ、要くん？」[lrcm]
-[set_default_message_window]
-#
-心臓が縮小し、血流が反乱し、初動から全速で逃げ出す準備を身体が整えた。[lrcm]
-が、精神のほうが萎縮した。[lrcm]
-[set_default_message_window]
-最悪だ。[lrcm]
-どうしてこうなった。[lrcm]
-昨日今日と、中上に絡まれすぎている。[lrcm]
-せいぜい月に一度ほど顔を合わせるくらいで済んでいたはずなのに。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「ちょっとちょっとぉ、こんなところで会うなんてめずらしいじゃん」[lrcm]
-[set_default_message_window]
-#【要】
+#【先生】
+「……という事で皆さん、戸伏さんと夕陽さんについて情報がありましたら私達職員か、警察の方に連絡して下さい」[lrcm]
+#【一】
 「……」[lrcm]
-[set_default_message_window]
-中上は勢いよく肩を掴んだ。[lrcm]
-肩の骨を粉砕したいのではないかと思うくらい強く。[lrcm]
-これはもう逃げられない。[lrcm]
-幸い、中上は一人で、剣道部の取り巻きを連れてはいなかった。[lrcm]
-多少は面倒が軽減されるはずだ。[lrcm]
-そう思わないとやってられない。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「え、要くん何しに来たん？」[lrcm]
-[set_default_message_window]
-#【要】
-「はは、ちょっとね……」[lrcm]
-[set_default_message_window]
-しまった。[lrcm]
-言って後悔した。[lrcm]
-こういう曖昧な返答を中上は嫌う。[lrcm]
-今朝からそうだったではないか。[lrcm]
-嘘でもいいから適当な理由をでっちあげるべきだった。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「ふーん、そう」[lrcm]
-[set_default_message_window]
-しかし、中上は意に介さない風で、手を伸ばして肩を組んできた。[lrcm]
-怒らせなくて済んだのはいいが、余計逃げづらくなった。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「要くんゲーセンとか行く？」[lrcm]
-[set_default_message_window]
-#【要】
-「あ、あんまり行かないかな」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「ははっ、確かに行かなそー」[lrcm]
-
-[set_default_message_window]
-中上はケラケラ笑った。[lrcm]
-何が面白いんだ。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「でもおれは行くんだよねー」[lrcm]
-
-[set_default_message_window]
-#【要】「そ、そう……」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「要くんこの後用事ある？」[lrcm]
-
-[set_default_message_window]
-#【要】
-「え……」[lrcm]
-
-[set_default_message_window]
-待て。[lrcm]
-この質問には迂闊に答えてはならない。[lrcm]
-下手に予定が無いと言ってしまえば、このあと中上から何かを命令されたとき断る理由が無くなってしまう。[lrcm]
-ボロを出さないためにも、極力嘘をつくべきではない。[lrcm]
-坂口の家に行くと言って問題があるだろうか。[lrcm]
-名前を出すのはまずいだろう。[lrcm]
-余計な火種になりかねない。[lrcm]
-学校のプリントを届けに友人の家に行くと言った場合、中上がそれについてくることはないだろう。[lrcm]
-あわよくば興味を失った中上と別れられるかもしれない。[lrcm]
-
-#【要】
-「ちょっと、友達の家にね……」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「遊ぶの？」[lrcm]
-
-[set_default_message_window]
-#【要】
-「プ、プリントを届けに行くだけだよ……」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「なあんだ、それだけ？」[lrcm]
-
-[set_default_message_window]
-これは好感触だ。[lrcm]
-声のトーンが一気にだるみを帯びた。[lrcm]
-ここは押す……！[lrcm]
-
-[set_default_message_window]
-#【要】
-「だから、おれ、その行か……」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「じゃあ、何もないのと一緒だよねえ？」[lrcm]
-
-[set_default_message_window]
-中上は待ち構えていたかのようにおれの言葉を遮った。[lrcm]
-
-#【要】
-「え……」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「大丈夫大丈夫、時間はとらせないからさ。ただ一つ頼み事を聞いてほしいんだよねぇ」[lrcm]
-
-[set_default_message_window]
-嫌な予感がする。[lrcm]
-
-[set_center_message_window]
-#【中上】「ちょっとお金貸してくれない？　あるだけ全部」[lrcm]
-
-[set_default_message_window]
-ちょっとじゃないではないか！[lrcm]
-金銭の話題になるのは初めてだった。[lrcm]
-この場を楽に乗り切るためには、お金を渡してしまうのが最適解だろう。[lrcm]
-しかし、後のことを考えたとき、ここで簡単にお金を貸してしまうのは危険だ。[lrcm]
-中上がおれのことを体のいい財布だと認識してしまえば、いつか要求はエスカレートしておれじゃどうにもできない高額を請求してくるかもしれないし、中上がおれに絡んでくる頻度は確実に上がる。[lrcm]
-それは避けたい。[lrcm]
-しかし、どうやって。[lrcm]
-
-[set_default_message_window]
-#【要】
-「い、いまお金あんまり持ってなくて」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「そんなたくさん欲しいってわけじゃねえのよ、ちょっとゲーセン寄りたいだけ」[lrcm]
-
-[set_default_message_window]
-#【要】
-「で、でも」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「でもじゃなくて、財布。ほらほら」[lrcm]
-
-[set_default_message_window]
-中上はおれの肩をがっちり捕らえて逃さないようにしたまま、おれの学生カバンを探り出した。[lrcm]
-財布の中身は確か五千円程度だったはずだ。[lrcm]
-
-……仕方ない、渡してしまおう。[lrcm]
-今日のところはとりあえず渡しておいて、明日から、今まで以上に細心の注意を払って中上を避けよう。[lrcm]
-これまでも、中上に絡まれるためにもう二度と会うまいと思ってきたが、今回は本気だ。[lrcm]
-常に気を張り、最悪の可能性——もちろん、中上と遭遇する可能性だ——を前提としながら行動する。[lrcm]
-そうすれば、今日のような偶然も防げるはずだ。[lrcm]
-
-強い意思を持ち続ければ、目的は達せられる。[lrcm]
-覚悟が足りなかった、徹底しよう。[lrcm]
-自由意志を最大限に活用するのだ。[lrcm]
-自らの平穏は、自らによってのみ勝ち取られよう。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「あ、これかなぁ？」[lrcm]
-[set_default_message_window]
-中上がカバンから財布を取り上げる直前だった。[lrcm]
-
-遠くの十字路。[lrcm]
-垂直に交わる歩道を左から右へ。[lrcm]
-肩から軍服をたなびかせ、ポケットに手をしまい込み、つまらなさそうな眼差しで闊歩するその姿……！[lrcm]
-
-間違いない、彼女だ。[lrcm]
-昨日の、王者のような彼女だ。[lrcm]
-
-そのまま彼女は直進する。[lrcm]
-このままでは再び見失うだろう。[lrcm]
-
-追わなければならないのだ、今、ここで……！[lrcm]
-
-#【要】
-「っ……！」[lrcm]
 #
-おれは全てを振り払って走り出した。[lrcm]
+担任の教師から放たれた報告。[lrcm]
+それは『戸伏正行』と『夕陽椿』が行方不明になった、という事実だった。[lrcm]
+昨日はあの後、知り合に連絡し、捜索を行うも、何も見つからなかった。[lrcm]
+最終的には警察が出動し、島中を捜索したが、進展なし。[lrcm]
+さまざまな状況から、これらの事件は一連の神隠し事件のひとつと認定されることとなった。[lrcm]
+
+#【先生】
+「……それと。降山くん、このあと職員室に来てもらえます？」[lrcm]
+#【一】
+「……わかり……ました」[lrcm]
+[mask effect="fadeIn"]
+
+;<場面転換適当な部屋>[lrcm]
+[bg layer=base storage=応接室昼.jpg time="1"]
+[mask_off effect="fadeOut"]
+#
+連れて行かれたのは、職員室隣の視聴覚室。[lrcm]
+防音構造になっているその室内には、スーツを着た女性が待っていた。[lrcm]
+
+#【谷垣】
+「環ノ島署の谷垣です。お久しぶりです！　一君！」[lrcm]
+#【一】
+「あ……お、お久しぶりです」[lrcm]
+
+#
+そう敬礼を知ながら挨拶をしてくれたのは、環ノ島署の女性刑事。[lrcm]
+環ノ島の住民の気風は非常に穏やかで、決して治安が悪いわけではない。[lrcm]
+しかし、離島でありながら船舶の停留所として比較的優位な位置にあるこの島は他と比べて人口は多い。[lrcm]
+さらに最近ではこの島の祭り”星降祭”が有名になり、観光客も増えてきたことから警察『署』ができるまでになった。[lrcm]
+
+#【谷垣】
+「以前の幽霊騒動ではお世話になりました……」[lrcm]
+#【一】
+「ああいえ、元々うちの担当ですから……谷垣さん、次は神隠し担当になったわけですね」[lrcm]
+#【谷垣】
+「ええ……あれ以降、署の方でオカルト担当みたいにされて困りますっ」[lrcm]
+「私、ホラーとか幽霊とかすっごい苦手なんですけど……」[lrcm]
+
+#
+この刑事さんとは以前、森の中の捨てられた社で幽霊騒動が合った時に出会った。[lrcm]
+たしかその時は森の洋館で二、三人の人間が怪我をしたというよくある事件だったのだ。[lrcm]
+おそらく事件性はないものの、通報者があまりに恐怖していることから街で噂が立ち始め、[lrcm]
+その真偽を確かめるために再び肝試しに行くような機運が島全体に広まってしまった。[lrcm]
+重傷者を出した現場に人を入れてしまっても困るので、警察も対面上ひとまず動くということとなったらしい。[lrcm]
+そのときに抜擢されたのが、署に所属されたばかりの谷垣さんだったらしい。[lrcm]
+拒否したかった谷垣さんだったが新人故にそれも叶わず、呪われないように護衛してほしいと神社に泣きついて来たのである。[lrcm]
+そのとき一族の中で一番くっきりと幽霊が見える自分が同行。[lrcm]
+結局、幽霊はたしかに居たものの、墓が壊れてしまっていたので居場所がなくなってしまったとのことだった。[lrcm]
+その相談に乗り、こちらで墓石を修復し、幽霊たちは礼を言って消えていった。[lrcm]
+……なお、『すこし見える』側の谷垣さんは幽霊と話している間、その場で失神していた。[lrcm]
+その日以降、幽霊の話がピタリと止んだことから、ものすごい勢いで感謝されることとなった。[lrcm]
+そのおかげか親密になり、その後も何度かこの手の騒動の相談に来るようになったのだ。[lrcm]
+
+#【一】
+「それで……今回神隠しにあった戸伏くんについてちょっと聞きたいんだけど……だいじょうぶ？」[lrcm]
+
+#
+気遣いを見せつつ、控えめに聞いてくる谷垣さん。[lrcm]
+
+#【一】
+「……はい、大丈夫です。ちょっと整理がつかないだけで」[lrcm]
+#【谷垣】
+「ごめんね、こんな時に呼び出して……ひとまず、私達の調査結果を報告するね？」[lrcm]
+「昨日の一君からの通報で、『星降の館』に向かったという報告があったので、急いで向かったのですが……」[lrcm]
+「館の方はきちんと鍵が閉まっており、窓ガラスも割られていたりしなかったので、特に侵入した形跡はないようです」[lrcm]
+「おそらく、山の中で何者かに攫われたのかと……」[lrcm]
+#【一】
+「やっぱりそうなんですね……」[lrcm]
+#【谷垣】
+「それと……一君が見つけたっていう、書いてあったって言う『b,w』というメッセージについてですが……」[lrcm]
+「こちらはとくに進展はありません。付近に血の反応も見られなったようなので、あの場所に戸伏くんがいたかどうかも……」[lrcm]
+#【一】
+「そう……ですか……」[lrcm]
+#【谷垣】
+「……力になれずごめんなさい」[lrcm]
+「でも安心して、必ず私達が見つけ出してみせますから！」[lrcm]
+#【一】
+「ええ、ありがごうとざいます」[lrcm]
+
+#
+むんっ、と胸の前でガッツポーズを取る谷垣さん。[lrcm]
+その仕草はどこか子どもっぽいが、不思議と安心感が湧く。[lrcm]
+……だが、それもつかの間、谷垣さんは急に目を泳がせ、こちらをチラチラと見始めると。[lrcm]
+
+#【谷垣】
+「それで……その、この事件なんですが……『神隠し』とか言われてるけど……そのぉ……」[lrcm]
+「もしかして幽霊とか、妖怪とかそういうのが関わってる可能性が……あったり……する……？」[lrcm]
+#
+心底怖そうな声で、ビクビクとしながら聞いてくる。[lrcm]
+一瞬、神社に現れた獣について思い出す。[lrcm]
+……が、俺は無意識にそれを振り払ってしまった。[lrcm]
+
+#【一】
+「……ま、まだなんとも言えないです……」[lrcm]
+
+#【谷垣】
+「そ、そっかー。うん、そうだよねーきっとどっかから来た大量誘拐犯とかだよねぇうんうん」[lrcm]
+
+#
+幽霊は怖くてそっちは怖くないのだろうか。[lrcm]
+;場面転換的なやつ、移動みたいなmask？
+その後、幾つかの取り調べの後、谷垣さんは立ち上がる。[lrcm]
+
+#【谷垣】
+「了解しましたっ！　ご協力感謝いたします！　なにか分かりましたら、私の方に連絡お願いします！」[lrcm]
+「大丈夫、二人はきっと見つけてみますから！　幽霊以外だったらお任せください！」[lrcm]
+
+#
+ニッと笑い、谷垣さんが笑う。[lrcm]
+相手がオカルトじゃないことがさぞ嬉しかったのだろうか、さあ行くぞっ、と意気揚々と谷垣さんは去っていった。[lrcm]
 
 [mask effect="fadeIn"]
+[bg layer=base storage=校門夕方.jpg time="1"]
+[mask_off effect="fadeOut"]
+放課後。[lrcm]
+夕焼けもそろそろ海の中に消えていこうとする黄昏時。[lrcm]
+さっさと疲れた体を休ませようと、体はまっすぐに家に向かおうとしていた。[lrcm]
+だが校門の前で、自然と足がとまった。[lrcm]
+……昨日はここで、あの二人が待っていてくれたんだ。[lrcm]
+
+#【一】
+「……くそ」[lrcm]
+
+#
+別に、毎日一緒に帰っていたわけではないし、話が特段合うわけでもない。[lrcm]
+子供の頃よく遊んでいた。そして、それが昔からずっと今に続いているだけ。[lrcm]
+だが、クラスが別れても、なんとなく、一緒に帰っている。そんな仲。[lrcm]
+
+#【一】
+「……くそ……」[lrcm]
+
+#
+だがそれが、なくなってしまうこと。[lrcm]
+当然のようにあったそれが、もう、永遠に失われてしまうかもしれないという恐怖。[lrcm]
+ただそれだけが胸の中をざわつかせる。[lrcm]
+誘拐犯なら警察が、神隠しなら土地神本人が……それぞれに適した人間が、探し当てるに違いない。[lrcm]
+あるいは、自分が行ったことで余計な騒動を起こすかもしれない。[lrcm]
+きっと、自分が出たところで意味はないだろう。[lrcm]
+…………なら、俺はあの時なぜ、谷垣さんにあの神様のことを言わなかった？[lrcm]
+
+#【一】
+「……くそっ！」[lrcm]
+
+#
+冷静に考えれば関連性は薄い。たまたま、妖物の発生とつながっていた。[lrcm]
+妖物の現れたとしたらその場で人間を襲うはずである。[lrcm]
+だが……[lrcm]
+
+[bg layer=base storage=room.jpg time="1"]
+[chara_show name="yuragi" top="50" face="Sdef" time="0"]
+#【ユラギ】
+『最近この島の”歪み”がまたひどくなって来てさぁ……いやー、もうそろそろ私だけじゃ抑えられなくなってねー」[lrcm]
+「たぶん自称”神隠し”もそっから出て来た怪異的なやつかなぁーと』[lrcm]
+[chara_hide name="yuragi"]
+
+[bg layer=base storage=校門夕方.jpg time="1"]
+#
+そう言っていたあの神様の言葉が事実なら……この連続で続いている不可解な神隠し事件との関係性はあるはずだったのだ。[lrcm]
+
+#【一】
+「なんで……言わなかったんだよっ……」[lrcm]
+#
+無意識だった。[lrcm]
+まるでそれが当然のことかのように、無意識で言うのを拒んだ。[lrcm]
+
+;回想
+;黒い背景
+[bg layer=base storage=bg.jpg time="1"]
+#【???】
+『う”えええ””ん……！！　うえ”え”ん……」[lrcm]
+#【???】
+『──だから言っただろう、他の人に見えないものなんかに関わるんじゃない』[lrcm]
+『あれらと俺らは、文字通り、生きている世界が違うんだ』[lrcm]
+『──いいか、一。見えないはず、のものとは決して関わるな。例え、何があってもだ』[lrcm]
+
+[bg layer=base storage=校門夕方.jpg time="1"]
+#【一】
+「……は」[lrcm]
+
+#
+幼い頃、祖父に何度も言われた言葉。[lrcm]
+普通の日常を歩きたいなら、見えない”ハズ”のものとは関わるな。[lrcm]
+幽霊に〝あの世〟に連れて行かれそうになったあの日に、刻み込まれたその傷が音を立て軋みを上げる。[lrcm]
+そう──ただ、緩やかで穏やかな半透明のあれらは、生々しい”死”を迎えた者たちだったのだ。[lrcm]
+
+#【一】
+「……！　ッ」[lrcm]
+
+#
+今にも逃げ出したくなりそうな恐怖。[lrcm]
+そうだ……あの日、幽霊に殺されそうになったあの日からずっと、俺は……。[lrcm]
+
+;回想
+;白背景
+[bg layer=base storage="whit.jpg" time="1"]
+#【正行】
+『……すま……ねえ……』[lrcm]
+
+[bg layer=base storage=校門夕方.jpg time="1"]
+#
+戸伏の最後の電話が頭をよぎる。[lrcm]
+聞いたこともない声、あいつが人をほんとうの意味で助けを乞う声なんて、初めて聞いた。[lrcm]
+そして、最後の最後、きっとあいつが助けを求めたのはきっと、谷垣さんや他の人ではなく……。[lrcm]
+
+#【一】
+「…………ッ！」[lrcm]
+
+#
+足をのスネを思い切り叩きつける。[lrcm]
+じんわりと伝わる痛み。それは紛れもない、生の証。[lrcm]
+これから行うのは、呪いのようにまとわりついた恐怖との戦い。
+何度も何度も言い聞かせられ、植え付けられた恐怖が、毒のように体を蝕んでいく。[lrcm]
+
+#【一】
+「だけど……それが……どうしたっていうんだ』[lrcm]
+
+#
+震える足を、震えたまで立ち上げて、山を睨む。[lrcm]
+もう、二度と会えないかもしれないなんて……そんなのは嫌だ。[lrcm]
+正行がまたおかしな事を言い出したばかりなんだ。[lrcm]
+だから……[lrcm]
+
+#【一】
+「……まってろ、椿、正行！」[lrcm]
+
+#
+学校へと踵を返し、『彼女』の元へと向かった。[lrcm]
+
+;神隠し
+;回想
+[mask effect="fadeIn"]
+[bg layer=base storage=廊下夕方.png time="1"]
 [mask_off effect="fadeOut"]
 
-人が、彼女に辿り着くの妨げるように配置されている。[lrcm]
-何度もぶつかったが、速度を緩めることはしなかった。[lrcm]
+#【一】
+「はぁっ……はあぁ…見つけ……え……？」[lrcm]
 
-十字路を右へ曲がると、の方で路地裏に入り込んでいく彼女が見えた。[lrcm]
 
-[set_default_message_window]
-#【要】
-「くそっ……！」[lrcm]
+[chara_show name="yuragi" top="50" face="Sdef" time="0"]
 #
-急いで後を追い、薄汚い路地裏の入り口に立ったが、そこには彼女の姿はなかった。[lrcm]
-きっと彼女はこの奥にいる。[lrcm]
+口内を駆け回ること数十分、ようやく見つけたその小さな体は、顔にほのかに赤らめ、口にアイスの棒を加えながら浮いていた。[lrcm]
+[fadeinbgm storage="ユラギ_1_dova.ogg" time="1000" loop="true"]
+[chara_mod name="yuragi" face="Ssekimen" time="0"]
+#【ユラギ】
+「ほ……ほぉほー、おおー最近の子は。発達が良いなぁ……ってか[chara_mod name="yuragi" face="Sodoroki" time="0"]えっ、そんな過激な下着つけてるのっかっ……？」[lrcm]
+[chara_mod name="yuragi" face="Ssekimen" time="0"]
+「こ、この部活で汗かいてヘトヘトの後に、更にもう一戦お楽しみなのか……！？」[lrcm]
 
-おれは再び走り出した。[lrcm]
-
-室外機、大型のごみ箱、フェンス、ネズミ、錆びついたドア。[lrcm]
-気がつくと、路地裏のなかの十字路に差し掛かっていた。[lrcm]
-
-[set_default_message_window]
-#【要】
-「ハァ、ハァ、ハァ」[lrcm]
 #
-どちらだ、どの道を辿れば彼女がいる？[lrcm]
-おれは立ち止まってしまった。[lrcm]
+フヨフヨ浮遊して女子更衣室の天窓を覗き込んでる土地神がいた。[lrcm]
 
-彼女は、昨日と同様におれの前から姿を消した。[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+#【ユラギ】
+「おお……？　おーハジメじゃないかぁ。こんばんわー！」[lrcm]
+#
+ユラギが元気にこちらに話しかけてくる。[lrcm]
 
-気づくのが遅かったか。[lrcm]
-もっと早くに彼女の姿を発見していれば、追いついていたかもしれないのに。[lrcm]
+#【一】
+「こんばん……っでおま……！」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「ん……？」[lrcm]
 
-[set_center_message_window]
-#【中上】
-「おいおい、どういうつもりよ要くぅん？」[lrcm]
+#
+昨日見たときよりも着崩している制服のシャツ。[lrcm]
+その表面は何やら青色の液体に濡れており、ピッタリと肌に密着していた。[lrcm]
+そこから発生するのは肌色の空間と胸元近くにこぼれた液体。[lrcm]
 
-[set_default_message_window]
-後ろから声をかけてきたのは中上だった。[lrcm]
-少し息が上がっている。[lrcm]
-走って追ってきたのだろう。[lrcm]
-
-もしあそこで中上に呼び止められていなかったなら、彼女に追いついていたのではないか。[lrcm]
-こいつが、余計なことをしなければ。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「ええ？　何だよ、その目は、何か言いたげじゃん。文句でもあるってのかなぁ？」[lrcm]
-
-[set_default_message_window]
-#【要】
+[chara_mod name="yuragi" face="Sodoroki" time="0"]
+#【ユラギ】
+「うおぁー。アイス食べてるの忘れてた。やっぱ受肉してるとベトベトになるなぁー」[lrcm]
+#【一】
 「……」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「おりょ……？」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+ユラギがこちらの視線にきがつきニヤリと笑う。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「何とか言えよオイ……！」[lrcm]
+#【ユラギ】
+「おやぁー？　おやぁーふふーなるほど、なるハジメ。お前は同年代の汗の染み付いた勝負下着を誰が着ているのだろう、」[lrcm]
+「という妄想よりも、目の前の幼女の肉体を持った人外に発情を知てしまうのだなぁー？」[lrcm]
+#【一】
+「い、いやちがう！　違うぞ！」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+#【ユラギ】
+「わかってる。わっかてるぞー神だし」[lrcm]
+「身長が低く、なだらかなカーブを描いてる系女子じゃないと愛せない、悲しき業を背負った男なんだな……」[lrcm]
+#【一】
+「違うから、俺をロリコンみたいにいうのはやめてもらおうか……！」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+#【ユラギ】
+「みなまで言うな……流石、降山の一族だな！！」[lrcm]
+#【一】
+「なにそれ先祖の話してます！？」[lrcm]
 
-[set_default_message_window]
-中上は剣幕でおれに詰め寄り、そのまま両手で胸ぐらを掴み、近くの壁に押し付けた。[lrcm]
+#
+え、つまり……先祖も……え？[lrcm]
+ユラギはフヨフヨと近づいてきて露骨にアイスを胸元に垂らしてきた。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「ねえ、どうしたのかなぁ？　急に走り出したりしてさぁ。俺ちょっとびっくりしちゃったよ」[lrcm]
+[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+#【ユラギ】
+「ふははは、ほれぇー。うんうん。人柱になれば、幼女の体を合法的に味わい放題だぞ～さぁさぁ、れっつ人柱どうよ〜？」[lrcm]
+#【一】
+「ど、どうよじゃねえっ！　もっと自分を大事にしろっ！」[lrcm]
+[chara_mod name="yuragi" face="Se" time="0"]
+#【ユラギ】
+「え……?」[lrcm]
 
-[set_default_message_window]
-#【要】
-「……」[lrcm]
+#
+何やら面食らった表情になるユラギ。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「俺、要くんに頼み事してる最中だったよねぇ。非道いなぁ、一言くらい、何か言ってくれてもよかったんじゃねえのかなぁ」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「……なるほど、その発想はなかったな」[lrcm]
 
-[set_default_message_window]
-#【要】
-「……」[lrcm]
+#
+何やら思案顔で考え込んでしまうユラギ。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「痛かったなぁ、肩はずれるかと思ったよ。俺が怪我してたらどうするつもりだったんだぁ……？」[lrcm]
+#【一】
+「あーもうっ、そうじゃなくてだな！　お願いがあってきたんだって！」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「お願い……？　[chara_mod name="yuragi" face="Sodoroki" time="0"]お、おおー！?　つまり、あの、お願いか！？　人が神様にやるという！？」[lrcm]
+#【一】
+「え、あ、うん……そうだけど？」[lrcm]
 
-[set_default_message_window]
-#【要】
-「……」[lrcm]
+#
+まるで初めて願いを聞くような口ぶりだが……家ではちゃんと祀っている神様だったはずだ。確か。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「だから何とか言えつってんだろうがッ！」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+#【ユラギ】
+「うんうん、任せてくれ！　なんでも言ってくれ！　聞いてやろぅ！」[lrcm]
 
-[set_default_message_window]
-中上はおれの右頬を殴った。[lrcm]
-口の中から鉄の味がした。[lrcm]
+#
+ユラギは上機嫌にこちらにすり寄ってくる。[lrcm]
+いかにもワクワクといった擬音が似合う、という瞳をこちらに向けてくる。[lrcm]
+……前のめりになってペトリと外れたシャツの隙間が、扇状的だったのを必死に顔に出さないようにした。[lrcm]
 
-[set_default_message_window]
-#【要】
-「……」[lrcm]
+#【一】
+「んん”っとな……腐れ縁の友達が、神隠しにあった」[lrcm]
+[chara_mod name="yuragi" face="Sfukigen" time="0"]
+#【ユラギ】
+「……何？　そうか、昨日からこの学校で行方不明になった学生というのは……」[lrcm]
 
-[set_center_message_window]
-#【中上】
-「……ああ？　何だぁ、文句あんなら抵抗してみたらどうなんだ」[lrcm]
 
-[set_default_message_window]
-#【要】
-「……」[lrcm]
+#
+しゅん、と眉を下げるユラギ。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「くそが！！」[lrcm]
+#【一】
+「ああ……だから……その、勝手なお願いとはわかってるが、俺にも、調査を手伝わせてほしいんだ」[lrcm]
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【ユラギ】
+「……ほ？」[lrcm]
+#【一】
+「足手まといだというのは分かっているさ」[lrcm]
+「森を依り代にしているあなたが探して見つからないんだ……俺が行ったところで、大した差はだろうが……」[lrcm]
 
-[set_default_message_window]
-もう一度、おれの右頬を殴った。[lrcm]
+#
+たとえ少し幽霊が見えたところでただの人。[lrcm]
+神様というものの実在が証明された時点で、その存在が人間以上の絶対的なものであると言うことは間違いない。[lrcm]
+ならばせめて、この意思伝達ができる神様の手助けをすることで少しでも正行達の手がかりをつかもうと思っただのだ。[lrcm]
 
-[set_center_message_window]
-#【中上】
-「お前ウゼェわ。決めた、まじぶっ殺す」[lrcm]
+#【一】
+「ただ……」[lrcm]
 
-[set_default_message_window]
-中上は襟元を強引に引っ張り、おれの鳩尾を足裏で押し込むように蹴った。[lrcm]
-バランスを崩されたおれは地面に倒れる。[lrcm]
+#
+だが、それでも。[lrcm]
 
-中上はそのまま倒れたおれの上にのしかかり、再び襟元を掴み上げた。[lrcm]
+#【一】
+「黙って誰かに任せていられるほど……我慢強くないんだ」[lrcm]
+「だから、足手まといになるっていうのはわかってる……」[lrcm]
+「でも、本当に怪異が事件の真相なら、聞き込みをするぐらいの役に立てるかもしれない」[lrcm]
 
-[set_center_message_window]
-#【中上】
-「ムカつくなぁ、ど畜生が。こちとら鬱憤が溜まってんだよ、お前には今日一日サンドバックになってもらうから」[lrcm]
-[set_default_message_window]
-中上は拳を振り上げた。[lrcm]
+#
+ユラギに向かって頭を深々と下げる。[lrcm]
 
-[set_center_message_window]
-#【???】
-「サンドバックはいいんだけどよ、兄ちゃん、場所は選んだ方がいいんじゃねえかな」[lrcm]
-[set_default_message_window]
-それと同時に、背後から強面のスキンヘッドが中上の肩に手をおいた。[lrcm]
+#【一】
+「頼む……！ もし駄目なら……俺がひとばし……」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+#【ユラギ】
+「いいよっ！」[lrcm]
 
-[set_center_message_window]
-#【中上】
-「あ゛あ゛！？」[lrcm]
-[set_default_message_window]
-中上が遅れて振り返る。[lrcm]
+#
+ガバっと手を両手で掴まれ、頭を上げさせられる。[lrcm]
+見上げたその先には、ぱぁあああっと、キラキラと人を浮かべたユラギがいた。[lrcm]
 
-[set_center_message_window]
-#【???】
-「ちょっとおイタが過ぎるんじゃあねえか」[lrcm]
+[chara_mod name="yuragi" face="Semi" time="0"]
+#【ユラギ】
+「わーっ、うれしいなっ！　人間と一緒に犯人探しかぁ！　うん……んふふー、あいつらみたいだなぁ！」[lrcm]
+#【一】
+「……えっ」[lrcm]
 
-[set_center_message_window]
-#【中上】
-「……っ！？」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+#
+ガシッと、小さな手のひらが、こちらの右手をつかんだ。[lrcm]
 
-[set_center_message_window]
-#【???】
-「あれ、兄ちゃん、最近会ったばっかじゃねえかな」[lrcm]
+#【ユラギ】
+「そうと決まれば作戦会議だー！　いくぞぉ、ハジメ！」[lrcm]
+#【一】
+「ちょっ、い、行くってどこへ！？」[lrcm]
+#【ユラギ】
+「そりゃもちろん……」[lrcm]
 
-[set_center_message_window]
-#【中上】
-「……」[lrcm]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+#
+ユラギはこちらを振り返って、ひまわりのような笑みを浮かべ。[lrcm]
 
-[set_center_message_window]
-#【???】
-「兄ちゃんよお、前も教えてやったよな？　遊ぶ場所は考えな、って」[lrcm]
+#【ユラギ】
+「私の家だ！！」
 
-[set_center_message_window]
-#【中上】
-「……」[lrcm]
-
-[set_default_message_window]
-中上の顔色が悪くなっていく。[lrcm]
-
-[set_center_message_window]
-#【???】
-「言って聞かねえから体に直接教え込んでやったんだが、もう忘れちまったのかぁ」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「……」[lrcm]
-
-[set_default_message_window]
-中上は、下からスキンヘッドを睨んでいる。[lrcm]
-が、その視線はおれに向けていたものとは質が違った。[lrcm]
-
-[set_center_message_window]
-#【???】
-「てめえみてぇな子犬がうるせえと、あの人の機嫌を損ねちまうんだ。どんくらい教えてやりゃあ分かってくれるんだぁ、おい」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「うるせぇ！！」[lrcm]
-
-[set_default_message_window]
-中上は不意をついて殴りかかった。[lrcm]
-しかし、その拳はスキンヘッドの手のひらにすっぽり収まった。[lrcm]
-
-[set_center_message_window]
-#【???】
-「バレバレなんだよ。不意をつくならもうちょいうまくやれってんだ」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「くそ、離しやがれ」[lrcm]
-[set_default_message_window]
-中上がいくら拳を引こうとしても、スキンヘッドは微動だにしない。[lrcm]
-中上はおれにまたがった状態だが、それに対しスキンヘッドは立っている。[lrcm]
-体勢的に中上の方が不利だった。[lrcm]
-
-[set_center_message_window]
-#【???】
-「タイマンなら勝てるとでも思ったのか。馬鹿が」[lrcm]
-[set_default_message_window]
-スキンヘッドがそう言うと、後ろから大量の男どもがわらわら現れた。[lrcm]
-姿格好はバラバラだが、全員が気質ではないオーラを纏っている。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「え……」[lrcm]
-[set_default_message_window]
-スキンヘッドが唖然とする中上の鳩尾に一発いれた。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「ぐえっ…………」[lrcm]
-
-[set_center_message_window]
-#【???】
-「お前は三つ勘違いしてんだよ。一つに、ここにいるのは俺だけじゃない。二つに、お前はタイマンだろうと不意打ちだろうと俺には勝てない。最後に、お前は人を殴ってい良い器じゃない。半端な覚悟でイキってんじゃねえぞ」[lrcm]
-[set_default_message_window]
-中上は何も言い返せない。[lrcm]
-息苦しそうに肩を震わせている。[lrcm]
-
-[set_center_message_window]
-#【???】
-「おいお前ら！　連れてけ、こいつは筋金入りの馬鹿だ。分かるまで帰すんじゃねえぞ、みっちり教育してやれ」[lrcm]
-[set_default_message_window]
-ウス、と声を揃えて男どもはゾロゾロ退散した。[lrcm]
-中上は最後尾で引きづられていた。[lrcm]
-
-[set_center_message_window]
-#【???】
-「兄ちゃん、立てるだろ？　早く立ち去んな。そんでもって、もうここらへんには近づかないこったな」[lrcm]
-
-[set_default_message_window]
-#【要】
-「……」[lrcm]
-
-[set_center_message_window]
-#【???】
-「兄ちゃんはあのバカとは違う。目を見りゃ分かるからな。でもよ、ここは兄ちゃんみたいな奴が立ち寄っていい場所じゃねえんだ。大人しく帰んな」[lrcm]
-
-[set_default_message_window]
-#【要】
-「あ、あの……」[lrcm]
-
-[set_center_message_window]
-#【???】
-「あ゛あん？」[lrcm]
-[set_default_message_window]
-スキンヘッドは鋭い目つきでおれを睨んだ。[lrcm]
-
-[set_default_message_window]
-#【要】
-「…………ここらへんに、女の子が来ませんでしたか」[lrcm]
-
-[set_center_message_window]
-#【???】
-「……知らねえな」[lrcm]
-
-[set_default_message_window]
-#【要】
-「……そうですか。ありがとうございます」[lrcm]
-
-[set_center_message_window]
-#【???】
-「女の子、なんてのがホイホイ来るようなところじゃねよ、見りゃ分かんだろ」[lrcm]
-
-[set_default_message_window]
-そう言ってスキンヘッドは立ち去った。[lrcm]
-
-おれは、彼の言動に不信感を覚えた。[lrcm]
-
-何かを隠されているような、そんな感覚だ。[lrcm]
-
-しかし、今は彼を追うべきではない。[lrcm]
-
-[mask effect="fadeIn"]
-[mask_off effect="fadeOut"]
-
-おれは来た道を引き返して、繁華街の大通りに戻った。[lrcm]
-俺のカバンは中身がぶちまけられたまま放置されていた。[lrcm]
-財布とプリントと教科書と……どうやら何も紛失してはいないようだ。[lrcm]
-
-坂口の家に行こう。[lrcm]
-それが本来の目的だったはずだ。[lrcm]
-そう言い聞かせて、おれは地図アプリを再び起動し、坂口の家を目指した。[lrcm]
-
-;（暗転、夕暮れ背景）
-[mask effect="fadeIn"]
-[mask_off effect="fadeOut"]
-
-坂口の家に行ったところ、玄関で坂口の母親に出迎えられた。[lrcm]
-結構な高熱らしく、風邪をうつしてはいけないからと坂口の母親に諭され、おれは玄関口でプリントを手渡して帰宅した。[lrcm]
-
-あれからずっと上の空で、坂口の母との会話、坂口宅周辺の町並み、帰宅した時間、その他諸々のことは碌に覚えていない。[lrcm]
-おれの意識はずっと彼女と、彼女と会うための方法に向けられていた。[lrcm]
-
-明日、もう一度あの路地裏へ行ってみようか。[lrcm]
-あのスキンヘッドからは止められているが、むしろ彼にこそ彼女への道筋の手がかりがあるのではないだろうか。[lrcm]
-おれは彼女の名前すら知らない。[lrcm]
-早く知らなければならないと思う。[lrcm]
-
-;（ここ託司）
-なぜ彼女なのか、これが問われることはなかった。[lrcm]
-そう、常に既に書き込まれているのだ。[lrcm]
-根拠を問うなかれ。[lrcm]
-残されているのは二又に分かたれた枝のみである。[lrcm]
-
-[mask effect="fadeIn"]
-@jump storage=2-1.ks target=*2-1
+@jump storage=1-6.ks target=*1-6

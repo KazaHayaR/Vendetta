@@ -1,359 +1,506 @@
-*1_4
+*1-4
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="500"]
+[chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
+[chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
+[chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
+[chara_face name="yuragi" face="Smu" storage="/chara/yuragi/C2-4.png"]
+[chara_face name="yuragi" face="Se" storage="/chara/yuragi/C2-5.png"]
+[chara_face name="yuragi" face="Ssekimen" storage="/chara/yuragi/C2-6.png"]
+[chara_face name="yuragi" face="Sodoroki" storage="/chara/yuragi/C2-7.png"]
+[chara_face name="yuragi" face="Semi" storage="/chara/yuragi/C2-8.png"]
+[chara_face name="yuragi" face="def" storage="/chara/yuragi/C1-1.png"]
+[chara_face name="yuragi" face="emi_m" storage="/chara/yuragi/C1-2.png"]
+[chara_face name="yuragi" face="fukigen" storage="/chara/yuragi/C1-3.png"]
+[chara_face name="yuragi" face="mu" storage="/chara/yuragi/C1-4.png"]
+[chara_face name="yuragi" face="e" storage="/chara/yuragi/C1-5.png"]
+[chara_face name="yuragi" face="sekimen" storage="/chara/yuragi/C1-6.png"]
+[chara_face name="yuragi" face="odoroki" storage="/chara/yuragi/C1-7.png"]
+[chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
+[bg layer=base storage=skche神社.jpg time="1"]
 [mask_off effect="fadeOut"]
-[call storage="macro.ks"]
-
-;キャラセットアップ
-;#【切慧】
-[chara_new name="Kirue" storage="./chara/Kirue/D2-8.png" jname="きるえ" width="500"]
-[chara_face name="Kirue" face="embarrass" storage="./chara/Kirue/D2-1.png"]
-[chara_face name="Kirue" face="zitome" storage="./chara/Kirue/D2-8.png"]
-[chara_face name="Kirue" face="fuan" storage="./chara/Kirue/D2-2.png"]
-[chara_face name="Kirue" face="ikari" storage="./chara/Kirue/D2-7.png"]
-[chara_face name="Kirue" face="ikari_min" storage="./chara/Kirue/D2-3.png"]
-
-;暗転解除
-[current layer="message0"]
-[bg layer=base storage=defimage.jpg time="1"]
-[set_default_message_window]
-[mask_off effect="fadeOut" time="3000"]
+[fadeinbgm storage="いつもの日常-dova.ogg" time="1000" loop="true"]
 
 
-;[set_default_message_window]
-;[set_center_message_window]
-;[set_left_message_window]
-;[set_right_message_window]
-
-[set_default_message_window]
-
-時間ギリギリに教室に行った。[lrcm]
-できるだけ人、特に剣道部の連中と鉢合わせないよう慎重に、かつ迅速に移動した。[lrcm]
-
-ちょうどチャイムが鳴るのと同じタイミングで教室のドアを開け、着席する。[lrcm]
-担任が来るのはチャイムが鳴ってから1、2分経ったころだ。[lrcm]
-そこまで計算に入れて、最も目立たないように振る舞うための最適解を導き出す。[lrcm]
-おれが数年の学校生活で培った技術だ。[lrcm]
-ここ以外では役にたちそうもない。[lrcm]
-
-少し待つと、担任がやって来た。[lrcm]
-
-[set_center_message_window]
-#【担任】
-「おはようございます」[lrcm]
-[set_default_message_window]
-まばらな返事。[lrcm]
-[set_center_message_window]
-#【担任】
-「特別な連絡事項は特にありません。もうすぐ夏休みですけど、最後まで気を抜かずに学業に励むように。いない人はいますか？」[lrcm]
-[set_default_message_window]
-もう担任も慣れたもので、一人ひとり名前を呼んで出欠を取るなんてことはしない。[lrcm]
-空いている机が誰のものか確認するだけだ。[lrcm]
-[set_right_message_window]
-#【高橋】
-「坂口がいませーん」[lrcm]
-[set_default_message_window]
-高橋が、気の抜ける声で先生に報告した。[lrcm]
-[set_center_message_window]
-#【担任】
-「え、ええ……坂口くんは風邪で欠席だそうです。他にはいますか？　いないならホームルームは終わりです。各自一限目の準備をしてください」[lrcm]
-[set_default_message_window]
-担任はそそくさと教室を出ていった。[lrcm]
-俄に、クラスに活気が戻る。[lrcm]
-おれは高橋の方に寄っていった。[lrcm]
-[set_default_message_window]
-#【要】
-「なあ、坂口は？　休みなのか？」[lrcm]
-[set_right_message_window]
-#【高橋】
-「ああ、さっきリーンしたけど風邪だってさ。すぐ既読ついたよ」[lrcm]
-[set_default_message_window]
-そう言って高橋はおれにスマホの画面を見せてきた。[lrcm]
-アニメキャラの、両手をあわせて謝罪するスタンプが坂口から送られていた。[lrcm]
-
-#【要】
-「ああ、ほんとに風邪なのね」[lrcm]
-[set_right_message_window]
-#【高橋】
-「昨日の今日じゃ流石にちょっと焦るよな」[lrcm]
-[set_default_message_window]
-#【要】
-「家にいるならまあいいさ」[lrcm]
-[set_right_message_window]
-#【高橋】
-「てか、お前なんか髪の毛テカってるよ？　一部だけ、左の方」[lrcm]
-[set_default_message_window]
-半笑いで高橋はそう指摘した。[lrcm]
-#【要】
-「げっ、嘘」[lrcm]
+#【朝八】
+「おう、ハジメ！　待ってたぞ」[lrcm]
+#【一】
+「どうしたんだよ、兄貴」[lrcm]
 #
-さっきの剣道場の、カップ麺のスープだろうか。[lrcm]
-[set_right_message_window]
-#【高橋】
-「何？　ちょっとだけジェルつけてみました、的な？」[lrcm]
-[set_default_message_window]
-#【要】
-「ちげーよ。ちょっと洗ってくるわ」[lrcm]
-[set_right_message_window]
-#【高橋】
-「はいよ」[lrcm]
-[set_default_message_window]
-おれはトイレに駆け込んだ。[lrcm]
-水で濡らせば落ちるのだろうか。[lrcm]
-剣道場の一件は、他人には知られたくない。[lrcm]
-おれが中上と接点があることは、できる限り隠していたいのだ。[lrcm]
+眼の前でのんきな声を出すのは降山浅八。[lrcm]
+少し年上の兄であり、なぜか頻繁に旅行を繰り返すしている両親の代わり、神社の神主代理を努めている。[lrcm]
+#【朝八】
+「んーいや……大事ことかもしれないし、大したことがないことかもしれん」[lrcm]
+#【一】
+「どっちだ……」[lrcm]
+#【朝八】
+「いやー、あれだよあれ」[lrcm]
 
-鏡を見ながらスープがかかった部分を濡らした。[lrcm]
-自分ではよく分からないが、人に気づかれない程度になればよい。[lrcm]
-ただ、匂いが心配だった。[lrcm]
-カップ麺の油の香り、それも長時間放置されていたものとなると、相応の悪臭を放つはずだ。[lrcm]
-
-#【要】
-「帽子とか、もってくればよかったかな」[lrcm]
 #
-しかし、教室ないで帽子をかぶっているのもそれはそれで目立つだろう。[lrcm]
-仕方ない、できる限りの対処はしたから、あとは気にしないようにしよう。[lrcm]
-気にしていたら逆に気づかれやすくなるだけだ。[lrcm]
-[set_center_message_window]
-[chara_show name="Kirue" top="50"]
-#【切慧】
-「来栖くん」[lrcm]
-[set_default_message_window]
-#【要】
-「おお、びっくりした」[lrcm]
+兄貴ののんびりとした口調で社の上を指差す。[lrcm]
+
+#【一】
+「……何だあれ」[lrcm]
+
 #
-男子トイレの出口で、辻さんが待ち構えていた。[lrcm]
-[set_center_message_window]
-#【切慧】
-「頭濡れてるけど、ハンカチ、いる？」[lrcm]
-[set_default_message_window]
-#【要】
-「え、いいの」[lrcm]
-[set_center_message_window]
-#【切慧】
-「ええ、どうぞ」[lrcm]
-[set_default_message_window]
-そういって辻さんは押し付けるように、可愛らしい水色のハンカチを渡してくれた。[lrcm]
-男の頭の水を吹くのに使用されるのに、嫌悪感はないのだろうか。[lrcm]
-まあ、貸してくれると本人が言うのだから、お言葉に甘えるが。[lrcm]
-[set_center_message_window]
-#【切慧】
-「あのあと、随分長く剣道場にいたんですね」[lrcm]
-[set_default_message_window]
-おれは返答につまった。[lrcm]
-中上のことは言いたくない。[lrcm]
-辻さんは中上に目撃されているのだ。[lrcm]
-変に話して悪影響を及ぼすことは避けたい。[lrcm]
-[set_default_message_window]
-#【要】
-「掃除が結構大変でさ」[lrcm]
-[set_center_message_window]
-#【切慧】
-「そうですか」[lrcm]
-[set_default_message_window]
-意外とあっさり引き下がった。[lrcm]
-トイレの前で待ち伏せするのに、剣道場のことを深く尋ねようとはしない。[lrcm]
-彼女は何がしたいのだろうか。[lrcm]
-意図が不明であった。[lrcm]
-[set_center_message_window]
-#【切慧】
-「坂口くん、休みらしいですね」[lrcm]
-[set_default_message_window]
-#【要】
-「うん、風邪だってさ」[lrcm]
-[chara_mod name="Kirue" face="ikari_min" time="0"]
-[set_center_message_window]
-#【切慧】
-「先生はそう言ってましたが、本当に風邪だけでしょうか？　ほら、最近失踪がどうのって……」[lrcm]
-[set_default_message_window]
-#【要】
-「ああ、それなら平気だよ。リーンしたらすぐに返事が来たらしいし」[lrcm]
-[set_center_message_window]
-[chara_mod name="Kirue" face="zitome" time="0"]
-#【切慧】
-「そうですか。ならよかったです」[lrcm]
-[set_default_message_window]
+それは、神社の社の上に経つ、小さな狼のような外見をしたなにか。[lrcm]
+だがそれは、ふつうの生き物とは異なり薄っすらと透けている。[lrcm]
+……幽体、いわゆる、幽霊と呼ばれるものの類だ。[lrcm]
+
+#【一】
+「兄貴にも見えるのか？」[lrcm]
+#【朝八】
+「あー薄っすらとだけどな。でも……うーん、上手く言えないんだが、少し、敵意みたいなものを感じてなぁ」[lrcm]
+「露骨にこちらを睨んでくるし、緊張感みたいなのがあたりにうっすら広がってる」[lrcm]
+「まーだから、ひとまずハジメに確認しとこうかと思って」[lrcm]
+
 #
-じゃあ、といって彼女は先に教室に戻った。[lrcm]
-[chara_hide name="Kirue"]
-結局辻さんは坂口のことが気になっていただけなのか。[lrcm]
-しかし、辻さんと坂口の接点が思いつかない。[lrcm]
+兄貴は自分より幽体を見る能力……有り体に言うと霊感が若干薄い。[lrcm]
+だがそれでも、ふつうの人間に比べたら見える方で、ある程度の意思疎通も可能である。[lrcm]
 
-もしかして、好き、とかそういうやつだろうか。[lrcm]
-剣道場で何をしているのか尋ねたのも、もしかしたらおれが坂口と落ち合うのではないかとふんでのことだったのだろうか。[lrcm]
-いや、考え過ぎだろう。[lrcm]
-だとしたら、彼女は何がしたいのか。[lrcm]
-ただクラスメイトの心配をする、危篤なクラス委員みたな振る舞いだった。[lrcm]
-クラス委員なら別にちゃんといる。[lrcm]
+#【朝八】
+「まあ、参拝客は来ないと思うから、そんなに問題はないけどな！　あっはっは！」[lrcm]
+#【一】
+「それは神社としてどうなんだ神主殿……」[lrcm]
 
-中上は辻さんのことをおれの彼女だと思っていた。[lrcm]
-しかし、おれは図書委員が一緒というだけで、事務連絡以外で碌に話したことはない。[lrcm]
-むしろ、これほどまで話しかけられて困惑すらしている。[lrcm]
-どういう風の吹き回しだろうか。[lrcm]
+#
+ともあれ、社の上に居座る獣を改めて観察してみる。[lrcm]
 
-昨日から今日にかけて、気がかりなことがいっきに増えた。[lrcm]
-昨晩の彼女との遭遇を切っ掛けに。[lrcm]
+#【一】
+「うーん、しかしあんなの初めて見るな……」[lrcm]
 
-考えているだけでは始まらない。[lrcm]
-気がかりを解消するには行動しなければ。[lrcm]
-能動的に動くのは慣れてないが、気になるものは仕方ない。[lrcm]
+#
+痩せこけたドーブルマンのような体に、２つの尻尾。[lrcm]
+目に当たる部分はまるで歌舞伎の赤っ面のように鋭く伸び、瞳孔がなく、どこに焦点があっているのかわからない。[lrcm]
 
-とりあえず今は教室に戻り、一日の義務としての授業を消化してしまおう。[lrcm]
+#【獣】
+『……』[lrcm]
+#【一】
+「ん……？」[lrcm]
+
+#
+突如、その狼が、こちらを”見た”気がした。[lrcm]
+[fadeoutbgm]
+[playse storage="遠吠え.ogg" time="1000"]
+;画面振動
+#【獣】
+『──オオオオオォン！』[lrcm]
+[quake count=2 time=100]
+;岩エフェクト
+
+[fadeinbgm storage="The_End_of_Destruction_バトル1_dova.ogg" time="1000" loop="true"]
+#
+吠えたと同時、地面が盛り上がり、大地が盛り上がり始める。[lrcm]
+
+#【朝八】
+「な、なんだぁ！？」[lrcm]
+#【一】
+「これ、まさか……！」[lrcm]
+
+#
+盛り上がった大地から剥がれた参拝路の石畳が剥がれ、フヨフヨと浮遊を始める。[lrcm]
+
+#【一】
+「兄貴！　適当に物陰に隠れろ！」[lrcm]
+#【朝八】
+「はっ！？　って、うおおおっ！？」[lrcm]
+
+#
+その瞬間、剥がれた石畳がこちらに高速で発射された。[lrcm]
+;画面振動
+;動画でなんか岩が砕けるのとか在ると嬉しい
+;SEガガガッ
+[playse storage="劇的に殴る蹴るなどの_dova.ogg" time="1000"]
+[movie storage="attack.webm" skip=false]
+[quake count=2 time=100]
+とっさに隠れた木に、ガガガッ！と石礫が当たる音が聞こえてくる。[lrcm]
+──あれは、人間に害を成す、獣に近い形をした”怪異”。[lrcm]
+
+#【一】
+「兄貴！　裏の蔵から『祓』に使うものありったけ持ってきて……！　アレは『妖物』だ！」[lrcm]
+#【朝八】
+「……妖物！？　ご先祖が殲滅したんじゃないのか！？」[lrcm]
+#【一】
+「でも、現実にあんなことができるのは妖物ぐらいだ！　早く！」[lrcm]
+#【朝八】
+「わ、わかった！　了解っ！　まってろーーっ！」[lrcm]
+
+#
+兄貴が蔵に走っていくのを見送り、木陰から妖物を見る。[lrcm]
+
+#【一】
+「さて……」[lrcm]
+
+#
+いつも持ち歩いている腰掛けのポーチのなかにてをいれて中身を確認する。[lrcm]
+筒状の感覚が２つと、球体が一つ。[lrcm]
+それは、効くかどうかもわからない”祓具”。[lrcm]
+かつて降山家が行ったとされる妖物退治のときに使われたものを再現したものだ。[lrcm]
+……これは”見えてしまう”ことに対して起こる、何らかの対策として持ち歩いているものだったが……まさか本当に使うことになるとは。[lrcm]
+
+#【一】
+「……使ったことないけど。やるしかないか」[lrcm]
+
+#
+かつて何度も練習し、暗記した祓いの言葉を脳内で復習する。[lrcm]
+
+「さて……」[lrcm]
+
+#
+……足が少し震えているのがわかる。[lrcm]
+大丈夫……大丈夫だ。何度も練習し、手応えがあるとわかるまでやりこんだ。[lrcm]
+いま、この時戦わないで……いつ戦うんだ。[lrcm]
+
+#【一】
+「………っ」[lrcm]
+
+#
+木の影から相手の様子を覗く。[lrcm]
+先程浮き上がっていた石畳は地面に落ち、投擲を受けた小木がいくつか倒れている。[lrcm]
+が……。[lrcm]
+
+#【一】
+「……いない……？　いやっ……！」[lrcm]
+
+#
+一瞬感じた殺気のような感覚を元に、地面に転がる。[lrcm]
+;画面振動
+;斬撃の動画
+[movie storage="斬撃.webm" skip=false]
+[playse storage="crash-wood_GkuoMh4d_story.ogg"]
+
+──バキィ！！[lrcm]
+;気が倒れるようなSE
+[quake count=2 time=100]
+今まで隠れていた木が妖物によって切り裂かれた。[lrcm]
+
+#【一】
+「嘘だろ……ッ！！」[lrcm]
+
+#
+こちらの体をすっぽりと多い隠せるほどの大きな大木をたった一薙でへし折った。[lrcm]
+……あたっていたら間違いなく即死。[lrcm]
+
+#【獣】
+『──アオオオオッン！』[lrcm]
+
+#【一】
+「くそっ……！」[lrcm]
+
+#
+こちらを見つめ、更に威嚇のように吠えこちらに走り出す。[lrcm]
+ポーチから筒を一つ取り出し、それを持ったまま思いっきり柏手を打つ。[lrcm]
+
+#【一】
+「短禊(タンセツ)──〝水祓(みずばらえ)〟！」[lrcm]
+[playse storage="水祓_rev.ogg"]
+[movie storage="mizu.webm" skip=false]
+#
+手の中で筒が弾け、ツンくる酒の香りと、大量の水が手のスキマから吹き出す。[lrcm]
+吹き出した水は渦を巻き、金色の光を纏って獣に獣に襲いかかる。[lrcm]
+;水のエフェクト
+
+#【獣】
+『──キャウン！！』[lrcm]
+
+#
+獣に正面から降り注いだ水は、獣にまとわりつくように、獣は走っていた勢いを落として倒れた。[lrcm]
+
+#【一】
+「効いた……！？」[lrcm]
+
+#【獣】
+『オオオオ──』[lrcm]
+
+#
+しかし、獣はゆらゆらと立ち上がる。[lrcm]
+周囲の地面を盛り上がらせ、石畳をまた持ち上げはじめた。[lrcm]
+
+#【一】
+「くそっ……！」[lrcm]
+
+#
+周囲を見渡しても遮蔽物はなにもない。[lrcm]
+持ち上げられた石畳が一つでもこちらに降り注いだら……おそらく、死ぬ。[lrcm]
+……それがわかった途端、足が震え始める。[lrcm]
+
+#【獣】
+『オオオオ──！』[lrcm]
+
+;岩が飛ぶエフェクト
+[playse storage="劇的に殴る蹴るなどの_dova.ogg"]
+[quake count=2 time=100]
+#
+妖物の掛け声とともに、いくつもの岩が、こちらに降り注ぐ。[lrcm]
+地面に伏せればもう少しマシになるかもしれないのに……震えは全身を蝕むように伝い、動くことができない。[lrcm]
+……やっぱり……また、だめ、だったか。[lrcm]
+
+#【朝八】
+「はじめ一ッ！！　もってきた……おっと……う、うわわっ……！」[lrcm]
+
+;ガラガラのSE
+[playse storage="rocks-dropped-onto-metal_MyIGwsEO_何かを落とす_story.ogg"]
+#
+ズサーッ！　という音とともに視界に小さな筒やいろいろなものが降り注いでくる。[lrcm]
+
+#【一】
+「あ、兄貴……」[lrcm]
+
+#
+……この絶体絶命の状況でコケてぶちまけるか。[lrcm]
+この兄はいつもそうである。勘が鋭く、頭も回るのに、肝心なところで抜けている。[lrcm]
+だが……いつもどおりで安心した。[lrcm]
+震えが少しだけ、おさまった。[lrcm]
+目の前に落ちてきた、一つの刀と、大きな玉を手にとる。[lrcm]
+
+#【一】
+「兄貴、後ろに隠れてて……！」[lrcm]
+
+#
+大きな玉を目の前にかざし、ありったけの力を込めて握りつぶす。[lrcm]
+
+#【一】
+「開てくれよ……開陣『環幣』！」[lrcm]
+
+;ポンっと小気味よい音
+[playse storage="空気音_story.ogg"]
+[playse storage="環幣.ogg"]
+[movie storage="環幣.webm" skip=false]
+#
+ポンッ、という音とともに空中に幾つかの縄をつなぎ合わせて作られた円が開く。[lrcm]
+そのつなぎ目には幾つも光る紙垂がある。[lrcm]
+古書曰く、降山の戦闘祓でも最も防御に特化した祓『環幣』。[lrcm]
+疑似神域を作り出し、その領域に降れた幽界の術式を”存在しなかったことにできる”。[lrcm]
+;シールド演出
+開いた円の中に獣の放った石礫は領域に触れた途端勢いを落としその場に転がる。[lrcm]
+
+#【一】
+「──『小祓(こばらえ)』〝桃雲(とううん)〟……『柏手』！」[lrcm]
+
+;パンッっという柏手SE
+[playse storage="craphand.ogg" buf="1"]
+[playse storage="桃雲.ogg" buf="2"]
+[movie storage="桃雲.webm" skip=false]
+#
+念を込めながらもう一つの小筒を取り出し手のひらで潰す。[lrcm]
+柔らかな表面の感覚が、手の中で弾けた。[lrcm]
+パンッという音が響いた瞬間、手のひらから桃色の光が飛び出す。[lrcm]
+それは徐々に束になり、綿のような光となって獣に巻きついた。[lrcm]
+
+#【獣】
+『──オウンッ……！！』[lrcm]
+
+
+#【要】
+「ッ！」[lrcm]
+
+#
+両手で構えた刀を手に、獣の懐へ潜り混む。[lrcm]
+かつてこの島で多くの妖物を退けたという、妖刀『軛』。[lrcm]
+その力が本物であるということを祈り、その柄に手をかける。[lrcm]
+
+#【一】
+「はああああっ！！！」[lrcm]
+
+
+;斬撃エフェクト
+[movie storage="斬撃.webm" skip=false]
+[playse storage="sword.ogg"]
+
+#
+その刃を居合の要領で引き抜く。[lrcm]
+ザンッ……という金属がこすれるような音と共に刃は引き抜かれ、妖物を一閃する。[lrcm]
+それはまるで素振りをしたかのような空気を切った触覚だったが、だがこの手のひらには、確かに『斬った』という感覚があった。[lrcm]
+
+#【獣】
+『──オオオ■■■■！』[lrcm]
+
+#
+獣は断末魔におおよそ生き物の鳴き声とは思えない身の毛もよだつような方向を残し、光となって消えていった。[lrcm]
+[fadeoutbgm]
+[fadeinbgm storage="このままでは危ない.ogg" time="1000" loop="true"]
+#【一】
+「はぁ……はぁ……」[lrcm]
+
+#
+命の危機なんてそうそう起こるもんじゃない。[lrcm]
+その心労は想像を絶するものだった。[lrcm]
+
+#【朝八】
+「は、ハジメ！？　大丈夫か！？」[lrcm]
+#【一】
+「ああ……はは、おかげさまでね」[lrcm]
+#【朝八】
+「そうか……無事で良かった」[lrcm]
+#【一】
+「まあ、俺は無事だけど…………こりゃひどいね」[lrcm]
+
+#
+あたりを見渡せば破壊しつくされた石畳と、投擲された礫によって破壊された社だった。[lrcm]
+
+#【朝八】
+「はぁ、ここまで破壊しつくされるとはなぁ……修理が大変そうだーぁ。……どうした」[lrcm]
+
+#【一】
+「あの妖物の……なんかよくわからないけど……黒いうねうねしたモノが残ってる。少しずつ消えていってはいるみたいだけど……」[lrcm]
+
+#
+そのうねりは何かを訴えるように震え、暴れまわっている。[lrcm]
+まるで、こちらを見ているかのように。[lrcm]
+
+#【一】
+「……なんだか……嫌な予感がする……」[lrcm]
+#【一】
+「兄貴、この妖物、どこから来たかわかるか？」[lrcm]
+#【朝八】
+「うーん、朝来たときは確か裏の副殿のほうになんかピリピリした空気が合ったような」[lrcm]
+「その時は見えなかったけどな」[lrcm]
+#【一】
+「副殿……？」[lrcm]
+
+#
+妖物や幽霊は神格や死者などの近くに在るとその力が鮮明に見えるという性質を持つ。[lrcm]
+その力を無意識に吸収し、現実界での”存在”が一時的に濃くなるためだ。[lrcm]
+福殿の方に意識を向けると、そこには獣の残滓のようなものがうねっていた。
+そして、そのうねりはまっすぐにとある場所へと向かっていた。[lrcm]
+
+#【一】
+「山……？」[lrcm]
+
+#
+そこで、先日あった神様のことを思い出す。[lrcm]
+
+;回想っぽく
+[bg layer=base storage=room.jpg time="1000" cross="ture"]
+[chara_show name="yuragi" top="50" time="1" face="Semi"]
+#【ユラギ】
+『最近この島の”歪み”がまたひどくなって来てさぁ……いやー、もうそろそろ私だけじゃ抑えられなくなってねー」[lrcm]
+「たぶん自称”神隠し”もそっから出て来た怪異的なやつかなぁーと』[lrcm]
+[chara_hide name="yuragi" time="1" face="Semi"]
+[bg layer="base" storage="skche神社.jpg" time="1000" cross="ture"]
+
+#【一】
+「……嫌な予感だけであってくれよ」[lrcm]
+
+#
+急いで携帯を取り出し、正行の携帯に電話をかけてみる。[lrcm]
+;電話SE
+……が、出ない。同様に椿にもかけてみる……出ない。[lrcm]
+その二人が向かった山の面にはうっすらとだが電波が通っていたはず。[lrcm]
+そして正行はともかく、几帳面な椿が電話がなったにもかかわらず出ないというのは考えにくい。[lrcm]
+運が悪く、圏外の場所にいるのかもしれないが……。[lrcm]
+
+#【一】
+「兄貴、俺はとりあえず山に行く……もしもの時のために、親父達に連絡しておいてくれ」[lrcm]
+#【朝八】
+「お、おいハジメ？　一人で大丈夫なのか」[lrcm]
+#【一】
+「さっきのでとりあえずアレぐらいなら俺の覚えた術が効くってわかったから、多分、俺以外が行くより安全だと思う」[lrcm]
+「……いま山には……正行と椿がいるんだ」[lrcm]
+#【朝八】
+「……ッ……わかった！　だが、無茶はするなよハジメ！」[lrcm]
+#【一】
+「善処するよ、兄貴」[lrcm]
+
+#
+兄に別れを告げ、走り出す。[lrcm]
 [mask effect="fadeIn"]
+[bg layer=base storage=ストリート.jpg time="1"]
+
+
+;場面転換
 [mask_off effect="fadeOut"]
+[playse storage="走る.ogg"]
 
-;（暗転、チャイム、教室）
-
-ぼーっとしていたら一瞬で帰りのHRとなった。[lrcm]
-もちろん授業に身は入らず、昨晩のことと今朝のことを繰り返し考えつづけた。[lrcm]
-
-ただ、剣道場のごみ処理だけは、しっかり昼休みの間に済ませておいた。[lrcm]
-特に誰にも邪魔されず穏便に済ますことができたのは幸運だった。[lrcm]
-
-[set_center_message_window]
-#【担任】
-「えー、では帰る前に、誰か坂口くんにプリントを届けに行って欲しいのですが。高橋くん、どうですか？」[lrcm]
-[set_right_message_window]
-#【高橋】
-「僕は今日部活があるので、それが終わってからなら」[lrcm]
-[set_center_message_window]
-#【担任】
-「うーん、あまり遅くても迷惑ですし……。来栖くんはどうですか」[lrcm]
-[set_default_message_window]
-#【要】
-「え、まあ特に問題はないですけど……」[lrcm]
-[set_center_message_window]
-#【担任】
-「じゃあ、お願いしてもいいですか。夏休みに入る前に渡しておきたいプリントなので。住所は分かりますか？」[lrcm]
-[set_default_message_window]
-#【要】
-「いや、ちょっとわかんないです」[lrcm]
-[set_center_message_window]
-#【担任】
-「でしたら、HR終わったあと職員室に来てください。それでは、何かこの場で連絡事項のある人はいますか？」[lrcm]
-[set_default_message_window]
-無言の返答をうけ、日直が頃合いを見計らって号令をかけた。[lrcm]
-担任はそそくさと教室を出ていき、部活のある生徒は急いで各々の活動場所へ、そうでない生徒たちは教室内でめいめいに集まっていた。[lrcm]
-[set_right_message_window]
-#【高橋】
-「悪いな、部活抜けられなくてさ」[lrcm]
-[set_default_message_window]
-高橋もまた部活動へ向かう生徒の一人であったが、移動する前におれのところへやってきて一声かけた。[lrcm]
-#【要】
-「あ、いいよ。どうせ暇だし」[lrcm]
-[set_right_message_window]
-#【高橋】
-「そんじゃ、頼むわ」[lrcm]
-[set_default_message_window]
-じゃーなー、と重そうなラケットバックを背負って高橋は出ていった。[lrcm]
-テニス部だったかバドミントン部だったか、どちらか忘れたが、ラケットを使うスポーツに勤しんでいるのだ、高橋は。[lrcm]
-おれは部活をやる人間が何を考えて活動に励んでいるのかわからないが、かといって部活動廃しすべし、と主張するほどの過激派無所属系帰宅部でもない。[lrcm]
-[set_default_message_window]
-#【要】
-「さて、職員室だったな」[lrcm]
 #
-すかすかの軽い学生バックを背負って教室を後にした。[lrcm]
+走る。[lrcm]
+
+たとえ、この時、それを引き止めるものがいたとしてもその声は耳に届いていなかっただろう。[lrcm]
+先程から、嫌な予感は当たり始めている。[lrcm]
+神社から走って20分ほど。この間にも電話をずっとかけ続けているが、応答はない。[lrcm]
+;電話がなるSE
+[playse storage="cellphone.ogg"]
+ヴーーッ……[lrcm]
+突如、携帯に着信があった、その名前は『戸伏正行』[lrcm]
+
+#【一】
+「ッ！？　正行か！？」[lrcm]
+#【正行】
+「……はぁ……ああ……おれだ……ぜ……ハジメ」[lrcm]
+
+#
+電話越しに聞こえる正行の声は、いつものような覇気はなく、何やら憔悴している容易な声だ。[lrcm]
+
+#【一】
+「お、おい今どこにいるんだ！」[lrcm]
+#【正行】
+『すまねえなハジメ……ちょっと……うまく……聞き取れないんだ……。　！！くそっもう来やがった……！』[lrcm]
+#【一】
+「おい、正行！？　どうした！？」[lrcm]
+
+#
+正行のここまで慌てた声は初めて聞いた。[lrcm]
+電話越しでもわかる。正行は今、かなり切羽詰まった状況にいるのだと。[lrcm]
+
+#【正行】
+『はぁ……はぁ……あの……場所……で………』[lrcm]
+「……すま……ねえ……」[lrcm]
+
+;電話切れるSE
+#
+ガッ……ツーツーツー。[lrcm]
+
+#【一】
+「おい、正行？　正行！？」[lrcm]
+
+#
+今聞こえたのは何かが壊れたかのような音と同時、通話が切れる。[lrcm]
+何度かけ直しても、正行につながることはない。同様に椿もだ。[lrcm]
+
+#【一】
+「くそっ！　……あの場所って……」[lrcm]
+
+#
+思い当たるフシは一つ。[lrcm]
+あいつらと過ごした小学校時代、あの森を庭のように遊び回っていた頃。[lrcm]
+秘密基地といって囲んだ、何でもない木々が円状に広がる空間。[lrcm]
+少しだけ不思議だったという理由で秘密基地にしたあの場所。[lrcm]
+
+#【一】
+「……無事でいろよ、二人共……！」[lrcm]
+[mask time="1000"]
+
+;場面転換　木の背景
+[bg layer=base storage=morinaka.png time="1"]
+[mask_off effect="fadeOut" time="1000"]
+#
+数十分後、息も絶え絶えでその場所に到着した。[lrcm]
+
+#【一】
+「はぁ……はあ……何も……ない？」[lrcm]
+
+#
+だけど、この空間にどこか違和感がある。[lrcm]
+子供の頃に秘密基地にしていたこの場所だからこそわかる、本当に小さな違和感……[lrcm]
+なぜだかはわからないが、まるでこの場所が、『何事もなかったかのように整形された』用に感じた。[lrcm]
+
+思い立って正行がいつも陣取っていた大きな樹木の近くに近寄る。[lrcm]
+その下には幾つもの落ち葉が盛り上がっており、その盛り上がりをどけて地面を露出させる。[lrcm]
+そこには……木にたった今傷をつけたかのような少し緑がかかった真新しい傷跡。[lrcm]
+
+#【一】
+「『b  w』　……？　か？」[lrcm]
+
+#
+形はぐちゃぐちゃでよくわからない。[lrcm]
+Wにいたっては終点から不規則に点や線が書かれて入ることからも、この２つの文字だけではない可能性がある。[lrcm]
+だが……おそらく、正行が残した何らかということはわかった。[lrcm]
+……長年の付き合いだからわかる。[lrcm]
+あの男はこんな安直ないたずらはしない。つまりあの二人になにかがあった。[lrcm]
+そのメッセージはそれを伝えていた。[lrcm]
+
+#【一】
+「くそっ……！！！」[lrcm]
+
+[fadeoutbgm]
 [mask effect="fadeIn"]
-[mask_off effect="fadeOut"]
-
-;（廊下）
-
-[set_center_message_window]
-#【???】
-「やあ、調子はどうだい」[lrcm]
-[set_default_message_window]
-#【要】
-「っ……！？」[lrcm]
-#
-背後から、背筋を逆なでするような不快な声が聞こえた。[lrcm]
-振り向くと、一人の男子生徒が、ニヤニヤ笑いながらこちらを見ていた。[lrcm]
-昨日、廊下ですれ違った男だ。[lrcm]
-[set_center_message_window]
-#【???】
-「昨日は剣道場に行ったそうじゃないか。来栖要くん。忠告したはずなんだけどね、僕は。もちろん、たかだか僕の言葉一つで君を止められるなんて、そこまで自惚れちゃあいないさ。しかし、選択したのは君自身だということを忘れないでくれ給え。後から文句を言われても困ってしまうからね。どうだったかな、彼女は？　感想を聞かせてくれないか」[lrcm]
-
-[set_default_message_window]
-#【要】
-「……はぁ？」[lrcm]
-
-#
-分からないふりをした。[lrcm]
-去勢だった。[lrcm]
-正体不明の不安が首をもたげて心にはりついた。[lrcm]
-目の前の男は、間違いなく”昨日の彼女”のことを言っている。[lrcm]
-底のしれない下卑た笑いがひどく不気味だった。[lrcm]
-
-[set_center_message_window]
-#【???】
-「いや、言いたくないならいいのさ。僕がちょっと安心したかっただけだからね。気にすることはない、君は君の気の赴くまま、自由意志の声を聞いて行動すればそれでいい。僕の声が届くのも今のうちなのだから。君にとって僕は羽虫も同然、顧みられることのない路傍の小石だ。とはいっても、少々の猶予くらいは認めてくれてもいいだろう？　いずれは欠けて砂塵となり、大地の一部に取り込まれる、そのことは痛いほどよく分かっているからね。それまでに、ちょっとした娯楽を君たちに見出ても罰は当たらないはずさ。それすらも君が断罪するというのなら、僕は甘んじて受け入れるがね」[lrcm]
-
-[set_default_message_window]
-ヒッ、ヒッ、ヒッと、咳き込むように彼は笑った。[lrcm]
-
-[set_center_message_window]
-#【???】
-「ところで、来栖要くん、君はこれから坂口くんの家へ、プリントを届けに行くのだよね？」[lrcm]
-
-[set_default_message_window]
-#【要】
-「！？」[lrcm]
-
-[set_center_message_window]
-#【???】
-「ならば、ちゃんと確かめたほうがいい。彼の姿を、君のその目で、確実に、だ。でないと君は後悔することになるだろう。それでは、また、いずれ」[lrcm]
-
-[set_default_message_window]
-#
-そういって謎の男子生徒は去った。[lrcm]
-彼が話していることのほとんどは理解できない。[lrcm]
-が、おれの言動と彼の言葉がなぜか噛み合っているような感覚がする。[lrcm]
-
-寒気がする。[lrcm]
-奴のことは考えないほうがいい。[lrcm]
-健康に悪い。[lrcm]
-
-おれは職員室まで早歩きで行った。[lrcm]
-[mask effect="fadeIn"]
-[mask_off effect="fadeOut"]
-#【要】
-「失礼します」[lrcm]
-[set_center_message_window]
-#【担任】
-「ああ、来栖くん。坂口くんの住所はここです。学校から歩いていけます。確か来栖くんも歩いて通学していますよね。あ、でも方向は逆になってしまいますが……」[lrcm]
-[set_default_message_window]
-#【要】
-「いや、大丈夫です。特に予定もないので」[lrcm]
-[set_default_message_window]
-実際予定はなかったが、先生と会話しているうちに予定を思いついた。[lrcm]
-坂口の家にプリントを届けにい行ったあと、日暮れまで適当に駅周辺で時間を潰し、それから学校に戻るというのはどうだろうか。[lrcm]
-
-夜八時ごろ。[lrcm]
-昨日と同じ時間帯に学校にいれば、また彼女を目撃できるのではないか。[lrcm]
-そうしよう。それがいい。[lrcm]
-[set_center_message_window]
-#【担任】
-「では、お願いしますね」[lrcm]
-@set_default_message_window
-#【要】
-「はい」[lrcm]
-
-#
-茶封筒に丁寧にしまい込まれたプリントを手渡された。[lrcm]
-住所が書かれたメモに、簡単な手書きの地図を添えてもらったが、大雑把すぎて何の指標にもならない。[lrcm]
-スマートフォンの地図を使えばいいか。[lrcm]
-スマートフォンを見ながら行くなら、自転車は使えない。[lrcm]
-徒歩で向かうとしよう。[lrcm]
-
-#【要】
-「失礼しました」[lrcm]
-[mask effect="fadeIn"]
-#
-[mask_off effect="fadeOut"]
-おれは職員室を出て、昇降口で靴を履き替え、坂口の家へ向かった。[lrcm]
-今が午後四時、坂口の家までは歩いて三十分強といったところだ。[lrcm]
-日は長い。[lrcm]
-まだ夜まで時間はあるのだ。[lrcm]
-気長に行こうではないか。[lrcm]
-
-彼女のもとまで。[lrcm]
-
-[mask effect="fadeIn"]
-@jump storage=1-5.ks target=*1_5
+@jump storage=1-5.ks target=*1-5

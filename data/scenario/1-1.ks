@@ -1,317 +1,223 @@
 *1_1
-[call storage="macro.ks"]
 
 ;キャラセットアップ
-;【切慧】
-[chara_new name="Kirue" storage="./chara/Kirue/D2-8.png" jname="きるえ" width="500"]
-[chara_face name="Kirue" face="embarrass" storage="./chara/Kirue/D2-1.png"]
+;【ユラギ】
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="500"]
+[chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
+[chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
+[chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
+[chara_face name="yuragi" face="Smu" storage="/chara/yuragi/C2-4.png"]
+[chara_face name="yuragi" face="Se" storage="/chara/yuragi/C2-5.png"]
+[chara_face name="yuragi" face="Ssekimen" storage="/chara/yuragi/C2-6.png"]
+[chara_face name="yuragi" face="Sodoroki" storage="/chara/yuragi/C2-7.png"]
+[chara_face name="yuragi" face="Semi" storage="/chara/yuragi/C2-8.png"]
+[chara_face name="yuragi" face="def" storage="/chara/yuragi/C1-1.png"]
+[chara_face name="yuragi" face="emi_m" storage="/chara/yuragi/C1-2.png"]
+[chara_face name="yuragi" face="fukigen" storage="/chara/yuragi/C1-3.png"]
+[chara_face name="yuragi" face="mu" storage="/chara/yuragi/C1-4.png"]
+[chara_face name="yuragi" face="e" storage="/chara/yuragi/C1-5.png"]
+[chara_face name="yuragi" face="sekimen" storage="/chara/yuragi/C1-6.png"]
+[chara_face name="yuragi" face="odoroki" storage="/chara/yuragi/C1-7.png"]
+[chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 
-;暗転解除
-[free_layermode time="0"]
-[current layer="message0"]
-[bg layer=base storage=cycle.jpg time="1"]
-[set_default_message_window]
-[mask_off effect="fadeOut" time="3000"]
-
-自転車の運転は一度覚えたら忘れないと言われるが、あれは嘘だった。[lrcm]
-18年の人生で初めて、世にいう寝坊というやつを盛大にやらかしたおれは可能な限り早く学校に着くようにと、マンションの駐輪場に停められた母親の自転車を借りうけ通学時間の短縮を試みた。[lrcm]
-しかし、小学生以来全く触れてこなかった自転車はおれの言うことを全く聞かないじゃじゃ馬であった。[lrcm]
-ハンドルは固定されずグラグラと揺れ直進することを許さず、ペダルはおれの足から逃れるかのように一人でに回転し、ハンドルのゴムは溶けかけていた。[lrcm]
-当然のことながら、時間短縮の試みは裏目に出て、結局学校に到着したのは4時限目の授業中——昼休みの直前であった。[lrcm]
-
-[mask effect="fadeIn"]
+;教室の背景
 [bg layer=base storage=room.jpg time="1"]
 [mask_off effect="fadeOut"]
+[playse storage="チャイムキンコンカンコン_dova.ogg" buf="1"]
+[fadeinbgm storage="いつもの日常-dova.ogg" time="1000" loop="true"]
+[playse storage="ジャスコ！_ガヤ_diva.ogg" buf="2"]
 
-;SEガラガラ
-遅れて入る教室には謎の緊張感がある。[lrcm]
-できるだけ音を立てないように扉をあけるが、授業中の静寂とあっては、やはり目立たざるを得ない。[lrcm]
-#【要】
-「…………遅れました」[lrcm]
+授業終了のチャイムと共に、教室中に喧騒が戻ってくる。[lrcm]
+そして、クラスのいたるところでおしゃべりが始まった。[lrcm]
+[fadeoutse]
+
+;ざわざわというがや
+#【女子生徒A】
+「ねぇ聞いた？　隣街でまた神隠しがあったんだって～」[lrcm]
+#【女子生徒B】
+「聞いた聞いた、もう何件目だっけ……親が放課後はやく帰ってこいってうるさいんだよねぇ」[lrcm]
+#【女子生徒A】
+「あ～わかる～うちもだわ」[lrcm]
 #
-一斉に視線を浴びたが、教師含め遅刻に言及してくるものは誰もいない。[lrcm]
-気にはなるけど関わりたくはない。[lrcm]
-こういう態度は皆多少なりとも持ち合わせているし、何も間違ってはいないだろう。[lrcm]
-かく言うおれもそうなのだから、文句を言う筋合いはない。[lrcm]
-ただ、いざおれがそういう視線の対象になると、なんともいたたまれなかった。[lrcm]
-席に着く前に一人とだけ目があった。[lrcm]
-[chara_show name="Kirue" top="50"]
-クラスでおれと共に図書委員をやっている辻さんだった。[lrcm]
-[set_center_message_window]
-#【切慧】
-「……」[lrcm]
-[set_default_message_window]
+いつもどおり、隣の席の女子たちが一つの机を中心に駄弁っている。[lrcm]
+何気ない日常。何気ない風景。[lrcm]
+いつも通りに登校し、いつも通りに家に帰る。[lrcm]
+将来に漠然とした不安は在るものの、だからといって、今からなにをするかなぁ……と迷い続ける日々。[lrcm]
+適度な数の友人と、適度なストレス。[lrcm]
+満たされるわけもなければ、満たされていないわけでもない。[lrcm]
+そんな、いつもどおりの、緩やかな放課後。[lrcm]
+#【女子生徒A】
+「最近怖いよねぇ、なんか本屋のびぃえる……？　コーナーから本がなくなってる代わりに金塊が置かれてたりさ」[lrcm]
 #
-辻さんはすぐに目を逸してしまったか委員会の仕事でもあっただろうか。[lrcm]
-特に何もなかったと思うが……[lrcm]
-[chara_hide name="Kirue"]
-
-そのまま教師の声を聞き流して授業は終わり昼休みとなった。[lrcm]
-
-;（SE:チャイム音、高橋・坂口立ち絵登場、モブ用の使い回しで可）
-[mask effect="fadeIn"]
-[set_right_message_window]
-[mask_off effect="fadeOut"]
-
-#【坂口】
-「来栖お前遅刻とかやるなぁ」[lrcm]
-[set_left_message_window]
-#【高橋】
-「不良か？　不良なのか？」[lrcm]
-[set_default_message_window]
-#【要】
-「いや普通に寝坊だから」[lrcm]
+……それは謎だな？[lrcm]
+#【女子生徒B】
+「そういえばさー、最近。学校で幽霊が出るんだってさ！　それがなんと……」[lrcm]
+#【女子生徒A】
+「なんと……？」[lrcm]
+#【女子生徒B】
+「小さくて可愛いらしいの！　そのせいでオカ研のデブ達が血眼で学校中を探しているみたい！」[lrcm]
+#【女子生徒A】
+「え～～怖～い！」[lrcm]
 #
-おれの座席へ学校ではよくつるむ友人、高橋と川上がやってきた。[lrcm]
-[set_left_message_window]
-#【高橋】
-「お前寝坊とかするキャラだっけ？」[lrcm]
-[set_default_message_window]
-#【要】
-「キャラとか関係なく寝坊くらい誰だってするだろ」[lrcm]
-[set_left_message_window]
-#【高橋】
-「ほんとは寝坊じゃないんだろ？」[lrcm]
-[set_right_message_window]
-#【坂口】
-「お？　学校サボってどこで遊んでたんだ？」[lrcm]
-[set_default_message_window]
-#【要】
-「いや、そんなら学校来ないで一日休むわ」[lrcm]
-[set_right_message_window]
-#【坂口】
-「そりゃそうか」[lrcm]
-[set_left_message_window]
-#【高橋】
-「でもお前、普段は真面目な風を装ってるけど、たまにすっげー何も考えてない顔でフラフラとどっかに消えてたりするよな」[lrcm]
-[set_right_message_window]
-#【坂口】
-「修学旅行の話はやめてやれ」[lrcm]
-[set_default_message_window]
-#【要】
-「てか真面目を装ってって何だよ。普通に普通だろ、おれは」[lrcm]
-[set_left_message_window]
-#【高橋】
-「いや寝坊とか普通しないから」[lrcm]
-[set_right_message_window]
-#【坂口】
-「いやまあ来栖要事故説浮上してたし、下手したら仏さんかと思ったけどな」[lrcm]
-[set_default_message_window]
-#【要】
-「そんな説ででたのか？」[lrcm]
-[set_right_message_window]
-#【坂口】
-「俺のなかでな」[lrcm]
-[set_left_message_window]
-#【高橋】
-「悲報　俺氏死亡説浮上するも話題にならず」[lrcm]
-[set_default_message_window]
-#【要】
-「人のことスレタイみたいに言わないでくれ」[lrcm]
+確かに幽霊よりも、血眼のデブのほうが怖いよなぁ。[lrcm]
+#【女子生徒B】
+「ねえ、降山くんって神社の息子なんでしょ？　幽霊とか見えないのー？」[lrcm]
+#【一】
+「えっ」[lrcm]
 #
-確かに、学校に連絡は入れていなかったから、二人に心配かけたなら申し訳ない。[lrcm]
-しかし、心配していたのならおれが教室に入ったとき目のひとつやふたつ合うのではないか。[lrcm]
-まあ、変に心配されてもこちらがやりづらくなるだけなのだが。[lrcm]
-学校でつるむ友人だ。それなりの距離感というものを向こうもわきまえてくれたのだろう。[lrcm]
-おれもそれに合わせねば。[lrcm]
-[chara_show name="Kirue" top="50"]
-
-;1-1-1
-すると彼女と目が合った。[lrcm]
-[chara_mod name="Kirue" face="embarrass"]
-[set_center_message_window]
-#【切慧】
-「……ッ」[lrcm]
-[set_default_message_window]
-辻さんはすぐにそっぽを向いてしまった。[lrcm]
-[chara_hide name="Kirue"]
-[set_left_message_window]
-#【高橋】
-「お前、今日飯あんの？」[lrcm]
-[set_default_message_window]
-#【要】
-「いや、急いで出てきたから。ちょっと購買行ってくる。先食っててくれ」[lrcm]
-[set_right_message_window]
-#【坂口】
-「はいよ」[lrcm]
-[set_default_message_window]
-#
-おれは弁当を広げる二人を尻目に教室を後にする。[lrcm]
-
-[mask effect="fadeIn"]
-[bg layer=base storage=rouka.jpg time="1"]
-[set_default_message_window]
-[mask_off effect="fadeOut"]
-
-;トランジション
-購買は東校舎の一階にあり、おれたちの教室のある西校舎からは渡り廊下を通って行かなければならなかった。[lrcm]
-その渡り廊下で、いやな奴らとすれ違った。[lrcm]
-[set_right_message_window]
-#【剣道部員A】
-「お、要くんじゃん」[lrcm]
-;中上立ち絵
-
-[set_default_message_window]
-#【要】
-「あ……」[lrcm]
-#
-剣道部員の一団だった。手に購買の袋を持っている。買い物の帰り際に出くわしてしまったということか。。[lrcm]
-剣道部のやつらはできれば関わりたくない手合だった。[lrcm]
-進学校とまではいかないまでも、偏差値的にはそこまで悪くない高校であるが、剣道部員らを引き連れて先頭に立っている中上は例外的な不良であった。[lrcm]
-それもこってこての不良であり、サボり、タバコ、暴力沙汰など悪い噂には事欠かない。[lrcm]
-それでも勉強は——少なくとも中学三年の段階では——できたらしく、公立であるここ夏海第二高校に正当に入学した。[lrcm]
-いろいろやらかしているにも関わらず退学していないのは、どうにもこの高校が公立であるから、生徒を強制的に退学させるのは難しいらしく、警察沙汰になればそうも言ってられないらしいが、中上も警察のお世話になるほどの罪は犯しておらず、いや未成年喫煙や暴力沙汰は立派に罪だろとは思うものの、なんやかんや停学を繰り返しながら今日まで学校をやめずにいる。[lrcm]
-なぜおれがこれほど事情に詳しいかと言えば、おれは中上と同じ中学校を卒業しているからである。[lrcm]
-しかも三年間クラスが一緒だった。[lrcm]
-もちろんそのころから不良だった中上が教室内でおれと顔を合わせることはそう多くはなかったが、流石に三年間一緒ともなると、向こうも顔と名前くらいは一致させるらしい。[lrcm]
-中学の知り合いと距離を置きたく少し遠めの学校を選んだはずだったが、入学式でやけに悪目立ちするやつが中上だと分かった瞬間、ちょっとした絶望に襲われたのを、今でも鮮明に思い出せる。[lrcm]
-そんなこんなで中上は剣道部と剣道場を自らの手中に収め、剣道部の顧問が名義上そうなっている新人教員だったことも相俟って、自らの不良テリトリーを拡大していったのだ。[lrcm]
-教師たちももう諦めている、というか触らぬ神に祟りなしのスタイルで、穏便に卒業して夏海第二高校から出ていってもらいたがっているようだ。[lrcm]
-取得単位数とか、そういう事務的な事情がどうなっているのかは知らないし知りたくもない。[lrcm]
-
-[set_left_message_window]
-#【剣道部員B】
-「あれ、この人さっき登校してましたよ。おれ授業中で、暇すぎて外見てたらこの人が通りかかったんすよね」[lrcm]
-
-[set_center_message_window]
-#【中上】
-「ええ！？　要くん遅刻とかすんのかよ、不良じゃん！」[lrcm]
-
-[set_default_message_window]
-そういって中上は挨拶のようにおれの肩を殴りつけた。[lrcm]
-結構、いやかなり痛いのだが、中上はさも当然のような顔で笑っている。[lrcm]
-取り巻きの剣道部員め、余計なことを言ってくれたな。[lrcm]
-これは面倒くさくなりそうだ。[lrcm]
-
-#【要】
-「い、いやあちょっと寝坊しちゃって」[lrcm]
-そのまま下を向いて彼らから離れようとしたが、がっしりと中上に肩を掴まれた。[lrcm]
-先程殴られたほうの肩だった。[lrcm]
-[set_center_message_window]
-#【中上】
-「それで、先公に怒られたりしたわけ？」[lrcm]
-[set_default_message_window]
-#【要】
-「い、いや特には」[lrcm]
-[set_center_message_window]
-#【中上】
-「はあ！？　遅刻は悪いことだろぉ。それなのにお咎めなしってのは、なんか俺許せないわー。なあ、お前らもそう思わね？」[lrcm]
-[set_right_message_window]
-#【剣道部員C】
-「はい！　悪いことしたら、ちゃんと反省しなきゃだと思います！」[lrcm]
-[set_default_message_window]
-剣道部の奴らはゲラゲラ笑っていた。[lrcm]
-彼らには自己反省という概念が欠損しており、自分のしたことと他人にすることが完全に分離されているのだろう。[lrcm]
-こんな奴ら、テレビとかネットとかエロゲとか、そういうフィクションの中にしか存在しないと思っていた時期が、おれにもあった。[lrcm]
-
-[set_center_message_window]
-#【中上】
-「悪いことしたらさあ、やっぱ誠意？　を見せて周りの信頼を取り戻さないとだよなぁ。お前もそう思うでしょ、要くん」[lrcm]
-
-[set_default_message_window]
-#【要】
-「う、うん。そのとおりじゃないかな」[lrcm]
-[set_center_message_window]
-#【中上】
-「けどさぁ、そういうとこ教師ってやつらは適当だよな。まあ公務員だし、お役所仕事ってやつなのかね」[lrcm]
-[set_left_message_window]
-#【剣道部員D】
-「教師というやつらは皆糞以下ですよね」[lrcm]
-[set_center_message_window]
-#【中上】
-「だからよぉ、代わりにさぁ、愛をもって叱ってくれる存在？　がぁ、いるんじゃないかなあ」[lrcm]
-[set_default_message_window]
-#【要】
-「う、うん」[lrcm]
-[set_center_message_window]
-#【中上】
-「いやおれ要くんのことダチだと思ってっから。まじで。そんな友達のために、俺も何かしてやりたいわけよ」[lrcm]
-[set_default_message_window]
-中上は再びおれの肩、それも先程と同じ方の肩を殴った。[lrcm]
-とてつもなく痛かったが、なんとか声だけは出すまいと踏ん張った。[lrcm]
-[set_center_message_window]
-#【中上】
-「つーこって、剣道場のゴミ捨てといてくんない？」[lrcm]
-[set_default_message_window]
-#【要】
-「……へ？」[lrcm]
-[set_right_message_window]
-#【剣道部員E】
-「確かに、最近ゴミ溜まってましたもんね」[lrcm]
-[set_center_message_window]
-#【中上】
-「いやこれも善意だから、善意。要くんのためを思って、心を鬼にして言ってんの。な、掃除して反省した要くんと、あらためてお友達になりたいわけ」[lrcm]
-[set_default_message_window]
-#【要】
-「い、いやそれとこれとは」[lrcm]
-[set_default_message_window]
-#
-というかおれはこんな不良とは一生関わりたくない。[lrcm]
-[set_center_message_window]
-#【中上】
-「な？　やってくれるでしょ」[lrcm]
-[set_default_message_window]
-#
-中上はまたおれの肩を殴った。[lrcm]
-そしてその殴った巨大な拳をほどき、そのままおれの腕をつかんだ。[lrcm]
-その力は強かった。[lrcm]
-#【要】
-「う、うん、わかったよ」[lrcm]
-[set_center_message_window]
-#【中上】
-「ほんとー？　マジ助かるわ。そんじゃよろしく。ゴミ残すなよ。そしたらまた頼まなきゃなんねぇからな」[lrcm]
-[set_default_message_window]
-中上はそう言い捨て、剣道部員たちを引き連れて去っていった。[lrcm]
-とんだ災難だった。[lrcm]
-が、金銭や持ち物を取られなかっただけましと考えよう。[lrcm]
-幸い、放課後に予定はない。[lrcm]
-今日だけ我慢して剣道場を掃除して、それでもって剣道部員のやつらと出会わないよう細心の注意を払って明日から過ごせば、それで済む話だ。
-[lrcm]
-中上たちに絡まれて時間をとられてしまい、購買には目ぼしいものはほとんど残っていなかった。[lrcm]
-しかたなく、余っていたレタス増々ごぼうもやしサンドを一つだけ購入した。[lrcm]
-これで飢えを凌ごう。[lrcm]
-そのかわり夜飯は豪華に。[lrcm]
-美味しくなさそうなパンを抱えて、おれは教室に戻る。[lrcm]
-
-[mask effect="fadeIn"]
-[mask_off effect="fadeOut"]
-;（託司立ち絵、学ラン）
-[set_center_message_window]
+突然会話のベクトルがこちらを向いたので驚いた。[lrcm]
+とりあえず隣りにいたから、みたいなノリで振られたのか。[lrcm]
+と言うか俺、認知されていたんだなぁ……。[lrcm]
 #【？？？】
-「君、今日は剣道場には行かないほうがいい」[lrcm]
-[set_default_message_window]
-#【要】
-「……っ！？」[lrcm]
+「おいおい、なんの話だ？　俺も混ぜてくれると嬉しい」[lrcm]
+#【？？？】
+「私も私もー、混ぜてよ？」[lrcm]
+#【女子生徒A】
+「げ、戸伏」[lrcm]
 #
-廊下で知らない男に背後から急に声をかけられた。[lrcm]
-その声は大きくなかったが、何故か確実におれにむけて言っているのだということがわかった。[lrcm]
-[set_center_message_window]
-#【？？？】
-「今日はおとなしくしておくべきだ。でないと君が大変なことになるだろう」[lrcm]
-[set_default_message_window]
-#【要】
-「は、はぁ？」[lrcm]
-[set_center_message_window]
-#【？？？】
-「忠告はしたよ。これで君がどうなっても、僕のせいではない。せいぜい気をつけるんだね。死か、死より恐ろしいものが君を待ち受けている。あるいはそれが、幸福なのかもしれないがね。フフフ」[lrcm]
-[set_default_message_window]
-男は不気味に笑いながら立ち去った。[lrcm]
-学ランを着ていたから、おそらくウチの生徒だろうが、少なくともおれは彼のことをはじめて見た。[lrcm]
-といっても、おれは友好関係が広くはないし、仮に広かったとしても同学年の生徒全員の顔に見覚えがあるやつなんていないだろう。[lrcm]
+二人の男女があらわれ、女子たちが引き気味に顔をしかめる。[lrcm]
+男の方は戸伏正行、女の方は夕陽椿。[lrcm]
+女子達の間に割入るように入ってきた彼らは、いわゆる”幼馴染”だ。[lrcm]
+#【女子生徒B】
+「えーいや、なんだか幽霊が出るらしいから、降山くんなら見えるかなーとか……？」[lrcm]
+#
+若干慌てつつ、顔を引きつりながらながら女子たちが言葉を紡ぐ。[lrcm]
+……それもそのはず。
+なぜならこの二人は、校内厄介事を持ってくるランキングの２トップなのである。[lrcm]
+#【椿】
+「うーん、私は見たことないわねー」[lrcm]
+「でも最近オカ研はネタなさすぎて週間デブ特集と銘打って、代謝の良い学生時代にいかにデブになるかっていうコラム書きまくってたわよ。はいこれ」[lrcm]
 
-意外と、夏海第二高校は規模が大きい。[lrcm]
-一学年に三百人近くの生徒がいる。[lrcm]
-そんななかで中上と直接喋ったことのある生徒が何人にるだろうか。[lrcm]
-おれは自分の不幸を呪いながら、教室へと戻った。[lrcm]
+#
+夕陽椿。[lrcm]
+小学校の頃からの幼馴染だ。[lrcm]
+強気な性格から、男女問わず隠れファンがいるとかいないとか。[lrcm]
+しかし、つるんでいる奴らのせいで周囲からは近寄りがたい存在として認知されている。[lrcm]
 
-;SEチャイム
-;剣道部
-[mask effect="fadeIn"]
-[mask_off effect="fadeOut"]
-剣道場はひどい有様だった。[lrcm]
-竹刀や防具が無造作に転がっている程度なら想定していたが、これほどの惨状だとは。[lrcm]
-カップ麺や菓子類の袋・食べかすやボロボロのビニール傘、タバコの吸殻までもが散乱していた。[lrcm]
-これを放置しているのは流石に教師共の職務怠慢だろう。[lrcm]
-しかし、この惨状を教師に訴え出る度胸も体力も俺にはない。[lrcm]
-とっとと作業を始めて早く帰ろう。[lrcm]
-@jump storage=1-2.ks target=*1_2
+#【女子生徒B】
+「いや、いらないって！　っていうかなんで持ってるの！？」[lrcm]
+#【戸伏】
+「なるほど、お気に召さない？　ではオカ研特製除霊お守り、『脂肪玉』！[lrcm]
+「『俺達が生命力に溢れすぎているせいでオカルトが寄り付かない』との思想で作られているらしい」[lrcm]
+「なんとも哀愁あふれる一品だ」[lrcm]
+#
+戸伏正行。[lrcm]
+通称、海見原一の変人、もしくは歩く災害。[lrcm]
+椿と同じ幼馴染で、俺と椿を巻き込んでは様々な厄介を持ち込むトラブルメーカーである。[lrcm]
+
+#【女子生徒B】
+「じゃあ痩せなさいよ！！　てか原材料何よそれ！」[lrcm]
+#【正行】
+「ちなみに脂肪と死亡をかけているらしいぞ」[lrcm]
+#【女子生徒B】
+「やかましいわっ！」[lrcm]
+[playse storage="ツッコミ_dova.ogg"]
+
+#
+この女子、ツッコミのキレがいいな。名前知らないけど。[lrcm]
+#【女子生徒B】
+「いやだからー！　私達は降山くんに聞いてんのっ！　学校一の問題児達には聞いてないって！」[lrcm]
+#
+少しキレ気味に女子生徒が言い放つ。[lrcm]
+#【椿】
+「……心外ね……イカれてんのはこいつだけよ？ あとその悪ノリを叶える一」[lrcm]
+#
+椿が正行と俺を指差す。[lrcm]
+#【正行】
+「はっはは、光栄だな！　まあ、事実だ！　否定はしない！」[lrcm]
+#
+その後、二人はどこか不自然に会話を幽霊以外の話題に持っていこうとしている。[lrcm]
+みるみるうちに貯まる女子生徒グループのヘイト。[lrcm]
+もはや爆発寸前と行ったところだろうか。[lrcm]
+……ああ、この二人、俺を気遣って割って入ってきたな。[lrcm]
+#【一】
+「これぐらいなら大丈夫だよ、二人とも」[lrcm]
+#【正行】
+「ん、んー？　なんのことだい兄弟」[lrcm]
+#
+正行も椿も、まるで示し合わせたかのように目が泳いでいる。[lrcm]
+長年の付き合いだが、相変わらずごまかしが下手だ。[lrcm]
+旧来の幼なじみたちの気遣いに感謝しつつ、”見える”事実を淡々と述べることにした。[lrcm]
+#【正行】
+「幽霊だろ？　それなら丁度、そこにいるぞ」[lrcm]
+[stopbgm]
+#【約全員】
+「「「「えっ」」」」[lrcm]
+[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
+
+#
+全員の声が重なった。[lrcm]
+
+#【一】
+「ほら、お前らが取り囲んでる机の上で、でろーんとしてるのが一人」[lrcm]
+
+[chara_show name="yuragi" top="100" face="Sodoroki"]
+[odoroku layer="0"]
+
+[manpu layer=0 name=yuragi type=bikkuri x="100" y="230" width="80"]
+#【幽霊？】
+『──！！』[lrcm]
+
+#【女子生徒B】
+「あ、あはは、なにそれー。　もうちょっとリアルな感じにしてよ！」[lrcm]
+
+#
+幽霊にリアルとは一体……。[lrcm]
+
+#【一】
+「じゃぁ、もう少し詳しく説明すると……制服を着ていて前髪に葉の髪留め、身長はうつ伏せだからわから……」[lrcm]
+
+[chara_move name="yuragi" anim="true" effect="easeInQuad" time="500" top="50" ]
+[chara_mod name="yuragi" face="Se" time="0"]
+[playse storage="椅子立ち上がる.ogg"]
+#
+ガタッ……という音は立たず、スッっと椅子を貫通して”幽霊”が立ち上がった。[lrcm]
+
+#【一】
+「……ああ、今立ち上がったけど大体、椿の肩ぐらいの大きさだな」[lrcm]
+
+[chara_mod name="yuragi" face="Sodoroki" time="0"]
+[manpu layer=0 name=yuragi type=bikkuri2 x="100" y="180" width="80"]
+#【幽霊？】
+『……！？』[lrcm]
+
+#
+おおよそ、140ぐらいか。身長だけ見ると中学生ぐらいだ。[lrcm]
+
+#【女子生徒B】
+「へ、へぇ……や、やるじゃん……そんなのよく即興で……」[lrcm]
+
+[chara_mod name="yuragi" face="Sdef" time="0"]
+#【一】
+「あっ……いま、そこの筆箱に手をのばし……」[lrcm]
+
+#【女子生徒A】
+「え、ちょ、え、えっ！？　わ、わたしの筆箱になにする……」[lrcm]
+[playse storage="浮遊_魔法.ogg"]
+[chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=bikkuri2 x="200" y="210" width="80"]
+
+#
+筆箱が、浮いた。[lrcm]
+
+#【女子生徒A】
+「う、うわあああああ！？」[lrcm]
+#【一】
+「えっ……浮かせた……？」[lrcm]
+#【椿】
+「ちょ、ちょ、ちょほんとにいるなら言ってよ！！？」[lrcm]
+
+[chara_mod name="yuragi" face="Sdef" time="0"]
+
+#
+一目散に机から離れていく椿と女子生徒たち。[lrcm]
+正行に関しては、筆箱がちょっと浮いた時点で、すでに遥か彼方へと消えていた。[lrcm]
+あいつが一番幽霊が苦手だからなぁ……。[lrcm]
+椿と女子生徒はそのまま、ぴゅ～っと言う効果音よろしく教室のドアまで走ると。[lrcm]
+
+#【椿】
+「は、一！　ちゃ、ちゃんと祓っといてよねっ！」[lrcm]
+
+#
+ピシャリとドアをしめ、教室には誰もいなくなった。[lrcm]
+@jump storage=1-2.ks target=*1-2
