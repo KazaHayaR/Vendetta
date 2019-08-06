@@ -39,5 +39,5 @@ TYRANO.kag.menu.displayLoad();
 [role_open]
 
 ;@jump storage=plolog_hosi.ks target=*plolog
-@jump storage="2_1.ks" target=*2_1
+@jump storage="2_2.ks" target=*2_2
 ;@jump storage="test.ks" target=*test

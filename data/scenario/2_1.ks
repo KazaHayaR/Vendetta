@@ -43,7 +43,6 @@
 [chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
 [chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
 
-
 [bg layer=base storage=morinaka.png time="1"]
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="神域.ogg" time="1000" loop="true"]
@@ -171,7 +170,7 @@
 こちらの叫びもどこ吹く風。[lrcm]
 あっはっは、と笑いながらユラギはソファーに倒れ込み、傍にあった枕を抱きかかえた。[lrcm]
 
-[manpu layer=0 name=yuragi type=waiwai x="250" y="50" width="80"]
+[manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
 #【ユラギ】
 「ははは、最近の人間はこんなふうにしゃべるんだなぁ～あはは、楽しい～」[lrcm]
 
