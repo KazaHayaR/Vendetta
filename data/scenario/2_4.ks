@@ -88,7 +88,6 @@
 「んん”っ！　アイツらなら多分、力を貸してくれるだろう……」[lrcm]
 「おそらく、この国でアイツらが見えるのは、私と縁を結んだハジメだけだろうからな」[lrcm]
 
-
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [fadeoutbgm]
@@ -325,6 +324,7 @@
 
 #【おつき】
 「そしたらねー、せいれいさんたちとおともだちになったの！　おつきともだちつくるのじょうずなんだ！」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「そうかー、すごいなおつきは！」[lrcm]
 #【おつき】
@@ -334,6 +334,7 @@
 むん、と胸をはるおつき。[lrcm]
 そこに抱きついたきり、よしよしとおつきを撫でまくったりするユラギ。[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ハジメ】
 「でもおつき、そろそろお家に帰らないとじゃないか？」[lrcm]
 #【おつき】
@@ -368,7 +369,7 @@
 涙を滝のように流すユラギ。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
-
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「よしっ！　おつき！　私達は友達だ。私のお家でご飯食べよう！」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
@@ -387,6 +388,7 @@
 それだけ、誰かと一緒にご飯を食べるのが久しぶりなんだろうか[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「ああ、まかせておけ！　料理は……は、はじめぇ……」[lrcm]
 
@@ -415,7 +417,6 @@
 「じゃあ、街に行くか」[lrcm]
 #
 いつの間にか張り詰めていた気分はどこかにいってしまった。[lrcm]
-
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
