@@ -442,4 +442,4 @@
 #【ユラギ】
 「私の家だ！！」
 
-@jump storage=1-6.ks target=*1-6
+@jump storage=2-1.ks target=*2_1

@@ -452,6 +452,16 @@
 [frame p="100%" y="0"]
 [endkeyframe]
 
+;-----------------------------------------------------------
+; 揺れ
+;-----------------------------------------------------------
+[keyframe name="yure"]
+[frame p="  0%" x="0"]
+[frame p=" 30%" x="-62"]
+[frame p=" 70%" x="62"]
+[frame p="100%" x="0"]
+[endkeyframe]
+
 
 ;===========================================================
 
@@ -1081,7 +1091,7 @@
 	[endmacro]
 
 ;------------------------------------------------------------
-; ガタガタブルブル終了 [stop_wiggle]
+; 驚く立ち絵
 ;------------------------------------------------------------
 	[macro name="odoroku"]
 	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
@@ -1089,4 +1099,12 @@
 	[layopt layer="&mp.layer" visible="true"]
 	[endmacro]
 
+;------------------------------------------------------------
+; 揺れ立ち絵
+;------------------------------------------------------------
+	[macro name="yure"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="yure" easing="linear" time="1300" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+	[endmacro]
 [return]
