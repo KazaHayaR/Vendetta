@@ -372,9 +372,10 @@
 #【ユラギ】
 「あの子を、あの子のまま救える、最後の切り札。これからハジメに、それを託す」[lrcm]
 
-
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [fadeoutbgm]
+
+
 
 @jump storage=3_5.ks target=*3_5
