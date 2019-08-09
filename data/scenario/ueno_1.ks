@@ -265,6 +265,6 @@
 #【夕陽翔】
 「…何？」[lrcm]
 #【後輩刑事】
-「また出たんすよ！食い荒らされたガイシャが！」
+「また出たんすよ！食い荒らされたガイシャが！」[lrcm]
 
 [end_template jumpstorage="ueno_2.ks" jumptarget="*ueno_2"]

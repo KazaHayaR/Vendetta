@@ -301,6 +301,7 @@ $(".message0_fore>.message_inner").css({
 
 ;jumpstorage,jumptarget
 [macro name="end_template"]
+#
 [wait time=500]
 [mask effect="fadeIn"]
 [chara_hide_all]
@@ -350,9 +351,7 @@ document.getElementsByClassName("situationOuter")[0].remove();
 [mask effect="fadeIn"]
 [chara_hide_all]
 @layopt layer=message0 visible=false
-[if exp="mp.storage?true:false"]
-[bg layer=base storage=%storage time="1"]
-[endif]
+[bg layer=base storage=%storage|black.png time="1"]
 [mask_off effect="fadeOut"]
 [if exp="mp.situation?true:false"]
 [display_situation situation=%situation]
