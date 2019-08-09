@@ -366,6 +366,7 @@
 #【ユラギ】
 「それは……」[lrcm]
 
+#
 ところどころ完全ではないが、確実に自分に一致する。[lrcm]
 
 #【ユラギ】
@@ -376,4 +377,4 @@
 [chara_hide name="yuragi"]
 [fadeoutbgm]
 
-@jump storage=2_2.ks target=*2_2
+@jump storage=3_5.ks target=*3_5
