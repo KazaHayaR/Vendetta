@@ -359,4 +359,4 @@
 #【夕陽翔】
 咄嗟に浮かんだのは、やっぱり娘の顔だった。…帰りてえなあ。まだ死ぬわけにはいかないよなあ。[lrcm]
 ;【獣の咆哮】
-[endscript jumpstorage="ueno_4.ks" jumptarget="*ueno_4"]
+[end_template jumpstorage="ueno_4.ks" jumptarget="*ueno_4"]
