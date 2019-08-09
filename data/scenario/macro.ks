@@ -109,7 +109,7 @@
 [macro name="set_default_message_window"]
 @layopt layer=message0 visible=true
 [position left="42" top="471" width="1190" height="200"]
-[position margint="34" marginl="143" marginr="138" marginb="46"]
+[position margint="42" marginl="143" marginr="138" marginb="46"]
 [free  name="chara_name_area" layer="message0"]
 [clearfix]
 [ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="185" y="480" color="0xffffff" edge="0x000000"]
@@ -117,21 +117,21 @@
 [deffont size="26" color="0xffffff" edge="0x000000"]
 [resetfont]
 ; @maki: tyrano.cssに書くと読み込み時おかしな挙動をするためここに。
-; 			 .message_innerは別のmessage_windowマクロから移動させるときに挙動がおかしくなるため分からせしてます。
+; 			 .message0_fore>.message_innerは別のmessage_windowマクロから移動させるときに挙動がおかしくなるため分からせしてます。
 [iscript]
-$(".message_outer").css({
+$(".message0_fore>.message_outer").css({
 	"background": "linear-gradient(to left, #361413, #000000, #361413)",
 	"opacity": "0.7",
 	"border-radius": "10px",
 	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
 	"transition": "500ms all 0s"
 });
-$(".message_inner").css({
+$(".message0_fore>.message_inner").css({
 	"width": "907px",
 	"height": "112px",
 	"top": "471px",
 	"left": "42px",
-	"padding-top": "34px",
+	"padding-top": "46px",
 	"padding-left": "143px",
 	"line-height": "38px"
 });
@@ -155,14 +155,14 @@ $(".message_inner").css({
 [resetfont]
 ; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
 [iscript]
-$(".message_outer").css({
+$(".message0_fore>.message_outer").css({
 	"background": "linear-gradient(to left, #361413, #000000, #361413)",
 	"opacity": "0.7",
 	"border-radius": "10px",
 	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
 	"transition": "500ms all 0s"
 });
-$(".message_inner").css({
+$(".message0_fore>.message_inner").css({
 	"width": "818px",
 	"height": "88px",
 	"top": "456px",
@@ -190,14 +190,14 @@ $(".message_inner").css({
 [resetfont]
 ; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
 [iscript]
-$(".message_outer").css({
+$(".message0_fore>.message_outer").css({
 	"background": "linear-gradient(to left, #361413, #000000, #361413)",
 	"opacity": "0.7",
 	"border-radius": "10px",
 	"box-shadow": "3px 3px 10px rgba(119, 119, 119, .75)",
 	"transition": "500ms all 0s"
 });
-$(".message_inner").css({
+$(".message0_fore>.message_inner").css({
 	"width": "818px",
 	"height": "88px",
 	"top": "456px",
@@ -226,14 +226,14 @@ $(".message_inner").css({
 [resetfont]
 ; @maki: どのメッセージウインドウが最初に読み込まれても大丈夫なように全部にjQueryつけてます。
 [iscript]
-$(".message_outer").css({
+$(".message0_fore>.message_outer").css({
 	"background": "linear-gradient(to left, #361413, #000000, #361413)",
 	"opacity": "0.7",
 	"border-radius": "10px",
 	"box-shadow": "3spx 3px 10px rgba(119, 119, 119, .75)",
 	"transition": "500ms all 0s"
 });
-$(".message_inner").css({
+$(".message0_fore>.message_inner").css({
 	"width": "818px",
 	"height": "88px",
 	"top": "456px",
@@ -247,7 +247,8 @@ $(".message_inner").css({
 [wait time="500"]
 [endmacro]
 
-[macro name="start_template"]
+;bgstorage,bgmstorage
+[macro name="start_template"] 
 ;キャラセットアップ
 ;【ユラギ】
 [chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
@@ -290,15 +291,75 @@ $(".message_inner").css({
 [chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
 [chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
 
-[bg layer=base storage=%bgstrage time="1"]
+[bg layer=base storage=%bgstorage|black.png time="1"]
 [mask_off effect="fadeOut"]
-[fadeinbgm storage=%bgmstrage time="1000" loop="true"]
+[if exp="mp.bgmstorage?true:false"]
+[fadeinbgm storage=%bgmstorage time="1000" loop="true"]
+[endif]
+[wait time=1000]
 [endmacro]
 
+;jumpstorage,jumptarget
 [macro name="end_template"]
+[wait time=500]
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
-[chara_hide name="tubaki"]
+[chara_hide_all]
 [fadeoutbgm]
-@jump storage=%jumpstrage target=%jumptarget
+@jump storage=%jumpstorage target=%jumptarget
 [endmacro]
+
+
+[macro name=display_situation]
+[iscript]
+var situationOuter = document.createElement('div');
+situationOuter.setAttribute('class', "situationOuter");
+situationOuter.setAttribute('style', "right:-100%;transition:1s all");
+var situationInner = document.createElement('div');
+situationInner.setAttribute('class', "situationInner");
+situationInner.setAttribute('style', "right:-100%;transition:1s all");
+var text = document.createTextNode(mp.situation);
+situationInner.appendChild(text);
+situationOuter.appendChild(situationInner);
+document.getElementById('tyrano_base').appendChild(situationOuter);
+[endscript]
+[wait time=300]
+[iscript]
+$(".situationOuter").css("right", "0%");
+[endscript]
+[wait time=300]
+[iscript]
+$(".situationInner").css("right", "0%");
+[endscript]
+[wait time=1500]
+[iscript]
+$(".situationInner").css("right", "100%");
+[endscript]
+[wait time=300]
+[iscript]
+$(".situationOuter").css("right", "100%");
+[endscript]
+[wait time=1100]
+[iscript]
+document.getElementsByClassName("situationOuter")[0].remove();
+[endscript]
+[wait time=700]
+[endmacro]
+
+[macro name=scene_change]
+#
+[mask effect="fadeIn"]
+[chara_hide_all]
+@layopt layer=message0 visible=false
+[if exp="mp.storage?true:false"]
+[bg layer=base storage=%storage time="1"]
+[endif]
+[mask_off effect="fadeOut"]
+[if exp="mp.situation?true:false"]
+[display_situation situation=%situation]
+[endif]
+[if exp="mp.message_window_open?mp.message_window_open:true"]
+[set_default_message_window]
+[endif]
+[wait time=500]
+[endmacro]
+
