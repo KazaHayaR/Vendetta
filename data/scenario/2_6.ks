@@ -1,3 +1,4 @@
+*2_6
 ;キャラセットアップ
 ;【ユラギ】
 [chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
@@ -20,31 +21,9 @@
 [chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 [chara_face name="yuragi" face="terewara" storage="/chara/yuragi/C1-9.png"]
 
-;キャラセットアップ
-;【椿】
-[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="400"]
-[chara_face name="tubaki" face="def" storage="chara/tubaki/T-def.png"]
-[chara_face name="tubaki" face="angry" storage="chara/tubaki/T-angry.png"]
-[chara_face name="tubaki" face="blush" storage="chara/tubaki/T-blush.png"]
-[chara_face name="tubaki" face="cry" storage="chara/tubaki/T-cry.png"]
-[chara_face name="tubaki" face="giggle" storage="chara/tubaki/T-giggle.png"]
-[chara_face name="tubaki" face="hopeless" storage="chara/tubaki/T-Hopeless.png"]
-[chara_face name="tubaki" face="smile" storage="chara/tubaki/T-smile.png"]
-[chara_face name="tubaki" face="surprised" storage="chara/tubaki/T-surprised.png"]
-[chara_face name="tubaki" face="Sdef" storage="chara/tubaki/TS-def.png"]
-[chara_face name="tubaki" face="Sangry" storage="chara/tubaki/TS-angry.png"]
-[chara_face name="tubaki" face="Sblush" storage="chara/tubaki/TS-blush.png"]
-[chara_face name="tubaki" face="Scry" storage="chara/tubaki/TS-cry.png"]
-[chara_face name="tubaki" face="Sgiggle" storage="chara/tubaki/TS-giggle.png"]
-[chara_face name="tubaki" face="Shopeless" storage="chara/tubaki/TS-Hopeless.png"]
-[chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
-[chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
-
-[bg layer=base storage=morinaka.png time="1"]
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="神域.ogg" time="1000" loop="true"]
-
-[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 
 #【一】
 「今日も、空振り……か」[lrcm]
@@ -52,28 +31,39 @@
 森の捜索をはじめてから二週間が立つ。[lrcm]
 やっていることは非常に地味だ。ユラギと共に森の中を巡り、精霊たちや、森に澄んでいる幽霊たちに聞き込みをして変わったことがないか調べ、歩き回る。[lrcm]
 時にユラギが怪しそうな場所で力を行使し、空間が隠されていないかを検査。それを繰り返す。[lrcm]
-#【おつき】
+#【おつき】 
 「すかーいらんたーん！　のにじょう！」[lrcm]
+[chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
 #【ユラギ】
 「なるほど……つまりマトリョシカのようなものだな！」[lrcm]
 #
-家の中でスカイランタンを飛ばすのは普通に火災の危険性が在るので危険だと思うのだが、そこら編は水の精霊がランタンの周りを警戒しながら飛んでいるおかげで大丈夫なのだそうだ。[lrcm]
+家の中でスカイランタンを飛ばすのは普通に火災の危険性が在るので危険だと思うのだが、[lrcm]
+そこら編は水の精霊がランタンの周りを警戒しながら飛んでいるおかげで大丈夫なのだそうだ。[lrcm]
 便利だなぁ、精霊。[lrcm]
+
 #【一】
 「ユラギ、おつきー、ジュース？　お茶？」[lrcm]
 #【おつき】
 「じゅーすー！」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「ほうじ茶がいいぞ！」[lrcm]
 #【一】
 「はいよ」[lrcm]
+[chara_hide name="yuragi"]
 #
 半ばツーカーになりつつ在るこの関係が深まっていることだけが、最近あった良かったことリストに追加されている。[lrcm]
 ……正直な話をすれば、この二人がいなかったら今頃病んでいてもおかしくはない。[lrcm]
 友人二人の行方不明と、知り合いの刑事が連れ去られた現場を見た……という２つの事実。[lrcm]
 おそらく、おつきの笑顔やユラギの優しさに俺は間違いなく救われている。[lrcm]
+
 #【一】
 「ふぅ……」[lrcm]
+
+[mask effect="fadeIn"]
+[bg layer=base storage=morinaka.png time="1"]
+[mask_off effect="fadeOut"]
+
 #
 だが、この二週間でいくつかわかったことが在る。[lrcm]
 まずはこの森の深さ。[lrcm]
@@ -84,27 +74,40 @@
 森には歪みで発生していた妖物が何匹か存在していた。[lrcm]
 これを何匹型押しているうちに自ずと妖物に対する対処の仕方がわかってくる。[lrcm]
 まずいちばんに強いのはおつき……というかその周りの精霊と二柱の神。[lrcm]
+[playse storage="ko.ogg"]
 基本的に妖物がおつきに注意を向けた5秒後には抹殺されている。[lrcm]
+[playse storage="獣やられ.ogg"]
+[chara_mod name="yuragi" face="def" time="0"]
+[bg layer=base storage=morinaka.png time="1" method="fadeIn"]
 次にユラギ。[lrcm]
 ユラギは降山式の祓術に似た技術で妖物に対処していた。[lrcm]
 もっぱらおつきの神や精霊が倒してしまうので使っていたのは数回だが、それでもその威力は確認できた。[lrcm]
 だらけていてもBL同人誌収集が趣味でも流石は神、一撃で妖物を祓ってしまった。[lrcm]
-……だが、それでも一つだけ懸念はのこっている[lrcm]
-
 対する俺はといえば初戦闘よりはマシになったもの、[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「ハジメは戦闘より大きな術を使うほうが向いてそうだな～」[lrcm]
 と励まされる始末である。[lrcm]
+[mask effect="fadeIn"]
+[chara_hide name="yuragi"]
+[mask_off effect="fadeOut"]
+
+
 #【一】
 「はい、水分どうぞ。俺は少しだけ周りを見てくるよ。[lrcm]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【ユラギ】
 「ん？　外に出るなら私も行くぞ？」[lrcm]
 #【一】
 「いや、とりあえず俺一人で出てくるよ」[lrcm]
+[chara_mod name="yuragi" face="odoroki" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「なっ……なんでだ！」[lrcm]
 #【一】
 「だって……かなり疲れているだろ、ユラギ」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+[manpu layer=0 name=yuragi type=ase x="50" y="70" width="80"]
 #【ユラギ】
 「……な、い、いや、私は全然そんなことは……」[lrcm]
 
@@ -115,6 +118,7 @@
 #【一】
 「なあユラギ……実は〝神様〟としての力は使うまでに時間がかかるんじゃないのか？」[lrcm]
 
+[odoroku layer="0"]
 #【ユラギ】
 「うぐっ……」[lrcm]
 #【一】
@@ -122,32 +126,41 @@
 
 #
 ユラギが妖物に対して術を使い始めてから、疲れが出るのが顕著だった。[lrcm]
-
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「……な、なんでわかったんだ……？」[lrcm]
 #
-そうだ俺の目には確かにユラギは〝神〟とわかるほどの鮮明さで写っている。[lrcm]
+しかし、俺の目には確かにユラギは〝神〟とわかるほどの鮮明さで写っている。[lrcm]
 #【一】
 「まあ、もう結構一緒にいるんだ。ユラギが疲れているのは何となく分かるし……少し無理をしてるのもわかる」[lrcm]
+[chara_mod name="yuragi" face="Se" time="0"]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【ユラギ】
 「う……」[lrcm]
 #【一】
 「それに、な。たぶん、これがその原因だと思ってるんだけど……」[lrcm]
-「最近ずっとユラギと一緒にいるせいか、なんとなくユラギの力が見えるようになってきたんだ。それはこの島全体を覆うようにまんべんなく、とても強い力として注がれている……きっとそれがないと、歪みっていうのが抑えられないんだろ？」[lrcm]
+「最近ずっとユラギと一緒にいるせいか、なんとなくユラギの力が見えるようになってきたんだ」[lrcm]
+「それはこの島全体を覆うようにまんべんなく、とても強い力として注がれている……きっとそれがないと、歪みっていうのが抑えられないんだろ？」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「な……そうか、そんなに私との縁が濃くなっていたのか……」[lrcm]
 
 #
 そう言うと、ユラギはしょんぼりと肩を落とし、小さな声でうつむきがちに言葉を紡ぐ。[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【ユラギ】
-「ご、ごめん……べ、別に騙してたわけではないんだ……その、一応神様だから、ハジメが不安にならないようにしようと……で、でもうう……ごめん……」[lrcm]
+「ご、ごめん……べ、別に騙してたわけではないんだ……」[lrcm]
+「その、一応神様だから、ハジメが不安にならないようにしようと……で、でもうう……ごめん……」[lrcm]
 #【一】
 「あ、ああ、別に怒ってるわけじゃないぞ……でも」[lrcm]
 #
 ぽん、と頭に手を載せて。[lrcm]
 #【一】
-「お前が俺に無理するなって言うなら……お前も無理するな。精霊たちもいるんだ、たとえ見つかったとしても逃げてくるぐらいはできる。だから……ちゃんと休んでくれ」[lrcm]
+「お前が俺に無理するなって言うなら……お前も無理するな」[lrcm]
+「精霊たちもいるんだ、たとえ見つかったとしても逃げてくるぐらいはできる。だから……ちゃんと休んでくれ」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「……うん……」[lrcm]
 
@@ -157,23 +170,33 @@
 
 #【一】
 「いいんだよ。この島の問題だ、ユラギの手伝いになれることならできるだけやるさ」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「ふふ、そうか……私の娘はこれにやられたんだなぁ……」[lrcm]
 #【一】
 「娘……？」[lrcm]
+[odoroku layer="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「ああ、言ってなかったな。お前は私の娘の子孫だぞ？」[lrcm]
 #【一】
 「………………は！！！？」[lrcm]
+[quake count=2 time=100]
 「ドドッドドドどういう事？　お、お前、ご先祖様なのか！？」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「そーだぞー、最終的に夫と共に死を選んでもういないがな」[lrcm]
 #【一】
 「な……」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
-「あ、でも安心しろ！　娘って言っても私は天津系の神だからな。娘は暇な日に、たまたま水切りをしたら8回いい音をたてて跳ね、こりゃめでたい！　と思ったらその石から産まれたんだ」[lrcm]
+「あ、でも安心しろ！　娘って言っても私は天津系の神だからな」[lrcm]
+「娘は暇な日に、たまたま水切りをしたら8回いい音をたてて跳ね、こりゃめでたい！　と思ったらその石から産まれたんだ」[lrcm]
 #【一】
 「たしかにうちの国の神様はそんなエピソードで生まれるけど……」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「だから、この神生ずっと独り身だぞ！」[lrcm]
 #【一】
@@ -182,28 +205,38 @@
 #
 ……少し安心した……と思ったのはなぜだろうか。[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「あ、でも……」[lrcm]
 #【一】
 「ん……？」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「私の体な？　娘が受肉しておもしろそーと思って、娘の体をコピーして造ったんだが……」[lrcm]
+[chara_mod name="yuragi" face="Se" time="0"]
+[manpu layer=0 name=yuragi type=heart3 x="50" y="70" width="80"]
 「男と付き合い始めて少ししてからコピーしたからなぁー。すまん、膜はもうないかもしれない……」[lrcm]
+[quake count=5 time=100]
 #【一】
 「俺の先祖の生々しいエピソードやめろ！　聞きたくないわそんな事！」[lrcm]
 
+[chara_mod name="yuragi" face="emi" time="0"]
 #
 こちらの反応を見て、にへーっと、ユラギが笑う。[lrcm]
 ……こちらをからかったつもりだろうか。[lrcm]
 
 #【一】
 「ったく……もう、じゃあ、いってくるぞ」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「ああ、いってらっしゃい。気をつけるんだぞ！」[lrcm]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
+
+[chara_mod name="yuragi" face="terewara" time="0"]
 #【ユラギ】
 「……まったく……神様のことを心配するなんて……ハジメはお人よし……？　ゴットよしだな……」[lrcm]
 #
@@ -212,15 +245,19 @@
 
 #【おつき】
 「ねーねー、おねーちゃん」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「んー？　なんだぁ、おつき」[lrcm]
 #【おつき】
 「おねーちゃんは、ハジメおにーちゃんのこと、好きなの？」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【ユラギ】
 「……なっ！？」[lrcm]
 
 #
 ドキン、と心臓の音が跳ね上がった。[lrcm]
+[chara_mod name="yuragi" face="odoroki" time="0"]
 #【ユラギ】
 「い、いい、いやぁ……うん好きだそ。は、はじめての友達だし、優しいし、料理美味しいし……」[lrcm]
 
@@ -237,31 +274,44 @@
 
 #【おつき】
 「ほっぺにちゅーするほじゃなくて、くちにちゅーするほうのすき！」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【ユラギ】
 「え、えええ！？　な、よ、よく知ってるなそんな事……」[lrcm]
 #【おつき】
 「あの、『ほんだな』のうしろのにあるまんがでみたの！」[lrcm]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
+[chara_mod name="yuragi" face="odoroki" time="0"]
 #【おつき】
 「なっ……ちょっ！」[lrcm]
 
 #
 BLマンガを平積みして隠しておいたはずの、私の少女漫画コレクションを……！？[lrcm]
 
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
-「ち、ちちがうんだ！　これはその……昔、私のことが見える二人が居て、その二人がずぅっといちゃついているもんだから羨ましいなって……それで買い漁ってるとかそういうんじゃないぞ！」[lrcm]
+「ち、ちちがうんだ！　これはその……昔、私のことが見える二人が居て、その二人がずぅっといちゃついているもんだから羨ましいなって……」[lrcm]
+「それで買い漁ってるとかそういうんじゃないぞ！」[lrcm]
 #【おつき】
-「おねーちゃんがこないだ『人間と神様の禁断のラブストーリー』っておびにかいてあるやつさいきんかってきてたの、おつきしってるから！　あんしんして！」[lrcm]
+「おねーちゃんがこないだ『人間と神様の禁断のラブストーリー』っておびにかいてあるやつさいきんかってきてたの、おつきしってるから！」[lrcm]
+「あんしんして！」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「や、やめろおおお！！」[lrcm]
 #【一】
 「ねーねーおねーちゃん！　どうなの！　すきなの！？」[lrcm]
+
 #
 お、恐ろしい、この幼女、完全にこちらの退路を断ってきてから、どうなんだ？　って聞いて来ているぞ！[lrcm]
-
+[quake count=3 time=100]
+[yure layer="0"]
 #【ユラギ】
 「い、いやあ……その……ええっとその……だな……た、確かにそのあの、ちょっと気になるかなって思ったけどまだその、よくわからないっていうか……」[lrcm]
 #【おつき】
 「なに！？　ちゃんとしなさい！！」[lrcm]
+[manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
 #【ユラギ】
 「は、はい……好きです……ホントは気がついたんだ。。はじめての友達からちょろすぎる自分に正直どうかなって思っていたんだ……」[lrcm]
 #
@@ -273,6 +323,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #【おつき】
 「ん！　よろしい！」[lrcm]
+[manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
 #【ユラギ】
 「う、うう……」[lrcm]
 
@@ -281,18 +332,21 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #【おつき】
 「だいじょーぶ、はじめおにーちゃんは、おつきのおとーさんに、にてるから！」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「……なんだ、おつきのパパはそんなにかっこいい人なのか？」[lrcm]
 #【おつき】
 「うん！　せかいいちかっこいい！」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
-「……はは、そうか。あーー」[lrcm]
+「……はは、そうか。[chara_mod name="yuragi" face="sekimen" time="0"]あーー」[lrcm]
 
 #
 今私ハジメのことかっこいいとか無意識で言ったな？[lrcm]
 ……まったく、困った。[lrcm]
 人間を好きになってしまうとか、あー、どうしたらいいんだ……。[lrcm]
 
+[manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
 #【ユラギ】
 「……くそー。だめだー」[lrcm]
 

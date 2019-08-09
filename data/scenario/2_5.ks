@@ -24,7 +24,7 @@
 
 [bg layer=base storage=繁華街.jpg time="1"]
 [mask_off effect="fadeOut"]
-[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
+[fadeinbgm storage="街に出てショッピング、快晴、海もあり？.ogg" time="1000" loop="true"]
 
 #
 森にいた妖精たちに一旦別れを告げ、商店街へと降りてきた。[lrcm]
@@ -34,6 +34,7 @@
 #【おつき】
 「んー、かれー？　ってやつ！　たべたことない！」[lrcm]
 [chara_show name="yuragi" top="50" face="emi" time="0" top="150"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「私も私も！　カレー食べたいぞ！」[lrcm]
 #【一】
@@ -57,24 +58,30 @@
 ならば、もしかしたら猶予は……。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
+
+[quake count=4 time=300]
 #【ユラギ】
 「ん……よしよし」[lrcm]
+[playse storage="抱きつく.ogg"]
+
 #
 ユラギがとつぜん、こちらの頭を撫でてくる。[lrcm]
 #【一】
 「な、なんだよ」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
 #【ユラギ】
 「安心するといい。君の友人を含め、まだ誰も死んでない。急いでも仕方ないさ」[lrcm]
-[chara_mod name="yuragi" face="emi_m" time="0"]
-「さらわれてしばらく立った後でもまだ死者がいないということは……おそらく、何らかの方法で生かしているんだろうさ」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「攫われてしばらく立った後でも、まだ死者がいないということは……おそらく、何らかの方法で生かしているんだろうさ」[lrcm]
 #
-まるでこちらの心を読んだようなな言葉。[lrcm]
+まるでこちらの心を読んだような言葉。[lrcm]
 #【一】
 「な……」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #
 だが、ユラギはこちらの顔を見てくす、と微笑む。[lrcm]
-
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「あはは、ハジメは実は顔に出やすいんだぞ。ちなみに私は心とか読めない。ステージ2ぐらいの中ボス神だからな！」[lrcm]
 
@@ -87,7 +94,7 @@
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
-「くーとー？　ああ、”空灯”か！」[lrcm]
+「くーとー？　ああ、〝空灯〟か！」[lrcm]
 #【おつき】
 「おつきもね、おつきもね、くーとーつくってるんだ！」[lrcm]
 #【一】
@@ -111,6 +118,7 @@
 #【おつき】
 「……！　じゃあユラギおねーちゃんいっしょにつくろー！」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「おお！　いいな！　それ一緒に作る……！　[chara_mod name="yuragi" face="emi_m" time="0"]ふふ、私は『空灯』の作り方はちょっとしたもんだぞ」[lrcm]
 #【おつき】
@@ -118,18 +126,19 @@
 [chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「だろ～～！　よーしよーし！」[lrcm]
+[playse storage="抱きつく.ogg"]
 #
-褒められておつきは抱きつきまくっていた。[lrcm]
-
+ユラギは、おつきに抱きつきまくっていた。[lrcm]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
 
 #
-スーパーマーケット。[lrcm]
+駅前のよくあるスーパーマーケットに到着した。[lrcm]
 #【おつき】
 「にくーー！」[lrcm]
+[quake count=3 time=100]
 #
 ドサーーっと色とりどりの肉がかいものかごに入れられる。[lrcm]
 牛、豚、羊……？　このルーミートってなんの肉だ……？[lrcm]
@@ -141,7 +150,7 @@
 「かみさまでも、おにくはおいしいよ？」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
-「……確かに、[chara_mod name="yuragi" face="emi_m" time="0"]美味しいものを食べたほうがいいな！」[lrcm]
+「……確かに、[chara_mod name="yuragi" face="emi_m" time="0"][manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]美味しいものを食べたほうがいいな！」[lrcm]
 #【一】
 「いや、こんなには鍋に入らないからね……」[lrcm]
 
@@ -151,12 +160,14 @@
 #【おつき】
 「おねーちゃん知ってる？　お肉はね、この白いのが少ないほうがおいしーいんだよ！」[lrcm]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【ユラギ】
 「何、そうなのか！？」[lrcm]
 
 #
 ちなみに、このノリノリでスーパーの中を探索する二人の後ろで買い物かごを押しているのが現在の俺である。[lrcm]
 
+[chara_hide name="yuragi"]
 #【テレビ】
 『……先日よリ発生している神隠し事件の人数は３人を超え、警察では同一犯の可能性が高いとし、捜査を続行中で……』[lrcm]
 
@@ -172,14 +183,15 @@
 公開してないとはいえ、谷垣さんの件に関しても騒ぎ立てられていないあたり、明らかに情報規制をかけているようだ。[lrcm]
 なお、谷垣さんが獣に拉致されたことに関しては、警察に伝えようとしたらユラギに止められた。[lrcm]
 [mask effect="fadeIn"]
-[mask_off effect="fadeOut"]
 [bg storage="ログハウス.png" time="1"]
-
-[chara_mod name="yuragi" face="def" time="0"]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
+[mask_off effect="fadeOut"]
 #【ユラギ】
-『〝アレ〟はもう妖物への対抗手段を持たない人間が対応にあたっていい案件じゃない。おつきレベルの加護持ちか、ハジメのように私がつきっきりで見張ってるやつじゃないと駄目だ』[lrcm]
-
+『〝アレ〟はもう妖物への対抗手段を持たない人間が対応にあたっていい案件じゃない」[lrcm]
+「おつきレベルの加護持ちか、ハジメのように私がつきっきりで見張ってるやつじゃないと駄目だ』[lrcm]
+#
 [mask effect="fadeIn"]
+[chara_hide name="yuragi"]
 [bg storage="繁華街.jpg" time="1"]
 [mask_off effect="fadeOut"]
 
@@ -203,6 +215,7 @@
 ニチ朝の戦隊モノが後半戦で出すロボットのような造形をしたカレーが描かれている。[lrcm]
 空腹に飢え、怪物化した人間を弾けるスパイスで救い出すらしい。[lrcm]
 
+[chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
 #【ユラギ】
 「人間の叡智は素晴らしいな……カレールウを型に流し込んだ子供用カレー……子供心を自ら血肉となって満たしていくとは」[lrcm]
 
@@ -215,19 +228,22 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg storage="ログハウス.jpg" time="1"]
+[bg storage="ログハウス.png" time="1"]
 [mask_off effect="fadeOut"]
+[fadeinbgm storage="おつきorユラギ.ogg" time="1000" loop="true"]
 
 #
 ゴトゴトと煮込まれる鍋の中で次第に体を失っていくゴットカレー。[lrcm]
-全ては子どもたちの笑顔のため。その身を物理的に粉にしてやって来たゴットカレーは、今、摂氏90度を超える湯の中に投入され、その体を失いつつある。[lrcm]
-残るはもはや上半身のみ……自らの最期まで残すところ2分というところでなお、しかし決してその笑顔を絶やさない。[lrcm]
+全ては子どもたちの笑顔のため。[lrcm]
+その身を物理的に粉にしてやって来たゴットカレーは、今、摂氏90度を超える湯の中に投入され、その体を失いつつある。[lrcm]
+残るはもはや上半身のみ……自らの最期まで残すところ2分というところでなお、決してその笑顔を絶やさない。[lrcm]
 #【一】
 「……ゴットカレー……お前はそこまでして……」[lrcm]
 #
-ありがとうゴットカレー、君のことは心と体に刻むよ。[lrcm]
+ありがとうゴットカレー、君のことは食べ終わるまで忘れない……[lrcm]
 
 [chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「ハジメ～まだぁ～～？」[lrcm]
 #【おつき】
@@ -236,18 +252,23 @@
 ソファーの背もたれから頭を突き出して二人が声をかけてくる。[lrcm]
 #【一】
 「もうすこしかかるよー」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
+[chara_hide name="yuragi"]
+
 #
 二人は帰ってくるなりこちらの料理をしばらく見ていたが、飽きてきたのか二人で遊び始めた。[lrcm]
 すっかり姉妹のようになって、Sw○thで遊んでいる二人。[lrcm]
 周りに入る精霊達は、ソファーやユラギの頭の上、おつきの肩の上等に乗ってゲーム画面を興味津々といった表情で見入っている。[lrcm]
-[chara_mod name="yuragi" face="odoroki" time="0"]
+[chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
 #【ユラギ】
 「ぬあーっ、おつきなんでそんな強いんだ！　シリーズを累計すれば私のプレイ時間は10000時間を超えてるんだぞ！」[lrcm]
 #【おつき】
 「おつきはてんさいだからって、おとーさんとおかーさんがいってた！」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
-「くうっ、確かに天神から恩恵与えられてる感じだからなんとも言えないっ……！　もっかいだ！　神様の本気見せてやるぞ！　すごいぞー泣くだけで海とか干上がるから！」[lrcm]
+「くうっ、確かに天神から恩恵与えられてる感じだからなんとも言えないっ……！」[lrcm]
+[odoroku layer="0"]
+「もっかいだ！　神様の本気見せてやるぞ！　すごいぞー泣くだけで海とか干上がるから！」[lrcm]
 #【一】
 「……冗談になってないぞ……」[lrcm]
 #
@@ -257,10 +278,12 @@
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
 
-[chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
+
 #【おつき】
 「ん～～おいしい！」[lrcm]
-[chara_mod name="yuragi" face="emi_m" time="0"]
+[chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「うまいっ！　すごいなハジメっ！　おまえたちはこんなに美味しいものを食べていたのかぁ」[lrcm]
 #【一】
@@ -276,11 +299,13 @@
 #【おつき】
 「あーおねえちゃん、にんじんもたべなきゃだめだよ！」[lrcm]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=ase x="50" y="70" width="80"]
 #【ユラギ】
 「いやっ……ち、ちがうんだ神様は栄養豊富な物はちょっとな……」[lrcm]
 #【おつき】
 「だめ！　ちゃんとたべなさい！」[lrcm]
 [chara_mod name="yuragi" face="sekimen" time="0"]
+[manpu layer=0 name=yuragi type=gaan x="20" y="80" width="80"]
 #【ユラギ】
 「はい……」[lrcm]
 #【一】
@@ -293,6 +318,7 @@
 ひとまず、ちゃんと休息を取り、明日の捜索に備えよう。[lrcm]
 
 [chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 #【ユラギ】
 「んふー」[lrcm]
 #
@@ -317,12 +343,13 @@
 「あー、おねーちゃんたちがおつきをなかまはずれにする！　ずるい！」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「じゃあおつきも一緒ににーってわらうんだ、[chara_mod name="yuragi" face="emi" time="0"]にーって！」[lrcm]
+「じゃあおつきも一緒ににーってわらうんだ、[chara_mod name="yuragi" face="emi" time="0"][manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]にーって！」[lrcm]
 #【おつき】
 「にいいいっ！」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【おつき】
-「まっすぐで素晴らしい笑顔だ……っ！　よーしよしよし」[lrcm]
+「まっすぐで素晴らしい笑顔だ……っ！　[chara_mod name="yuragi" face="emi" time="0"][manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]よーしよしよし」[lrcm]
+[playse storage="抱きつく.ogg"]
 #
 ぎゅ～っとおつきに抱きつくユラギ。[lrcm]
 おつきが笑い、ユラギがころころと表情を変えて。[lrcm]
@@ -330,16 +357,6 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg storage="bg.png"]
-[mask_off effect="fadeOut"]
-
-
-…[lrcm]
-……[lrcm]
-………[lrcm]
-
-[mask effect="fadeIn"]
-[bg storage="ログハウス.png"]
 [mask_off effect="fadeOut"]
 
 #【おつき】
@@ -359,18 +376,36 @@
 #【一】
 「ふふっ、行ってらっしゃい、おつき」[lrcm]
 [chara_show name="yuragi" top="50" face="emi" time="0" top="150"]
+[odoroku layer="0"]
 #【ユラギ】
-「おうおうっ、行ってらっしゃい！　また来るんだぞ！　いや、見つけたら連れてきちゃうからな！」[lrcm]
+「おうおうっ、行ってらっしゃい！　また来るんだぞ！」[lrcm]
+「いや、見つけたら連れてきちゃうからな！」[lrcm]
 #【おつき】
 「……うんっ！　いってきます！」[lrcm]
 
+#
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+[bg storage="bg.jpg"]
 [mask_off effect="fadeOut"]
+
+#
+…[lrcm]
+……[lrcm]
+………[lrcm]
+……………[lrcm]
+
+[mask effect="fadeIn"]
+[bg storage="ログハウス.png"]
+[mask_off effect="fadeOut"]
+[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
+──そんな日常が、二週間ほど続いた。[lrcm]
 
 #【おつき】
 「これをーこーして、こう！　はい！　どだい！」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
+[chara_show name="yuragi" top="50" face="emi" time="0" top="150"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「おー！　確かにそんな形してたなぁ。よしよし、わたしも作るぞ！」[lrcm]
 #【おつき】
@@ -451,6 +486,7 @@
 #【ユラギ】
 「うーむ、そうだな……まあ、見てみないことにはわからないか」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 「とにかく一回だけ！　おつきと、私を信じてくれ！」[lrcm]
 #
 真っ直ぐな目でこちらを見ている。[lrcm]
@@ -458,43 +494,56 @@
 #【一】
 「ううん……わかった、そこまで言うなら」[lrcm]
 #
-ぱぁああっと[lrcm]
+ぱぁああっと表情が明るくなった。[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
-
+[odoroku layer="0"]
 #【ユラギ】
 「うんうん！　ありがとう！　ハジメ信じてくれて嬉しい！」[lrcm]
-[quake count=3 time=100]
+[playse storage="抱きつく.ogg"]
+[quake count=4 time=100]
 #
 そう言って抱きついてくる。[lrcm]
 #【一】
 「あ、いや、一回、一回だけだからな！」[lrcm]
 #【おつき】
 「ああーーおねーちゃんずるいー！　おつきもやるーー！」[lrcm]
-[quake count=3 time=100]
+[quake count=4 time=100]
+[playse storage="抱きつく.ogg"]
+[playse storage="抱きつく.ogg"]
 #
 しばらくユラギとおつきに抱きつかれたまま、その場でぐるぐるまわる羽目になった。[lrcm]
-
+#
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [bg storage="morinaka2.jpg"]
 [mask_off effect="fadeOut"]
+[fadeinbgm storage="The_End_of_Destruction_バトル1_dova.ogg" time="1000" loop="true"]
 
 #【一】
 「な…………」[lrcm]
 ;se
+[playse storage="kick-low1.ogg" buf="1"]
+[playse storage="kick-high1.ogg" buf="1"]
+[playse storage="獣やられ.ogg" buf="2"]
 #【哀れな獣】
 『キャン……キャッ！　ギャウン……』[lrcm]
+[quake count=5 time=300]
 #
 目の前にあるのは、妖物が半透明のムキムキマッチョにボコボコにされている光景。[lrcm]
 それを今、横にいるユラギと呆然と見ていることしかできない。[lrcm]
 ことの始まりはおつきを連れて森を捜査に出てからしばらく立ってのこと。[lrcm]
 森の祠のようなものの近くに、突然現れた狼のような妖物。[lrcm]
-それは神社に出ていたものと似てる複数のしっぽを持ったそれ。[lrcm]
+それは神社に出ていたものと似てる複数のしっぽを持ったそれと同じだった。[lrcm]
 こちらが警戒に入るより前に妖物がおつきを狙った。[lrcm]
 ……その瞬間、動きが２つ合った。[lrcm]
 まず、おつきの周りをくるくると飛んでいた精霊たちがおつきの興味を妖物の反対に向け、その周囲を護るように、火や風といった障壁が展開され始めた。[lrcm]
 そして妖物がおつきへ飛びかかった直後、おつきの周囲から溶け出るように二人の半透明マッチョが出現し、その妖物を吹き飛ばしたのだ。[lrcm]
-最終的には、二人のマッチョが連携し、格ゲーのコンボ動画でも見せられているのではないかと言うぐらいの鮮やかな攻撃が続けられてる。[lrcm]
+;コンボ音
+[quake count=5 time=300]
+最終的には、二人のマッチョが連携し、[playse storage="kick-low1.ogg" buf="1"]
+[playse storage="kick-high1.ogg"][quake count=5 time=300][playse storage="kick-middle1.ogg"]
+格ゲーのコンボ動画でも見せられているのではないかと言うぐらい[quake count=5 time=300][playse storage="ko.ogg"]の鮮やかな攻撃が続けられてる。[lrcm]
+[playse storage="down1.ogg"]
 
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【ユラギ】
@@ -505,13 +554,15 @@
 「そしてあの二柱の強さは……ご覧のとおりだ」　[lrcm]
 #【一】
 「あ、ああ……」[lrcm]
-[chara_mod name="yuragi" face="fukigen" time="0"]
 [manpu layer=0 name=yuragi type=gaan x="20" y="80" width="80"]
 #【ユラギ】
 「そ、それにああいう筋力系の祓い使える奴があんなにご執心ってことは、私が余計なことするとほら……わたし、神話から消されちゃうかもしれないし……」[lrcm]
+[chara_mod name="yuragi" face="e" time="0"]
 「いや、私そもそも公的な物語に載ってないしいろいろと……立場がほら……」[lrcm]
 #【おつき】
 「しっかりしてくれ、この島の守り神だろ……」[lrcm]
+[yure layer="0"]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「無理ぃ……マッチョ無理ぃ……」[lrcm]
 
@@ -521,26 +572,31 @@
 #【おつき】
 「おねーちゃーん！　このくさ、ぐっとないろしてるー！」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
+[odoroku layer="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「おーう！　まっってろー今行くぅー！」[lrcm]
 
 #
 パタパタとユラギはおつきのもとへ向かっていく。[lrcm]
-[chara_hide name="yuragi"]。
+[chara_hide name="yuragi"]
 ……その後、3筋肉ぐらいの出来事があり、素材集めはつつがなく終了した。[lrcm]
 
 [mask effect="fadeIn"]
+[bg storage="ログハウス.png"]
 [mask_off effect="fadeOut"]
+[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
 
 #【おつき】
 「じゃーねーおねーちゃん！　いってきまーす！」[lrcm]
 [chara_show name="yuragi" top="50" face="emi" time="0" top="150"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「おーう！　絵の具いっぱい作っとくからなおつき！　いってらっしゃーい！」[lrcm]
 #【おつき】
 「うんっ！」[lrcm]
 #
-いつものようにユラギとおつきが両手をなんどもタッチしながら微笑み合う。[lrcm]
+いつものようにユラギとおつきが両手を何度もタッチしながら微笑み合う。[lrcm]
 おつきが来てから、何度も繰り返されているやり取り。[lrcm]
 #【おつき】
 「おにーちゃんもー！」[lrcm]
@@ -558,11 +614,14 @@
 #【一】
 「ああ、俺はすぐ戻ってくるけどな」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
+[manpu layer=0 name=yuragi type=muka2 x="20" y="80" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「むー、そうじゃない！　こういう時は、行ってきます、って言うんだ！」[lrcm]
 #【おつき】
 「そうだぞーはじめおにーちゃん！　でかけるときは行ってきますってキスするの！」[lrcm]
 [chara_mod name="yuragi" face="sekimen" time="0"]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【一】
 「き、キス！？」[lrcm]
 #【おつき】
@@ -588,18 +647,9 @@
 #【ユラギ】
 「あ、う、うん！　[chara_mod name="yuragi" face="emi_m" time="0"]行ってらっしゃい！　ハジメ！」[lrcm]
 
-
+#
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg storage="bg.png"]
-[mask_off effect="fadeOut"]
-
-
-…[lrcm]
-……[lrcm]
-………[lrcm]
-
-[mask effect="fadeIn"]
 [bg storage="ログハウス.png"]
 [mask_off effect="fadeOut"]
 
@@ -644,11 +694,14 @@
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「その二人と、もう一匹。家族のような……”ユキ”という狼がいてな。私と彩、九郎、ユキでこの山の中を遊び回ったんだ。あの子達が……死んでしまうあの事件まで」[lrcm]
+「その二人と、もう一匹。家族のような……”ユキ”という狼がいてな」[lrcm]
+「私と彩、九郎、ユキでこの山の中を遊び回ったんだ。あの子達が……死んでしまうあの事件まで」[lrcm]
 
 #【一】
 「あの……事件？」[lrcm]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「……はっ！　ご、ごめん、これはちょっと暗い話だった！　いやー悪いわるい」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
@@ -670,10 +723,12 @@
 #【一】
 「ああ」[lrcm]
 #
-ユラギはもう一度さみしげにはにかんだ。[lrcm]
+ユラギはもう一度淋しげにはにかむ。[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
+[fadeinbgm storage="悲しい回想.ogg" time="1000" loop="true"]
+
 #【ユラギ】
-「あの事件は……冬の冷え込んだ日だった。あの二人はお互いいがみ合い続けていた名家の跡取りでな。まあいわゆる、禁断の恋だったわけだ」[lrcm]
+「あの二人はお互いいがみ合い続けていた名家の跡取りでな。まあいわゆる、禁断の恋だったわけだ」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 「それだけだったら……よかった。だけどとある事情のせいであの二人は……その２つの家から命を狙われる立場になってしまった」[lrcm]
 #【一】
@@ -694,7 +749,7 @@
 「だから私は、あの二人に付きっきりで着いてあげることができなかった……」[lrcm]
 「あの日も歪みはかなり危険な状態に膨張していた」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
-「そのせいで私は、この姿を表わすどころかあの二人に別れもい言えず…駆けつけたその時にはもう……」[lrcm]
+「そのせいで私は、この姿を表わすどころかあの二人に別れも言えず……駆けつけたその時にはもう……」[lrcm]
 #【一】
 「……」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
@@ -702,13 +757,15 @@
 「そして……あの日は一番起こってはいけないことすら起こってしまって……もう、散々だったのさ」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
-「……あの時の私は……一体どうしたら良かったんだろうか……どちらも失ってはいけないはずだったのに……でも、私は歪みを止めることしかできなかった……」[lrcm]
+「……あの時の私は……一体どうしたら良かったんだろうか……決して失ってはいけないもののはずだったのに……」[lrcm]
+「でも、私は歪みを止めることしかできなかった……」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
-「それをやめれば……この島ごとなくなってしまっていたか……」[lrcm]
+「それをやめれば……この島ごとなくなってしまっていたからな……」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
+[odoroku layer="0"]
 「わかっている……わかってるんだ。あの時に他の選択肢は選べなかった！」[lrcm]
 「でもどうしても、どうしても、思ってしまうんだ」[lrcm]
-「”あの時、私にもっと力があれば”、”あの時、もっといい方法があったんじゃないか”って……」[lrcm]
+「〝あの時、私にもっと力があれば〟、〝”あの時、もっといい方法があったんじゃないか〟って……」[lrcm]
 
 #
 言葉の節々に現れるのは後悔の念。[lrcm]
@@ -728,6 +785,8 @@
 #【ユラギ】
 「ハジメ……？」[lrcm]
 ;立ち上がる音
+[playse storage="立ち上がる.ogg"]
+[playse storage="コソゴソ.ogg"]
 
 #
 俺は立ち上がると、戸棚の奥に隠しておいたお菓子と、ポットからお湯を注いでユラギのもとに持っていく。[lrcm]
@@ -759,6 +818,7 @@
 そして、手元のココアを持って。[lrcm]
 
 [chara_mod name="yuragi" face="terewara" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「うん……あったかいな」[lrcm]
 
@@ -767,15 +827,21 @@
 パクパクと、期間限定『粉雪どら焼き』を頬張ると、ユラギはよしっ、と意気込み。[lrcm]
 
 [chara_mod name="yuragi" face="emi" time="0"]
+[fadeinbgm storage="ユラギ_1_dova.ogg" time="1000" loop="true"]
 #【ユラギ】
-「……よし！　しみったれてもしょうがない！　今、この製法を知っている人間はもうこの世界にはいない！」[lrcm]
+「……よし！　しみったれてもしょうがない！」[lrcm]
+「今、この製法を知っている人間はもうこの世界にはいない！」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 「だから、私が見えるあの子に……せめてプレゼントして上げたいんだ」[lrcm]
 「たとえそれが後の世に残らず、どこかで壊れてしまったといても、あの二人が生きた証を少しでも残そう！」[lrcm]
 
-;ゴソゴソ音
+[chara_hide name="yuragi"]
+[playse storage="コソゴソ.ogg"]
+#
 ゴソゴソと棚の方をさぐり、一つのプレートを取り出してくる。[lrcm]
 
+[chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 #【ユラギ】
 「じゃじゃーん、だから、ちゃーんとハジメのやつもあるぞ！」[lrcm]
 
@@ -811,8 +877,9 @@
 #
 肝心の空灯の方はうんともすんとも言わない。[lrcm]
 
+[manpu layer=0 name=yuragi type=hatena x="30" y="80" width="80"]
 #【ユラギ】
-「うーん？　確かこんなんだった気がするんだけどなぁ……九郎は手先が器用すぎるんだ」[lrcm]
+「うーん？　確かこんなんだった気がするんだけどなぁ……[chara_mod name="yuragi" face="fukigen" time="0"]九郎は手先が器用すぎるんだ」[lrcm]
 「設計図なくなっちゃったしなぁ……ううむ……どうするか……」[lrcm]
 
 #
@@ -823,15 +890,18 @@
 #【一】
 「ん……？」[lrcm]
 
+#
 だが、その形状にはどこか見覚えがあった。[lrcm]
 それはおそらく、自分が修行のために籠もっていた頃に見た神社の蔵にあった祓具の一つ。[lrcm]
 #【一】
 「……なあ、この針金の位置、右回りなってるせいで止まってるんじゃないか？」[lrcm]
 「ここで折り返さないと力を通したとしても、うまく伝達できないし」[lrcm]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
-「えっ……おお！　ホントだ！　すごいなハジメ！　でもなぜこんな技術を……[chara_mod name="yuragi" face="def" time="0"]あ、そうか」[lrcm]
-＃
+「えっ……おお！　ホントだ！　すごいなハジメ！」[lrcm]
+「でもなぜこんな技術を……[chara_mod name="yuragi" face="def" time="0"]あ、そうか」[lrcm]
+#
 ユラギは少しだけ上を向いて。[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
@@ -840,17 +910,18 @@
 「ん？　なんかいったか？」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「いやなんでもないぞぉ。[chara_mod name="yuragi" face="emi" time="0"]yハジメ、一緒に作ってくれ！」[lrcm]
-＃
+「いやなんでもないぞぉ。[chara_mod name="yuragi" face="emi" time="0"]ハジメ、一緒に作ってくれ！」[lrcm]
+#
 この日から、二人でおつきのプレゼントを作り始める事となった。[lrcm]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [bg storage="forest_night.jpg"]
 [mask_off effect="fadeOut"]
-
-[playse storage="bell.ogg"]
+[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
+[playse storage="足音草.ogg"]
 それは、ゆっくりと近づいてきていた。[lrcm]
+[playse storage="yuki_やられ.ogg"]
 人を襲い、食らうために動くそれは、あの時なぜか男を殺さなかった。[lrcm]
 何故だ、何故だ。[lrcm]
 自分の中で葛藤がおこる、この黒黒と浮かび上がり、全身が血が出るまでかきむしっても止むことのない”何か”。[lrcm]
@@ -859,6 +930,5 @@
 獣は獲物に気配を気取らないように、静かに行動を開始した。[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
+
 @jump storage=2_6.ks target=*2_6
