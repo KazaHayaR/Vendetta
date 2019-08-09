@@ -48,8 +48,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 キィ……っと、古びた門が開く。[lrcm]
 つんとくるカビと腐った木の匂い。[lrcm]
@@ -107,8 +106,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 ──ギギギィ……。[lrcm]
 
@@ -149,8 +147,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-;黒背景[lrcm]
+[mask_off effect="fadeOut"];黒背景[lrcm]
 ──[lrcm]
 その獣は漆黒の毛皮、巨大な一角を持つその獣であり、その容姿は狼に近い。[lrcm]
 ロンドンの魔術師や各国の教会組織からの情報共有によれば、それは現れるごとに神格、霊格の力を借り、多くの犠牲を払い、ようやくもって封じ込められている。[lrcm]
@@ -162,8 +159,7 @@
 ──[lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【一】
 「その驚異は、幼生であっても森に存在するような妖物とは比べ物にならない」[lrcm]
 「少なくとも神格、しかも並の神々では太刀打ちできないほどの力を持った凶悪な怪物である……か」[lrcm]
@@ -212,6 +208,5 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=3_2.ks target=*3_2

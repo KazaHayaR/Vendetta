@@ -203,8 +203,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 「……まったく……神様のことを心配するなんて……ハジメはお人よし……？　ゴットよしだな……」[lrcm]
 #
@@ -303,8 +302,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 月明かりが照らす森の中。[lrcm]
 森に住む虫たちのさえずり、そよ風にさざめく木々。[lrcm]
@@ -367,8 +365,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【一】
 「ただいま……ユラギ、おつき」[lrcm]
 #【おつき】
@@ -428,8 +425,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 ;ハジメ
 #【一】
 「……えっと……ええと……？」[lrcm]
@@ -458,8 +454,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 真っ暗闇。[lrcm]
 布団の中はいつだって真っ暗だ。[lrcm]
 彩と九郎と喧嘩した日も……あの日も、私はこの中にいた。[lrcm]
@@ -873,6 +868,5 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=3_1.ks target=*3_1

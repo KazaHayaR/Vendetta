@@ -66,14 +66,14 @@
 #【ユラギ】
 「ん？　なんだ？」[lrcm]
 
-#【ハジメ】
+#【一】
 「ああいや、なんでも。始めてくれ」[lrcm]
 
 [chara_mod name="yuragi" face="def" time="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「うむ！　じゃあまず、攫われた人たちについてだが……ひとまず無事……だと思う少なくとも、生きてはいる」[lrcm]
-#【ハジメ】
+#【一】
 「本当か……！？」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
 [manpu layer=0 name=yuragi type=kiran x="50" y="60" width="80"]
@@ -82,7 +82,7 @@
 
 #
 無い胸を、ふんす、と張ってくれた。[lrcm]
-#【ハジメ】
+#【一】
 「……いや、それは……信じていいのか……？」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 [odoroku layer="0"]
@@ -95,7 +95,7 @@
 というユラギはどこか楽しげに怒る振りをしている。[lrcm]
 怒る、という行為自体が久しぶりなのだろう。[lrcm]
 
-#【ハジメ】
+#【一】
 「……それはすごいな」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
@@ -110,7 +110,7 @@
 少し真剣な声になるユラギ。思わず、生唾を飲み込む。[lrcm]
 …………つまり、現在の状況は犯人のさじ加減一つですべてが変わる。[lrcm]
 
-#【ハジメ】
+#【一】
 「ん？　でも全住人の状況を把握できるなら、その場所も特定できるはずじゃないのか？」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 
@@ -118,7 +118,7 @@
 「普通はできるぞ……できるんだが……[chara_mod name="yuragi" face="def" time="0"]」[lrcm]
 [manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
 「かろうじて、この森の中であるということはわかった……だが、それ以上は知覚不可能な領域に居るみたいなんだ」[lrcm]
-#【ハジメ】
+#【一】
 「ん……？　まて、それは……」[lrcm]
 
 #
@@ -133,7 +133,7 @@
 「あ、でも今の私は神と言ってもなんというか……元々偏在できたりしないからなぁ」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 「古い本とかにも載ってないし。こう、最初のステージの中ボスぐらいの神様だぞ？」[lrcm]
-#【ハジメ】
+#【一】
 「ちゅ、中ボス……」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
 [manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
@@ -148,7 +148,7 @@
 「……まるで、この島に私が居ると分かっているような対応をされているなぁ」[lrcm]
 #
 どこか遠い目で、ユラギはぼそっと呟いた。[lrcm]
-#【ハジメ】
+#【一】
 「ん……？」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
@@ -157,13 +157,13 @@
 #
 ユラギは肩をすくめた。[lrcm]
 
-#【ハジメ】
+#【一】
 「あー、ちなみにだが、他の神様は護ってくれないのか？　一応、家には神様を二柱祀ってるはずなんだが」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 [manpu layer=0 name=yuragi type=tameiki x="75" y="0" width="80"]
 #【ユラギ】
 「残念ながら神は基本、人事不介入だからなぁ……」[lrcm]
-#【ハジメ】
+#【一】
 「警察みたいなこと言うなよ……」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
@@ -175,7 +175,7 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 「まー要するに、神様は自身がもつ役割を果たすときじゃないと基本的に人界に干渉できないのさ」[lrcm]
-#【ハジメ】
+#【一】
 「なるほど……」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
@@ -196,7 +196,7 @@
 #
 それもまた『嬉しい』という感情が全面に出た笑顔だった。[lrcm]
 
-#【ハジメ】
+#【一】
 「お、おう……」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=hatena x="30" y="80" width="80"]
@@ -207,13 +207,13 @@
 んー？　と、不思議そうにこちらを見上げてくるユラギ。[lrcm]
 ……なんというか……くっ、庇護欲がっ……！[lrcm]
 
-#【ハジメ】
+#【一】
 「んん”、まあ了解した。それなら、仕方ないな」[lrcm]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「まー島が滅びそうになったら流石に駆けつけると思うけどなぁー。そうなる前に、私達で解決しないとだ！」[lrcm]
-#【ハジメ】
+#【一】
 「うん。後は……犯人の正体、か。なにかわかってることはあるか？」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 [manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
@@ -222,13 +222,13 @@
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「さっきの領域と同じく、犯人も知覚できない。ついでにいうなら……」[lrcm]
-#【ハジメ】
+#【一】
 「そいつが、人を誘拐した理由？」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=onpu x="20" y="80" width="80"]
 #【ユラギ】
 「そのとぉりー！　ふふ、ハジメは頭がいいんだなぁ」[lrcm]
-#【ハジメ】
+#【一】
 「いや……そんなことはないと思うが……」[lrcm]
 
 #
@@ -246,11 +246,11 @@
 
 #【ユラギ】
 「該当項目がありすぎるんだ。わかることといえば、おそらく怪異や妖物の類だということぐらいかぁ～う～ん」[lrcm]
-#【ハジメ】
+#【一】
 「つまり、まとめると……限られた時間の中で犯人の正体を確かめ、住民を救出。その後……封じ込めるか退治するか、だな」[lrcm]
 #
 自分の口をついた言葉に、少しだけ気分が落ち込むのがわかった。[lrcm]
-#【ハジメ】
+#【一】
 「退治……か……」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
@@ -258,7 +258,7 @@
 [manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 [chara_mod name="yuragi" face="emi" time="0"]
 「降山の”祓え”は心強いぞ～ふふ～」[lrcm]
-#【ハジメ】
+#【一】
 「……まあ、な……」[lrcm]
 
 #
@@ -285,7 +285,7 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=kiran x="50" y="60" width="80"]
 「それに私がいれば万事解決だ！」[lrcm]
-#【ハジメ】
+#【一】
 「まあ、そんな状況になりたくないけどな……でも、やばくなったらそうさせてもらうよ」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
@@ -299,7 +299,7 @@
 「まあひとまずできることといえば……今までどおりの聞き込みに加えて、森の中のそれっぽい気配が濃い場所を巡るぐらいか……」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 「ということで、ハジメも明日から森を巡るのを手伝ってくれ！」[lrcm]
-#【ハジメ】
+#【一】
 「ああ、任された。聞き込みの方も、知り合いに不思議な事がなかったか聞いて回ってみるさ」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=onpu x="20" y="80" width="80"]
@@ -314,6 +314,5 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=2_3.ks target=*2_3

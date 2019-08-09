@@ -364,6 +364,5 @@ Fin
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=ending.ks target=*ending

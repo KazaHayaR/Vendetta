@@ -210,7 +210,7 @@
 らの顔を見ている。[lrcm]
 幼気な顔立ちと、どこか眠そうな瞼。[lrcm]
 だがその裏に在るのは、どこかこの世のものでないような美しさを持つ瞳。[lrcm]
-#【ハジメ】
+#【一】
 （……改めて、近くで見ると、相当かわいいなこの神様……）[lrcm]
 #
 クラスでも抜きん出た可愛さを持つと言われる椿と互角かそれ以上。[lrcm]
@@ -301,6 +301,5 @@
 それからしばらくユラギの顔を撫で回した。
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=2_2.ks target=*2_2

@@ -112,8 +112,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 それは、山から避難する一人の刑事。[lrcm]
 #【谷垣】
@@ -135,8 +134,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 荘厳でありながらも優しく。[lrcm]
 幻想的でありながら、手を伸ばせば確かに届く光が世界を満たす。[lrcm]
@@ -553,6 +551,5 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=2_2.ks target=*2_2

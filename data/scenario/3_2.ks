@@ -58,8 +58,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【一】
 「……っ……いた……」[lrcm]
 
@@ -165,10 +164,7 @@
 駆け寄ってくるユラギ、[lrcm]
 獣はそれを見届けるなり、先程吐き出した人間を再び加え、森の奥へと消えていった。[lrcm]
 
-[mask effect="fadeIn"]
-[chara_hide name="yuragi"]
-[fadeoutbgm]
-#【ユラギ】
+[mask effect="fadeIn"] [chara_hide name="yuragi"] [mask_off effect="fadeOut"]#【ユラギ】
 「あああっ……ハジメ……ッ！　お前まで……私のせいで……ッ！」[lrcm]
 
 #
@@ -336,8 +332,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"\]
 #【ユラギ】
 「……」[lrcm]
 #【一】

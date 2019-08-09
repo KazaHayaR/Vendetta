@@ -364,6 +364,5 @@
 おれはさっさと学校を後にした。[lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=1-3.ks target=*1-3

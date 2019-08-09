@@ -84,8 +84,7 @@
 ;bg変更
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 「この一本一本の線は、決して交わること無く進んでいく……進んでいくはずだった」[lrcm]
 「ある時、その線同士が衝突するという〝事故〟が起こった」[lrcm]
@@ -124,8 +123,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 ぴちゃん、ぴちゃん、とどこかから水が落ちとる音がする。[lrcm]
 ぼんやりと青白い光が満ちているのは鍾乳洞のような洞窟だ。[lrcm]
@@ -193,8 +191,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 警戒して進んでいくが……特に障害はなかった。[lrcm]
 若干肩透かしを喰らいつつも、祠の奥、小さな祭壇にたどり着いた。[lrcm]
@@ -235,8 +232,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 いくつもの繭を開けてはユラギが即座に手を入れ、回復していく。[lrcm]
 繭をいくつか開けていた後、見慣れた二人の姿を見つけた。[lrcm]
@@ -270,8 +266,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【谷垣】
 「ん、んん～～っ！　あれ……っここは」[lrcm]
 #【一】
@@ -484,8 +479,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 「ハジメは、良い友人を持っているな」[lrcm]
 #【一】

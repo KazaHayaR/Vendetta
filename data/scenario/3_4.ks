@@ -62,8 +62,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 星山の家系は自らが継承した神の血を利用し、この島特有の強力な魔物に対抗すべく様々な術を開発していった。[lrcm]
 一つが対妖物戦闘特化した『略祓』。[lrcm]
@@ -112,8 +111,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 あの二人の出会いは幼い頃。[lrcm]
 お互い、家の格式張ったいろいろに疲れ、こっそり抜け出しては森で遊んでいた時だったそうだ。[lrcm]
@@ -133,8 +131,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【一】
 「……ユラギか？」[lrcm]
 #【ユラギ】
@@ -147,8 +144,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【彩】
 「ふふ、神様もやっぱりゴロゴロしたい時はあるのね！ 　うんうん、わかるわー！」[lrcm]
 #【ユラギ】
@@ -166,8 +162,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 「ちなみに何故当主が見えないのか知っているかと言うと、私はその頃誰にも認知されないのが悲しくて、降山と星降の当主が変わるたびに扉から押し入って話しかけたり変顔したりして見えないか検査しに行ってた」[lrcm]
 #【一】
@@ -175,8 +170,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 ともあれ、私の見ることも声を交わすこともできる人間と遊ばない手はない。[lrcm]
 ……それからは、楽しい日々の連続だった。[lrcm]
@@ -216,8 +210,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 ぎゅっ……とユラギは首元の円のネックレスを握りしめる。[lrcm]
 
@@ -226,8 +219,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 私も、あの時、何が起こったのかわからなかった。[lrcm]
 歪みの制御をなんとか無理やり抜け出しユキのもとに駆けつけた時、その姿は何倍にも膨れ上がり巨大になっていた。[lrcm]
 黒い瘴気を撒き散らし、その目は虚ろ。[lrcm]
@@ -374,8 +366,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 
 
 @jump storage=3_5.ks target=*3_5

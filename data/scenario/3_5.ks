@@ -70,8 +70,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 「作戦はこうだ。私の力も歪みの維持で使える術はそう多くない。加えて攻撃系の祓はあの子にはほぼ効かないいと考えていい……なればまともに戦っても勝機が薄いと考えるのが普通だ」[lrcm]
 
@@ -91,8 +90,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 と、息巻いたものの、こちらの足の速さではあっという間に追いつかれてしまうがオチだ。[lrcm]
 ならば。[lrcm]
@@ -382,13 +380,11 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-#【谷垣】
+[mask_off effect="fadeOut"]#【谷垣】
 『島の安全を護るのが、私達の仕事ですから！』[lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 怖くても、なんでも、ただ、その信念に近い意思が、彼女の恐怖を打ち消し、行動させた。[lrcm]
 果たして、自分はどうだろうか。[lrcm]
@@ -530,8 +526,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【ユラギ】
 『かつて、星詠みと祓いの者が肩を並べて戦っていた日。星詠みの技術と祓えの技術を合わせ、神すらも下せる〝祓〟が作られようとした』[lrcm]
 『しかし……完成の瞬間で袂を別れ、ついに完成には至らなかった』[lrcm]
@@ -540,8 +535,7 @@
  [lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #
 山が、大きく震え始めた。[lrcm]
 地面に浸透した筒が、大地の奥深くに埋まっていた、何かを呼び覚ました。[lrcm]
@@ -607,8 +601,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 #【一】
 「……はぁ……ごほっ、ごほっ……いたた……」[lrcm]
 
