@@ -1,7 +1,7 @@
 *title
 @layopt layer=message0 visible=false
 @layopt layer=message1 visible=false
-
+[call storage="macro.ks"]
 ; @maki: bgimage
 [image layer="base" page="fore" storage=rouka.jpg]
 ; @maki: logo image
@@ -14,11 +14,11 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   // 外
   var div = document.createElement('div');
   div.setAttribute('id', 'title_base');
-  div.setAttribute('style', 'position: absolute;top: 0;right: 0;height: 100%;width: 294px;z-index:101;background: linear-gradient(180deg,rgba(54, 20, 19, .89),rgba(38, 38, 38, .89),rgba(54, 20, 19, .89));');
+  div.setAttribute('style', 'position: absolute;top: 0;right: 0;height: 100%;width: 294px;z-index:101;background: linear-gradient(180deg,rgba(20, 19, 54, .89),rgba(38, 38, 38, .89),rgba(20, 19, 54, .89));');
   // 中
   var cdiv = document.createElement('div');
   cdiv.setAttribute('id', 'title_buttons');
-  cdiv.setAttribute('style', 'height: 448px;width: calc(100% - 180px);margin: 94px 90px 68px;position:relative');
+  cdiv.setAttribute('style', 'height: 448px;width: calc(100% - 180px);margin: 94px 90px 60px;position:relative');
   var topBorder = document.createElement('div');
   var bottomBorder = document.createElement('div');
   topBorder.setAttribute('style', 'position:absolute;top:0;bottom:0;width:100%;height:1px;background-color:#fff;box-shadow: 0 0 7px rgba(255,255,255,1);')
@@ -96,11 +96,11 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   var simg3 = document.createElement('img');
   div3.setAttribute('style', 'position: relative;margin-top: 60px;');
   a3.setAttribute('href', "javascript:void(0);");
-  a3.setAttribute('onclick', 'document.getElementById("title_base").remove();TYRANO.kag.layer.getMenuLayer().empty();TYRANO.kag.layer.getMenuLayer().css("background-image","url(./data/image/save_bg.png)");TYRANO.kag.menu.displayLoad();');
+  a3.setAttribute('onclick', 'document.getElementById("title_base").remove();tyrano.plugin.kag.ftag.startTag("jump", {storage: "ueno_1.ks",target: "*ueno_1"});');
   mimg3.setAttribute('src', 'data/image/trial_m.svg');
   simg3.setAttribute('src', 'data/image/trial_s.svg');
-  mimg3.setAttribute('style', 'margin: 0 calc((100% - 107.89px)/2);width:107.89px;-webkit-filter: drop-shadow(0 0 7px #fff);');
-  simg3.setAttribute('style', 'padding: 0 calc((100% - 29.33px)/2);position: absolute;top: 36px;left: 0;-webkit-filter: drop-shadow(0 0 7px #fff);width: 100%;box-sizing: border-box;');
+  mimg3.setAttribute('style', 'margin: 0 calc((100% - 154px)/2);width:154px;-webkit-filter: drop-shadow(0 0 8px #fff);');
+  simg3.setAttribute('style', 'padding: 0 calc((100% - 91px)/2);position: absolute;top: 36px;left: 0;-webkit-filter: drop-shadow(0 0 7px #fff);width: 100%;box-sizing: border-box;');
   a3.appendChild(mimg3);
   a3.appendChild(simg3);
   div3.appendChild(a3);
@@ -109,7 +109,6 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   cdiv.appendChild(bottomBorder);
   cdiv.appendChild(div1);
   cdiv.appendChild(div2);
-  // cdiv.appendChild(div3);
   cdiv.appendChild(div4);
   cdiv.appendChild(div5);
   div.appendChild(cdiv);
