@@ -21,26 +21,6 @@
 [chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 [chara_face name="yuragi" face="terewara" storage="/chara/yuragi/C1-9.png"]
 
-;キャラセットアップ
-;【椿】
-[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="400"]
-[chara_face name="tubaki" face="def" storage="chara/tubaki/T-def.png"]
-[chara_face name="tubaki" face="angry" storage="chara/tubaki/T-angry.png"]
-[chara_face name="tubaki" face="blush" storage="chara/tubaki/T-blush.png"]
-[chara_face name="tubaki" face="cry" storage="chara/tubaki/T-cry.png"]
-[chara_face name="tubaki" face="giggle" storage="chara/tubaki/T-giggle.png"]
-[chara_face name="tubaki" face="hopeless" storage="chara/tubaki/T-Hopeless.png"]
-[chara_face name="tubaki" face="smile" storage="chara/tubaki/T-smile.png"]
-[chara_face name="tubaki" face="surprised" storage="chara/tubaki/T-surprised.png"]
-[chara_face name="tubaki" face="Sdef" storage="chara/tubaki/TS-def.png"]
-[chara_face name="tubaki" face="Sangry" storage="chara/tubaki/TS-angry.png"]
-[chara_face name="tubaki" face="Sblush" storage="chara/tubaki/TS-blush.png"]
-[chara_face name="tubaki" face="Scry" storage="chara/tubaki/TS-cry.png"]
-[chara_face name="tubaki" face="Sgiggle" storage="chara/tubaki/TS-giggle.png"]
-[chara_face name="tubaki" face="Shopeless" storage="chara/tubaki/TS-Hopeless.png"]
-[chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
-[chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
-
 [bg layer=base storage=morinaka.png time="1"]
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="Shiokaze_感動_dova.ogg" time="1000" loop="true"]
@@ -64,9 +44,9 @@
 「そして一つの大きな悲劇を生み出してしまうまでのお話だ」[lrcm]
 
 [mask effect="fadeIn"]
-[bg layer=base storage=bg.png time="1"]
+[bg layer=base storage=青赤.png time="1"]
 [mask_off effect="fadeOut"]
-;パッケージのあれ
+
 #【ユラギ】
 星山の家系は自らが継承した神の血を利用し、この島特有の強力な魔物に対抗すべく様々な術を開発していった。[lrcm]
 一つが対妖物戦闘特化した『略祓』。[lrcm]
@@ -276,7 +256,7 @@
 「でも、なんとか友人を救い出し、逃げ出すことに成功したが……最後の最後で怪我をしてしまった」[lrcm]
 [chara_show name="yuragi" top="50" face="fukigen" time="0" top="150"]
 「そして廃屋の中で体を休めてるところを……降山と星降、両方の部隊に襲撃されて殺された」[lrcm]
-;抱きしめる
+[playse storage="抱きつく.ogg"]
 #
 ぎゅっ……とユラギは首元の円のネックレスを握りしめる。[lrcm]
 
@@ -355,7 +335,7 @@
 #【ユラギ】
 「あのときどうしたら……どうしたらよかったんだ……わたしはっ……ううっ……ううっ……」[lrcm]
 
-;抱きしめる
+[playse storage="抱きつく.ogg"]
 #
 泣き始めてしまったユラギをやさしく抱きしめる。[lrcm]
 胸の中で嗚咽の音が響く。[lrcm]
@@ -367,7 +347,7 @@
 #【ユラギ】
 「ああ、いいよ。大丈夫」[lrcm]
 
-;抱きしめる
+[playse storage="抱きつく.ogg"]
 #
 振るえる小さな体へ抱きしめる力を強める。[lrcm]
 せめて、その震えが止まるように祈りながら。[lrcm]
@@ -379,7 +359,7 @@
 「そうか？」[lrcm]
 #【ユラギ】
 「そうさ……私が保証する」[lrcm]
-;抱きしめる
+[playse storage="抱きつく.ogg"]
 #
 ユラギはとん、ともう一度こちらの胸の中に飛び込んでくる。[lrcm]
 
@@ -419,7 +399,7 @@
 [chara_mod name="yuragi" face="sekimen" time="0"]
 「だから……私達だけでなんとかしないといけない……ハジメ、手伝って──」[lrcm]
 
-;だきしめる
+[playse storage="抱きつく.ogg"]
 #
 ユラギの頭をグシャグシャにする。[lrcm]
 #【一】
@@ -435,7 +415,7 @@
 
 #
 ユラギは微笑みながら俺の手を取ると。[lrcm]
-;抱きしめる
+[playse storage="抱きつく.ogg"]
 
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
@@ -486,8 +466,9 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-;bg 鍾乳洞
+[bg layer=base storage=鍾乳洞.jpg time="1"]
 [mask_off effect="fadeOut"]
+[playse storage="鍾乳洞ピチャン.ogg" loop="true"]
 ;ぴちゃん音
 #
 ぴちゃん、ぴちゃん、とどこかから水が落ちとる音がする。[lrcm]
@@ -504,8 +485,10 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 [chara_show name="yuragi" top="50" face="sekimen" time="0" top="150"]
+
 #【ユラギ】
 「そ、その……さ、さっきのでつ、つながりが深くなったはずだから、探知の精度はもっと上がるはず」[lrcm]
 #【一】
@@ -526,6 +509,8 @@
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
+[playse storage="鍾乳洞ピチャン.ogg" loop="true"]
+[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
 
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 [manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
@@ -556,11 +541,10 @@
 #
 少しだけ声のトーンを落とし、しゅんとするユラギ。[lrcm]
 
-
 #【ユラギ】
 「大丈夫。ちゃんとユキを助け出せば、解決だろ？」[lrcm]
 
-;だきしめる
+[playse storage="抱きつく.ogg"]
 #
 つないだ手のひらを、ぎゅっと握りこむ。[lrcm]
 
@@ -583,7 +567,6 @@
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
-;鍾乳洞bg
 #
 警戒して進んでいくが……特に障害はなかった。[lrcm]
 若干肩透かしを喰らいつつも、祠の奥、小さな祭壇にたどり着いた。[lrcm]
@@ -664,7 +647,7 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「任せろ、必ず助ける」[lrcm]
-;鈴の音
+[playse storage="bell魔法.ogg"]
 #
 ユラギの手が飾れると同時、徐々その噛み傷が修復されていく。[lrcm]
 苦しげな二人の表情が戻り、穏やかに変わる。[lrcm]
