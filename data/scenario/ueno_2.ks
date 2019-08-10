@@ -170,20 +170,31 @@
 教室は昨日のニュースの話題で持ちきりだったが、緊張感は皆無に近かった。仮にも同じ島で惨たらしい事件が起きたというのに。現代人はどうにも当事者意識というものに欠けている気がする。[lrcm]
 #【坂本宗介】
 「…まあ、いつも通り読書にいそしんでる俺も人のことは言えないか」[lrcm]
+[chara_show name="katura" face="hera" top=50]
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「何が人のことは言えないって？」[lrcm]
 #【坂本宗介】
 「げえっ、桂!?」[lrcm]
+[chara_mod name='katura' face='oko' time='0']
+[hop name=katura time=400]
 #【桂慎太郎】
-「なんだ、人のことを関羽みたいに。…関羽みたいに扱われるんだったらそれはそれで光栄なことだな！はっはっは！」[lrcm]
+「なんだ、人のことを関羽みたいに。…関羽みたいに扱われるんだったらそれはそれで光栄なことだな！
+[wait time=500]
+[chara_mod name='katura' face='smile' time='0']
+はっはっは！」[lrcm]
 #【坂本宗介】
 「お前といい椿といい、どうして俺の幼馴染たちはみんな俺に静かな読書空間を提供する気がないんだ？」[lrcm]
+[manpu layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「竹馬の友たる俺たちに遠慮がいるか？」[lrcm]
 #【坂本宗介】
 「親しき仲にも礼儀ありってことわざの意味を百回調べてきてくれ」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[hop name=katura time=700]
 #【桂慎太郎】
 「そんなもの、調べなくても知っているさ」[lrcm]
+[manpu layer='0' name='katura' type='waiwai' x='140' y='70' width='80']
 #【坂本宗介】
 あっはっは、と爽やかに笑う桂。コイツも昔から変わらない。騒がしいヤツで、俺に静かな学園生活を遅らせる気がない。これで神社の神主の息子なんだから世の中分からない。[lrcm]
 #【坂本宗介】
@@ -192,18 +203,26 @@
 下らない話とは主に、お互いの女性の趣味・お互いの好きな女性の部位・お互いの女性に言わせてみたい台詞は何か・などなど多岐に渡る。[lrcm]
 #【坂本宗介】
 下らないので俺はそんなに乗り気ではないのだが、桂はお構いなしに俺の性癖を掘り下げにかかってくるのだから厄介だ。[lrcm]
+[chara_mod name='katura' face='def' time='0']
+[manpu layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「そう言うな。もしかしたら、しばらくはそのくだらない話もろくにできなくなるかもしれんのだから」[lrcm]
 #【坂本宗介】
 「どういうことだ？」[lrcm]
+[chara_mod name='katura' face='majime' time='0']
+[hop_revert name=katura time=500]
 #【桂慎太郎】
 「…お前も知っているのだろう？昨日の凄惨な事件を」[lrcm]
 #【坂本宗介】
 「ああ…。今朝からその話題でみんな持ちきりみたいだな」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[manpu layer='0' name='katura' type='mojamoja' x='50' y='50' width='80']
 #【桂慎太郎】
 「さっさと下手人が捕まってくれれば問題はないのだが…そうならなかった場合、休校や外出制限もあり得る。というわけで…」[lrcm]
 #【坂本宗介】
 「今のうちに友人と話しておこうと思った、というわけか」[lrcm]
+[chara_mod name='katura' face='def' time='0']
+[hop_revert name=katura time=300]
 #【桂慎太郎】
 「うむ」[lrcm]
 #【坂本宗介】
@@ -216,6 +235,9 @@
 「あーっ!!ちょっと、私は追い払ったのになんで慎太郎とは会話してるの！私も混ぜて！」[lrcm]
 #【坂本宗介】
 前言撤回。やっぱり面倒な幼馴染ズは放置しておくに限る。[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[chara_mod name='katura' face='smile' time='0']
+[hop name=katura time=400]
 #【桂慎太郎】
 「おっと。本の虫には戻らせないぞ。さあ、今日は何を語る？」[lrcm]
 #【坂本宗介】
@@ -241,14 +263,16 @@
 #【坂本宗介】
 「…なあ、椿。一晩といわず、しばらくはうちにいていいんだぞ。ゆらぎだって歓迎してくれるさ」[lrcm]
 [chara_mod name='tubaki' face='Sgiggle' time='0']
-[manpu layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
 #【夕陽椿】
 「あはは…。…ありがと。やっぱり、宗介は優しいね」[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
 #【坂本宗介】
 「翔さんの言いつけを守ろうとしてるだけだ」[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
 [hop_revert name=tubaki time=600]
 #【夕陽椿】
 「ふふ…。でもいいの。一人は慣れてるし、父さんだってずっと帰って来ないわけじゃないし…」[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
 #【坂本宗介】
 そう言いつつこっちに笑いかけてくる椿。いつものような快活な笑みじゃなく、無理して絞り出しているような痛々しい笑みだった。[lrcm]
 #【坂本宗介】
@@ -258,67 +282,106 @@
 #【坂本宗介】
 無性に恥ずかしくて、言葉尻はほぼほぼウィスパーボイスに近くなってしまった。逃げ出したい。[lrcm]
 [chara_mod name='tubaki' face='Sblush' time='0']
-
+[hop name=tubaki time=300]
 #【夕陽椿】
 「…！」[lrcm]
 #【坂本宗介】
 「だから…その。ほとぼりが冷めるまでは、俺の…」[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[hop_revert name=tubaki time=600]
 #【夕陽椿】
 「ありがと…」[lrcm]
+[chara_move name=tubaki width=600]
+[quake time=300 count=2]
 #【坂本宗介】
 次の瞬間、時が止まった。[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
 #【坂本宗介】
 「つっ、椿!?何を…」[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[hop_revert name=tubaki time=600]
 #【夕陽椿】
-「何って、抱きついてるだけだよ。ふふ、すっごくドキドキしてる」[lrcm]
+「何って、抱きついてるだけだよ。
+ふふ、すっごくドキドキしてる」[lrcm]
 #【坂本宗介】
 「おまえ、そんなこと、一度も…」[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
+[vShake name=tubaki time=600]
 #【夕陽椿】
 「あはは、テンパりすぎ。この程度、外国じゃ挨拶代わりなんでしょ？君なら知らないわけないよね」[lrcm]
 #【坂本宗介】
 「ここは日本だ！」[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[manpu layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
 #【夕陽椿】
 「それはそうだね！ごめんごめん。…ただ私がこうしたくなっただけ、だよ」[lrcm]
 #【坂本宗介】
 「…椿」[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
 #【夕陽椿】
-「本当にありがとう。そんなに言うなら…お言葉に、甘えさせてもらうね？」[lrcm]
+「本当にありがとう。そんなに言うなら…お言葉に、
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[hop_revert name=tubaki time=500]
+甘えさせてもらうね？」[lrcm]
 #【坂本宗介】
 「…ああ。遠慮するなよ、色々」[lrcm]
 #【夕陽椿】
 「…うん」[lrcm]
 #【坂本宗介】
-密着している椿が、顔を上げた。俺と目が合うと、少し恥ずかしそうにはにかんだ。俺はそんな彼女から目がそらせない。彼女も俺から目をそらさない。[lrcm]
+密着している椿が、顔を上げた。俺と目が合うと、少し恥ずかしそうにはにかんだ。
+[chara_mod name='tubaki' face='Sgiggle' time='0']
+俺はそんな彼女から目がそらせない。彼女も俺から目をそらさない。[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[hop_revert name=tubaki time=500]
 #【夕陽椿】
 「宗介…」[lrcm]
 #【坂本宗介】
 この後一体どうすればいいのか、何が起こるのか、俺には予想も———。[lrcm]
 #【携帯電話】
-ブーッ！ブーッ！[lrcm]
+[playse storage="trial/携帯のバイブレーション.ogg"][lrcm]
 #【坂本宗介】
 「うわっ！」[lrcm]
+[chara_mod name='tubaki' face='Ssurprised' time='0']
+[hop name=tubaki time=300]
 #【夕陽椿】
 「きゃっ！」[lrcm]
 #【坂本宗介】
-突然の着信で、俺たちは現実に引き戻された。慌てて椿から距離をとる。[r]…危なかった。いや、何が危なかったのかと問われると困るんだが。[lrcm]
+突然の着信で、俺たちは現実に引き戻された。慌てて椿から距離をとる。
+[chara_move name=tubaki width=400]
+[r]…危なかった。いや、何が危なかったのかと問われると困るんだが。[lrcm]
 #【坂本宗介】
 「すまん、着信だ！」[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[vShake name=tubaki time="400"]
 #【夕陽椿】
 「う、うん！気にしないで」[lrcm]
 #【坂本宗介】
-「ああ、ちょっと失礼。…っと、父さんからだ。[wait time=300]なるほどな」[lrcm]
+「ああ、ちょっと失礼。…っと、父さんからだ。
+[stopse][playse storage="trial/携帯に出る.ogg"]
+[wait time=500]
+[stopse]
+[quake time=2000 wmax=0 count=3]
+なるほどな」[lrcm]
+[chara_mod name='tubaki' face='Sdef' time='0']
+[manpu layer='0' name='tubaki' type='hatena' x='50' y='50' width='80']
 #【夕陽椿】
 「宗介パパ、なんだって？」[lrcm]
 #【坂本宗介】
 「いつ帰れるか怪しいから、家から着替えを持ってきてほしいんだと。まったく、人使いが荒いよ」[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
+[hop_revert name=tubaki time=500]
 #【夕陽椿】
 「あはは…そっちも色々大変なんだね」[lrcm]
 #【坂本宗介】
 「とにかく、急いで家に帰らないとな。椿は、着替えとか大丈夫なのか？」[lrcm]
+[chara_mod name='tubaki' face='Ssmile' time='0']
+[hop name=tubaki time=400]
 #【夕陽椿】
 「そうだね、私も家からもっと日用品持ってきちゃおうっと」[lrcm]
 #【坂本宗介】
 「わかった。じゃあ、また後でな」[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
+[hop_revert name=tubaki time=300]
 #【夕陽椿】
 「うん。あとでね」[lrcm]
 [chara_hide name=tubaki]

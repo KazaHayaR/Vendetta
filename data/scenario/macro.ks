@@ -292,6 +292,15 @@ $(".message0_fore>.message_inner").css({
 [chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
 [chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
 
+;キャラセットアップ
+;【桂】
+[chara_new  name="katura" storage="chara/katura/def.png" jname="桂" width="500"]
+[chara_face name="katura" face="def"    storage="chara/katura/def.png"]
+[chara_face name="katura" face="hera"   storage="chara/katura/hera.png"]
+[chara_face name="katura" face="majime" storage="chara/katura/majime.png"]
+[chara_face name="katura" face="oko"    storage="chara/katura/oko.png"]
+[chara_face name="katura" face="smile"  storage="chara/katura/smile.png"]
+
 [bg layer=base storage=%bgstorage|black.png time="1"]
 [mask_off effect="fadeOut"]
 [if exp="mp.bgmstorage?true:false"]
@@ -371,6 +380,7 @@ document.getElementsByClassName("situationOuter")[0].remove();
 ;------------------;
 ;	animation macros ;
 ;------------------;
+; 基本的に [macroName name="chara name" time="time"] で使う
 
 ;縦揺れ
 [keyframe name="vShake"]
