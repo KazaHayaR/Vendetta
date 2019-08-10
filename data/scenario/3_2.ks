@@ -46,7 +46,7 @@
 「縁が繋がってないと本当の姿を見せないんだ。君が囚われていた、あの洋館のようにな」[lrcm]
 #【一】
 「……っ！　知ってるのか！？」[lrcm]
-[chara_mod name="yuragi" face="fukigen" time="0"]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「森の中の出来事だからな」[lrcm]
 
@@ -62,7 +62,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg layer=base storage=morinaka2.png time="1"]
+[bg layer=base storage=morinaka2.jpg time="1"]
 [mask_off effect="fadeOut"]
 ;狼やられ
 [playse storage="yuki_やられ.ogg"]
@@ -75,6 +75,7 @@
 また一人、攫ってきているのだろう。[lrcm]
 
 [chara_show name="yuragi" top="50" face="fukigen" time="0" top="150"]
+[playse storage="run_yuragi.ogg"]
 [quake count=3 time=100]
 #【ユラギ】
 「……ッ！」[lrcm]
@@ -91,7 +92,7 @@
 捨てられた人は……遠目ではあるが、まだ、呼吸している！[lrcm]
 
 [chara_mod name="yuragi" face="sekimen" time="0"]
-#【一】
+#【ユラギ】
 「どうしてだ……どうしてなんだ……君が……なんで……」[lrcm]
 
 #【黒い獣】
@@ -128,7 +129,8 @@
 [chara_mod name="yuragi" face="fukigen" time="0"]
 [odoroku layer="0"]
 #【ユラギ】
-「君も私をおいて、本物の人喰いの獣に……なってしまうのか……!?　なあっ、『ユキ』ッ！」[lrcm]
+「君も私をおいて、本物の人喰いの獣に……なってしまうのか……!?」[lrcm]
+「なあっ、『ユキ』ッ！」[lrcm]
 
 #
 現れたのは一本の真っ黒な角を持つ狼のような獣。[lrcm]
@@ -146,9 +148,11 @@
 
 #
 その姿を見られた魔獣は雄叫びを上げる。[lrcm]
-同時に、その口元に真っ黒な炎のようなんいかが溢れ始めた。[lrcm]
-
+同時に、その口元に真っ黒な炎のような何かが溢れ始めた。[lrcm]
+[playse storage="炎.ogg"]
 [chara_mod name="yuragi" face="sekimen" time="0"]
+[odoroku layer="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「ユキ！　私だ……彩と九郎の……お姉ちゃんだぞ！」[lrcm]
 #【一】
@@ -159,14 +163,16 @@
 #【黒い獣】
 「──■■■■■■！」[lrcm]
 
-＃
+#
 獣の口元に宿る炎は徐々に大きくなり、ウネウネとした気味の悪い何かへと変貌していく。[lrcm]
+[playse storage="炎.ogg"]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「ユキっ！　私はっ、私ははあの時……っ！　君たちに──」[lrcm]
 #【黒い獣】
 「──■■■■ッ！」[lrcm]
 ;火の穂のエフェクト
+[playse storage="炎吐く.ogg"]
 [movie storage="derkness_eater.webm" skip=false]
 ;攻撃
 ;炎吐くmov
@@ -185,11 +191,10 @@
 その状態で神に対抗できる力を持ったものからの攻撃を受けたら……どうなるかわかからない。[lrcm]
 聞くかもしれないし、効かないかもしれない……。[lrcm]
 だけど、そんなことを考えるより先に、俺の体は動いていた。[lrcm]
-
+[playse storage="炎吐く.ogg"]
 [movie storage="derkness_eater.webm" skip=false]
+
 [quake count=10 time=100]
-──ボウッ！！　（SE)[lrcm]
-えぐるような血のエフェクトと、燃えるような音。[lrcm]
 
 #【一】
 「ぐうううっ！」[lrcm]
@@ -200,6 +205,7 @@
 「──■■■■！」[lrcm]
 [playse storage="yuki_威嚇.ogg"]
 
+[fadeoutbgm]
 #
 駆け寄ってくるユラギ、[lrcm]
 [playse storage="足音草.ogg"]
@@ -207,7 +213,9 @@
 
 [mask effect="fadeIn"] 
 [mask_off effect="fadeOut"]
+[fadeoutse]
 [chara_mod name="yuragi" face="sekimen" time="0"]
+[playse storage="抱きつく.ogg"]
 #【ユラギ】
 「あああっ……ハジメ……ッ！　お前まで……私のせいで……ッ！」[lrcm]
 
@@ -217,16 +225,20 @@
 体内で大きな蛇が動き回っているんじゃないかと言うぐらいの不快感と焼けるような痛み。[lrcm]
 ……でもっ……！[lrcm]
 
+
 #【一】
 「……だい……じょうぶ。俺だって、盾になるぐらいはできる。少なくとも……ユラギの側にいる……だから……ぐっ……」[lrcm]
 [chara_mod name="yuragi" face="sekimen" time="0"]
 [odoroku layer="0"]
+[playse storage="抱きつく.ogg"]
 #【ユラギ】
 「何をッ……喋るんじゃないッ……その炎はすぐに消さないと……ッ！」[lrcm]
 
 #
 だが、言わなければならない、この子には……笑っていてほしいんだ。[lrcm]
 それは、谷垣さんが、俺が護って行った、決死の攻撃のように、せめて……。[lrcm]
+
+[fadeinbgm storage="Shiokaze_感動_dova.ogg" time="1000" loop="true"]
 
 #【一】
 「ユラギっ！！」[lrcm]
@@ -279,7 +291,7 @@
 [chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「この……このばか……！　馬鹿だハジメは……もうなんで……君は……」[lrcm]
-
+[playse storage="抱きつく.ogg"]
 #
 ユラギが、乱暴にこちらを引き寄せる。[lrcm]
 胸の中でぽかぽかとこちらの胸を叩く。[lrcm]
@@ -289,18 +301,20 @@
 「守りたいからお互いを守る。そこに、神様も人間もないはずだ」[lrcm]
 「ユラギの親友だって、きっと、そう思ってたんじゃないか？」[lrcm]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「……っ！」[lrcm]
 #【一】
 「……ユラギ……神様だからって全部一人で背負うことはないさ」[lrcm]
 「だから、一人で行こうとしないでくれよ。あの獣に立ち向かうんだったら、俺も手伝う……」[lrcm]
 「さほど役には立たなかもしれないけど……まあその、正直頼ってもらえないとしょげる」[lrcm]
-[chara_mod name="yuragi" face="fukigen" time="0"]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「……馬鹿……ばかだ……馬鹿だな君たちは……」[lrcm]
 #【一】
 「あはは、人間ある程度馬鹿じゃないとやっていけないからな……げほっ」[lrcm]
 
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #
 まるで何かが焦げたような香りの咳。[lrcm]
 ……本当に体内が焼けたのか。あのままだったらと思うと、ぞっとしないな。[lrcm]
@@ -332,6 +346,7 @@
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「でもっ……私は神様だっ……なのにあの子達に何もしてあげることはできなかったんだ！」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 「大切な……大切な友達だったのに……！」[lrcm]
 #【一】
 「……うん」[lrcm]
@@ -378,14 +393,18 @@
 #
 [playse storage="抱きつく.ogg"]
 ユラギは顔を上げこちらの肩を無理やり寄せた。[lrcm]
-唇どうしが、触れ合う。[lrcm]
+[mask effect="fadeIn"]
 [playse storage="kiss.ogg"]
+[mask_off effect="fadeOut"]
+唇どうしが、触れ合った。[lrcm]
+
 
 [chara_mod name="yuragi" face="terewara" time="0"]
 #【ユラギ】
 「だから私は……君が好きになってしまったんだな……」[lrcm]
 #【一】
 「な……！？　ぐっぐううっあああっ」[lrcm]
+[playse storage="消火.ogg"]
 
 [quake count=5 time=100]
 [playse storage="抱きつく.ogg"]
@@ -394,7 +413,7 @@
 
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
-「……まったく、水祓なんて応急処置程度にしかならないんだぞ……大丈夫だ、私に全部任せて」[lrcm]
+「……まったく、水祓なんて応急処置程度にしかならないんだぞ……[chara_mod name="yuragi" face="emi_m" time="0"]大丈夫だ、私に全部任せて」[lrcm]
 「ハジメは、私に従うだけでいい……」[lrcm]
 
 [playse storage="kiss.ogg"]
@@ -410,6 +429,7 @@
 「君が私のそばに居てくれるなら、私も君のそばにいる……」[lrcm]
 
 [playse storage="kiss.ogg"]
+[playse storage="kiss.ogg"]
 #
 次は舌が絡まる深いキス。[lrcm]
 ピチャピチャと言う淫靡な音が森のなかに響き渡る。[lrcm]
@@ -422,13 +442,17 @@
 [mask_off effect="fadeOut"]
 
 [chara_show name="yuragi" top="50" face="sekimen" time="0" top="150"]
+
+[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
+
+
 #【ユラギ】
 「……」[lrcm]
 #【一】
 「……」[lrcm]
 
-＃
-あたりには、微妙な雰囲気が流れていた[lrcm]。
+#
+あたりには、微妙な雰囲気が流れていた。[lrcm]
 関係が進展しそれに脳がついてこれず、お互いに言葉が紡げない。[lrcm]
 そんなもどかしい沈黙だった。[lrcm]
 
@@ -442,16 +466,17 @@
 「ううん、いいんだ。君がかばってくれたから、元気が出た。それに……」[lrcm]
 
 [playse storage="抱きつく.ogg"]
-＃
+#
 ユラギは思い切りぎゅっと抱きしめてきた。[lrcm]
 ユラギに触れられる柔らかな感触とぬくもりが、そのまま頬に伝わるように赤くなった。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「私の思いも伝えられた。ふふ、好きの感情が辛いという感情をドカーンとぶち破り、溢れてしまった！」
+「私の思いも伝えられた。ふふ、好きの感情が辛いという感情をドカーンとぶち破り、溢れてしまった！」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 「つまり、私は愛の力でネガティブを脱することができた！　イェイ！」[lrcm]
 
-＃
+#
 ユラギはハイテンションだが、その顔は真っ赤だった。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
@@ -463,10 +488,9 @@
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「……もう、流されて告白でも私はいいんだぞ。[chara_mod name="yuragi" face="terewara" time="0"]まあでも……その誠実さも、ハジメの魅力ではあるが」[lrcm]
-
+#
 [chara_hide name="yuragi"]
 [playse storage="kiss.ogg"]
-#
 ちゅっ、とこちらの頬にキスをくれた。[lrcm]
 [chara_show name="yuragi" top="50" face="terewara" time="0" top="150"]
 
@@ -478,7 +502,7 @@
 #
 顔が赤くなるのがわかる。	[lrcm]
 
-[chara_mod name="yuragi" face="terewara" time="0"]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「あ～～赤くなったーー！　脈アリだなー！」[lrcm]
 #【一】
@@ -494,6 +518,7 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「これぐらいがちょうどいいのは遺伝子レベルで知ってる！」[lrcm]
+[chara_show name="yuragi" top="50" face="terewara" time="0" top="150"]
 「そしてハジメは私のような容姿の女の子がタイプだからな、籠絡までは長くないだろう！」[lrcm]
 #【一】
 「う、うるさいなっ！」[lrcm]
