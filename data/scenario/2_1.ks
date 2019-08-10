@@ -64,6 +64,7 @@
 #【一】
 「……ここは……『神域』？」[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「おぉーよく知ってるなぁ。そうそう、この島を依り代とする、私の楔となる部分だぞ〜」[lrcm]
 #
@@ -79,6 +80,7 @@
 #【ユラギ】
 「んー私はちょっと特殊な神だからなぁ〜、神体が存在できないんだ」[lrcm]
 「でも、の国の神群的には神体が無いと人と関われないということになっているから、楔でつないでるわけ」[lrcm]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 「そんなわけでお前んちにある神木には誰もいないぞぉ〜。ただの木だ」[lrcm]
 #【一】
 「いや、ちょっとまって。それ神社としては由々しき事態なんだけど！？」[lrcm]
@@ -116,8 +118,8 @@
 「……ふっふっふ、なんせありがたいお供え物だからな！」[lrcm]
 #【一】
 「大切に一つ平起きされた表紙には、強気な顔の男が二人、キスする1秒前のが描かれているが？」[lrcm]
-[manpu layer=0 name=yuragi type=ase x="20" y="80" width="80"]
 [chara_mod name="yuragi" face="Sodoroki" time="0"]
+[manpu layer=0 name=yuragi type=ase x="50" y="70" width="80"]
 #【ユラギ】
 「……っふ……やっぱ長い間生きていると？　そういうこともあるかなって」[lrcm]
 #【一】
@@ -298,7 +300,7 @@
 「…………」[lrcm]
 
 #
-それからしばらくユラギの顔を撫で回した。
+それからしばらくユラギの顔を撫で回した。[lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]

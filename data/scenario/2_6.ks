@@ -241,11 +241,8 @@
 
 ;ユラギ専用textレイヤー
 @layopt layer=message0 visible=true
-[plugin name="message_edge" edge="true" edge_color="AB5FA5" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
 [position left=0 top=526 width=1280 height=194]
 [position layer=message0 page=fore frame="texyuragi.png" margint="41" marginl="240" marginr="190" marginb="46"]
-[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
-[chara_config ptext="chara_name_area"]
 
 [mask_off effect="fadeOut"]
 [chara_show name="yuragi" top="50" face="terewara" time="0" top="150"]
@@ -374,11 +371,9 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 [chara_hide name="yuragi"]
 
 @layopt layer=message0 visible=true
-[plugin name="message_edge" edge="true" edge_color="0x1A237E" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
 [position left=0 top=526 width=1280 height=194]
 [position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
-[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
-[chara_config ptext="chara_name_area"]
+
 [bg layer=base storage=morinaka2.jpg time="1"]
 [mask_off effect="fadeOut"]
 [fadeoutbgm]
@@ -454,8 +449,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 @layopt layer=message0 visible=true
 [position left=0 top=526 width=1280 height=194]
 [position layer=message0 page=fore frame="texyuragi.png" margint="41" marginl="240" marginr="190" marginb="46"]
-[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
-[chara_config ptext="chara_name_area"]
+
 [fadeinbgm storage="神域.ogg" time="1000" loop="true"]
 [bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
@@ -537,8 +531,6 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 @layopt layer=message0 visible=true
 [position left=0 top=526 width=1280 height=194]
 [position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
-[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
-[chara_config ptext="chara_name_area"]
 
 [mask_off effect="fadeOut"]
 
@@ -577,8 +569,6 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 @layopt layer=message0 visible=true
 [position left=0 top=526 width=1280 height=194]
 [position layer=message0 page=fore frame="texyuragi.png" margint="41" marginl="240" marginr="190" marginb="46"]
-[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
-[chara_config ptext="chara_name_area"]
 
 [mask_off effect="fadeOut"]
 
@@ -786,11 +776,8 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 
 @layopt layer=message0 visible=true
-[plugin name="message_edge" edge="true" edge_color="0x1A237E" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
 [position left=0 top=526 width=1280 height=194]
 [position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
-[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
-[chara_config ptext="chara_name_area"]
 
 [bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
@@ -845,14 +832,13 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg layer=base storage=bg.jpg time="1"]
 [mask_off effect="fadeOut"]
 [playse storage="kiss.ogg"]
 #【ユラギ】
 「……んっ……」[lrcm]
 #
-[bg layer=base storage=ログハウス.png time="1"]
 [mask effect="fadeIn"]
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 
 [chara_show name="yuragi" top="50" face="sekimen" time="0" top="150"]
@@ -1089,10 +1075,9 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [chara_mod name="yuragi" face="odoroki" time="0"]
 #【ユラギ】
-「……ここは……」
+「……ここは……」[lrcm]
 
 [fadeoutse]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
 @jump storage=3_1.ks target=*3_1

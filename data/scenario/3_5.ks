@@ -90,7 +90,7 @@
 と、息巻いたものの、こちらの足の速さではあっという間に追いつかれてしまうがオチだ。[lrcm]
 ならば。[lrcm]
 
-#【ユラギ】
+#【一】
 「小祓『櫛蔓』　✕３！　柏手！」[lrcm]
 [playse storage="craphand.ogg" buf="1" volume="100"]
 [playse storage="桃雲.ogg" buf="2"]
@@ -130,7 +130,7 @@
 櫛蔓をあっという間に食いちぎった獣。[lrcm]
 だが、確実に足は止まり、こちらとの距離はなんとか維持できている。[lrcm]
 
-#【ユラギ】
+#【一】
 「このまま行ければ……！ 追加、小祓『桃雲(とううん)』　✕３！　柏手！」[lrcm]
 [playse storage="craphand.ogg" buf="0" volume="100"]
 [playse storage="桃雲.ogg" buf="1"]
@@ -577,12 +577,14 @@
 それは回避不可能ならば、飛び込んで、自ら体を獣の口へと放り込む。[lrcm]
 [playse storage="血が出る打撃.ogg"]
 [quake count=5 time=100]
+[layermode graphic=blood.jpg mode=overlay name=yuragi]
 ;地の打撃
 ──グシャッ。[lrcm]
 
 #【一】
 「──ッッ！！　ぐっう”う”う”！！」[lrcm]
 [chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
+[free_layermode]
 #【ユラギ】
 「は、ハジメッ！！？」[lrcm]
 [chara_hide name="yuragi"]
@@ -644,6 +646,8 @@
 #
 パンッ、という音と主に、ユキに刺さった刀から幾つもの白い糸のようなものが吹き出す。[lrcm]
 それはあっという間にユキを包み込み、巨大な繭となる。[lrcm]
+[playse storage="ツッコミ_dova.ogg"]
+[quake count=5 time=100][playse storage="ツッコミ_dova.ogg"][quake count=5 time=100]
 だが、それは一瞬ユキの動きを止めるが……ユキ暴れるたび、その糸は次々と切られていく。[lrcm]
 
 [chara_mod name="yuragi" face="odoroki" time="0"]
@@ -723,9 +727,9 @@
 『幾多の願いを束ねて送れ……』[lrcm]
 
 #
-[fadeinse storage="湧き上がる.ogg" buf="3" loop="true"]
-大地から光が現れる。
-それは、強い力を持った光。
+[fadeinse storage="湧き上がる.ogg" buf="3" loop="true" time="1000"]
+大地から光が現れる。[lrcm]
+それは、強い力を持った光。[lrcm]
 
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
@@ -772,14 +776,17 @@
 
 #【黒い獣】
 「──■■■■■■■■■！！！」[lrcm]
+#
 ;雄叫び
 [mask graphic=whit.jpg effect="fadeIn"]
 [bg layer=base storage=whit.jpg time="1"]
 [mask_off effect="fadeOut"]
 ;白いフェードアウト
-
+#
 断末魔にも似た雄叫びを上げ、獣は光りに包まれてゆく。[lrcm]
-その光が収まったとき、そこにはすでに、黒い獣の姿は消えていた。
+その光が収まったとき、そこにはすでに、黒い獣の姿は消えていた。[lrcm]
+………[lrcm]
+…………[lrcm]
 
 [mask effect="fadeIn" wait="1000"]
 [stopse buf="0"]
@@ -868,7 +875,7 @@
 #
 ユラギは立ち上がり、ユキに近づいていく。[lrcm]
 ユキはユラギの顔をちらりと見るが、襲いかかろうとはしない。[lrcm]
-[fadeoutse]
+[fadeoutse buf="3"]
 そういえば先程ユキから発せられていた黒い霧のようなものもなくなっている。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]

@@ -145,7 +145,7 @@
 「……！？　ま、正行、これって……」[lrcm]
 #【正行】
 「まさか……これが……本当の『星降』か！？」[lrcm]
-
+#
 [mask effect="fadeIn"]
 [chara_hide name="tubaki"]
 [bg layer=base storage=startrail2.png time="1"]
@@ -195,7 +195,7 @@
 「星降と、降山の名を持って唱えます……『星よ、色を灯せ』！」[lrcm]
 [chara_hide name="yuragi"]
 
-[bg layer=base storage=starain.png time="1000" cross="true"]
+[bg layer=base storage=rantanstar.jpg time="1000" cross="true"]
 ;bgをどうにかして虹にする
 ;虹の天の川
 #
@@ -416,7 +416,7 @@
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「あ、彩のやつ……娘にそんなこと言ってたのかっ!」[lrcm]
-[chara_mod name="yuragi" face="Se" time="0"]
+[chara_mod name="yuragi" face="e" time="0"]
 「……あれ……？　それってつまり……」[lrcm]
 [chara_mod name="yuragi" face="sekimen" time="0"]
 「私は幼子の恋愛指南で成功し、調子に乗っている哀れな神……？」[lrcm]
@@ -547,7 +547,7 @@
 すでに、おつきは『祓われた』のだ。[lrcm]
 今ここで話ができるのは、その僅かに残った残滓が強かったから。[lrcm]
 いくら神をも超える力を持った獣だったとしても……もう、長くはもたないだろう。[lrcm]
-]
+
 [chara_mod name="yuragi" face="def" time="0"]
 #【おつき】
 『あのねあのねっ……おつきね……おつきねっ……』[lrcm]
@@ -671,6 +671,6 @@
 #【ユラギ】
 「…………ああ……いって、らっしゃい。おつき……ユキ、彩、九郎」[lrcm]
 
-[mask_off effect="fadeOut"]
+[mask effect="fadeIn" time="3000"]
 
 @jump storage=epilogue.ks target=*epilogue

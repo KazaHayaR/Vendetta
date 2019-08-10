@@ -1,7 +1,7 @@
-*1-5
+*1_5
 ;キャラセットアップ
 ;【ユラギ】
-[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="500"]
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
 [chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
 [chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
 [chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
@@ -178,7 +178,7 @@
 だが……[lrcm]
 
 [bg layer=base storage=room.jpg time="1"]
-[chara_show name="yuragi" top="50" face="Sdef" time="0"]
+[chara_show name="yuragi" top="50" face="Sdef" time="0" top="150"]
 #【ユラギ】
 『最近この島の”歪み”がまたひどくなって来てさぁ……いやー、もうそろそろ私だけじゃ抑えられなくなってねー」[lrcm]
 「たぶん自称”神隠し”もそっから出て来た怪異的なやつかなぁーと』[lrcm]
@@ -233,6 +233,8 @@
 聞いたこともない声、あいつが人をほんとうの意味で助けを乞う声なんて、初めて聞いた。[lrcm]
 そして、最後の最後、きっとあいつが助けを求めたのはきっと、谷垣さんや他の人ではなく……。[lrcm]
 
+[quake count=5 time=100]
+[playse storage="ツッコミ_dova.ogg"]
 #【一】
 「…………ッ！」[lrcm]
 
@@ -266,8 +268,7 @@
 #【一】
 「はぁっ……はあぁ…見つけ……え……？」[lrcm]
 
-
-[chara_show name="yuragi" top="50" face="Sdef" time="0"]
+[chara_show name="yuragi" top="50" face="Sdef" time="0" top="150"]
 #
 口内を駆け回ること数十分、ようやく見つけたその小さな体は、顔にほのかに赤らめ、口にアイスの棒を加えながら浮いていた。[lrcm]
 [fadeinbgm storage="ユラギ_1_dova.ogg" time="1000" loop="true"]
@@ -281,7 +282,7 @@
 フヨフヨ浮遊して女子更衣室の天窓を覗き込んでる土地神がいた。[lrcm]
 
 [chara_mod name="yuragi" face="Semi_m" time="0"]
-[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「おお……？　おーハジメじゃないかぁ。こんばんわー！」[lrcm]
 #
@@ -307,7 +308,7 @@
 #【ユラギ】
 「おりょ……？」[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
-[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=pikon x="50" y="50" width="80"]
 ユラギがこちらの視線にきがつきニヤリと笑う。[lrcm]
 
 #【ユラギ】
@@ -322,6 +323,7 @@
 #【一】
 「違うから、俺をロリコンみたいにいうのはやめてもらおうか……！」[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「みなまで言うな……流石、降山の一族だな！！」[lrcm]
 #【一】
@@ -331,7 +333,7 @@
 え、つまり……先祖も……え？[lrcm]
 ユラギはフヨフヨと近づいてきて露骨にアイスを胸元に垂らしてきた。[lrcm]
 
-[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=pikon x="50" y="50" width="80"]
 #【ユラギ】
 「ふははは、ほれぇー。うんうん。人柱になれば、幼女の体を合法的に味わい放題だぞ～さぁさぁ、れっつ人柱どうよ〜？」[lrcm]
 #【一】
@@ -410,7 +412,9 @@
 
 #【一】
 「頼む……！ もし駄目なら……俺がひとばし……」[lrcm]
-[chara_mod name="yuragi" face="Semi_m" time="0"]
+[chara_mod name="yuragi" face="Semi" time="0"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「いいよっ！」[lrcm]
 
@@ -435,11 +439,11 @@
 #【ユラギ】
 「そりゃもちろん……」[lrcm]
 
-[chara_mod name="yuragi" face="Semi_m" time="0"]
+[chara_mod name="yuragi" face="Semi" time="0"]
 #
 ユラギはこちらを振り返って、ひまわりのような笑みを浮かべ。[lrcm]
 
 #【ユラギ】
 「私の家だ！！」
 
-@jump storage=2-1.ks target=*2_1
+@jump storage=2_1.ks target=*2_1

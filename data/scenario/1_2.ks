@@ -2,7 +2,7 @@
 
 *1_2
 
-[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="350" top="50"]
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
 [chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
 [chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
 [chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
@@ -25,7 +25,7 @@
 ;背景
 [mask_off effect="fadeOut"]
 [bg layer=base storage=room.jpg time="1"]
-[chara_show name="yuragi" top="50" face="Sdef" time="0"]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【一】
 「……さ、て」[lrcm]
 #
@@ -44,7 +44,7 @@
 先程からこちらを見つめているのは、くりくりとした眠そうな眼。[lrcm]
 両手は気だるそうに伸ばしたまま、可愛らしく首を傾げるその仕草は見た目よりもさらに幼さを感じさせる。[lrcm]
 顔立ちは”可愛い”と”綺麗”が8:2で整えられており、その顔はこちらを不思議そうな表情を見つめている。[lrcm]
-[manpu layer=0 name=yuragi type=hatena x="100" y="180" width="80"]
+[manpu layer=0 name=yuragi type=hatena x="30" y="80" width="80"]
 
 #【???】
 『うーー』[lrcm]
@@ -67,12 +67,12 @@
 #
 とりあえず黙っておく。[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
-[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=pikon x="50" y="50" width="80"]
 幽霊などの『見えないはずの者』と言うのは基本的に絡まれないほうがいいのだ……。[lrcm]
 
 
 ;横に揺れるエフェクト
-[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【???】
 『ほふぃー』[lrcm]
 [fadeinbgm storage="ユラギ_1_dova.ogg" time="1000" loop="true"]
@@ -82,7 +82,7 @@
 #【一】
 「ぶふっ……」[lrcm]
 [chara_mod name="yuragi" face="Semi" time="0"]
-[manpu layer=0 name=yuragi type=waiwai x="200" y="210" width="80"]
+[manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
 #【???】
 『お、おー、おーっ！ 見えるのかー！？　すごいなーお前！』[lrcm]
 #
@@ -98,11 +98,11 @@
 一通り嗅ぎ終わると、彼女は納得したように腕を組み、うんうん頷く。[lrcm]
 
 [chara_mod name="yuragi" face="Semi_m" time="0"]
-[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=pikon x="50" y="50" width="80"]
 #【???】
 「あーなるほど！　おまえ神社の次男坊かー。なるほどなー！　だから私のこと神ってわかるのか」[lrcm]
 [chara_mod name="yuragi" face="Semi" time="0"]
-[manpu layer=0 name=yuragi type=onpu x="50" y="200" width="80"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 「でもすごいぞー、私のことが見える人間は神職でも数百年ぶりだっ！」[lrcm]
 #
 と、気だるげな声とは正反対なトーンで、キラキラとした目をこちらに向けてくる。[lrcm]
@@ -130,7 +130,7 @@
 #【一】
 「わかった……ええっとそれじゃあ……なんて呼べばいいんだ？」[lrcm]
 [chara_mod name="yuragi" face="Semi" time="0"]
-[manpu layer=0 name=yuragi type=onpu x="50" y="200" width="80"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 #【???】
 「ん～っ。ぐっとな素っ気なさだ。いいじゃないかぁ～」[lrcm]
 #
@@ -149,7 +149,7 @@
 #【一】
 「うち的には守護神……守り神として祀ってるんだけど……？」[lrcm]
 [chara_mod name="yuragi" face="Smu" time="0"]
-[manpu layer=0 name=yuragi type=mojamoja x="130" y="200" width="80"]
+[manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
 #【ユラギ】
 「……だってぇお前んちの主神、木花ちゃんじゃんかー」[lrcm]
 「あの子いれば守護なんて事足りるしぃー。私も一応祀ってもらっては居るけど、依代がこの島なだけだし」[lrcm]
@@ -162,13 +162,13 @@
 [chara_mod name="yuragi" face="Sdef" time="0"]
 #【ユラギ】
 「まーでも安心してほしい。[chara_mod name="yuragi" face="Semi_m" time="0"]わたしは、この島と、この島の人間が好きだからなぁ～。だから見守ってる」[lrcm]
-[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #
 サムズアップにウィンクをセットでよこしてくれた。[lrcm]
 #【一】
 「はぁ……なるほど。それで、結局こんな学校に何しに来たんだ？」[lrcm]
 [chara_mod name="yuragi" face="Se" time="0"]
-[manpu layer=0 name=yuragi type=mojamoja x="130" y="200" width="80"]
+[manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
 #【ユラギ】
 「あーうん……濡れ衣を晴らしに、だ」[lrcm]
 #
@@ -177,7 +177,7 @@
 「濡れ衣……あ、『神隠し』か」[lrcm]
 [chara_mod name="yuragi" face="Smu" time="0"]
 [odoroku layer="0"]
-[manpu layer=0 name=yuragi type=muka2 x="50" y="200" width="80"]
+[manpu layer=0 name=yuragi type=muka2 x="20" y="80" width="80"]
 #【ユラギ】
 「そーだー！  私は何にも隠してないぞー！　[chara_mod name="yuragi" face="Se" time="0"]あいや、ちょっとは隠したことあるけど……」[lrcm]
 #【一】
@@ -188,12 +188,12 @@
 #
 なんらか違うものは隠しているということだろうか……。[lrcm]
 [odoroku layer="0"]
-[manpu layer=0 name=yuragi type=muka x="50" y="200" width="80"]
+[manpu layer=0 name=yuragi type=muka2 x="20" y="80" width="80"]
 #【ユラギ】
 「とにかく、私の名を語って人間からのヘイトを私に向けてるふとどきやろーの正体を明かしてやろうと、こうして聞き込み捜査中なんだよー」[lrcm]
 #【一】
 「なるほど、ちなみに、基本誰にも見えないのにぴっちり制服まで来てるのは？」[lrcm]
-[manpu layer=0 name=yuragi type=ase x="90" y="200" width="80"]
+[manpu layer=0 name=yuragi type=ase x="50" y="70" width="80"]
 [chara_mod name="yuragi" face="Se" time="0"]
 #【ユラギ】
 「えっ……そ、それは……ほら……その……ほら……郷に入りては郷に従えというか……」[lrcm]
@@ -205,7 +205,7 @@
 「ぐ…………き、着てみたかったんだよぉ！　わるいかっ！　ここの制服可愛くなったしなぁ！」[lrcm]
 #
 何故か恥ずかしそうに叫ぶユラギ。[lrcm]
-ちなみにここの制服は落ち着いた赤と緑色のチェック柄を基調としているどこか落ち着きながらも人形に着せる服のような愛らしさのあると島の外からも評判である。[lrcm]
+ちなみに制服がダサすぎるので変えてくれというデモ活動を正行が主導で行った結果現在のものになっている。[lrcm]
 [chara_mod name="yuragi" face="Sdef" time="0"]
 #【ユラギ】
 「んん”っ、まあいい。それと今もう一つ、山を降りてきた理由が出来たかなぁ」[lrcm]
@@ -215,7 +215,7 @@
 ユラギと名乗った少女はこちらの肩に左手を置く。[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
 そして、ばっとこちらに乗り出してきた。[lrcm]
-[manpu layer=0 name=yuragi type=kiran x="310" y="130" width="80"]
+[manpu layer=0 name=yuragi type=kiran x="50" y="60" width="80"]
 #【ユラギ】
 「な、人柱やらない？」[lrcm]
 
@@ -226,7 +226,7 @@
 「人柱って……その、簡単に言うと生贄……だよな……？」[lrcm]
 #
 見た目は学園の制服を着た中学生だが、これは、目をつけられた……？[lrcm]
-[manpu layer=0 name=yuragi type=waiwai x="50" y="210" width="80"]
+[manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
 #【ユラギ】
 「いやー、よかったよかった。最近この島の”歪み”がまたひどくなって来てさぁ……もうそろそろ私だけじゃ抑えられなくなってねー」[lrcm]
 「たぶん自称”神隠し”もそっから出て来た怪異的なやつかなぁーと」[lrcm]
@@ -249,7 +249,7 @@
 #【ユラギ】
 「でも安心してほしい、今回の人柱は霊体化するけど普通にものは触れるし、他人から認知もされる」[lrcm]
 [chara_mod name="yuragi" face="Semi" time="0"]
-「しかも、老いもしないし病気にもならない！  [manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]つまーり、実質不老不死になるだけなのだー！」[lrcm]
+「しかも、老いもしないし病気にもならない！  [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]つまーり、実質不老不死になるだけなのだー！」[lrcm]
 #
 にぃーっといたずらっ子のような笑いをして、ユラギがこちらにずんっと、顔を近づけてくる。[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
@@ -258,7 +258,7 @@
 #【一】
 「……お断りします」[lrcm]
 [chara_mod name="yuragi" face="Sodoroki" time="0"]
-[manpu layer=0 name=yuragi type=nanto x="90" y="150" width="80"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【ユラギ】
 「！　 な、何故……あらゆる人間が一度は思った理想じゃないのか……？」[lrcm]
 #
@@ -271,7 +271,7 @@
 #【一】
 「いや、人柱ってあれだろ？　もともと城とか建てる時に人埋めたっていうやつだし……なった時点で一定の場所から動けないんじゃないか？」[lrcm]
 [chara_mod name="yuragi" face="Se" time="0"]
-[manpu layer=0 name=yuragi type=ase x="90" y="200" width="80"]
+[manpu layer=0 name=yuragi type=ase x="50" y="70" width="80"]
 #【ユラギ】
 「んぐっ……い、いやぁ、そんなことはないぞーうん。この島の中ならどこにでもいけるぞーー？」[lrcm]
 #
@@ -286,13 +286,13 @@
 だらだらと冷や汗っぽいものを流している。[lrcm]
 
 [chara_mod name="yuragi" face="Semi" time="0"]
-[manpu layer=0 name=yuragi type=kiran x="310" y="130" width="80"]
+[manpu layer=0 name=yuragi type=kiran x="50" y="60" width="80"]
 #【ユラギ】
 「……島が吹き飛んだら、外に出れるぞっ！」[lrcm]
 #【一】
 「実質出れねーじゃねえか！！」[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
-[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「大丈夫！ 次の大戦はたぶん島ごと消えるなんて余裕だろう！　ワンチャンあるぜ〜！」[lrcm]
 #【一】
@@ -302,7 +302,7 @@
 ぐぬぬぬぬ……と眼の前の神様は悔しがっている。[lrcm]
 
 [chara_mod name="yuragi" face="Sdef" time="0"]
-[manpu layer=0 name=yuragi type=pikon x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=pikon x="50" y="50" width="80"]
 #【ユラギ】
 「はっ……」[lrcm]
 
@@ -321,15 +321,15 @@
 #【一】
 「……好きにって……」[lrcm]
 [chara_mod name="yuragi" face="Semi_m" time="0"]
-[manpu layer=0 name=yuragi type=kiran x="310" y="130" width="80"]
+[manpu layer=0 name=yuragi type=kiran x="50" y="60" width="80"]
 #【ユラギ】
 「あぁ……どんなプレイでも受け入れよう……！」[lrcm]
 #【一】
 「ぷ、ぷれっい！？」[lrcm]
-[manpu layer=0 name=yuragi type=oya x="120" y="130" width="80"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「ふふ、お盛んな年頃だろう？ その欲望が衰えぬまま人柱化！」[lrcm]
-[manpu layer=0 name=yuragi type="heart3" x="50" y="200" width="80"]
+[manpu layer=0 name=yuragi type=heart3 x="50" y="100" width="80"]
 「縛るかー？ 野外とか？ 玩具という手もある！ 叩くのはちょっと痛そうだが……愛があればOK！」[lrcm]
 「お、おまっ……それは……」[lrcm]
 [chara_mod name="yuragi" face="Semi" time="0"]
@@ -355,7 +355,7 @@
 #【一】
 「……じゃ、帰るわ」[lrcm]
 [chara_mod name="yuragi" face="Sodoroki" time="0"]
-[manpu layer=0 name=yuragi type=nanto x="90" y="150" width="80"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【ユラギ】
 「えっ、ちょっとまっ……ちょっとまってくれええ！」[lrcm]
 
@@ -364,5 +364,6 @@
 おれはさっさと学校を後にした。[lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
-@jump storage=1-3.ks target=*1-3
+[fadeoutbgm]
+
+@jump storage=1_3.ks target=*1_3

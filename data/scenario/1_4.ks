@@ -1,5 +1,5 @@
-*1-4
-[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="500"]
+*1_4
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
 [chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
 [chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
 [chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
@@ -192,6 +192,7 @@
 
 #【一】
 「短禊(タンセツ)──〝水祓(みずばらえ)〟！」[lrcm]
+[playse storage="craphand.ogg" buf="1" volume="100"]
 [playse storage="水祓_rev.ogg"]
 [movie storage="mizu.webm" skip=false]
 #
@@ -277,7 +278,7 @@
 「──『小祓』〝桃雲〟……『柏手』！」[lrcm]
 
 ;パンッっという柏手SE
-[playse storage="craphand.ogg" buf="1"]
+[playse storage="craphand.ogg" buf="1" volume="100"]
 [playse storage="桃雲.ogg" buf="2"]
 [movie storage="桃雲.webm" skip=false]
 #
@@ -371,11 +372,11 @@
 
 ;回想っぽく
 [bg layer=base storage=room.jpg time="1000" cross="ture"]
-[chara_show name="yuragi" top="50" time="1" face="Semi"]
+[chara_show name="yuragi" top="50" face="Sdef" time="0" top="150"]
 #【ユラギ】
 『最近この島の”歪み”がまたひどくなって来てさぁ……いやー、もうそろそろ私だけじゃ抑えられなくなってねー」[lrcm]
 「たぶん自称”神隠し”もそっから出て来た怪異的なやつかなぁーと』[lrcm]
-[chara_hide name="yuragi" time="1" face="Semi"]
+[chara_hide name="yuragi" time="1"]
 [bg layer="base" storage="skche神社.jpg" time="1000" cross="ture"]
 
 #【一】
@@ -503,4 +504,4 @@ Wにいたっては終点から不規則に点や線が書かれて入ること�
 
 [fadeoutbgm]
 [mask effect="fadeIn"]
-@jump storage=1-5.ks target=*1-5
+@jump storage=1_5.ks target=*1_5

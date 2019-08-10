@@ -1,7 +1,7 @@
-*1-3
+*1_3
 ;キャラセットアップ
 ;【ユラギ】
-[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="500"]
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400"]
 [chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
 [chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
 [chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
@@ -19,6 +19,25 @@
 [chara_face name="yuragi" face="odoroki" storage="/chara/yuragi/C1-7.png"]
 [chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 
+;キャラセットアップ
+;【椿】
+[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="450"]
+[chara_face name="tubaki" face="def" storage="chara/tubaki/T-def.png"]
+[chara_face name="tubaki" face="angry" storage="chara/tubaki/T-angry.png"]
+[chara_face name="tubaki" face="blush" storage="chara/tubaki/T-blush.png"]
+[chara_face name="tubaki" face="cry" storage="chara/tubaki/T-cry.png"]
+[chara_face name="tubaki" face="giggle" storage="chara/tubaki/T-giggle.png"]
+[chara_face name="tubaki" face="hopeless" storage="chara/tubaki/T-Hopeless.png"]
+[chara_face name="tubaki" face="smile" storage="chara/tubaki/T-smile.png"]
+[chara_face name="tubaki" face="surprised" storage="chara/tubaki/T-surprised.png"]
+[chara_face name="tubaki" face="Sdef" storage="chara/tubaki/TS-def.png"]
+[chara_face name="tubaki" face="Sangry" storage="chara/tubaki/TS-angry.png"]
+[chara_face name="tubaki" face="Sblush" storage="chara/tubaki/TS-blush.png"]
+[chara_face name="tubaki" face="Scry" storage="chara/tubaki/TS-cry.png"]
+[chara_face name="tubaki" face="Sgiggle" storage="chara/tubaki/TS-giggle.png"]
+[chara_face name="tubaki" face="Shopeless" storage="chara/tubaki/TS-Hopeless.png"]
+[chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
+[chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
 
 [bg layer=base storage=校門昼.jpg time="1"]
 ;[chara_hide name="yuragi"]
@@ -26,6 +45,8 @@
 [fadeinbgm storage="いつもの日常-dova.ogg" time="1000" loop="true"]
 
 ;伝説の三人組別れまで
+[chara_show name="tubaki" top="50" face="Ssurprised" time="0" top="150"]
+[odoroku layer="0"]
 #【椿】
 「あっ、一来た！」[lrcm]
 #【正行】
@@ -44,6 +65,7 @@
 
 #【正行】
 「ほ、ほんとに大丈夫か？　前の幽霊騒動のときだって声が聞こえるぐらいで物が浮くなんて……」[lrcm]
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【椿】
 「まあ驚いて逃げ出してきちゃった私達が言うのもアレなんだけどさ……」[lrcm]
 
@@ -74,6 +96,7 @@
 #【正行】
 「……まあそうか！　一がそう言うならないいだろう」[lrcm]
 「よし、じゃあ行こうか！　カフェ-Camellia-に！！」[lrcm]
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「……なんでまたウチなのよ。いい加減うちの喫茶店をたまり場にするのはやめていただけません？」[lrcm]
 
@@ -83,9 +106,11 @@
 
 #【一】
 「あそこ居心地がいいんだよ。コーヒー美味しいし」[lrcm]
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【椿】
 「むっ……まあ別にママも喜んでるから別にいいけど……」[lrcm]
 
+[chara_mod name="tubaki" face="Ssmile" time="0"]
 #
 と、少し顔をそらしながらそらすが、その口元が若干緩んでいたのが見えた。[lrcm]
 この椿という幼馴染は、おだてればすぐ乗せられるので非常に扱いやすい。[lrcm]
@@ -93,6 +118,8 @@
 
 #【正行】
 「ふっふ……諸君、今回のカメリア会議は一味違うぞ？　本日は諸君らに、”作戦要項”を聞いてもらおうと思ってな」[lrcm]
+
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿＆一】
 「「作戦……」」[lrcm]
 
@@ -102,6 +129,7 @@
 
 [mask effect="fadeIn"]
 [bg layer=base storage=喫茶店.png time="1"]
+[chara_hide name="tubaki"]
 [mask_off effect="fadeOut"]
 [fadeoutbgm]
 [fadeinbgm storage="ボナペティ_カフェ案_dova.ogg" time="1000" loop="true"]
@@ -119,6 +147,7 @@
 快活な声が響く、喫茶店カメリア。[lrcm]
 ポニーテールにニンマリと笑う、オレンジ色にCamelliaと茶色く刺繍されたエプロンを付けた女性。[lrcm]
 
+[chara_show name="tubaki" top="50" face="Ssurprised" time="0" top="150"]
 #【椿】
 「お母さん、伝説御一行はやめてって！　ダサいから！」[lrcm]
 #【正行】
@@ -129,6 +158,8 @@
 #
 フロントの奥にいるのは椿の母、『夕陽茜』である。[lrcm]
 
+[chara_mod name="tubaki" face="Sangry" time="0"]
+[manpu layer=0 name=tubaki type=muka x="40" y="90" width="80"]
 #【椿】
 「うるさいわっ！　あたしは女だからな！」[lrcm]
 #【茜】
@@ -137,12 +168,16 @@
 「おうっ！　茜さんの頼みなら喜んで引き受けるぜ！」[lrcm]
 #【一】
 「ああ、茜さんの飯に外れナシ、だからな」[lrcm]
+[manpu layer=0 name=tubaki type=muka2 x="20" y="80" width="80"]
+[odoroku layer="0"]
 #【椿】
 「人の母親を名前で呼ぶなぁあっ！！」[lrcm]
 
 #
 あっはっはっはっは！　と大爆笑しながらキッチンに向かう椿母。[lrcm]
 俺たちはぶーぶー言う椿の背中を押して、カウンターの角へとむかった。[lrcm]
+
+[chara_hide name="tubaki"]
 
 ;場面転換
 喫茶- Camellia -。[lrcm]
@@ -154,14 +189,15 @@
 「はいコーヒー。あら、戸伏、いい顔してるじゃない？　また悪巧み？」[lrcm]
 #【正行】
 「おっ！　わかりますか、流石茜さん！」[lrcm]
+[chara_show name="tubaki" top="50" face="Sangry" time="0" top="150"]
 #【椿】
 「あ”！？」[lrcm]
 #【正行】
 「いたい、痛いです、親指だけ集中して踏まないで……」[lrcm]
+[chara_hide name="tubaki"]
 #【一】
 「おー、新作はシナモンロールですか？」[lrcm]
 
-;簡単加工でシナモンロール四角いなんかでいいのでは
 #
 茜さんが持ってきたのは、香ばしく焼き上がったパン。[lrcm]
 ほのかに甘く香るシナモンの風味が鼻孔を擽る。[lrcm]
@@ -170,9 +206,10 @@
 
 #【茜】
 「そうだぞ～茜さん特製シナモンロール。名前は伝説ロールにしようと思ってる」[lrcm]
+[chara_show name="tubaki" top="50" face="Sangry" time="0" top="150"]
 #【椿】
-「絶対阻止するからね！　お父さーーん！　またお母さんがメニューに変な名前つけようとしとるんやけど！」[lrcm]
-
+「絶対阻止するからね！　お父さーーん！　またお母さんがメニューに変な名前つけようとしてるんだけど！」[lrcm]
+[chara_hide name="tubaki"]
 #
 厨房の方から優しそうな声で「ははは、はいはい」という笑い声が聞こえてくる。[lrcm]
 ここの家族は本当に仲がいいな。[lrcm]
@@ -185,12 +222,14 @@
 「他にも『伝説の三人』とか呼ばれてるらしい」[lrcm]
 #【一】
 「俺たち忍者じゃないんが……」[lrcm]
+[odoroku layer="0"]
+[chara_show name="tubaki" top="50" face="Ssurprised" time="0" top="150"]
 #【椿】
 「待って最後の何？　『変な』って何！？」[lrcm]
 
 #
 ………神妙にうんうんとうなずいている戸伏正行という男が中心にいるせいで、『変な』というのは否定しにくい。[lrcm]
-
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【椿】
 「はぁ……なんというか大層な名前をつけられたもんよね……」[lrcm]
 「商店街歩くと『よう！　伝説組の！　またなにかするときは言ってくれよ！』とか言われるの、謎の期待で胃が痛いわ……」[lrcm]
@@ -200,6 +239,7 @@
 
 ;なんかそれっぽい背景をPANする[lrcm]
 [mask effect="fadeIn" time="500"]
+[chara_hide name="tubaki"]
 [camera layer="base" zoom="1.5" time="1" y="100" x="100" ease_type="linear"]
 [bg layer=base storage=校門セピア.jpg time="100" cross="true"]
 [mask_off effect="fadeOut" time="500"]
@@ -231,6 +271,7 @@
 「まったく、あの堅物だった商店街のじいさまたちが、今じゃ子供みたいにはしゃいでる」[lrcm]
 #【一】
 「流石に考えすぎでは……」[lrcm]
+[chara_show name="tubaki" top="50" face="Sdef" time="0" top="150"]
 #【椿】
 「……というわけでもなさそうなのがこの男なわけよね」[lrcm]
 
@@ -265,15 +306,20 @@
 
 #【一】
 「椿……頑張ろうな……？」[lrcm]
+[chara_mod name="tubaki" face="Sangry" time="0"]
 #【椿】
 「……見なさい正行！　この諦めきった目を！」[lrcm]
 #【正行】
 「茜さん……このシナモンロールの香り、コーヒーと非常にマッチしている……まるで僕とあなたのようだ」[lrcm]
+[manpu layer=0 name=tubaki type=muka2 x="20" y="80" width="80"]
+[odoroku layer="0"]
 #【椿】
 「人の母親を口説くな聞けぇ！！」[lrcm]
 
 #
 その様子をニコニコと見ていた茜さんも吹き出す。[lrcm]
+
+
 
 #【茜】
 「あはっはっ……あー全く、あんたらは面白いね。それじゃごゆっくり。　後で新作の感想きかせなさいよ～」[lrcm]
@@ -282,7 +328,7 @@
 
 #
 そういって茜さんはひらひらと手を振り去っていった[lrcm]
-
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「まったく、お母さんったら男子高校生におだてられて調子に乗って……毎回ウキウキで新作作ってるんだから……」[lrcm]
 #【正行】
@@ -293,6 +339,7 @@
 
 #【正行】
 「まあ、さっきから言われていたとおり、我らの本校での生活も一段落し、我らも二年生……そろそろ、暴れたくはないか？　なあ、海原の問題児達よ！」[lrcm]
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【椿】
 「いえ、まったく」[lrcm]
 #【一】
@@ -316,7 +363,7 @@
 「おお、流石ハジメ！　話が早いぜ！」[lrcm]
 #【一】
 「まあ、もうすぐだしな」[lrcm]
-
+[chara_hide name="tubaki"]
 ;[適当な島を横PANで流す][lrcm]
 #
 星降祭。[lrcm]
@@ -334,6 +381,7 @@
 
 #【正行】
 「そう、星降祭り……なあ、考えても見てくれ……なんで星降なんだ？」[lrcm]
+[chara_show name="tubaki" top="50" face="Sdef" time="0" top="150"]
 #【椿】
 「あーたしかに。この島って『星』要素ほぼ無いわよね。夜空は綺麗だけどさ」[lrcm]
 #【正行】
@@ -355,14 +403,14 @@
 
 #
 正行が、A4用紙右上をホッチキスでとめたものを机に叩きつけた。[lrcm]
-
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「……中学の時とは偉い違いね……なんでパワポで作ったのよ」[lrcm]
 #【一】
 「営業でもしに来たのか？　という気分になるな」[lrcm]
 #【正行】
 「うるせぇな！　いいから見て！？」[lrcm]
-
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #
 言われたとおり、20ページほどの資料をパラパラとめくる。[lrcm]
 多くの図や細かな説明などが書かれているが、簡単に要約するとこうだ。[lrcm]
@@ -373,6 +421,7 @@
 
 #【一】
 「……またこういうのかよ……具体性のかけらもないんだが……」[lrcm]
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「これで最終的にそれっぽくなるのが、質が悪いのよね……」[lrcm]
 #【正行】
@@ -386,16 +435,19 @@
 「ここでこの島の大昔について書かれた記録が見つかったのさ」[lrcm]
 「かなり貴重な資料らしくて、今は色んな所をたらい回しにされているが……見つけたのが偶然俺の父ちゃんでな、その中身を大雑把にめくって教えてくれたのさ」[lrcm]
 「そこに書かれていたのが……この、”星降祭り”の記述だったわけよ」[lrcm]
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【椿】
 「それで？　その星降っていうのは結局なんなのよ？　この資料に載ってなかったけど」[lrcm]
 #【正行】
 「うむ……それは……ぼやっとしてる」[lrcm]
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「……おい？」[lrcm]
 #【正行】
 「そう怖い顔しないでよツバキン。ぼやっとはしているが、根拠が無いわけでもない」[lrcm]
 「……実は、星降祭りは最初は祭りではなかったらしい」[lrcm]
 「しかも、スカイランタンを上げるような催しすら最近の出来事なんだとさ」[lrcm]
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【椿】
 「祭り……じゃなかった？　じゃあ星降祭の前身に当たるなにかがあるって事？」[lrcm]
 #【正行】
@@ -403,6 +455,7 @@
 「どうやらこの島には昔、本当に『星が降っていた』らしいんだよな」[lrcm]
 #【一】
 「星が……」[lrcm]
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「降っていた……？」[lrcm]
 
@@ -420,13 +473,21 @@
 #【一】
 「ん……？　そういえば」[lrcm]
 
+[mask effect="fadeIn"]
+[chara_hide name="tubaki"]
 [bg layer=base storage=room.jpg time="1000" cross="ture"]
-[chara_show name="yuragi" top="50" time="1" face="Semi"]
+[chara_show name="yuragi" top="50" face="Semi" time="0" top="150"]
+[mask_off effect="fadeOut"]
+
+
 #
 あの土地神様も確かこの島のこと〝星降島〟って言ってたな。[lrcm]
-[chara_hide name="yuragi" time="1" face="Semi"]
+[mask effect="fadeIn"]
+[chara_hide name="yuragi" time="1"]
 [bg layer=base storage=喫茶店.png time="1000" cross="ture"]
+[mask_off effect="fadeOut"]
 
+[chara_show name="tubaki" top="50" face="Sdef" time="0" top="150"]
 #【椿】
 「それで……それがどうしてこの計画書につながるのかしら？」[lrcm]
 #【正行】
@@ -439,8 +500,10 @@
 #【正行】
 「そうだ！　だから、俺たちはそれをもう一度、再現する！」[lrcm]
 「失われた『星降』の謎を解明し、それを星降祭りで再現するのさっ！」[lrcm]
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「……ちょと待ちなさいよ。流石にその昔の記録みたいなのだけじゃ再現なんて無理じゃない？」[lrcm]
+[chara_mod name="tubaki" face="Sdef" time="0"]
 「というか、その記録がだれかの空想で書かれた黒歴史本だった可能性もあるわけだし……」[lrcm]
 #【正行】
 「たしかにそうだ……が！」[lrcm]
@@ -452,6 +515,7 @@
 #【一】
 「ああ、ある」[lrcm]
 「加えて言うなら、俺の家……『降山神社』は妖怪退治の伝説が多く残っている神社なんだが、その次に占星術に関する術や記録が多いいんだ」[lrcm]
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「えっ……」[lrcm]
 #【正行】
@@ -462,7 +526,7 @@
 #
 やると決めた後の正行は、相変わらずの行動力だ。[lrcm]
 バンっと机を打って、正行が立ち上がる。[lrcm]
-
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【正行】
 「なーに、昔起こっていた自然現象なら現代科学でなとかなるだろ！」[lrcm]
 「オカルト方面でも俺たちにはハジメがいる、ならもう、勝ったも同然ではなかうろかっ！」[lrcm]
@@ -480,6 +544,7 @@
 「確証が得られていないのは俺も同じ……だから、ひとまずは山に向かおうと思う！　あそこには、館があるだろ、ハジメ？」[lrcm]
 #【一】
 「なるほど……よく調べたなぁ」[lrcm]
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「……館？」[lrcm]
 #【一】
@@ -489,14 +554,14 @@
 #
 ちなみに山には他にもいくつか館がある。[lrcm]
 これは大昔、力を持った商人などがこの島では山の中に住む風習が合ったらしいためだ。[lrcm]
-
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【正行】
 「『星降の』っていうぐらいなんだから、なにか関係があるはずだろ？　だから、言ってみて確かめるのさ！」[lrcm]
 「さ、行こうぜ！」[lrcm]
 
 #
 正行がシナモンロールの最後の一口を頬張ってから、立ち上がり、外へ向かう。[lrcm]
-
+[chara_mod name="tubaki" face="Ssurprised" time="0"]
 #【椿】
 「あ、ちょっとちょっと、今から！？　待ちなさいよ私は着替えてから行くから！」[lrcm]
 
@@ -510,6 +575,10 @@
 「茜さん、新作のシナモンの香りとほのかな甘さの中にある柑橘系の酸味……最高でした。次も楽しみにしてます」[lrcm]
 #【茜】
 「なっはっは、まいどあり！　また来なよ！」[lrcm]
+[chara_mod name="tubaki" face="Sangry" time="0"]
+[manpu layer=0 name="tubaki" type=muka2 x="20" y="80" width="80"]
+[odoroku layer="0"]
+
 #【椿】
 『だから何なんだお前らは！』[lrcm]
 
@@ -520,6 +589,7 @@
 ;暗転
 [mask effect="fadeIn"]
 [bg layer=base storage=ストリート.jpg time="1"]
+[chara_hide name="tubaki"]
 [mask_off effect="fadeOut"]
 ;カランカラン
 [playse storage="入店するときのベル_カラン_dova.ogg" buf="1"]
@@ -548,7 +618,7 @@
 「そんなに時間はかからないと思うから、先に行っててくれ。ついでに館の鍵がないか聞いてくるよ」[lrcm]
 #【正行】
 「おう、よろしく頼むわ！」[lrcm]
-
+[chara_show name="tubaki" top="50" face="def" time="0" top="150"]
 #【椿】
 「早く来てねーハジメ。こいつ一人だと何やらかすかわからないから……」[lrcm]
 
@@ -558,6 +628,7 @@
 #【一】
 「ああ、それじゃあ」[lrcm]
 [mask effect="fadeIn"]
+[chara_hide name="tubaki"]
 [fadeoutbgm]
 
-@jump storage=1-4.ks target=*1-4
+@jump storage=1_4.ks target=*1_4

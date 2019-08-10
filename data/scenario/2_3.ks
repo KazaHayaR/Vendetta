@@ -189,7 +189,7 @@
 「ガサガサ……？　動物とかじゃないんですか？」[lrcm]
 #【谷垣】
 「え？　違うよ〜。だってほら、霊がいる方向ってなんかちょっとだけ靄がかかるでしょ～？　あれがガサガサしている位置で起こってるからさぁ……」[lrcm]
-
+[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
 #
 ……霊体は通常、現実の物体に影響を及ぼすことできない。[lrcm]
 及ぼすことができるとしたら、それは────[lrcm]
@@ -596,6 +596,7 @@
 #
 久しぶりに会話ができたことを喜んでいたユラギ。[lrcm]
 きっとこれは、心からの言葉なのだろう。[lrcm]
+[playse storage="抱きつく.ogg"]
 そこからしばらく、えんえんとあまりにも泣くので、胸の中でなくユラギを抱き寄せる。[lrcm]
 
 [chara_mod name="yuragi" face="def" time="0"]
@@ -736,5 +737,4 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
 @jump storage=2_4.ks target=*2_4

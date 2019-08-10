@@ -41,6 +41,15 @@
 [chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
 [chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
 
+[bg layer=base storage=bg.jpg time="1"]
+[mask_off effect="fadeOut"]
+
+#
+……[lrcm]
+…………[lrcm]
+………………[lrcm]
+
+[mask effect="fadeIn"]
 [bg layer=base storage=enniti.jpg time="1"]
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="神域.ogg" time="1000" loop="true"]
@@ -211,11 +220,13 @@
 #【一】
 「それは、どういう……」[lrcm]
 
+[playse storage="抱きつく.ogg"]
 #
 谷垣さんは近場に合った、大きめの円柱を取り出す。[lrcm]
 それは、『星降祭り』と書かれたスカイランタンであった。[lrcm]
 
-[playse storage="抱きつく.ogg"]
+
+[chara_mod name="yuragi" face="def" time="0"]
 #【谷垣】
 「じゃじゃーん、これよこれ。私達の家が、この島にこれを伝えたのよ」[lrcm]
 「それで先祖が、星降祭りのときに上げたら綺麗じゃないか～って提案したんだってさ」[lrcm]
@@ -432,7 +443,6 @@
 そのうちの３つが小さく揺れて……キラキラと光って、空に消えた。[lrcm]
 それはまるで、二人を見て微笑んだかのように。[lrcm]
 温かな光となって、星降島に降り注いだ。[lrcm]
-　　[lrcm]
 〜Fin〜[lrcm]
 
 ;ここからは下
