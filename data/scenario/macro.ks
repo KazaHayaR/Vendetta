@@ -309,7 +309,7 @@ $(".message0_fore>.message_inner").css({
 @jump storage=%jumpstorage target=%jumptarget
 [endmacro]
 
-
+;situation: 流れてくる文字
 [macro name=display_situation]
 [iscript]
 var situationOuter = document.createElement('div');
@@ -346,6 +346,8 @@ document.getElementsByClassName("situationOuter")[0].remove();
 [wait time=700]
 [endmacro]
 
+;storage: 次のシーンの背景画像、指定なければ黒背景
+;situation: 流れてくる文字、指定なければ流れてくる演出自体ナシ
 [macro name=scene_change]
 #
 [mask effect="fadeIn"]
