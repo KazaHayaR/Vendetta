@@ -21,10 +21,10 @@
 [chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 [chara_face name="yuragi" face="terewara" storage="/chara/yuragi/C1-9.png"]
 
-
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="Shiokaze_感動_dova.ogg" time="1000" loop="true"]
-[bg layer=base storage=ログハウス.png time="1"]
+
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 
 #【ユラギ】
@@ -990,5 +990,7 @@
 「……うん、でも、それこそ余計に、すぐに行かなきゃだ」[lrcm]
 「〝あの子〟を『人食いの獣』なんかにしちゃいけない」[lrcm]
 
+[mask effect="fadeIn"]
+[chara_hide name="yuragi"]
 
 @jump storage=3_5.ks target=*3_5

@@ -1,3 +1,4 @@
+*3_5
 ;キャラセットアップ
 ;【ユラギ】
 [chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
