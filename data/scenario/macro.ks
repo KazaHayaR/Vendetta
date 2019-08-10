@@ -274,7 +274,7 @@ $(".message0_fore>.message_inner").css({
 
 ;キャラセットアップ
 ;【椿】
-[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="400"]
+[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="400" top="50"]
 [chara_face name="tubaki" face="def" storage="chara/tubaki/T-def.png"]
 [chara_face name="tubaki" face="angry" storage="chara/tubaki/T-angry.png"]
 [chara_face name="tubaki" face="blush" storage="chara/tubaki/T-blush.png"]
@@ -350,21 +350,110 @@ document.getElementsByClassName("situationOuter")[0].remove();
 ;storage: 次のシーンの背景画像、指定なければ黒背景
 ;situation: 流れてくる文字、指定なければ流れてくる演出自体ナシ
 [macro name=scene_change]
-#
-[mask effect="fadeIn"]
-[chara_hide_all]
-@layopt layer=message0 visible=false
-[bg layer=base storage=%bgstorage|black.png time="1"]
-[mask_off effect="fadeOut"]
-[if exp="mp.bgmstorage?true:false"]
-[fadeinbgm storage=%bgmstorage time="1000" loop="true"]
-[endif]
-[if exp="mp.situation?true:false"]
-[display_situation situation=%situation]
-[endif]
-[if exp="mp.message_window_open?mp.message_window_open:true"]
-[set_default_message_window]
-[endif]
-[wait time=500]
+	#
+	[mask effect="fadeIn"]
+	[chara_hide_all]
+	@layopt layer=message0 visible=false
+	[bg layer=base storage=%bgstorage|black.png time="1"]
+	[mask_off effect="fadeOut"]
+	[if exp="mp.bgmstorage?true:false"]
+		[fadeinbgm storage=%bgmstorage time="1000" loop="true"]
+	[endif]
+	[if exp="mp.situation?true:false"]
+	[display_situation situation=%situation]
+	[endif]
+	[if exp="mp.message_window_open?mp.message_window_open:true"]
+		[set_default_message_window]
+	[endif]
+	[wait time=500]
 [endmacro]
 
+;------------------;
+;	animation macros ;
+;------------------;
+
+;縦揺れ
+[keyframe name="vShake"]
+	[frame p="  0%" y="0"]
+	[frame p=" 20%" y="-31"]
+	[frame p=" 35%" y="0"]
+	[frame p=" 70%" y="-40"]
+	[frame p="100%" y="0"]
+[endkeyframe]
+
+[macro name="vShake"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[eval exp="mp.time = '600'" cond="mp.time == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="vShake" easing="ease" time="&mp.time" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+[endmacro]
+
+;横揺れ
+[keyframe name="hShake"]
+	[frame p="  0%" x="0"]
+	[frame p=" 33%" x="-20"]
+	[frame p=" 66%" x="20"]
+	[frame p=" 95%" x="-5"]	
+	[frame p="100%" x="0"]
+[endkeyframe]
+
+[macro name="hShake"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[eval exp="mp.time = '600'" cond="mp.time == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="hShake" easing="ease" time="&mp.time" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+[endmacro]
+
+;ほぼ驚き時間調整ができる
+[keyframe name="hop"]
+[frame p="  0%" y="0"]
+[frame p=" 50%" y="-31"]
+[frame p="100%" y="0"]
+[endkeyframe]
+
+[macro name="hop"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[eval exp="mp.time = '300'" cond="mp.time == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="hop" easing="ease" time="&mp.time" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+[endmacro]
+
+;hopの逆
+[keyframe name="hop_revert"]
+[frame p="  0%" y="0"]
+[frame p=" 40%" y="31"]
+[frame p=" 55%" y="35"]
+[frame p="100%" y="0"]
+[endkeyframe]
+
+[macro name="hop_revert"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[eval exp="mp.time = '600'" cond="mp.time == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="hop_revert" easing="ease" time="&mp.time" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+[endmacro]
+
+[keyframe name="tilt"]
+[frame p="  0%" y="0" rotate="0deg"]
+[frame p=" 40%" y="10" rotate="1deg"]
+[frame p="100%" y="0" rotate="0deg"]
+[endkeyframe]
+
+[macro name="tilt"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[eval exp="mp.time = '600'" cond="mp.time == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="tilt" easing="ease" time="&mp.time" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+[endmacro]
+
+[keyframe name="run_left"]
+[frame p="  0%" y="0"]
+[frame p="100%" x="3000"]
+[endkeyframe]
+
+[macro name="run_left"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[eval exp="mp.time = '600'" cond="mp.time == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="run_left" easing="ease" time="&mp.time" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+[endmacro]

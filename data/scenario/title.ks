@@ -96,7 +96,7 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   var simg3 = document.createElement('img');
   div3.setAttribute('style', 'position: relative;margin-top: 60px;');
   a3.setAttribute('href', "javascript:void(0);");
-  a3.setAttribute('onclick', 'document.getElementById("title_base").remove();tyrano.plugin.kag.ftag.startTag("jump", {storage: "ueno_1.ks",target: "*ueno_1"});');
+  a3.setAttribute('onclick', 'document.getElementById("title_base").remove();tyrano.plugin.kag.ftag.startTag("mask", {effect: "fadeIn"});tyrano.plugin.kag.ftag.startTag("jump", {storage: "first.ks",target: "*trial"});');
   mimg3.setAttribute('src', 'data/image/trial_m.svg');
   simg3.setAttribute('src', 'data/image/trial_s.svg');
   mimg3.setAttribute('style', 'margin: 0 calc((100% - 154px)/2);width:154px;-webkit-filter: drop-shadow(0 0 8px #fff);');
