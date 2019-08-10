@@ -673,4 +673,4 @@
 
 [mask_off effect="fadeOut"]
 
-@jump storage=eplogue.ks target=*eplogue
+@jump storage=epilogue.ks target=*epilogue

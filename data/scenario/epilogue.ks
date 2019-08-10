@@ -1,3 +1,4 @@
+*epilogue
 ;キャラセットアップ
 ;【ユラギ】
 [chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
@@ -40,13 +41,13 @@
 [chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
 [chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
 
-[bg layer=base storage=morinaka.png time="1"]
+[bg layer=base storage=enniti.jpg time="1"]
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="神域.ogg" time="1000" loop="true"]
 
 [chara_show name="yuragi" top="50" face="emi" time="0" top="150"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
-;神社の鳥居近くbg
+
 #【ユラギ】
 「おーい！　ハジメ！　こっちだ！」[lrcm]
 #【一】
@@ -64,12 +65,13 @@
 [chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「……う、うむ」[lrcm]
-
+#
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+[camera layer="base" zoom="1.5" time="1" y="100" x="100" ease_type="linear"]
 [mask_off effect="fadeOut"]
+[camera layer="base" wait="false" zoom="1.5" time="50000"  y="-100" x="-100" ease_type="linear"]
 
-;お祭りbg
 #
 街は色とりどりの光で溢れていた。[lrcm]
 光る色とりどりの提灯の光、金魚すくいの水面の反射、はしゃぎまわる子どもたちの楽しげな瞳。[lrcm]
@@ -85,7 +87,7 @@
 屋台が立ち並ぶ喧騒から少し離れた丘に陣取って、先程回って手に入れた焼きそばやら、たこ焼きやらを食べてた。[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
+[reset_camera layer="base" time="1"]
 [mask_off effect="fadeOut"]
 
 #【一】
@@ -110,7 +112,7 @@
 蔵の中にまるで主かのように鎮座していた空灯があった。[lrcm]
 
 #【ユラギ】
-「なはは、それじゃあ、”空灯”を広めたのは降山なのかぁ……[chara_mod name="yuragi" face="fukigen" time="0"]なんというか、少しだけ複雑だなぁ……」[lrcm]
+「なはは、それじゃあ、”空灯”を広めたのは降山なのかぁ……[manpu layer=0 name=yuragi type=tameiki x="75" y="0" width="80"][chara_mod name="yuragi" face="fukigen" time="0"]なんというか、少しだけ複雑だなぁ……」[lrcm]
 
 #
 ユラギが少しだけ顔に影を落とす。[lrcm]
@@ -142,7 +144,8 @@
 いつものトレンチコートの代わりに、『星降祭』と帯に書れたハッピを着ている。[lrcm]
 
 #【谷垣】
-「いやー聞いてよ、今日起きて署に行ったら、さらわれた人の全員の記憶から『獣』についての情報がなくなっちゃってるんだよねー。取り調べのときに必死に話したんだけど『働きすぎなんだよ谷垣……もういいから、しばらく休め？　な？』って署内全員から心配されてしまいました」[lrcm]
+「いやー聞いてよ、今日起きて署に行ったら、さらわれた人の全員の記憶から『獣』についての情報がなくなっちゃってるんだよねー」[lrcm]
+「取り調べのときに必死に話したんだけど『働きすぎなんだよ谷垣……もういいから、しばらく休め？　な？』って署内全員から心配されてしまいました」[lrcm]
 #【一】
 「あはは……」[lrcm]
 
@@ -159,12 +162,12 @@
 #【一】
 「いますよ、俺の横に」[lrcm]
 
-;キス音
+[playse storage="kiss.ogg"]
 #
 ──チュッ。[lrcm]
 と、何かが唇に……触れたというかこれは……！[lrcm]
+[chara_show name="yuragi" top="50" face="terewara" time="0" top="150"]
 
-[chara_mod name="yuragi" face="terewara" time="0"]
 #【ユラギ】
 「やぁやぁ、刑事殿！　ユラギって呼んでくれっていったろー！」[lrcm]
 #【谷垣】
@@ -178,11 +181,13 @@
 #【ユラギ】
 「なっはっは、ちょ、ちょっと屋台を高速で回しすぎて疲れちゃったのかなぁあははー」[lrcm]
 #【谷垣】
-「なるほど！　それは何よりだっ！　いやぁ、一時はどうなることかと思ったけど、事件も解決、うちとしても祭りが開けて万々歳！　ありがとうございます、これからもよろしくおねがいします！」[lrcm]
+「なるほど！　それは何よりだっ！」[lrcm]
+「いやぁ、一時はどうなることかと思ったけど、事件も解決、うちとしても祭りが開けて万々歳！」[lrcm]
+「ありがとうございます、これからもよろしくおねがいします！」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「うん……うちとしても……？」[lrcm]
-#【黒い獣】
+#【一】
 「んん”……谷垣さんの家が”星降祭”の主催なんだよ」[lrcm]
 「谷垣家は大昔に島にやってきた家系なんだけど、いつの間にか星降祭の運営になっていたらしい」[lrcm]
 
@@ -196,6 +201,7 @@
 「そうなんですか？」[lrcm]
 #【谷垣】
 「あ、捜査協力のお礼に特別に教えてあげるよ！」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【一】
 「極秘は！？」[lrcm]
 
@@ -209,9 +215,10 @@
 谷垣さんは近場に合った、大きめの円柱を取り出す。[lrcm]
 それは、『星降祭り』と書かれたスカイランタンであった。[lrcm]
 
-;抱きしめ
+[playse storage="抱きつく.ogg"]
 #【谷垣】
-「じゃじゃーん、これよこれ。私達の家が、この島に、これを伝えたのよ。それで先祖が、星降祭りのときに上げたら綺麗じゃないか～って提案したんだってさ」[lrcm]
+「じゃじゃーん、これよこれ。私達の家が、この島にこれを伝えたのよ」[lrcm]
+「それで先祖が、星降祭りのときに上げたら綺麗じゃないか～って提案したんだってさ」[lrcm]
 「そこから、商人スキルをアレヤコレヤと使って一気に運営ポジションをもぎ取った……！　ということらしいよん」[lrcm]
 #【一】
 「……谷垣家が……空灯をこの島に伝えた……？」[lrcm]
@@ -227,7 +234,11 @@
 そりゃそうだろう。[lrcm]
 
 #【谷垣】
-「──もともと、この島にあった技術なんだって。この島にやってくるその前、ご先祖様はこの島に住んでたんだってさ。まったく、一度出ていったのに、またこの島に戻ってきたなんて、先祖は何考えてたのかね～」[lrcm]
+「──もともと、この島にあった技術なんだって」[lrcm]
+「この島にやってくるその前、ご先祖様はこの島に住んでて、これの作り方を伝授してもらってたとか」[lrcm]
+「それで、またこの島に戻ってきてこの技術が失われてたから、もう一度やっかー！　ってなったみたい」[lrcm]
+「まったく、一度出ていったのに、またこの島に戻ってきたなんて、先祖は何考えてたのかね～」[lrcm]
+[manpu layer=0 name=yuragi type=bikkuri2 x="30" y="80" width="80"]
 #【一】
 「……それは……まさか」[lrcm]
 
@@ -235,6 +246,8 @@
 俺とユラギは顔を合わせる。[lrcm]
 まるでそれは……。[lrcm]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「……お、おい、まて、谷垣。君の苗字は昔違うものだったりしないか……！？」[lrcm]
 #【谷垣】
@@ -259,8 +272,8 @@
 
 #【谷垣】
 「あっ！　ご、ごめんうちのおとーさんが呼んでるから！　また今度ちゃんと挨拶に行くから～お祭りたのしんでねっ！」[lrcm]
-
-;run
+[fadeinbgm storage="Shiokaze_感動_dova.ogg" time="1000" loop="true"]
+[playse storage="rum.ogg"]
 
 #
 そう言って嵐のように谷垣さんは去っていく。[lrcm]
@@ -290,17 +303,17 @@
 #
 へなへなとユラギは地面に崩れ落ちる。[lrcm]
 それは、どこかため息混じりの笑顔で。[lrcm]
-つまり──こういうことだ。
+つまり──こういうことだ。[lrcm]
 二人に助けられ、その死を知った星山の子孫は先祖の意思を継いで、商家としてこの島に戻ってきた。[lrcm]
 そして、二人の作った”空灯”の作り方をそのままに、”スカイランタン”としてこの島に広めたのだ。[lrcm]
 
 #【ユラギ】
 「まったく……私は、君たちが大好きだぁ。奇跡にしても出来すぎじゃないか……あはは……」[lrcm]
 
-＃
+#
 少しだけ瞳に涙を浮かべながら、ユラギは幸せそうに笑う。[lrcm]
 
-;歓声のse
+[playse storage="歓声.ogg" volume="10"]
 ──わぁっ……。[lrcm]
 
 直後、街中から歓声が上がる。[lrcm]
@@ -355,6 +368,7 @@
 #【一】
 「人柱……考えてもいいかなぁ……と……」[lrcm]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 [odoroku layer="0"]
 #【ユラギ】
 「……っ！　ハジメっ……！？」[lrcm]
@@ -381,7 +395,7 @@
 #【一】
 「いや待って！？　お前と付き合った手前、強く否定しがたいけどそういう意味じゃないからな！？」[lrcm]
 
-;抱きつく
+[playse storage="抱きつく.ogg"]
 [chara_mod name="yuragi" face="terewara" time="0"]
 #
 そう言うと、満面の笑顔で笑いだし、ぎゅーっと、ユラギは抱きついてくる。[lrcm]
@@ -398,8 +412,9 @@
 [chara_mod name="yuragi" face="terewara" time="0"]
 #【ユラギ】
 「私は今、世界一幸せな神様だぁ……ううっ……」[lrcm]
-
-[bg layer=base storage=CG.png time="1" cross=true]
+#
+[chara_hide name="yuragi" wait=true]
+[bg layer=base storage=CG.png time="2000" cross=true]
 #
 嬉し涙をこぼしながら。[lrcm]
 小さな少女は胸の中で幸せそうな笑顔で。[lrcm]
@@ -412,17 +427,18 @@
 
 #
 そう言って、もう一度眩しいぐらいの笑顔で彼女は笑った。[lrcm]
-
+[playse storage="魔術起動音_bell.ogg" ]
 ──空に浮かぶ数百の灯りが、ゆっくりゆっくり、空へと登る。[lrcm]
 そのうちの３つが小さく揺れて……キラキラと光って、空に消えた。[lrcm]
 それはまるで、二人を見て微笑んだかのように。[lrcm]
 温かな光となって、星降島に降り注いだ。[lrcm]
-
-〜Fin〜
+　　[lrcm]
+〜Fin〜[lrcm]
 
 ;ここからは下
 
-[mask effect="fadeIn"]
-[chara_hide name="yuragi"]
+[mask effect="fadeIn" time="3000"]
+[fadeoutse]
 [mask_off effect="fadeOut"]
+
 @jump storage=ending.ks target=*ending
