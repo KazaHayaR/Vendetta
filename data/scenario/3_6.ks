@@ -40,12 +40,22 @@
 [chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
 [chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
 
+;正行セットアップ
+[chara_new name="masayuki" storage="chara/masayuki/ccs46.png" jname="椿" width="400"]
+[chara_face name="masayuki" face="def" storage="chara/masayuki/cs46.png"]
+[chara_face name="masayuki" face="mu" storage="chara/masayuki/cs46_do.png"]
+[chara_face name="masayuki" face="yo" storage="chara/masayuki/cs46_ki.png"]
+[chara_face name="masayuki" face="smile" storage="chara/masayuki/cs46_rk.png"]
+[chara_face name="masayuki" face="n" storage="chara/masayuki/cs46_ai.png"]
+
 [bg layer=base storage=morinaka.png time="1"]
 [mask_off effect="fadeOut"]
-[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
+[fadeinbgm storage="空のリボン_感動_dova.ogg" time="1000" loop="true"]
 
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 
+;風が流れる
+;山の頂上カルデラbg
 #
 さぁ……っと風が流れる。[lrcm]
 それは、山の頂上を吹き抜ける緩やかな風だった。[lrcm]
@@ -58,12 +68,15 @@
 それは巨大な隕石が降ってきたクレーターのようだった。[lrcm]
 暗くてよくは見えないが、クレーターの壁面には急斜面ながらも幾つもの小さな草木が生い茂っており、緑色の巨大なくぼみがそこにはあった。[lrcm]
 
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【ユラギ】
-「この島はかなり大きいが……このくぼみは、島の半分以上の面積を持っているんだ。元々は本当に大きな山だったんだが……『歪み』がこんな大きなくぼみを作り上げてしまったのさ」[lrcm]
+「この島はかなり大きいが……このくぼみは、島の半分以上の面積を持っているんだ」[lrcm]
+「元々は本当に大きな山だったんだが……『歪み』がこんな大きなくぼみを作り上げてしまったのさ」[lrcm]
 
 #
 そう言ってユラギは空を見上げる。[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「……長かった……本当に長かったなぁ」[lrcm]
 「あれから、どれくらいの月日が経っただろう……あの日々のことを、何度思い返しただろう……」[lrcm]
@@ -71,25 +84,30 @@
 #
 ユラギは星空を見上げながら、言葉を続ける。[lrcm]
 
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「でも……今ようやく、君達に届けられる」[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #
 ユラギはユキの方を真っ直ぐに向いて、慈しむな笑顔を取る。[lrcm]
 
 #【ユラギ】
 「……ユキ、君の両親から、贈り物がある」[lrcm]
 
+;抱きつく
 #
 ユラギが取り出したのは、先程大祓に使った”空灯”。[lrcm]
 ずっとユラギが胸につけていた大きなペンダントだ[lrcm]
 
+[playse storage="獣やられ.ogg"]
 #【ユキ】
 「──クウ……」[lrcm]
 
 #
 それを見てユキは眼を丸くした。[lrcm]
 
+;魔法起動loop
 #【ユラギ】
 「さぁ……開け、”星降灯”。幾千、幾億と瞬く星を……もう一度」[lrcm]
 
@@ -101,20 +119,21 @@
 #【ユラギ】
 「『星降』の祖、ユラギが命ずる──星よ、”降れ”」[lrcm]
 
+;星降の背景
 #
 ユラギが唱えた途端、星が、一つだけ流れた。[lrcm]
 それは夜空を走り、一瞬で消える光ではなく、真っ直ぐに、こちらに向かってくる光。[lrcm]
 ついに、足元の地面に落ちてくる。[lrcm]
 地面に落ちた途端、星は弾けて、キラキラと輝いた。[lrcm]
-
 それは一つ、また一つと次々に降り注ぐ。[lrcm]
 そして、あっというまに、山に、いいや、島中に、幾つもの星の光が降り注いだ。[lrcm]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+[bg layer=base storage=morinaka.png time="1"]
 [mask_off effect="fadeOut"]
 #
-それは、山から避難する一人の刑事。[lrcm]
+それは、山から避難する刑事と、その一行。[lrcm]
 #【谷垣】
 「……雨……？　ううん……これは」[lrcm]
 
@@ -127,14 +146,19 @@
 
 それは、刑事の隣りにいた二人の学生二人。[lrcm]
 
+[chara_show name="tubaki" top="50" face="Ssurprised" time="0" top="150"]
+[chara_show name="masayuki" top="50" face="mu" time="0" top="150"]
 #【椿】
 「……！？　ま、正行、これって……」[lrcm]
 #【正行】
 「まさか……これが……本当の『星降』か！？」[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
+[chara_hide name="tubaki"]
+[chara_hide name="masayuki"]
 [mask_off effect="fadeOut"]
+[bg layer=base storage=morinaka.png time="1"]
+
 #
 荘厳でありながらも優しく。[lrcm]
 幻想的でありながら、手を伸ばせば確かに届く光が世界を満たす。[lrcm]
@@ -148,8 +172,11 @@
 
 #【一】
 「『星降祭り』、『星降島』……これが、その真実か」[lrcm]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【ユラギ】
-「ああ。島中に星の光を降らし、未来を占う『星降』。星降の一族が居なくなってから、もう誰もそれを動かせるものが居なかったからな」[lrcm]
+「ああ。島中に星の光を降らし、未来を占う『星降』」[lrcm]
+「星降の一族が居なくなってから、もう誰もそれを動かせるものが居なかったからな」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 「ユキ、綺麗だろ……？」[lrcm]
 
 #
@@ -157,18 +184,24 @@
 ユキは興奮した目つきでユラギを見る、まるで、はしゃいでいる子供のようだ。[lrcm]
 そっと心地よさそうユキが目を細め、それにユラギは微笑みで答える。[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「でもな……これだけじゃないんだ」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 「あの二人はな……大馬鹿だったのさ。私がちょっとこの窪みのことが好きじゃないと言ったばっかりに……それを塗り替えてやろうと、私にまで秘密で仕込んでいたんだ」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 「400年も過ぎればそんなものも見つけてしまう……本当に……本当に……っ……大馬鹿だ」[lrcm]
 
 #
 ユラギはわずかに声を震わせる。[lrcm]
 そして、何かを思うようにまっすぐと空を見上げた。[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「星降と、降山の名を持って唱えます……『星よ、色を灯せ』！」[lrcm]
 
+;bgをどうにかして虹にする
+;虹の天の川
 #
 直後、島の真ん中から光が上がる。[lrcm]
 赤、青、黄色。淡い色合いを灯すしながら上がるその光は、おそらく、”空灯”。[lrcm]
@@ -176,7 +209,6 @@
 その”空灯”は、真っ暗だった空洞に、虹のような泉をつくり出す。[lrcm]
 まるで、天の川を地表におろしてきたかのように燦然と輝くそれは、見るもの全てを魅了する絶景だった。[lrcm]
 ……だが、それだけではかった。[lrcm]
-
 
 #【一】
 「星の色が……！」[lrcm]
@@ -186,34 +218,55 @@
 地表にある天の川の周りへに、七色の淡い光が雨のように降り注ぐ。[lrcm]
 地面につくたびに星は弾け、まるで踊るようにキラキラと煌いた。[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
-「これが、あの二人が生涯をかけて生み出した術の一つ、”彩星”。効果は、降り注ぐ星にただ色を付け、星を弾けさせるだけ……一匹の娘と馬鹿な神を喜ばすために作り出した……っ……あの二人の、最高傑作だよ」[lrcm]
+「これが、あの二人が生涯をかけて生み出した術の一つ、”彩星”」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
+「効果は、降り注ぐ星にただ色を付け、星を弾けさせるだけ……」[lrcm]
+「一匹の娘と馬鹿な神を喜ばすために作り出した……っ……あの二人の、最高傑作だ」[lrcm]
 
 #
 ユラギの瞳から、涙が溢れだす。[lrcm]
 それを見上げるユキの瞳にも大きな涙がこぼれていた。[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「長い……とっても長い時間を過ごしてきた」[lrcm]
-「……君たち人のあらゆるを識り、醜悪で悪辣な君達を見てきた。いともたやすく同族を屠り、それはときに理由もないことすらある。私は、君たちほど恐ろしい生物を知らない」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「……君たち人のあらゆるを識り、醜悪で悪辣な君達を見てきた」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+「いともたやすく同族を屠り、それはときに理由もないことすらある」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「私は、君たちほど恐ろしい生物を知らない」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 「だが……」[lrcm]
-「それでも、私は君たちのことが嫌いになれなかった。どれだけ恐ろしかったとしても、目を覆いたくなるような惨事を見たときでも、だ」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
+「それでも、私は君たちのことが嫌いになれなかった」[lrcm]
+「どれだけ恐ろしかったとしても、目を覆いたくなるような惨事を見たときでも、だ」[lrcm]
 
 #
 ユラギは降り注ぐ七色を潤んだ瞳で見つめている。[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「なぜななら……これだ。君たちはそれでも、こんなにも美しく、真っ直ぐな願いを果たし……こんなに綺麗な景色を生み出すんだ」[lrcm]
-「私は、君たちが出会い、結び、刻んでいく『音』が、愛おしくてたまらい。この万天から降り注ぐ星よりもずっと……君たちの『音』は、それほどに尊く、美しい」[lrcm]
+「なぜななら……………………この景色さ」
+[chara_mod name="yuragi" face="emi" time="0"]
+「君たちはそれでも、こんなにも美しく、真っ直ぐな願いを果たし……こんなに綺麗な景色を生み出すんだ」[lrcm]
+[chara_mod name="yuragi" face="terewara" time="0"]
+「私は、君たちが出会い、結び、刻んでいく『音』が、愛おしくてたまらい」[lrcm]
+「この万天から降り注ぐ星よりもずっと……君たちの『音』は、それほどに尊く、美しい」[lrcm]
+
 #
 ユラギは自分のめをごしごしと涙を拭いて、展望台の柵に寄りかかるような体勢になる。[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「まったく……君たちは本当に……馬鹿だなぁ……」[lrcm]
 #
 少しだけ涙声のユラギは、そう言ってまた涙を流す。[lrcm]
+;犬無く
 #【ユキ】
 「──クゥン……」[lrcm]
-
+[chara_hide name="yuragi"]
 #
 しばらく、二人は空を黙って見上げていたが……おれは、ユキに向き直る。[lrcm]
 #【一】
@@ -223,13 +276,14 @@
 俺はユラギと共に空を見つめている”ユキ”に話しかける。[lrcm]
 見れば、獣の姿が少しずつ薄くなっていた。それは、星が降るたびに少しずつ、少しずつ、透明度を増していな。[lrcm]
 #【一】
-「──なぁ、『おつき』」[lrcm]
+「──なぁ、おつき」[lrcm]
 
 #【ユキ？】
 『…………』[lrcm]
 
 #
 獣はその言葉を聞いて、おどろいたようにこちらを向いた。[lrcm]
+;魔法
 そして、少しの間をおいて、獣の目の前に薄く幽霊のような何かが現れ始める。[lrcm]
 ──それは、見覚えのある少女の姿で。[lrcm]
 
@@ -239,31 +293,48 @@
 #
 この一週間でよく聞いた元気な声が、響いてきた。[lrcm]
 #【一】
-「……気がついたのはユラギだよ」[lrcm]
+「気がついたのはユラギだよ」[lrcm]
+
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #
 ユラギがうなずき、ユキの方を向く。[lrcm]
 
 #【ユラギ】
 「……おつきが攫われて、探知を行った時点ですでに予感はあった」
+[chara_mod name="yuragi" face="fukigen" time="0"]
 「そしてあの祠だ。おつきが居ないかと必死に祠の中で縁を探し回っていたら……なぜか、落ちていた髪の毛に反応したんだ」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 「よく調べてみたら、それは繭の近くや、あるいは繭の中からも見つかった」[lrcm]
-「そもそもあの祠がある場所は島の中心だから、おつきの髪が見つかるのはおかしい。たとえ攫われた人間と接触したことがあり、たまたま髪の毛が付着した……と考えても、全体の1/3の繭から髪の毛が発見できるのはおかしい」[lrcm]
+「そもそもあの祠がある場所は島の中心だから、おつきの髪が見つかるのはおかしい」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+「たとえ攫われた人間と接触したことがあり、たまたま髪の毛が付着した……と考えても、全体の1/3の繭から髪の毛が発見できるのはおかしい」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 「以上のことから考えられるのは……おつき、君が、繭を作っていたんじゃないか？」[lrcm]
 
 #【おつき】
 『……ふふっ、せいかーい！　でも、それだけでわかったの？』[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「ううん、それは鍵かな。決め手となったのは、神域への獣の侵入だ」[lrcm]
-「域にはどんな強力な妖物は愚か、神格すら入ってこれない。これだけは普段私が使える力とは別枠の『概念』だから間違いないはずなんだ……でも、例外はある」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+「域にはどんな強力な妖物は愚か、神格すら入ってこれない」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「これだけは普段私が使える力とは別枠の『概念』だから間違いないはずなんだ……でも、例外はある」[lrcm]
 「それは、私が許可した何かであることだ……つまり……」[lrcm]
-#【ユラギ】
-「私が出していた許可はおつきとハジメと精霊たちだけ。精霊たちに関しては、全員が『この島』の出身じゃないからシロ。いまここにいるハジメは除外するとして、残るは……おつき、君だけだ」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+「私が出していた許可はおつきとハジメと精霊たちだけ」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「精霊たちに関しては、全員が『この島』の出身じゃないからシロ」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
+「いまここにいるハジメは除外するとして、残るは……おつき、君だけだ」[lrcm]
 #
 おつきは、それをきいてなぜかニコニコとしている。[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【おつき】
 『だいせいかい！　めいたんてい！』[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「ふふん、だろー？」[lrcm]
 
@@ -272,7 +343,7 @@
 
 #【一】
 「そして、もう一つだ」[lrcm]
-
+[chara_hide name="yuragi"]
 #
 ユラギをついで言葉を続ける。[lrcm]
 
@@ -298,12 +369,14 @@
 #
 おつきはそう、幸せそうに微笑む。[lrcm]
 
+[chara_show name="yuragi" top="50" face="sekimen" time="0" top="150"]
+
 #【ユラギ】
 「そ、そうか……？」[lrcm]
 
 #【おつき】
 『うんっ！　だって……いまの言い方、むかしのおとーさんと、おかーさんみたい！』[lrcm]
-
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【ユラギ】
 「……そ、そんなにか！？　そ、そこまでか！？」[lrcm]
 
@@ -314,6 +387,7 @@
 『うんっ！　ふたりともとっても、おにあい？　らぶらぶ？』[lrcm]
 #【一】
 「い、いや、ラブラブというかなんというか……」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「なっ、なんだよぉ。ラブラブじゃないのかぁ？」[lrcm]
 
@@ -324,20 +398,28 @@
 「いや……う、ううん……まあ……うん……」[lrcm]
 #【おつき】
 『おーっ！　ユラギおねーちゃん、せめせめ！』[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「ふっ、なんてったって神様だからなっ！」[lrcm]
 #【おつき】
 『よかった。おねーちゃん、これでひとりぼっちじゃないね！』[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「……おつき……？　あっ……まさか……」[lrcm]
+「……おつき……？　[chara_mod name="yuragi" face="Se" time="0"]あっ……まさか……」[lrcm]
 #【おつき】
-『えへへ。おかーさんがいってた。ユラギお姉ちゃんは……実はへたれ？　だから、誰かが、せなか押さないといつまでたっても始まらないのよねーって』[lrcm]
+『えへへ。おかーさんがいってた。ユラギお姉ちゃんは……実はへたれ？　だから、誰かが、背中押さないといつまでたっても始まらないのよねーって』[lrcm]
+[manpu layer=0 name=yuragi type=muka2 x="20" y="80" width="80"]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
-「あ、彩のやつ……娘にそんなこと言ってたのかっ。と、ということは、私は幼子の恋愛指南で成功し、調子に乗っている哀れな神……？」[lrcm]
+「あ、彩のやつ……娘にそんなこと言ってたのかっ!」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
+「と、ということは、私は幼子の恋愛指南で成功し、調子に乗っている哀れな神……？」[lrcm]
 #【おつき】
 『ふふーん』[lrcm]
-#【ユラギ】
+#【一】
 「？　なんの話だ？」[lrcm]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【一】
 「はっ、ハジメは気にしなくていいんだっ！　こっちの、お、女の秘密だ！　なっ！」[lrcm]
 #【おつき】
@@ -345,40 +427,46 @@
 
 #
 ねー？　とニコニコしているおつきと対象的に、何やらがっかりと肩を落とすユラギ。[lrcm]
-そこで……[lrcm]
+そこで……おつきが改めてこちらに向き直った。[lrcm]
 
 #【おつき】
 『あのね……おつき、二人に言わなきゃいけないことがあるの』[lrcm]
 #【一】
-「え？」[lrcm]
+「ん？」[lrcm]
 #【おつき】
 『ごめんなさい……！』[lrcm]
-
+[chara_mod name="yuragi" face="def" time="0"]
 #
 そう言うとおつきは思い切り頭を下げた。[lrcm]
 #【おつき】
 『ごめんなさい……私のせいで……たくさんたくさんのひとが……死んじゃった……傷つけちゃった』[lrcm]
+[chara_mod name="yuragi" face="odoroki" time="0"]
 #【ユラギ】
 「おつき……？」[lrcm]
 #【おつき】
 『いっぱい耐えたけど、いっぱい頑張ったけど……でも、いつの間にか私は私じゃなくなっちゃって……たくさん……たくさん……』[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【一】
 「おつき……」[lrcm]
 #【おつき】
 『でも、良かった……最後におねーちゃんだけはしあわせにできたから……』[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「ど、どういうことだ……？」[lrcm]
 #【おつき】
 『おねーちゃんだけが、一人ぼっちになっちゃったから……だから、せめて、おねーちゃんとおにーちゃんと幸せになってほしかったの……』[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「……っ……だから私に……？」[lrcm]
 #【おつき】
 『うんっ……ぜんぶぜんぶ、私のせいだから……私がこの世界にいなければ……きっと、おとーさんもおかーさんも……きっと、みんな幸せだったはずだから……』[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「──違うっ！　違うぞおつき！」[lrcm]
 「誰も……誰も悪くないんだ。私達はみんな精一杯足掻いて……そして、届かなかっただけだ」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 「それは暴力にも似た何かで、私達にはどうしようもなかった……」[lrcm]
-#【ユラギ】
 「それでも……」[lrcm]
 
 #
@@ -386,31 +474,44 @@
 #【おつき】
 『おねえちゃん……？』[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「それでも、最後にあの二人が君に残した願いは……確かに届いた。遥か彼方の昔に結んだあの二人と結んだ約束を……今ここで、君に届けることが出来た」[lrcm]
-　[lrcm]
-「おつき……私は、君たちと過ごした日々が大好きだ。だから私は、それを失わないために、二人を失った傷を背負って生きる」[lrcm]
+「それでも、最後にあの二人が君に残した願いは……確かに届いた」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「遥か彼方の昔に結んだあの二人と結んだ約束を……今ここで、君に届けることが出来た」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
+「おつき……私は、君たちと過ごした日々が大好きだ」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+「だから私は、それを失わないために、二人を失った傷を背負って生きる」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
+[odoroku layer="0"]
 「そして、その上で私は、あの二人以上に幸せに生きてみせる！　だから……安心してくれ、おつき！」[lrcm]
 「私はあの二人と過ごしたあの日々と、ハジメと過ごしたこの日々を私は幸せであったとそう思う！」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 「だから後は……ユキが思うだけだ」[lrcm]
 #【おつき】
 『わたしが……？』[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「ああ、私は君達と過ごした日々を本物だと思う……ユキは、どう思う？」[lrcm]
 #【おつき】
 『……わたしは……』[lrcm]
 
 #
-ユキは、ちいさく振るえると、うつむいて手を握って小さく震え始める。[lrcm]
-
+おつきは小さくふるえると、うつむいてユラギの手を握った。[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 #【おつき】
 『わ、わたしもっ……！』[lrcm]
-『わたしもっ、一緒にくうとうつくって、山の中を遊び回って……おとーさんとおかーさんと、はじめおにーちゃんと、ゆらぎおねーちゃんと……いっぱいいっぱい……とってもたのしくて……だのじぐでっ……』[lrcm]
+『わたしもっ、一緒にくうとうつくって、山の中を遊び回って……」[lrcm]
+「おとーさんとおかーさんと、はじめおにーちゃんと、ゆらぎおねーちゃんと……いっぱいいっぱい……とってもたのしくて……だのじぐでっ……』[lrcm]
 『しあわせ……っだった！！！』[lrcm]
 
+[chara_mod name="yuragi" face="emi" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「ああっ！！　私もだっ！」[lrcm]
 
+;抱きしめる
 #
 ユラギがユキを抱きしめる。[lrcm]
 此方より彼方まで続き……悲しみで終わってしまったその日々。[lrcm]
@@ -425,6 +526,7 @@
 それと同時、少しずつおつきの体が透明になっていく。[lrcm]
 まるでそれは世界に溶けていくように。[lrcm]
 
+[chara_mod name="yuragi" face="odoroki" time="0"]
 #【ユラギ】
 「……おつきっ……」[lrcm]
 #【一】
@@ -459,10 +561,12 @@
 #【おつき】
 『あのねっ……おつきねっ……！』[lrcm]
 『────とっても……とっても……しあわせ、だったよ！』[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「っおつきっ……！」[lrcm]
 #【一】
 「おつきっ……」[lrcm]
+;抱きしめる
 
 #
 おつきとユラギ、そして三人で抱き合う形となる。[lrcm]
@@ -493,10 +597,13 @@
 #【一】
 「おつき……俺もっ！　俺も楽しかったよ！　三人で過ごしたあの日々を……絶対に忘れない」[lrcm]
 
+[odoroku layer="0"]
 #【ユラギ】
 「わたしもだっ！　きっと、あの日々は彩と九郎たちと過ごしたあの日々も、ハジメと三人で暮らした日々も全部、たのしくて、あったかくて……全部私の、私のっ……宝物だ！」[lrcm]
 #【おつき】
 『うんっ……ハジメおにーちゃん、ユラギおねーちゃん、おつきがなくてもっ、ふたりとも、なかよくしてね……っ』[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「ああっ……まかせろっ、わたしとハジメだぞ！　きっと……あの二人よりもっとラブラブさっ」[lrcm]
 
@@ -512,17 +619,20 @@
 
 #
 おつきが笑顔で手を降り、緩やかに光となっていく。[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「おつきっ！！」[lrcm]
 
 #
 ユラギが叫んで、空へ昇るおつきを見上げる。[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「おかえりなさい……そして……」[lrcm]
 
 #
 俺とユラギは顔を合わせ、うなずきあう。[lrcm]
 
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ、ハジメ】
 「「いってらっしゃい！」」[lrcm]
 
@@ -538,13 +648,13 @@
 高く、高く登っていくその光は、降ってくる星を受けて、キラキラと煌く。[lrcm]
 ……直後、その光を追うように、どこからから現れた２つの光が浮かび上がり寄り添うように空へと登っていく。[lrcm]
 
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【一】
 「…………ああ……いって、らっしゃい。おつき……ユキ、彩、九郎」
 
 
 [bg layer=base storage=morinaka.png time="1"]
 [mask_off effect="fadeOut"]
-[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
 
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 ;ここからは下
