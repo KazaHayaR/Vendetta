@@ -22,7 +22,7 @@
 #
 「1965年8月 還ノ島島内新聞より抜粋」[lrcm]
 ;図書館 bg
-[scene_change situation="図書館"] 
+[scene_change situation="図書館" bgstorage="図書館.jpg"] 
 #【時任勢一】
 「縁があったらまた会おうねとは言ったけど、思ったより再会が早かったね…」[lrcm]
 #【坂本宗介】
@@ -80,7 +80,7 @@
 #【坂本宗介】
 そう言って時任さんは笑顔で手を振りつつ、積み上げられた本を抱えて去っていった。…また会えるといいな。[lrcm]
 ;郊外・森近く bg
-[scene_change situation="郊外"]
+[scene_change situation="郊外" bgstorage="郊外.jpg"]
 #【後輩刑事】
 「翔さーん、もう帰りましょうよー。森は今猟友会の人たちと協力して手掛かりを探してるみたいですし、事件現場からは離れてるし…」[lrcm]
 #【夕陽翔】
@@ -252,7 +252,7 @@
 #【坂本宗介】
 この後、どんな運命が待ち受けているのか。それを知っていたら、俺はこんなに呑気ではいられなかったに違いない。[lrcm]
 ;森
-[scene_change situation="森" bgstorage="morinaka.png"]
+[scene_change situation="森" bgstorage="郊外.png"]
 #【後輩刑事】
 「翔さん、あの証言…どこまで信用できますかね」[lrcm]
 #【夕陽翔】
@@ -320,7 +320,7 @@
 #【後輩刑事】
 「んなことしたら後でぶっ飛ばされそうなんでやめときますよ」[lrcm]
 ;morinaka? bg
-[scene_change]
+[scene_change bgstorage="森中.jpg"]
 #【夕陽翔】
 「進めども進めども毒ガスのどの字もないな」[lrcm]
 #【後輩刑事】

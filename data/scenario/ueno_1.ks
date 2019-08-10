@@ -142,7 +142,7 @@
 
 
 ;放課後
-[scene_change bgstorage="ストリート.jpg" situation="放課後"]
+[scene_change bgstorage="通学路夕方.jpg" situation="放課後"]
 [chara_show name="tubaki" face="Sdef" top="100"]
 [tilt layer=0 time=1000]
 #【夕陽椿】

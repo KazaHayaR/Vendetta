@@ -11,7 +11,7 @@
 だが、我々は…私は確かに観測したのである。宗教の世界で描かれるような、神話の一端を。科学の力によって。[lrcm]
 ;図書館
 ;図書館bg
-[scene_change situation="図書館"]
+[scene_change situation="図書館" bgstorage="図書館.jpg"]
 #【石田修星】
 「それでやってきたのが図書館ねえ…。動物図鑑でも探しに来たのか？」[lrcm]
 #【坂本宗介】
@@ -253,7 +253,7 @@
 「もう経験済みなんですよ、それは」[lrcm]
 ;石田家
 ;アパート夜
-[scene_change situation="石田家"]
+[scene_change situation="石田家" bgstorage="アパート.jpg"]
 #【石田修星】
 「経験済み、か…」[lrcm]
 #【石田修星】
@@ -272,7 +272,7 @@
 何があろうと、あの子は守る。俺の命に代えてもだ。[lrcm]
 ;翌日図書館
 ;図書館
-[scene_change situation="翌日　図書館"]
+[scene_change situation="翌日　図書館" bgstorage="図書館.jpg"]
 #【坂本宗介】
 「…良かった。やっぱりいらっしゃいましたか」[lrcm]
 #【時任勢一】

@@ -24,9 +24,7 @@
 #
 「還ノ島伝説（晴明社文庫）より抜粋」[lrcm]
 ;坂本家
-*test
-[start_template]
-[set_default_message_window]
+
 [scene_change situation="坂本家"]
 #【坂本宗介】
 「む…ううん…」[lrcm]
@@ -90,10 +88,12 @@
 「今日未明に発見された二つの遺体は、現場に落ちていた遺留物から市内に住む高校三年生たちのものではないかと見て警察は捜査を進めています。還ノ島では昨日も松岡さん一家の遺体が発見されたばかりで…」[lrcm]
 #【坂本宗介】
 「おいおい…また犠牲者が出たのか」[lrcm]
-[chara_show name="tubaki" face="Sdef" top="100"]
+[chara_show name="tubaki" face="Scry" top="100" reflect=true]
+[hop_revert name=tubaki time=300]
 #【夕陽椿】
 「お父さん、大丈夫かな…」[lrcm]
-[chara_show name="yuragi" face="Sdef" top="200"]
+[chara_show name="yuragi" face="Sfukigen" top="200" reflect=true]
+[hop_revert name=yuragi time=300]
 #【坂本ゆらぎ】
 「…なんだか、嫌な感じ…。一週間ぐらい前からこの島に悪いのが住みついてるような…」[lrcm]
 #【坂本宗介】
@@ -104,37 +104,57 @@
 俺が中学生の時事故（幸いかすり傷程度で済むようなものだったが）に遭った時も、その前ゆらぎに散々外出を止められてたっけ。[lrcm]
 #【坂本宗介】
 我が妹ながら恐ろしいヤツだ。この前も「私…違う世界だったら神様になれるぐらいの逸材なんだよ」とかゆらぎ以外が言ってたら黄色い救急車を呼ぶレベルの発言をかましていたが、なぜか冗談に聞こえなかったし。[lrcm]
+[chara_mod name='tubaki' face='Ssurprised' time='0']
+[manpu layer='0' name='tubaki' type='hatena' x='50' y='50' width='80']
 #【夕陽椿】
 「悪いのって…どんなの？」[lrcm]
+[chara_mod name='yuragi' face='Sdef' time='0']
+[hShake name=yuragi time=1000]
 #【坂本ゆらぎ】
 「よくわからない…。恐ろしいものだってことはわかるんだけど…」[lrcm]
+[chara_mod name='tubaki' face='Scry' time='0']
+[hop_revert name=tubaki time=500]
 #【夕陽椿】
 「そう…。怖いなあ、人間の仕業じゃないみたいだし」[lrcm]
 #【坂本宗介】
 「食い荒らされてたとか言ってたしな。熊か何かじゃないか？」[lrcm]
+[chara_mod name='tubaki' face='Ssurprised' time='0']
+[hop name=tubaki time=300]
 #【夕陽椿】
-「でも、事件現場は森から結構距離あるよね。わざわざ人の多いところまで下りてくるかなあ…。熊の被害とか今までそんなに聞いたことないし」[lrcm]
+「でも、事件現場は森から結構距離あるよね。わざわざ人の多いところまで下りてくるかなあ…。
+[chara_mod name='tubaki' face='Scry' time='0']
+[hop_revert name=tubaki time=300]
+熊の被害とか今までそんなに聞いたことないし」[lrcm]
 #【坂本宗介】
 「それがわからないんだよな…。まあ、俺たちが考えることじゃないか。それこそ翔さんや俺の父さんがなんとかしてくれるさ」[lrcm]
+[hop_revert name=tubaki time=500]
 #【坂本ゆらぎ】
 「そうだと…いいけれど…」[lrcm]
 #【坂本宗介】
 「……」[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
+[hop name=tubaki time=300]
 #【夕陽椿】
 「ま、まあまあ！とりあえず朝ごはん食べちゃおうよ！ほら、学校遅刻しちゃうよ？」[lrcm]
 #【坂本宗介】
 「…そうだな」[lrcm]
 #【坂本宗介】
 そう。俺たちがこんなことを考えたところで意味はない。こういうのは警察か猟友会の領分だ。俺たちは微妙な雰囲気のまま朝食を済ませると、各々学校へ向かった。[lrcm]
+
 ;学校
 [scene_change bgstorage=room.jpg]
-[chara_show name="tubaki" face="Sdef" top="100"]
+[chara_show name="tubaki" face="Ssurprised" top="100"]
+[manpu layer='0' name='tubaki' type='bikkuri' x='40' y='50' width='80']
+[hop name=tubaki time=300]
 #【夕陽椿】
 「登校して5秒で本と合体…さすがだね宗介」[lrcm]
 #【坂本宗介】
 「その悪意を感じる表現やめろ。そら見世物じゃないぞ、散れ散れ」[lrcm]
+[chara_mod name='tubaki' face='Sangry' time='0']
+[vShake name=tubaki time=600]
 #【夕陽椿】
 「何よー！」[lrcm]
+[run_left name=tubaki time=4000]
 [chara_hide name=tubaki]
 #【坂本宗介】
 頬を膨らませ、女友達の方へと駆けていく椿。…うん、いつも通りだ。[lrcm]
@@ -190,7 +210,8 @@
 「…そう、だな」[lrcm]
 #【坂本宗介】
 俺は本を閉じた。どうせ家でも読める。それよりかは、家ではできないこの騒がしい幼馴染の相手をしておくのが、今は一番いいのかもしれないと思ったから。[lrcm]
-[chara_show name="tubaki" face="Sdef" top="100"]
+[chara_show name="tubaki" face="Ssurprised" top="100"]
+[vShake name=tubaki time=600]
 #【夕陽椿】
 「あーっ!!ちょっと、私は追い払ったのになんで慎太郎とは会話してるの！私も混ぜて！」[lrcm]
 #【坂本宗介】
@@ -201,23 +222,31 @@
 「はあ…」[lrcm]
 #【坂本宗介】
 俺にできることは、災害のごとき幼馴染たちの相手をしながら事件解決を祈ることだけらしい。ちくしょうめ。[lrcm]
+*test
+[start_template]
+[set_default_message_window]
 ;放課後 通学路夕方
-[scene_change situation="放課後"]
-[chara_show name="tubaki" face="Sdef" top="100"]
+[scene_change situation="放課後" bgstorage="通学路夕方.jpg"]
 #【坂本宗介】
 「やっぱり、事件の経過によってはしばらく休校になるのもあり得るらしいな。職員室で先生たちがひそひそと話してた」[lrcm]
+[chara_show name="tubaki" face="Scry" top="100"]
+[hop_revert name=tubaki time=500]
 #【夕陽椿】
 「そうなんだ…。さっきお父さんからも連絡あって、当分は帰れないかもって」[lrcm]
 #【坂本宗介】
 「立て続けに2件も人死にだもんな」[lrcm]
+[hop_revert name=tubaki time=300]
 #【夕陽椿】
 「うん…」[lrcm]
 #【坂本宗介】
 「…なあ、椿。一晩といわず、しばらくはうちにいていいんだぞ。ゆらぎだって歓迎してくれるさ」[lrcm]
+[chara_mod name='tubaki' face='Sgiggle' time='0']
+[manpu layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
 #【夕陽椿】
 「あはは…。…ありがと。やっぱり、宗介は優しいね」[lrcm]
 #【坂本宗介】
 「翔さんの言いつけを守ろうとしてるだけだ」[lrcm]
+[hop_revert name=tubaki time=600]
 #【夕陽椿】
 「ふふ…。でもいいの。一人は慣れてるし、父さんだってずっと帰って来ないわけじゃないし…」[lrcm]
 #【坂本宗介】
@@ -228,6 +257,8 @@
 「お前が平気かどうかなんて、俺は気にしてない。俺が心配なんだよ。…お前のことが」[lrcm]
 #【坂本宗介】
 無性に恥ずかしくて、言葉尻はほぼほぼウィスパーボイスに近くなってしまった。逃げ出したい。[lrcm]
+[chara_mod name='tubaki' face='Sblush' time='0']
+
 #【夕陽椿】
 「…！」[lrcm]
 #【坂本宗介】
@@ -349,7 +380,7 @@
 「さて、帰るか…」[lrcm]
 ;第一の事件・現場
 ;夜の街 bg
-[scene_change situation="第一の事件・現場"]
+[scene_change situation="第一の事件・現場" bgstorage="夜道.jpg"] 
 #【後輩刑事】
 「翔さーん、もう戻りましょうよ。鑑識が調べても何も出てこなかったんですから」[lrcm]
 #【夕陽翔】
