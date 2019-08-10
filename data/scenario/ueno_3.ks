@@ -202,7 +202,7 @@
 #【坂本宗介】
 のどかな島で始まった事件が他人事ではなくなってきているような気配を、俺は肌で感じ始めていた。…それでも、危機感と呼べるほどのレベルではなかったのだが。[lrcm]
 ;教室
-[scene_change situation="教室" storage="room.jpg"]
+[scene_change situation="教室" bgstorage="room.jpg"]
 #【担任教師】
 「えー、警察からの要請で明日からしばらく休校になる。各自、極力外には出ずに自宅学習に励むこと！」[lrcm]
 #【生徒A】
@@ -252,7 +252,7 @@
 #【坂本宗介】
 この後、どんな運命が待ち受けているのか。それを知っていたら、俺はこんなに呑気ではいられなかったに違いない。[lrcm]
 ;森
-[scene_change situation="森" storage="morinaka.png"]
+[scene_change situation="森" bgstorage="morinaka.png"]
 #【後輩刑事】
 「翔さん、あの証言…どこまで信用できますかね」[lrcm]
 #【夕陽翔】

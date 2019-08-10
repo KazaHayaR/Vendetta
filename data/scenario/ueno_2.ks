@@ -106,7 +106,7 @@
 #【坂本宗介】
 そう。俺たちがこんなことを考えたところで意味はない。こういうのは警察か猟友会の領分だ。俺たちは微妙な雰囲気のまま朝食を済ませると、各々学校へ向かった。[lrcm]
 ;学校
-[scene_change storage=room.jpg]
+[scene_change bgstorage=room.jpg]
 [chara_show name="tubaki" top="100" face="Sdef" top="200"]
 #【夕陽椿】
 「登校して5秒で本と合体…さすがだね宗介」[lrcm]

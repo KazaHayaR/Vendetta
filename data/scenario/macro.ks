@@ -354,8 +354,11 @@ document.getElementsByClassName("situationOuter")[0].remove();
 [mask effect="fadeIn"]
 [chara_hide_all]
 @layopt layer=message0 visible=false
-[bg layer=base storage=%storage|black.png time="1"]
+[bg layer=base storage=%bgstorage|black.png time="1"]
 [mask_off effect="fadeOut"]
+[if exp="mp.bgmstorage?true:false"]
+[fadeinbgm storage=%bgmstorage time="1000" loop="true"]
+[endif]
 [if exp="mp.situation?true:false"]
 [display_situation situation=%situation]
 [endif]
