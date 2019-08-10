@@ -20,34 +20,18 @@
 [chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 [chara_face name="yuragi" face="terewara" storage="/chara/yuragi/C1-9.png"]
 
-;キャラセットアップ
-;【椿】
-[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="400"]
-[chara_face name="tubaki" face="def" storage="chara/tubaki/T-def.png"]
-[chara_face name="tubaki" face="angry" storage="chara/tubaki/T-angry.png"]
-[chara_face name="tubaki" face="blush" storage="chara/tubaki/T-blush.png"]
-[chara_face name="tubaki" face="cry" storage="chara/tubaki/T-cry.png"]
-[chara_face name="tubaki" face="giggle" storage="chara/tubaki/T-giggle.png"]
-[chara_face name="tubaki" face="hopeless" storage="chara/tubaki/T-Hopeless.png"]
-[chara_face name="tubaki" face="smile" storage="chara/tubaki/T-smile.png"]
-[chara_face name="tubaki" face="surprised" storage="chara/tubaki/T-surprised.png"]
-[chara_face name="tubaki" face="Sdef" storage="chara/tubaki/TS-def.png"]
-[chara_face name="tubaki" face="Sangry" storage="chara/tubaki/TS-angry.png"]
-[chara_face name="tubaki" face="Sblush" storage="chara/tubaki/TS-blush.png"]
-[chara_face name="tubaki" face="Scry" storage="chara/tubaki/TS-cry.png"]
-[chara_face name="tubaki" face="Sgiggle" storage="chara/tubaki/TS-giggle.png"]
-[chara_face name="tubaki" face="Shopeless" storage="chara/tubaki/TS-Hopeless.png"]
-[chara_face name="tubaki" face="Ssmile" storage="chara/tubaki/TS-smile.png"]
-[chara_face name="tubaki" face="Ssurprised" storage="chara/tubaki/TS-surprised.png"]
-
-[bg layer=base storage=morinaka.png time="1"]
+[bg layer=base storage=morinaka2.png time="1"]
 [mask_off effect="fadeOut"]
-[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
+[fadeinbgm storage="The_End_of_Destruction_バトル1_dova.ogg" time="1000" loop="true"]
 
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 
+;run
 #【一】
 「短祓『水祓』！」[lrcm]
+[playse storage="craphand.ogg" buf="1" volume="100"]
+[playse storage="水祓_rev.ogg"]
+[movie storage="mizu.webm" skip=false]
 
 #
 小さな筒を潰して放つ聖なる水。[lrcm]
@@ -56,6 +40,7 @@
 
 #【黒い獣】
 「──■■■■！」[lrcm]
+;攻撃
 
 #
 いともたやすくかわされる。[lrcm]
@@ -69,23 +54,27 @@
 向かう先はおおよそ500m先。[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
 
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【ユラギ】
-「作戦はこうだ。私の力も歪みの維持で使える術はそう多くない。加えて攻撃系の祓はあの子にはほぼ効かないいと考えていい……なればまともに戦っても勝機が薄いと考えるのが普通だ」[lrcm]
-
-#
-こくんとうなずく。[lrcm]
-
+「作戦はこうだ。私の力も歪みの維持で使える術はそう多くない」[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
+「加えて攻撃系の祓はあの子にはほぼ効かないいと考えていい……」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「なればまともに戦っても勝機が薄いと考えるのが普通だ」[lrcm]
 #【ユラギ】
-「だから、まず、私はあるポイントで大きな術の用意をしている。ハジメはユキを誘導し、そのポイントまで引き連れてきてくれ」[lrcm]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+「だから、まず、私はあるポイントで大きな術の用意をしている」[lrcm]
+「ハジメはユキを誘導し、そのポイントまで引き連れてきてくれ」[lrcm]
 #【一】
-「そこに連れてきたら術で拘束した後……さっき教えてもらった『祓』を使うと」[lrcm]
+「そこに連れてきたら術で拘束した後、さっき教えてもらった『祓』を使うと」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「そのとーり！　ハジメがかなり危険だが……」[lrcm]
 #【一】
 「大丈夫だ。必ず連れてくる」[lrcm]
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「……うんっ、頼んだぞ！」[lrcm]
 
@@ -98,19 +87,22 @@
 
 #【ユラギ】
 「小祓『櫛蔓』　✕３！　柏手！」[lrcm]
-
+[playse storage="craphand.ogg" buf="1" volume="100"]
+[playse storage="桃雲.ogg" buf="2"]
+[movie storage="桃雲.webm" skip=false]
 #
 ３つの筒を一気に潰し、空高く放つ。[lrcm]
 すると、そこをめがけてどこからともなく三筋の蔓のようなものが出現する。[lrcm]
 そのうちの一つが獣にまとわりつこうとするが、一瞬で噛み砕かれる。[lrcm]
 だが、残りの２つがまとわりつき、そこに青々とした実の房をつけ、破裂した。[lrcm]
-
+破裂によって実の中身が破裂し、”祓”と拘束を同時に行う術、小祓『櫛蔓』。[lrcm]
+[quake count=5 time=100]
+;やられ
 #【黒い獣】
 「──■■■■■■！」[lrcm]
 
 #
 獣の雄叫びが響く。[lrcm]
-破裂によって実の中身が破裂し、”祓”と拘束を同時に行う術、小祓『櫛蔓』。[lrcm]
 
 #【一】
 「ぐっ……」[lrcm]
@@ -119,50 +111,62 @@
 体にぐっと疲労感が来た。[lrcm]
 ──祓いを使うときは当然、消費されるものがある。[lrcm]
 降山式の戦闘祓術はユラギいわく、先祖代々ユラギの血族としてその血を使用して祓いを行っているらしい。[lrcm]
-その血に含まれる『神力』──特に名前をつけられていなかったが、ユラギが即興で『わかりやすく神力とかでいいんじゃない？』と命名した──を消費するらしい。[lrcm]
+その血に含まれる『神力』──
+──特に名前をつけられていなかったが、ユラギが即興で『わかりやすく神力とかでいいんじゃない？』と命名した──[lrcm]
+──を消費するらしい。[lrcm]
 この神力は精神と大きく結びついており、使用するたびに、精神がすり減っていく。[lrcm]
 人の血の割合のほうが多いので使いすぎても死ぬことはないが、一週間ぐらい動けなくなる程度にはダメージを受けるらしい。[lrcm]
 
+;攻撃
 #【黒い獣】
 「──■■■■■■！」[lrcm]
-
+[quake count=5 time=100]
 #
 櫛蔓をあっという間に食いちぎった獣。[lrcm]
 だが、確実に足は止まり、こちらとの距離はなんとか維持できている。[lrcm]
 
 #【ユラギ】
 「このまま行ければ……！ 追加、小祓『桃雲(とううん)』　✕３！　柏手！」[lrcm]
+[playse storage="craphand.ogg" buf="1" volume="100"]
+[playse storage="桃雲.ogg" buf="2"]
+[movie storage="桃雲.webm" skip=false]
 
 #
 桃色の雲が獣を追って射出される。[lrcm]
-だが。獣の方も学習したのか大きく飛び回り、一つ一つを避けるため飛び上がり、あろうことか、木の幹を蹴って森の中を縦横無尽に飛び回り始めた。[lrcm]
+だが。獣の方も学習したのか大きく飛び回り、一つ一つを避けるため飛び上がり回避する。[lrcm]
+そして、あろうことか、木の幹を蹴って森の中を縦横無尽に飛び回り始めた。[lrcm]
 
+;攻撃
 #【黒い獣】
 「──■■■■ッ！」[lrcm]
 
 #
-全ての桃を避けきりつつの、上空へ　の跳躍。[lrcm]
-そのまま、こちらに向かって爪を立てながら落下してくる獣。[lrcm]
+全ての桃を避けきりつつの、上空への跳躍。[lrcm]
+そのまま、こちらに向かって爪を立てながら落下してくる[lrcm]
 
 #【一】
-「ご冗談をっ……！　開陣『逆環幣』！」[lrcm]
+「ご冗談をっ……！　開陣『環幣』！」[lrcm]
+[playse storage="空気音_story.ogg" buf="1"]
+[playse storage="環幣.ogg"buf="2"]
+[movie storage="環幣.webm" skip=false]
 
 #
-ポンッ、という音とともに[lrcm]
-同時に、空中に幾つかの縄をつなぎ合わせて作られた円が開く。[lrcm]
+ポンッ、という音とともに空中に幾つかの縄をつなぎ合わせて作られた円が開く。[lrcm]
 そのつなぎ目には幾つも光る紙垂。[lrcm]
 曰く、降山の戦闘祓でも最も防御に特化した祓『環幣』。[lrcm]
 疑似神域を作り出し、その領域内に踏み込んだあらゆる妖物を拒絶する術。[lrcm]
 
 #【黒い獣】
 「──■■■■■！！」[lrcm]
-
+[quake count=5 time=100]
+;鈴魔法
 #
 リ──リィィィィィィン…。(SE)[lrcm]
 獣が『環幣』に近づいた瞬間、鈴のような音と莫大な光が発生し、獣を吹き飛ばした。[lrcm]
 
 #【一】
 「──よしっ……！！」[lrcm]
+;攻撃
 #【黒い獣】
 「──■■■！！」[lrcm]
 
@@ -171,27 +175,31 @@
 莫大な量の光をもろともせず獣は『環幣』に食らいつく。[lrcm]
 何輝けるような匂いとともに、『環幣』にヒビが入り。[lrcm]
 
-;──バリィン！(SE)
+;割れる音
 
 悲痛な叫びのような音と主に、『環幣』は砕け散った。[lrcm]
 だが……。[lrcm]
 
 #【一】
 「まだだっ！……壊されるのは予想外だったが……もう少しっ！」[lrcm]
-
 #
 ユキが飛び上がるたび、『環幣』や他の祓術を組み合わせて足止め、前へ、前へ……！[lrcm]
 
 #【一】
 「はぁっ……はあっ……」[lrcm]
 
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+[chara_show name="yuragi" top="50" face="emi" time="0" top="150"]
+[odoroku layer="0"]
 #【ユラギ】
 「……！　ハジメ！！　流石ハジメだ！」[lrcm]
 
+[chara_hide name="yuragi"]
 #
 ユラギが見えた。[lrcm]
 予定のポイントまでもう少し。[lrcm]
 
+;攻撃
 #【黒い獣】
 「──■■■ッ！！」[lrcm]
 
@@ -201,11 +209,15 @@
 
 #【一】
 「──『水祓』！」[lrcm]
+[playse storage="craphand.ogg" buf="1" volume="100"]
+[playse storage="水祓_rev.ogg"]
+[movie storage="mizu.webm" skip=false]
 
 #
 こちらが放った『水祓』。しかし、すでに一度避けられている攻撃。[lrcm]
 当然のようにユキは薄皮一枚で交わし、速度を落とさずこちらに突進してくる。[lrcm]
 
+;攻撃
 #【黒い獣】
 「──■■■！！」[lrcm]
 
@@ -217,37 +229,66 @@
 #【一】
 「とっておきだ……再帰演『黄泉下り』……！」[lrcm]
 
+
+[playse storage="craphand.ogg" buf="1" volume="100"]
+[playse storage="桃雲.ogg" buf="2"]
+[movie storage="桃雲.webm" skip=false]
+[playse storage="環幣.ogg"buf="2"]
+[movie storage="環幣.webm" skip=false]
+[playse storage="水祓_rev.ogg"]
+[movie storage="mizu.webm" skip=false]
+
 #
 戦う前から用意していた仕込みを開放する。[lrcm]
 先程から潰していた筒より大きめの筒をつぶし、破裂した内部からきつい神酒の香りが立ち込める。[lrcm]
 そして、それが地面に浸透し……先程まで使っていた祓術が、周囲の空間から湧き出してくる。[lrcm]
+
 環幣が獣の動きを止め、桃雲が獣を大地に落とし、櫛蔓の蔓が獣を巻き付け、一瞬、獣の動きを完全に地面に縫い止めた。[lrcm]
 環幣、櫛蔓、桃雲、水祓。[lrcm]
 逸話の一連の流れを順番通りに行うことで実行できる複合祓『黄泉下り』。[lrcm]
 これで数秒ぐらいは留められる置けるはずだ。[lrcm]
 
+[quake count=5 time=100]
+#【黒い獣】
+「■■■■■■■■■！」」
+
 #【一】
 「今だッユラギっ！」[lrcm]
+[chara_show name="yuragi" top="50" face="emi" time="0" top="150"]
 #【ユラギ】
 「おまかせりんごジュース！」[lrcm]
 
+;魔法起動
 #
 ユラギの口元が開き、何かを唱える。[lrcm]
+[playse storage="craphand.ogg" buf="1" volume="100"]
 口元が閉じ、一拍おいてから柏手が打たれる。[lrcm]
 それは、こちらが普段行うよりも鮮烈に響き、その場空気が、一瞬で変わった。[lrcm]
 
-#【一】
+;魔法起動
+#【ユラギ】
 「『菖還縛』」[lrcm]
 
 #
 旋律のような言霊が森に浸透する。[lrcm]
 どこからともなくつるのようなものが獣に襲いかかりがんじがらめにした。[lrcm]
+[quake count=5 time=100]
+;雄叫び
+#【黒い獣】
+「■■■■■■■■■■■■■！！」[lrcm]
+
 ユキは暴れまわるも、次第に力を抜けていき、やがて力なくうなだれた。[lrcm]
 
-#【ユラギ】
-「……よし……！」[lrcm]
 #【一】
-「……ふぅ、意外とすんなりいったなー！　そのまま最後まで仕上げるぞっ。ハジメはさすがだなッ！　怪我しなかったのも偉いぞ！」[lrcm]
+「……よし……！」[lrcm]
+[odoroku layer="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+#【ユラギ】
+「……ふぅ、意外とすんなりいったなー！」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
+「そのまま最後まで仕上げるぞっ。ハジメは流石だなッ！」[lrcm]
+[chara_mod name="yuragi" face="terewara" time="0"]
+「怪我しなかったのも偉いぞ！」[lrcm]
 
 #
 上機嫌のユラギが少し遠くから話しかけてくる。[lrcm]
@@ -260,6 +301,8 @@
 
 #【一】
 「……ユラギっ！」[lrcm]
+[odoroku layer="0"]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「ッ！　ああ、かなりヤバそうだ！　気をつけるんだ！」[lrcm]
 
@@ -267,19 +310,22 @@
 ユキの周りを覆う漆黒の瘴気。[lrcm]
 それが幾つもの塊に分かれて生き物のように動き出だした。[lrcm]
 
+;雄叫び
 #【黒い獣】
 「──■■」[lrcm]
 
 #
 ユキがちいさく吠える。[lrcm]
 それと同時、生き物のように動いていた瘴気に『眼』が現れる。[lrcm]
-眼を得た塊はそのまま石を持ったかのようにつるに食らいつき、一つづつ引きちぎり食い破る。[lrcm]
+
+眼を得た塊はそのまま石を持ったかのようにつるに食らいつき[quake count=5 time=100]、一つづつ引きちぎり食い破る。[quake count=5 time=100][lrcm]
 その蔦自身を喰らうかのようにどこまでも執拗に喰らい続け、しょうきはやがてぶくぶくと膨れ上がっていく。[lrcm]
 
 #【ユラギ】
 「なんだ……あれ……」[lrcm]
 #【一】
 「冗談だろ……あの蔦はうちの総氏神だって縛れるんだぞ……！」[lrcm]
+;雄叫び
 #【黒い獣】
 「──■■■■■■■■！」[lrcm]
 
@@ -289,28 +335,45 @@
 
 #【一】
 「くそっ……どうする！　もう一度縛れるか！？」[lrcm]
+[odoroku layer="0"]
 #【ユラギ】
-「無理だッ！　あの霧がある限り、拘束は出来ない……！　どうにかしてあれを剥がすか貫通させて本体に巻き付けないと！」[lrcm]
-#
+「無理だッ！　あの霧がある限り、拘束は出来ない……！」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
+「どうにかしてあれを剥がすか貫通させて本体に巻き付けないと！」[lrcm]
+
+;雄叫び
+#【黒い獣】
 「──■■■■■■■■！」[lrcm]
 
+[quake count=5 time=100]
 #
 そうこう話す間に獣の触手がこちらに飛んでくる。[lrcm]
-その速さはギリギリ目で追えるレベル。かろうじて回避するも、何本もの触手に襲われる。[lrcm]
+その速さはギリギリ目で追えるレベル[lrcm]
+かろうじて回避するも、何本もの触手に襲われる。[lrcm]
 
-#【一】
+[chara_mod name="yuragi" face="fukigen" time="0"]
+[manpu layer=0 name=yuragi type=nami2 x="50" y="100" width="80"]
+[odoroku layer="0"]
+#【ユラギ】
 「ハジメっ……このっ！」[lrcm]
 
 #
 ユラギの方にはこちらよりも倍以上の触手が襲いかかり、こちらに処理を回すことが出来なさそうだ。[lrcm]
 
+[chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「──ハジメっ！！　後ろだ！」[lrcm]
+
+[chara_hide name="yuragi"]
+
 #【一】
 「──ッ！」[lrcm]
 
+[layermode graphic=blood.jpg mode=overlay name=yuragi]
 ;──ぐじゃっ。というSEと背景。[lrcm]
-
+[filter layer="base" blur=5]
 #【一】
 「ぐあっっ……あああああっ」[lrcm]
 
@@ -318,17 +381,24 @@
 衝撃は右の肩、そして、両足。[lrcm]
 恐る恐るそちらを向くとがっぷりと肩に触手がまとわりついていた。[lrcm]
 それだけではなく、ギザギザと尖った牙のようなものが肩に噛みつき、深々と突き刺さっていた。[lrcm]
+;血の音
 
-#【ユラギ】
+#【一】
 「く……そっ……『水祓』！」[lrcm]
+
+[playse storage="水祓_rev.ogg"]
+[movie storage="mizu.webm" skip=false]
 
 #
 左手で筒を潰し、触手に当てる。[lrcm]
+;消火
 触手は気味の悪い叫び声のような声を上げて離れていく。[lrcm]
+;血の音
 が。離れた刃から血が吹き出し、シャツを真っ赤に濡らした。[lrcm]
 
 #【一】
 「はあっ……はあっ……！」[lrcm]
+;ブラー落として
 
 #
 全身から力が抜け、近くにあった樹にもたれかかる。[lrcm]
@@ -339,40 +409,54 @@
 
 #
 ユラギの声が遠くから聞こえが、かなり苦戦しているようだ。[lrcm]
-;音
 ──獣と、目が合った。[lrcm]
 獣はよだれを垂らしながらゆっくりとこちらに近づいてくる。[lrcm]
 真っ赤に染まった獣の瞳。そして、ジリジリとこちらを包囲する眼の着いたきりの触手。[lrcm]
 
-#【ユラギ】
+[filter layer="base" blur=10]
+
+#【一】
 「ッ……！ はぁ……はぁ……」[lrcm]
 
 #
+;血の音
 先程噛まれた傷口からは、どくどくと血が流れ出している。[lrcm]
 流れ出る血はあっという間に地面に血溜まりを作り……意識が朦朧としてきた。[lrcm]
-眼の前に獣がいると言うのに、視界がぶれ、やがて真っ黒になる。[lrcm]
+[filter layer="base" blur=30]
+
+#【一】
+「く……そ……」[lrcm]
+
+;倒れる
+眼の前に獣がいると言うのに、視界がぶれ、焦点が合わなくなってくる。[lrcm]
 痛みがやがて消え初め、脳の拒絶反応としてどこか心地よさが脳を満たし始める……。[lrcm]
+;足音
 ズッ……ズッ……と獣が歩いてくる音が聞こえる。[lrcm]
 ──谷垣さんと襲われたときも、こんなふうに近づいてきていたな。[lrcm]
 
+
 #【一】
-「……あのときは……結局、何も出来なかったなぁ」[lrcm]
+(……あのときは……結局、何も出来なかったなぁ)[lrcm]
 
 #
 妖物に対してなんの対処法を持っていないはずの谷垣さんに助けられ、俺は今ここに立っている。[lrcm]
 なんとも、情けない話だ。[lrcm]
+[filter layer="base" blur=40]
 
-#【一】
+#【ユラギ】
 「ハジっ……！　………………めっ！！」[lrcm]
 
 #
 遠くで、ユラギの声が聞こえてくる。[lrcm]
 耳も、少しずつ聞こえなくなっているようだ。[lrcm]
 どくどくと、右肩の出血を左手で押さえつける。[lrcm]
-痛みは、どんどんと強くなる。[lrcm]
+[bg layer=base storage=bg.jpg time="1"]
+[free_filter]
+痛みは、どんどんと強くなり、やがて、視界は真っ暗になった。。[lrcm]
+
 
 #【一】
-（そうだ……でも、谷垣さんも、『見えないはずのもの』が怖いはずなのに、なんども立ち向かっていっていた……）[lrcm]
+（そういえば……谷垣さんは『見えないはずのもの』が怖いはずなのに、なんで立ち向かっていったんだろう）[lrcm]
 （血まみれになって、それでも……俺を、護るために……）[lrcm]
 
 #
@@ -380,16 +464,16 @@
 谷垣さんがいいそうなことを想像してみれば……きっとこういうんじゃないだろうか。[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]#【谷垣】
+[mask_off effect="fadeOut"]
+#【谷垣】
 『島の安全を護るのが、私達の仕事ですから！』[lrcm]
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
+
 #
 怖くても、なんでも、ただ、その信念に近い意思が、彼女の恐怖を打ち消し、行動させた。[lrcm]
 果たして、自分はどうだろうか。[lrcm]
-ユキは、もう、すぐそこまで来ているのに……。[lrcm]
+あの子は、もう、すぐそこまで来ているのに……。[lrcm]
 
 #【一】
 （きっと、見えないものにかかわらなければ……こんなにボロボロになることもなかったんだろうし）[lrcm]
@@ -408,6 +492,7 @@
 例えば正行、椿、谷垣さん。街でユキに攫われた人々。[lrcm]
 彼らの行方不明を、遠い場所で起こった出来事として処理してしまうことで、平穏で安穏とした日常は送られていく。[lrcm]
 
+;bgm変更『決意』
 #【一】
 （……でも、それは、嫌だ……）[lrcm]
 
@@ -440,8 +525,13 @@
 #【一】
 「……」[lrcm]
 
+[mask effect="fadeIn"]
+[bg layer=base storage=morinaka2.jpg time="1"]
+[mask_off effect="fadeOut"]
+
 #
 目を開けると、いつの間にか目の前に獣が居た。[lrcm]
+;やられ
 ──獣の口が大きく開く。[lrcm]
 恐怖が全身を満たす。足は震え、脳は逃げろと警報を鳴らし続けている。[lrcm]
 だが、それでも。[lrcm]
@@ -449,15 +539,19 @@
 #【一】
 「……そうだ……君を、人喰いの獣なんかにさせるもんか……！」[lrcm]
 
+
 #
 刃を抜き、ユキの口元へ躍りでる。両足が悲鳴を上げるが、関係ない。[lrcm]
 それは回避不可能ならば、飛び込んで、自ら体を獣の口へと放り込む。[lrcm]
+;地の打撃
 ──グシャッ。[lrcm]
 
 #【一】
 「──ッッ！！　ぐっう”う”う”！！」[lrcm]
+[chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
 #【ユラギ】
 「は、ハジメッ！！？」[lrcm]
+[chara_hide name="yuragi"]
 
 #
 腹部に走る激痛。[lrcm]
@@ -467,86 +561,111 @@
 #【一】
 「でああああっっ！！」[lrcm]
 
+[movie storage="斬撃.webm" skip=false]
+[playse storage="sword.ogg"]
+
 #
 最後の力を振り絞り、左手に持った刀で獣をおもいっきり突き刺す。[lrcm]
 ぐしゃり、という肉をえぐる音とともに、刀は深々と獣に刺さる。[lrcm]
 
-;se
+;やられ
 #【黒い獣】
 『──■■■■■！！！』[lrcm]
 
 #
 それと同時、痛みからか、獣がこちらを吐き出した。[lrcm]
 
+[playse storage="craphand.ogg" buf="1" volume="100"]
+;魔法発動
 #【一】
 「──かはっ……か、……柏手……設陣『軛』ッ！」[lrcm]
 
 #
-地面に転がる体を起こし、右手で無理、柏手を打つ。[lrcm]
+地面に転がる体を起こし、右手で無理やり柏手を打つ。[lrcm]
 パン！っと、打ち付けた瞬間、右肩に激痛が走る。[lrcm]
 だがそれでも目を瞑らずにイメージを保つ。[lrcm]
+;魔法発動
 それと同時、ユキに刺さった刀が光り、その周囲に様々な文字が書かれた陣が出現した。[lrcm]
 獣を取り巻いていた触手も動きを止める。[lrcm]
 
 #【一】
 「ユラ……ギ……！」[lrcm]
+[chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
 #【ユラギ】
-「ばかっ……無茶して……！　でも、わかった！」[lrcm]
+「ばかっ……無茶して……！　[chara_mod name="yuragi" face="def" time="0"]でも、わかった！」[lrcm]
 
+;魔法発動
 #
 ユラギの唇が動き、”何”かが発せられる。[lrcm]
 それは、言葉と言うには鮮烈すぎ、音と言うにはあまりに静謐すぎる波。[lrcm]
 
 #【ユラギ】
 「創母『ユラギ』の名において命ずる──『六法繭』」[lrcm]
+[playse storage="craphand.ogg" buf="1" volume="100"]
+;魔法音
 
-#【ユラギ】
+#
 パンッ、という音と主に、ユキに刺さった刀から幾つもの白い糸のようなものが吹き出す。[lrcm]
 それはあっという間にユキを包み込み、巨大な繭となる。[lrcm]
 だが、それは一瞬ユキの動きを止めるが……ユキ暴れるたび、その糸は次々と切られていく。[lrcm]
 
+[chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「……世界を束ねる糸だぞ！？　すまないハジメっ！　長くはもたないっ！　痛いだろうがっ……頼むっ！」[lrcm]
 
 #【一】
 「ああっ……了解……！」[lrcm]
 
+[chara_hide name="yuragi"]
 #
 先程の噛まれた腹部、そして左手から、血が吹き出し、意識も次第に薄くなっている。[lrcm]
 貧血で視界はどうしようもなく悪く、体全体が徐々に力が抜けていっているのがわかる。[lrcm]
 
+
 #【一】
 「でも、今やらなきゃ……今君を、送らないと……取り戻しがつかなくなる……！」[lrcm]
 
+
 #
+[playse storage="craphand.ogg" buf="1" volume="100"]
 パンッ！[lrcm]
 精一杯の力で柏手を打つ。腰に下げた全ての小筒が呼応し、熱を帯びる。[lrcm]
+;魔法発動
 筒は一つづつ浮遊し始め、地面へと下り、ゆっくりと浸透していく。[lrcm]
-#
-──山が、鳴いた。[lrcm]
+
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【ユラギ】
-『かつて、星詠みと祓いの者が肩を並べて戦っていた日。星詠みの技術と祓えの技術を合わせ、神すらも下せる〝祓〟が作られようとした』[lrcm]
+『かつて、星詠みと祓いの者が肩を並べて戦っていた日」[lrcm]
+「星詠みの技術と祓えの技術を合わせ、神すらも下せる〝祓〟が作られようとした』[lrcm]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 『しかし……完成の瞬間で袂を別れ、ついに完成には至らなかった』[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 『だが、その詞をとある夫婦が完成させた。もう一度、２つが一つになるように。そう願ってね』[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 『──きっと、あの子を鎮められるのは、この詞だけだ』[lrcm]
  [lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
+
+;重低音
 #
-山が、大きく震え始めた。[lrcm]
+──山が、鳴いた。[lrcm]
 地面に浸透した筒が、大地の奥深くに埋まっていた、何かを呼び覚ました。[lrcm]
 それは大きなうねりとなって蠢きはじめ、ごうごうと音を立てて空間を満たしていく。[lrcm]
 
 #【一】
 「ユラギッ！」[lrcm]
+[chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
 #【ユラギ】
 「ああっ！　──ユキ……見てくれ、これが、君の両親が完成させた……灯だ！」[lrcm]
 
+;魔法発動
 #
 ユラギは、ネックレスの先端にくくりつけられていた円筒を引きちぎり、こちらに投げる。[lrcm]
 くるくると飛びながら、光を宿し、こちらに飛んできたそれは一つの形を取る。[lrcm]
@@ -555,6 +674,8 @@
 星降と降山がもう一度一つになることを願って、作られた祈りの灯り。[lrcm]
 “空灯”は淡く暖かな光をまとうと、カラカラと回転し、空に浮かんだ[lrcm]
 
+;魔法長いやつ
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 『──星骸は満ちた。地底の夜空は空を願い』[lrcm]
 
@@ -566,16 +687,18 @@
 大地から光が現れる。
 それは、強い力を持った光。
 
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 『──願いをここに。……心の奏(ユラギ)は汝と今、共にある』[lrcm]
 
 #
 小さく、だが強い祈りの込められたその『祝詞』を唱え、もう一度、手を打ち付ける。[lrcm]
-;パンッ
+[playse storage="craphand.ogg" buf="1" volume="100"]
 
 #【ユラギ】
 『子は今一度、空へと登る。再び、”山”へ”降”る、”星”となるために……！』[lrcm]
-
+[chara_hide name="yuragi"]
+;すべて音を止める
 #
 唱え終わるとと同時、山にある全ての音が静止した。[lrcm]
 大地の下でうねっていたなにかも、風が葉を撫でる音も、虫たちの声も、全て。[lrcm]
@@ -583,12 +706,14 @@
 
 ──一瞬の静謐に、願いを込めて言葉を放つ。[lrcm]
 
+[playse storage="craphand.ogg" buf="1" volume="100"]
 #【一】
 「──星山式『大祓』〝星降ノ山(ほしふりのやま)〟」[lrcm]
-;SEパンッ
+
 
 #
 一筋の光が、空へと上がった。[lrcm]
+;魔法音2つｘ重低音
 それは、２つ、３つと続いて上っていく。[lrcm]
 まるで、この山の内部にいくつもの星が蓄えていたかのように。[lrcm]
 空灯が、ひときわ大きく光を放ちはじめる。[lrcm]
@@ -596,12 +721,14 @@
 
 #【黒い獣】
 「──■■■■■■■■■！！！」[lrcm]
+;雄叫び
 
-断末魔にも似た雄叫びを上げ、獣は光りに包まれてゆく[lrcm]
+;白いフェードアウト
 
+断末魔にも似た雄叫びを上げ、獣は光りに包まれてゆく。[lrcm]
+その光が収まったとき、そこにはすでに、黒い獣の姿は消えていた。
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
 #【一】
 「……はぁ……ごほっ、ごほっ……いたた……」[lrcm]
@@ -611,6 +738,8 @@
 牙は完全に内蔵まで達していたらしい。[lrcm]
 喀血なんて言う事態、よもやこんな若い時期で体験できるとは。[lrcm]
 
+[chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【ユラギ】
 「ハジメ、ハジメぇ、大丈夫か！？　いますぐ回復するからっ！」[lrcm]
 
@@ -624,50 +753,67 @@
 多分これはユラギが居なければ死んでただろうなぁ……と思いつつ、体をユラギに任せる。[lrcm]
 ユラギが体中に触れるたびに、痛みが引いていく。[lrcm]
 
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「……全く、ガブッと食べられたときは心臓が止まるかと思ったぞ！」[lrcm]
 #【一】
-「悪かったって……いたいっいたいっ、傷口を叩くのはまじでやめてください……」[lrcm]
+「悪かったって……[quake count=5 time=100]いたいっいたいっ、傷口を叩くのはまじでやめてください……」[lrcm]
 
 #
 頬をプクーっと膨らませて起こっているのは微笑ましのだが、治療の仕方が荒い。[lrcm]
 ……心配させた分、これは甘んじて受けるべきなのだろうが。[lrcm]
 
+[odoroku layer="0"]
 #【ユラギ】
 「全く本当に……まったく……」[lrcm]
 
+;抱きつく
 #
 治療が終わると、ギュッとユラギが抱きついてくる。[lrcm]
 そして、頬に小さくキスをされる。[lrcm]
 
+;キス
+
 #【一】
 「……ほっぺ？」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「ふんっ、心配させたからお預けだ！　……でもまあ、多少かっこよかったから……妥協点」[lrcm]
 #【一】
 「はは、次はもう少しかっこよくするように頑張るよ」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
+[odoroku layer="0"]
+
 #【ユラギ】
 「無茶するなって言ってるんだぞ！　バカ！」[lrcm]
 
+[quake count=5 time=100]
 #
 ごつっと、胸の中でユラギが頭突きをしてくる。[lrcm]
 痛いが……でも、それは優しく、暖かな痛みだ。[lrcm]
 なんだか日常に帰ってこれたようで、少し安心する。[lrcm]
 
+;狼の音
 #【???】
 「──グルルルウゥ……」[lrcm]
+
 #【一】
 「！？　まさか、まだ！？」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「……いや」[lrcm]
 
+;足音
 ユラギは立ち上がり、ユキに近づいていく。[lrcm]
 ユキはユラギの顔をちらりと見るが、襲いかかろうとはしない。[lrcm]
 そういえば先程ユキから発せられていた黒い霧のようなものもなくなっている。[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「ユキ……」[lrcm]
 
+;抱きつく
 #
 ユラギが手を伸ばすと、ユキはその手のひらに頭を擦り付ける。[lrcm]
 
@@ -677,17 +823,21 @@
 #
 その仕草は先程の殺気だった獣とは違い、まるで親しいペットの犬のようだ。[lrcm]
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
-「もう、この子は『祓われている』んだよ。でも、まだ少しだけ、残滓が残っているんだ。奇跡……ううん、これは必然かな。この子が、人喰いになるのを抑えていてくれたんだから」[lrcm]
+「もう、この子は『祓われている』んだよ。でも、まだ少しだけ、残滓が残っているんだ」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
+「奇跡……ううん、これは必然かな。この子が、人喰いになるのを抑えていてくれたんだから」[lrcm]
 
 #
 俺も近くに行ってユキの頭を撫でる。こちらを見つめる丸々とした獣の瞳。[lrcm]
 ……その瞳は、やはりある一人の少女を思い出させる。[lrcm]
 #【ユラギ】
-「戦っていたのは、私達だけじゃなかったみたいだな……」[lrcm]
+「戦っていたのは、私達だけじゃなかったみたいだな」[lrcm]
 #【一】
 「ああ」[lrcm]
 
+;抱きつく
 #
 ユキはこちらにも顔を寄せ、スリスリと手の中を堪能するようになすりつけてくる。[lrcm]
 
@@ -697,18 +847,20 @@
 #
 心地よさそうに目を細めるユキ。[lrcm]
 
+[chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「そうだろう～？　モフった回数なら私はあの二人より上だ！」[lrcm]
 
 #
 何を張り合ってるんだこの神様は。[lrcm]
-;音
+;風の音一瞬
 ──フッ。[lrcm]
 
 突然、あたりが明るくなった。[lrcm]
 
 #【一】
 「……これは？」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「ああ、獣が祓われたことで、この山の蓋が開いたんだな」[lrcm]
 
@@ -716,16 +868,19 @@
 見れば、いつの間にか背後に合った山がごっそり消えている。[lrcm]
 それによって影になっていた空が開け、幾つもの星が輝いている。[lrcm]
 
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「行こう……ユキ、ハジメ。この先で……全て終わらせよう」[lrcm]
 #【一】
 「……あれは」[lrcm]
 
+;階段bg
 #
 ユラギが指さしたのは、階段。[lrcm]
 今までただ頂上への道が続いていただったはずの場所に、それは現れていた。
 その先には、今まであった山の頂上は失われ、代わりに星空が見えた。
 
+[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「星降の展望台さ。『星降』を行うために作られた祭壇であり……私達の約束の場所だ」[lrcm]
 #【ユキ】
@@ -736,8 +891,8 @@
 ユラギと俺は手をつなぐようにユキの背中に手をおいて、階段を登り始める。[lrcm]
 ──大昔のあの日、彼らが登れなかった階段を。
 
-;ここからは下
-
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [fadeoutbgm]
+
+@jump storage=3_6.ks target=*3_6
