@@ -471,13 +471,25 @@ document.getElementsByClassName("situationOuter")[0].remove();
 [endmacro]
 
 [keyframe name="run_left"]
-[frame p="  0%" y="0"]
-[frame p="100%" x="3000"]
+[frame p="  0%" x="0"]
+[frame p="100%" x="2000"]
 [endkeyframe]
 
 [macro name="run_left"]
 	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
 	[eval exp="mp.time = '600'" cond="mp.time == undefined"]
 	[kanim name="&mp.name" layer="&mp.layer" keyframe="run_left" easing="ease" time="&mp.time" count="1"]
+	[layopt layer="&mp.layer" visible="true"]
+[endmacro]
+
+[keyframe name="run_right"]
+[frame p="  0%" x="0"]
+[frame p="100%" x="-2000"]
+[endkeyframe]
+
+[macro name="run_right"]
+	[eval exp="mp.layer = '0'" cond="mp.layer == undefined"]
+	[eval exp="mp.time = '600'" cond="mp.time == undefined"]
+	[kanim name="&mp.name" layer="&mp.layer" keyframe="run_right" easing="ease" time="&mp.time" count="1"]
 	[layopt layer="&mp.layer" visible="true"]
 [endmacro]

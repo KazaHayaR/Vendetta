@@ -385,9 +385,7 @@
 [chara_hide name=tubaki]
 #【坂本宗介】
 言葉を交わして別れる俺たち。まだドキドキ言っている胸を押さえつつ、俺はなんともいえない顔をして帰路についた。[lrcm]
-*test
-[start_template]
-[set_default_message_window]
+
 ;【市役所】bg
 [scene_change situation="市役所"]
 #【坂本宗介】
