@@ -249,6 +249,7 @@ $(".message0_fore>.message_inner").css({
 
 ;bgstorage,bgmstorage
 [macro name="start_template"] 
+[deffont facce=web_noto_m]
 ;キャラセットアップ
 ;【ユラギ】
 [chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
