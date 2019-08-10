@@ -21,22 +21,15 @@
 [chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 [chara_face name="yuragi" face="terewara" storage="/chara/yuragi/C1-9.png"]
 
-[bg layer=base storage=morinaka.png time="1"]
+
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="Shiokaze_感動_dova.ogg" time="1000" loop="true"]
-
+[bg layer=base storage=ログハウス.png time="1"]
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
-
-
-;mask
-[mask effect="fadeIn"]
-[bg layer=base storage=bg.jpg time="1"]
-[mask_off effect="fadeOut"]
 
 #【ユラギ】
 「この島には昔、妖物を退治する一つの家があった」[lrcm]
 「その名前を『星山』……私の娘、『コオリ』を直系の先祖にもつ、神の血を引き継ぐ対妖の系だ」[lrcm]
-
 #【一】
 「まて……ユラギの娘って、俺の先祖だっていう……？」[lrcm]
 #【ユラギ】
@@ -44,9 +37,12 @@
 「そして一つの大きな悲劇を生み出してしまうまでのお話だ」[lrcm]
 
 [mask effect="fadeIn"]
+[chara_hide name="yuragi"]
 [bg layer=base storage=青赤.png time="1"]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 [mask_off effect="fadeOut"]
 
+;パッケージのあれ
 #【ユラギ】
 星山の家系は自らが継承した神の血を利用し、この島特有の強力な魔物に対抗すべく様々な術を開発していった。[lrcm]
 一つが対妖物戦闘特化した『略祓』。[lrcm]
@@ -68,7 +64,8 @@
 「……ん、『星降』って……」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
-「うん、『星降祭り』というは星読みのためにその装置を使う時に行われた儀式が前身だな。星降という装置は『星の光を大地に貯め込む』事によっていつでも星読みを可能にする、というとんでもないものでな」[lrcm]
+「うん、『星降祭り』というは星読みのためにその装置を使う時に行われた儀式が前身だな」[lrcm]
+「星降という装置は『星の光を大地に貯め込む』事によっていつでも星読みを可能にする、というとんでもないものでな」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 「この星を大地に貯め込むために、星の光を地上に”降らす”のさ」[lrcm]
 #【一】
@@ -88,6 +85,7 @@
 [chara_mod name="yuragi" face="def" time="0"]
 「彼らは揉めに揉め、結局……血みどろの大喧嘩の末、２つの家に別れてしまったんだ」[lrcm]
 
+[playse storage="抱きつく.ogg"]
 #
 ユラギはこちらの手を両手でぎゅうっ、と握りこんでくる。[lrcm]
 
@@ -100,8 +98,8 @@
 「そして、彼らは星降への意趣返しとして”山”を”降りる”、なんて苗字にしたのさ」[lrcm]
 #【一】
 「……それが、『星降』と『降山』か……でも、どうして今その話を……？」[lrcm]
-[odoroku layer="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「簡単な話さ。ユキの両親の名は、『星降彩』と、『降山九郎』だからさ」[lrcm]
 #【一】
@@ -114,7 +112,7 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg layer=base storage=morinaka2.png time="1"]
+[bg layer=base storage=morinaka2.jpg time="1"]
 [camera layer="base" zoom="1.5" time="1" y="100" x="100" ease_type="linear"]
 [mask_off effect="fadeOut"]
 [camera layer="base" wait="false" zoom="1.5" time="50000"  y="-100" x="-100" ease_type="linear"]
@@ -132,14 +130,15 @@
 二人は獣に合うために森に忍び込んでは餌をやり、共に森の中を駆け巡って遊んだ。[lrcm]
 
 家のものは遊び呆けいている二人を必死に探していたらしい。[lrcm]
-だが、あの二人は幼い頃から飛び抜けた才能を持っていてね、あらゆる探知回避の術、それも降山と星降両家の技術を彼女たちは無意識のうちに共鳴させ、その頃の両家の当主でも破れないほど高度な術を使いこなしていた。[lrcm]
-……そしてある日、そこにもう一人、遊び仲間が加わることとなる。[lrcm]
-
+だが、あの二人は幼い頃から飛び抜けた才能を持っていてね、あらゆる探知回避の術を使い、一度も見つかることはなかった[lrcm]
+しかも降山と星降両家の技術を彼女たちは無意識のうちに共鳴させ、その頃の両家の当主でも破れないほど高度な術を使いこなしていたのさ[lrcm]
+……そしてある日、そこにもう一人、遊び仲間が加わることとなる[lrcm]
+#
 [mask effect="fadeIn"]
 [reset_camera layer="base" time="1"]
-[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
-
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【一】
 「……ユラギか？」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
@@ -154,23 +153,23 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 「それでも、あの二人と一匹の目は私をたしかに捉えることが出来ていた」[lrcm]
 「私が誰にも見られないと思って、祠の上でゴロゴロしているときさ」[lrcm]
-
+#
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg layer=base storage=morinaka2.png time="1"]
+[bg layer=base storage=morinaka2.jpg time="1"]
 [mask_off effect="fadeOut"]
 
 #【彩】
 「ふふ、神様もやっぱりゴロゴロしたい時はあるのね！ 　うんうん、わかるわー！」[lrcm]
 [chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
-[odoroku layer="0"]
 [manpu layer=0 name=yuragi type=bikkuri2 x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 『……！！！？』[lrcm]
 #【九郎】
 「こら、彩。失礼だろ……すいません、神様」[lrcm]
-[odoroku layer="0"]
 [manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 『お、おおおおまえら！？　私が見えるのか！！？』[lrcm]
 #【九郎】
@@ -184,17 +183,20 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 #【ユラギ】
 「ちなみに何故当主が見えないのか知っているかと言うと」[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 「その頃誰にも認知されないのが悲しくて、降山と星降の当主が変わるたびに押し入って話しかけたりポルターガイストしたりして検査しに行ってた」[lrcm]
 #【一】
 「代替わりのときに呪いみたいなの起こるのお前のせいか……」[lrcm]
-
+#
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg layer=base storage=morinaka2.png time="1"]
+[bg layer=base storage=morinaka2.jpg time="1"]
 [camera layer="base" zoom="1.5" time="1" y="100" x="100" ease_type="linear"]
 [mask_off effect="fadeOut"]
 [camera layer="base" wait="false" zoom="1.5" time="50000"  y="-100" x="-100" ease_type="linear"]
@@ -209,6 +211,7 @@
 あれほど楽しく、あれほど暖かで穏やかな日々は、私の覚えている限り、一番キラキラとした思い出で……私の大切な宝物だ。[lrcm]
 
 [bg layer=base storage=bg.jpg time="1"]
+[reset_camera layer="base" time="1"]
 ──だが、その日常もやがて終りが来る。[lrcm]
 ある日、歪みの深度が突然跳ね上がった。[lrcm]
 原因は不明。だが、歪みの先、衝突した方の世界の獣になにかがあったのだと私は推測している。[lrcm]
@@ -221,8 +224,10 @@
 「……」[lrcm]
 
 [mask effect="fadeIn"]
-[bg layer=base storage=morinaka2.png time="1"]
+[bg layer=base storage=morinaka2.jpg time="1"]
 [mask_off effect="fadeOut"]
+
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 
 #【ユラギ】
 その話はどこからか降山にも伝わり、両家は独自のルートで仕入れた『人喰いの獣』との類似点を見つけ出し、二人を問いただした。[lrcm]
@@ -233,8 +238,9 @@
 もちろん、私も手伝ったさ[lrcm]
 ……が、その頃の歪みの状況から、私も数ヶ月に一度、彼女たちの前に姿を表すのがやっとだった。[lrcm]
 
+[chara_hide name="yuragi"]
 [layermode graphic=blood.jpg mode=overlay name=yuragi]
-…………そして、悲劇は起こった。[lrcm]
+…………そして、悲劇は始まった。[lrcm]
 
 皮肉にも最悪の事態で手を組んだ降山と星降の両家は、秘密裏に二人を手伝ってくれていた共通の友人を半殺しにした。[lrcm]
 そして、多くの罠を従えて二人を呼びつけた。[lrcm]
@@ -243,8 +249,8 @@
 二人が囮に、そしてユキが友人を救出し、安全な場所まで連れて行く作戦で。[lrcm]
 
 [mask effect="fadeIn"]
-[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 [bg layer=base storage=ログハウス.png time="1"]
+[free_layermode]
 [mask_off effect="fadeOut"]
 
 #【一】
@@ -253,8 +259,7 @@
 #【ユラギ】
 「……二人は、最後まで戦ったんだ」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
-「でも、なんとか友人を救い出し、逃げ出すことに成功したが……最後の最後で怪我をしてしまった」[lrcm]
-[chara_show name="yuragi" top="50" face="fukigen" time="0" top="150"]
+「でも、なんとか友人を救い出し、逃げ出すことに成功したが……[chara_show name="yuragi" top="50" face="fukigen" time="0" top="150"]最後の最後で怪我をしてしまった」[lrcm]
 「そして廃屋の中で体を休めてるところを……降山と星降、両方の部隊に襲撃されて殺された」[lrcm]
 [playse storage="抱きつく.ogg"]
 #
@@ -265,48 +270,61 @@
 「『ユキ』は友人を安全な場所に届けた後、殺された二人を見て……あの子は泣いていた」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 「そして……そこからが……本当の悲劇だった」[lrcm]
-[chara_mod name="yuragi" face="def" time="0"]
-「私も、あの時、何が起こったのかわからなかった」[lrcm]
-「歪みの制御をなんとか無理やり抜け出しユキのもとに駆けつけた時、その姿は何倍にも膨れ上がっていた」[lrcm]
-「黒い瘴気を撒き散らし、その目は虚ろ」[lrcm]
-[chara_mod name="yuragi" face="sekimen" time="0"]
-「そしてこちらを一瞬だけ向いた後──ユキは二人を殺した奴らに襲いかかった」[lrcm]
 
-#【一】
-「……ッ」[lrcm]
-#【ユラギ】
-[chara_mod name="yuragi" face="def" time="0"]
-「私も止めに入ったが……あの子の力はそこらの神で太刀打ちできるほどのものではなかった……」
-[chara_mod name="yuragi" face="fukigen" time="0"]
-「それからユキは、何人も殺した」[lrcm]
-[chara_mod name="yuragi" face="def" time="0"]
-「山を越え街に出て、九郎と彩を追い詰めた人間を見つけ出し一人ずつ殺してった」[lrcm]
+[mask effect="fadeIn"]
+[chara_hide name="yuragi"]
+[bg layer=base storage=bg.jpg time="1"]
+
+[image  layer="2" time="1" storage="bg.jpg" visible="true"]
+[bg layer=base cross="true" storage=Plolog_beast.jpg]
+[layermode_movie video="Blood_rain.webm" time="1" wait=true loop="true" mode="overlay"]
+[freeimage  layer="2" time=500]
+
+[mask_off effect="fadeOut"]
+[playse storage="rain_激しい.ogg"]
+
+私も、あの時、何が起こったのかわからなかった[lrcm]
+歪みの制御をなんとか無理やり抜け出しユキのもとに駆けつけた時、その姿は何倍にも膨れ上がっていた[lrcm]
+黒い瘴気を撒き散らし、その目は虚ろ[lrcm]
+そしてこちらを一瞬だけ向いた後──ユキは二人を殺した奴らに襲いかかった」[lrcm]
+もちろん止めに入ったが……あの子の力はそこらの神で太刀打ちできるほどのものではなかった……[lrcm]
+それからユキは、何人も殺した[lrcm]
+山を越え街に出て、九郎と彩を追い詰めた人間を見つけ出し一人ずつ殺してった[lrcm]
 #【一】
 「…………」[lrcm]
-[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「あの子は復讐は時間が経つに連れどんどんと凶悪になっていった。途中からはもう『降山』や『星降』の連中では手を付けられないほどにね」[lrcm]
 「降山が呼んだ外部の妖物退治専門家が数百人体制で事に当たっても、祓い切れなくなっていたんだ」[lrcm]
 「その頃からいたこの島の神……木花ちゃんたちが腰を上げたが……それでも、太刀打ちできなかった」[lrcm]
 #【一】
 「なっ……そんなに……？」[lrcm]
-[chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「ああ……そして最終的には私がかけあって、〝天照〟と〝御柱〟を先頭に、この国の神が総出で、この島に集まりユキの対処にあたった」[lrcm]
 #【一】
 「うそだろ……」[lrcm]
-[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
-「有史以来初だ、あんなのは。でも──それでもあの子は暴れまわり、ユキは最終的に、彩と九郎を追い詰めた人間を皆殺しにした」[lrcm]
+「有史以来初だ、あんなのは。でも──それでもあの子は暴れまわった」[lrcm]
+「そして……ユキは最終的に、彩と九郎を追い詰めた人間を皆殺しにした」[lrcm]
 #【一】
 「っ……」[lrcm]
-[chara_mod name="yuragi" face="fukigen" time="0"]
+
+[mask effect="fadeIn"]
+[free_layermode]
+[fadeoutse]
+[bg layer=base storage=bg.jpg time="1"]
+[mask_off effect="fadeOut"]
+
 #【ユラギ】
-「最後の一人を殺した時……ユキはそれ以上人を襲わなくなった。そして、ある場所に居座って神々の祓いにひたすら耐え続けた……まるで、何かを待っているように……」[lrcm]
+「最後の一人を殺した時……ユキはそれ以上人を襲わなくなった」[lrcm]
+「そして、ある場所に居座って神々の祓いにひたすら耐え続けた……まるで、何かを待っているように……」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 「最後の最後はこの山に、私を『楔』として打ち込むこむという方法を使ってあの子をこの島に封印したんだ」[lrcm]
 
-＃
+[mask effect="fadeIn"]
+[bg layer=base storage=ログハウス.png time="1"]
+[mask_off effect="fadeOut"]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
+#
 ユラギは一息ついて、前を向くと話を再開する。[lrcm]
 
 #【ユラギ】
@@ -315,11 +333,11 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 「まあこの一族の衰退は……両家の力を持っていた人間がほとんど、ユキが殺してしまったというのもあるけどね」[lrcm]
 
-＃
+#
 ……力を持った人間の殆どが二人を殺そうとしていたということか。[lrcm]
 ユラギは話し終えると息を吐きながらこちらに抱きしめる力を強めてくる。[lrcm]
 
-[chara_mod name="yuragi" face="emi_m" time="0"]
+[chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「以上が、かつてこの島で起こった騒動の顛末さ……」[lrcm]
 
@@ -339,6 +357,7 @@
 #
 泣き始めてしまったユラギをやさしく抱きしめる。[lrcm]
 胸の中で嗚咽の音が響く。[lrcm]
+[playse storage="抱きつく.ogg"]
 しばらくすると、ユラギは腕で涙を拭うい、まっすぐとした瞳をこちらに寄せる[lrcm]
 
 [chara_mod name="yuragi" face="sekimen" time="0"]
@@ -380,7 +399,7 @@
 [chara_mod name="yuragi" face="sekimen" time="0"]
 「アレは、復讐であって捕食じゃない。ユキは一度も、人喰いなんてしたことは無い……」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
-「私、創母神魂揺ノ貴(たまゆらぎのむち)の名にかけて断言する。あの子は〝人喰いの獣〟じゃない」[lrcm]
+「私、創母神『魂揺ノ貴(たまゆらぎのむち)』の名にかけて断言する。あの子は〝人喰いの獣〟じゃない」[lrcm]
 [chara_mod name="yuragi" face="sekimen" time="0"]
 「ただの少しだけ特異な獣……ううん、人を殺せる力を持ってしまった、ただの『小さな子ども』なんだ……」[lrcm]
 
@@ -405,11 +424,13 @@
 #【一】
 「手伝うって言ってるだろ」[lrcm]
 [chara_mod name="yuragi" face="terewara" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「なはは……そうだった。ハジメは私を手伝わないとしょげてしまうんだった～」[lrcm]
 #【一】
 「う、うるさいな」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 #【ユラギ】
 「ふふ、うふふふー」[lrcm]
 
@@ -449,12 +470,12 @@
 「星山の血を引き、降山の技術を身に着け、星降の祓具を持ち……そして、魂揺ノ貴と契りを結んだ者」[lrcm]
 
 #
-ユラギ呪文のような言葉を連ね、その胸に下げているペンダント……折りたたみ式のスカイランタンに手を当てた。
+ユラギ呪文のような言葉を連ね、その胸に下げているペンダント……折りたたみ式のスカイランタンに手を当てた。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「……これが、その『祓』の使用条件なんだ」[lrcm]
-#【ユラギ】
+#【一】
 「それは……」[lrcm]
 
 #
@@ -469,12 +490,13 @@
 [bg layer=base storage=鍾乳洞.jpg time="1"]
 [mask_off effect="fadeOut"]
 [playse storage="鍾乳洞ピチャン.ogg" loop="true"]
+[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
 ;ぴちゃん音
 #
 ぴちゃん、ぴちゃん、とどこかから水が落ちとる音がする。[lrcm]
 ぼんやりと青白い光が満ちているのは鍾乳洞のような洞窟だ。[lrcm]
 わずかな苔の土臭い匂い。気温はひんやりと、澄んだ空気が周囲を満たしている。[lrcm]
-周囲は大きく開けており、大人5、６人が並んでも余裕で入る横幅だ。
+周囲は大きく開けており、大人5、６人が並んでも余裕で入る横幅だ。[lrcm]
 
 #【一】
 「ここが……山の祠か」[lrcm]
@@ -484,7 +506,6 @@
 ユラギの提案で再度探知の術を行い、獣が封じられている祠の場所を捜索することとなった。[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
 [bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 [chara_show name="yuragi" top="50" face="sekimen" time="0" top="150"]
@@ -500,17 +521,18 @@
 『と、とにかっくやるぞ１！』[lrcm]
 #【一】
 『あ、ああ！！　やろう！』[lrcm]
+[mask effect="fadeIn"]
+[chara_hide name="yuragi"]
+[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
+[bg layer=base storage=鍾乳洞.jpg time="1"]
+[mask_off effect="fadeOut"]
+[playse storage="鍾乳洞ピチャン.ogg" loop="true"]
 
 #
 という青春の１ページみたいなやり取りの後、探知を実行した。[lrcm]
 ユラギの言うとおり探知の精度はかなり上がっていたため、すんなりとこの場所をつきとめられた。[lrcm]
 現在はユラギが先頭、俺のほうがその後ろを警戒する形で祠の中を進んでいる。[lrcm]
 
-[mask effect="fadeIn"]
-[chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
-[playse storage="鍾乳洞ピチャン.ogg" loop="true"]
-[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
 
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 [manpu layer=0 name=yuragi type=waiwai x="150" y="70" width="80"]
@@ -534,7 +556,7 @@
 [chara_mod name="yuragi" face="def" time="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
-「本来ならあそこから頂上が見えるんだ。ああ、ハジメに許可を出してないわけじゃないぞ」[lrcm]
+「本来ならあそこから頂上が見えるんだ。ちなみにハジメに許可を出してないわけじゃないぞ」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 「あれは……ユキの封印と同時に山の蓋を閉じてしまったからな。今の私ではどうにもならないんだ」[lrcm]
 
@@ -549,7 +571,7 @@
 つないだ手のひらを、ぎゅっと握りこむ。[lrcm]
 
 [chara_mod name="yuragi" face="sekimen" time="0"]
-[manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
+[manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 [odoroku layer="0"]
 #【ユラギ】
 「……ハジメは過保護すぎだ。これぐらい大丈夫なんだからなっ」[lrcm]
@@ -578,12 +600,16 @@
 「な、なんだこれ……」[lrcm]
 [chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
 
+[odoroku layer="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+[fadeinbgm storage="Shiokaze_感動_dova.ogg" time="1000" loop="true"]
 #【ユラギ】
 「……これは……！」[lrcm]
 
 #
 それは、幾つもの繭のように包まれた何かだった。[lrcm]
 人間大のその繭は幾つも壁にもたれかかるようにして無造作に置かれている。[lrcm]
+[playse storage="run.ogg"]
 ユラギが驚愕の表情で走り出す。[lrcm]
 
 [chara_mod name="yuragi" face="def" time="0"]
@@ -591,7 +617,7 @@
 「……星降の『括リ繭』だ。降山と別れた後、独自に妖物と戦闘を行うために作られた、緊急用の救護術」[lrcm]
 「幽相からの攻撃を繭で括り、本人の精神時間を止めることで、傷を無いものとして維持できる……」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
-「非常強力な術だが、使用するのに凄まじいエネルギーが必要だ」
+「非常強力な術だが、使用するのに凄まじいエネルギーが必要だ」[lrcm]
 「こんなことができる人間は現代にいない……そして、神だったらこんなまどろっこしいとはしない……」[lrcm]
 #【一】
 「じゃあ……もしかして……！」[lrcm]
@@ -615,7 +641,7 @@
 [chara_mod name="yuragi" face="emi" time="0"]
 [odoroku layer="0"]
 #【ユラギ】
-「よしっ。ハジメ！　片っ端から繭を開けていくぞ！　私が回復する！」[lrcm
+「よしっ。ハジメ！　片っ端から繭を開けていくぞ！　私が回復する！」[lrcm]
 「大丈夫だ、死んでいなければ必ず助ける！」[lrcm]
 #【一】
 「おうっ！」[lrcm]
@@ -627,11 +653,12 @@
 #
 いくつもの繭を開けてはユラギが即座に手を入れ、回復していく。[lrcm]
 繭をいくつか開けていた後、見慣れた二人の姿を見つけた。[lrcm]
-
+[playse storage="抱きつく.ogg"]
 #【椿】
-「…………」
+「…………」[lrcm]
+[playse storage="抱きつく.ogg"]
 #【正行】
-「…………」
+「…………」[lrcm]
 #【一】
 「椿……正行……」[lrcm]
 #
@@ -655,13 +682,14 @@
 「よかった……」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
-「うん、これで最後かな？」
+「うん、これで最後かな？」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 「しかし、全員助けたはいいものの、この後どうするべきか……このまま連れて行くわけにもいかないし……」[lrcm]
 #【一】
 「それじゃあ……悪いけど一人だけ、起こさないといけない人がいるみたいだ」[lrcm]
 
 [mask effect="fadeIn"]
+[chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
 #【谷垣】
 「ん、んん～～っ！　あれ……っここは」[lrcm]
@@ -708,6 +736,7 @@
 「ああ……ごめんね、私が君たちを護らなきゃいけないのに……こんな事になっちゃって」[lrcm]
 #【一】
 「……いえ、そんな事はありません！」[lrcm]
+[quake count=3 time=100]
 #【谷垣】
 「え！？」[lrcm]
 #
@@ -718,7 +747,7 @@
 「怯えてでも獣に最後まで立ち向かって行った姿を見たから、おれはあの獣と戦えているんです」[lrcm]
 #【谷垣】
 「……一君……」[lrcm]
-#【谷垣】
+#【一】
 「だから、胸を張ってください。谷垣さんは……環ノ島のカッコいい刑事さんですよ」[lrcm]
 #【谷垣】
 「……え、えへへ。な、なんだぁい。そんな褒められるとこ、困るなぁ、あはは……」[lrcm]
@@ -734,15 +763,18 @@
 #【一】
 「はい？」[lrcm]
 #【谷垣】
-「はじっ……ハジメクンッ！　そ、その、横でフヨフヨういていらっしゃる方は、ゆ、ゆゆ、幽霊さんでしょうかっ！！？」[lrcm]
+「はじっ、ハジメクンッ！　そ、その、横でフヨフヨういていらっしゃる方は、ゆ、ゆゆ、幽霊さんでしょうかっ！！？」[lrcm]
 #【一】
 「えっ……？」[lrcm]
+
 [chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
+[manpu layer=0 name=yuragi type=bikkuri2 x="50" y="100" width="80"]
 [odoroku layer="0"]
 #【ユラギ】
 「お、おおおっ！？　私が見えるのか！？」[lrcm]
 #【谷垣】
 「しゃ、シャベッタアアアアッ！！？」[lrcm]
+[odoroku layer="0"]
 #【ユラギ】
 「声まで聞こえるのかっ！！　うおおおっ！　こ、この谷垣っていうのも霊感がものすごい強いのか！？」[lrcm]
 #【一】
@@ -763,6 +795,7 @@
 
 #
 ユラギが突然下腹部のあたりを押さえ、もぞもぞとし始めた。[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 ポンと手を打つと、そしてこちらに向かって右手の拳の中から親指を出すポーズをサムズアップの要領で打ってきた。[lrcm]
 
 #【一】
@@ -770,7 +803,8 @@
 
 #
 つまり……。[lrcm]
-
+[odoroku layer="0"]
+[chara_mod name="yuragi" face="terewara" time="0"]
 #【ユラギ】
 「中に入っていれば……ハジメ縁の縁深い人間とはコミュニケーションができるのかっ！！」[lrcm]
 #【谷垣】
@@ -779,6 +813,7 @@
 「ああいえっ！　なんでもないです！　ちょっとあれはあっぱっぱーな存在なんですよ！」[lrcm]
 [manpu layer=0 name=yuragi type=muka2 x="20" y="80" width="80"]
 [chara_mod name="yuragi" face="fukigen" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「だれがあっぱっぱーか！　だれがぁ！」[lrcm]
 #【谷垣】
@@ -796,7 +831,7 @@
 ひとまず、こほんと咳払いをしつつ。[lrcm]
 
 #【一】
-「こいつはユラギ。うちの神社で祀っている魂揺ノ貴(タマユラギノムチ)、つまりこの島の……守り……神ですよ」[lrcm]
+「こいつはユラギ。うちの神社で祀っている魂揺ノ貴、つまりこの島の守り？神ですよ」[lrcm]
 #【谷垣】
 「……えええ！？　か、神様！？」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
@@ -816,7 +851,7 @@
 #【谷垣】
 「ま、まさか、ハジメくん、幽霊だけじゃなく神様とも知り合いとは……」[lrcm]
 #【一】
-「いや、知り合ったのは最近ですけどね……ひとまずユラギと一緒に今は例の獣を追っているんです」[lrcm]
+「いや、知り合ったのは最近ですけどね。ひとまずユラギと一緒に今は例の獣を追っているんです」[lrcm]
 #【谷垣】
 「──っ！　じゃあまだ、獣は近くにいるの！？」[lrcm]
 
@@ -836,11 +871,11 @@
 #【谷垣】
 「……？」[lrcm]
 #【一】
-「……谷垣さん。端的に言います。谷垣さんはこの人達が起きたらなるべく早く、街の方へ誘導して安全を確保してください」[lrcm]
+「……谷垣さん。端的に言います。谷垣さんはこの人達が起きたら、なるべく早く街の方へ誘導して安全を確保してください」[lrcm]
 #【谷垣】
 「ちょ、ちょっと待ってください、一君たちは……どうするの！？」[lrcm]
 #【一】
-「僕らはまだ……やること……いえ、やらなきゃいけないことがあるんです。今日、今この場所で……あの子のために」[lrcm]
+「僕らはまだ、やらなきゃいけないことがあるんです。今日、今この場所で、あの子のために」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【谷垣】
 「ま、まって！　だ、だめです！　そんなに体中ぼろぼろなのに……」[lrcm]
@@ -851,12 +886,14 @@
 #【谷垣】
 「……ハジメくん？」[lrcm]
 #【一】
-「行かせてください、きっと……今、行かないと駄目なんです」[lrcm]
+「行かせてください。今、行かないと駄目なんです」[lrcm]
 #
 そこでふよふよと浮いていたユラギが足に地面につけ、谷垣さんと向かい合った。[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
-「現実の平和は君たちに任せる。だが……この森から起こる〝見えないはず〟の平和を犯す存在は……私達に任せてくれないか」[lrcm]
+「現実の平和は君たちに任せる」[lrcm]
+「だが、この森から起こる〝見えないはず〟の平和を犯す存在は私達に任せてくれないか」[lrcm]
 #【谷垣】
 「ゆ、ユラギ様……」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
@@ -875,8 +912,9 @@
 #【一】
 「……ええ！」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
-「ああ、任されよう！」
+「ああ、任されよう！」[lrcm]
 
 [chara_hide name="yuragi"]
 
@@ -885,21 +923,22 @@
 だが、それを追うように後ろから声がかかった。[lrcm]
 
 #【谷垣】
-「ふたりとも！！」[lrcm]
+「おふたりとも！！」[lrcm]
 #
 振り向くと、胸を張り、こちらを真っ直ぐに見据えた谷垣さんが居た。[lrcm]
 
 #【谷垣】
 「お気をつけて！」[lrcm]
+
+[playse storage="ツッコミ_dova.ogg"]
 #
 ピシッと、胸を張る敬礼。[lrcm]
-きっとこれは、谷垣さんからの激励だろう[lrcm]
 
 #【一】
 「はいっ！」[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
+[bg layer=base storage=morinaka2.jpg time="1"]
 [mask_off effect="fadeOut"]
 
 [chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
@@ -909,6 +948,7 @@
 「友人っていうのはちょっとアレだけど……でも、環ノ島のカッコいい刑事さんだよ」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
 [odoroku layer="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「なはは、そうか！」[lrcm]
 #
@@ -939,6 +979,7 @@
 #【一】
 「……やっぱり、そうなのか」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「気づいてたのか？」[lrcm]
 #【一】

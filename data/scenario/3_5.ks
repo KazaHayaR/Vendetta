@@ -71,6 +71,7 @@
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
+
 #【ユラギ】
 「作戦はこうだ。私の力も歪みの維持で使える術はそう多くない。加えて攻撃系の祓はあの子にはほぼ効かないいと考えていい……なればまともに戦っても勝機が薄いと考えるのが普通だ」[lrcm]
 
