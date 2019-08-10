@@ -34,6 +34,7 @@
 #【おつき】 
 「すかーいらんたーん！　のにじょう！」[lrcm]
 [chara_show name="yuragi" top="50" face="emi_m" time="0" top="150"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「なるほど……つまりマトリョシカのようなものだな！」[lrcm]
 #
@@ -60,6 +61,7 @@
 #【一】
 「ふぅ……」[lrcm]
 
+#
 [mask effect="fadeIn"]
 [bg layer=base storage=morinaka.png time="1"]
 [mask_off effect="fadeOut"]
@@ -77,8 +79,8 @@
 [playse storage="ko.ogg"]
 基本的に妖物がおつきに注意を向けた5秒後には抹殺されている。[lrcm]
 [playse storage="獣やられ.ogg"]
-[chara_mod name="yuragi" face="def" time="0"]
-[bg layer=base storage=morinaka.png time="1" method="fadeIn"]
+[chara_show name="yuragi" top="50" face="def" time="0" top="150"]
+[bg layer=base storage=ログハウス.png time="1" method="fadeIn"]
 次にユラギ。[lrcm]
 ユラギは降山式の祓術に似た技術で妖物に対処していた。[lrcm]
 もっぱらおつきの神や精霊が倒してしまうので使っていたのは数回だが、それでもその威力は確認できた。[lrcm]
@@ -87,11 +89,11 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「ハジメは戦闘より大きな術を使うほうが向いてそうだな～」[lrcm]
+#
 と励まされる始末である。[lrcm]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
-
 
 #【一】
 「はい、水分どうぞ。俺は少しだけ周りを見てくるよ。[lrcm]
@@ -133,7 +135,7 @@
 しかし、俺の目には確かにユラギは〝神〟とわかるほどの鮮明さで写っている。[lrcm]
 #【一】
 「まあ、もう結構一緒にいるんだ。ユラギが疲れているのは何となく分かるし……少し無理をしてるのもわかる」[lrcm]
-[chara_mod name="yuragi" face="Se" time="0"]
+[chara_mod name="yuragi" face="e" time="0"]
 [manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【ユラギ】
 「う……」[lrcm]
@@ -148,13 +150,14 @@
 #
 そう言うと、ユラギはしょんぼりと肩を落とし、小さな声でうつむきがちに言葉を紡ぐ。[lrcm]
 
-[chara_mod name="yuragi" face="def" time="0"]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 [manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
 #【ユラギ】
 「ご、ごめん……べ、別に騙してたわけではないんだ……」[lrcm]
 「その、一応神様だから、ハジメが不安にならないようにしようと……で、でもうう……ごめん……」[lrcm]
 #【一】
 「あ、ああ、別に怒ってるわけじゃないぞ……でも」[lrcm]
+[chara_mod name="yuragi" face="def" time="0"]
 #
 ぽん、と頭に手を載せて。[lrcm]
 #【一】
@@ -213,7 +216,7 @@
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
 「私の体な？　娘が受肉しておもしろそーと思って、娘の体をコピーして造ったんだが……」[lrcm]
-[chara_mod name="yuragi" face="Se" time="0"]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=heart3 x="50" y="70" width="80"]
 「男と付き合い始めて少ししてからコピーしたからなぁー。すまん、膜はもうないかもしれない……」[lrcm]
 [quake count=5 time=100]
@@ -229,14 +232,24 @@
 「ったく……もう、じゃあ、いってくるぞ」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「ああ、いってらっしゃい。気をつけるんだぞ！」[lrcm]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
 
-[chara_mod name="yuragi" face="terewara" time="0"]
+;ユラギ専用textレイヤー
+@layopt layer=message0 visible=true
+[plugin name="message_edge" edge="true" edge_color="AB5FA5" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
+[position left=0 top=526 width=1280 height=194]
+[position layer=message0 page=fore frame="texyuragi.png" margint="41" marginl="240" marginr="190" marginb="46"]
+[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+[chara_config ptext="chara_name_area"]
+
+[mask_off effect="fadeOut"]
+[chara_show name="yuragi" top="50" face="terewara" time="0" top="150"]
+
 #【ユラギ】
 「……まったく……神様のことを心配するなんて……ハジメはお人よし……？　ゴットよしだな……」[lrcm]
 #
@@ -252,6 +265,7 @@
 「おねーちゃんは、ハジメおにーちゃんのこと、好きなの？」[lrcm]
 [chara_mod name="yuragi" face="sekimen" time="0"]
 [manpu layer=0 name=yuragi type=ase2 x="50" y="70" width="80"]
+[odoroku layer="0"]
 #【ユラギ】
 「……なっ！？」[lrcm]
 
@@ -282,6 +296,7 @@
 「あの、『ほんだな』のうしろのにあるまんがでみたの！」[lrcm]
 [manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 [chara_mod name="yuragi" face="odoroki" time="0"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【おつき】
 「なっ……ちょっ！」[lrcm]
 
@@ -292,12 +307,13 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 [chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「ち、ちちがうんだ！　これはその……昔、私のことが見える二人が居て、その二人がずぅっといちゃついているもんだから羨ましいなって……」[lrcm]
-「それで買い漁ってるとかそういうんじゃないぞ！」[lrcm]
+[odoroku layer="0"]「それで買い漁ってるとかそういうんじゃないぞ！」[lrcm]
 #【おつき】
 「おねーちゃんがこないだ『人間と神様の禁断のラブストーリー』っておびにかいてあるやつさいきんかってきてたの、おつきしってるから！」[lrcm]
 「あんしんして！」[lrcm]
 [chara_mod name="yuragi" face="sekimen" time="0"]
 [odoroku layer="0"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【ユラギ】
 「や、やめろおおお！！」[lrcm]
 #【一】
@@ -305,10 +321,10 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #
 お、恐ろしい、この幼女、完全にこちらの退路を断ってきてから、どうなんだ？　って聞いて来ているぞ！[lrcm]
-[quake count=3 time=100]
 [yure layer="0"]
 #【ユラギ】
 「い、いやあ……その……ええっとその……だな……た、確かにそのあの、ちょっと気になるかなって思ったけどまだその、よくわからないっていうか……」[lrcm]
+[quake count=3 time=100]
 #【おつき】
 「なに！？　ちゃんとしなさい！！」[lrcm]
 [manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
@@ -356,10 +372,20 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+
+@layopt layer=message0 visible=true
+[plugin name="message_edge" edge="true" edge_color="0x1A237E" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
+[position left=0 top=526 width=1280 height=194]
+[position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
+[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+[chara_config ptext="chara_name_area"]
+[bg layer=base storage=morinaka2.jpg time="1"]
 [mask_off effect="fadeOut"]
+[fadeoutbgm]
+
+[playse storage="ざぁ.ogg"]
 #
 月明かりが照らす森の中。[lrcm]
-;ざぁ……という音
 森に住む虫たちのさえずり、そよ風にさざめく木々。[lrcm]
 澄んだ空気を吸い込んで、見上た先には満点の星空が輝いている。[lrcm]
 #【一】
@@ -369,25 +395,24 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 こうやってユラギの神域の周りを巡るのも何回目か。[lrcm]
 行く前と後とで獣が通った痕跡が無いか確かめているのだ。[lrcm]
 ……いまのところ、収穫を上げたことは一度もないのだが。[lrcm]
-;ベルの音
+[playse storage="bell.ogg"]
 #【一】
 「ん……？　お前はこないだの」[lrcm]
 
 #
 突然、木々の影から精霊が近づいてきた。[lrcm]
 それは見覚えのある、輪郭が見えてくると、それは最初に森で出会ったシルフィードだった。[lrcm]
-;ベルの音
+[playse storage="bell.ogg"]
 精霊は俺を探していたのか、笑顔でこちらに寄ってくると、周囲をくるくると回りはじめる。[lrcm]
-;ベルの音
-そして、突然身振り手振りでシャドウボクシングをしたり、てで大きな輪っかを作ったりと必死で何かを伝えようとしはじめた。[lrcm]
+[playse storage="bell.ogg"]
+そして、突然身振り手振りでシャドウボクシングをしたり、手で大きな輪っかを作ったりと必死で何かを伝えようとしはじめた。[lrcm]
 
 #【一】
 「ん……もしかして、力を貸してくれるのか？」[lrcm]
-
-;ベルのおと
+[playse storage="bell.ogg"]
 #
 こくこく、と精霊がうなずくと、こちらの周りをくるくると周り、頬に近づいてくると。[lrcm]
-;キス音
+[playse storage="kiss.ogg"]
 ──ちゅっ。[lrcm]
 
 #【一】
@@ -396,7 +421,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 #
 頬に何かが触れた感覚。それと同時、風が周囲を満たした。[lrcm]
 
-;風の音
+[playse storage="ざぁ.ogg"]
 #【一】
 「……これは……風の流れが見える……？」[lrcm]
 
@@ -424,8 +449,17 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 少しの違和感を振り払い、探索を継続しつづけた。[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
+[fadeoutse]
+;ユラギ専用textレイヤー
+@layopt layer=message0 visible=true
+[position left=0 top=526 width=1280 height=194]
+[position layer=message0 page=fore frame="texyuragi.png" margint="41" marginl="240" marginr="190" marginb="46"]
+[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+[chara_config ptext="chara_name_area"]
+[fadeinbgm storage="神域.ogg" time="1000" loop="true"]
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
+
 #【一】
 「ただいま……ユラギ、おつき」[lrcm]
 #【おつき】
@@ -493,10 +527,19 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #
 はじめの言葉に嬉しいんだか怒っているのかショックなのか頭の中がぐちゃぐちゃになってしまった。[lrcm]
+[playse storage="run_yuragi.ogg"]
 そうなったら私はもう、そこにはいられなくなって、奥の部屋に逃げるように走って、鍵を閉めた。[lrcm]
+[playse storage="ドアが開く.ogg"]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+
+@layopt layer=message0 visible=true
+[position left=0 top=526 width=1280 height=194]
+[position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
+[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+[chara_config ptext="chara_name_area"]
+
 [mask_off effect="fadeOut"]
 
 ;ハジメ
@@ -529,8 +572,14 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 似るって……だ、誰に……？[lrcm]
 
 [mask effect="fadeIn"]
-[chara_hide name="yuragi"]
-[bg layer=base storage=bg.png time="1"]
+[bg layer=base storage=bg.jpg time="1"]
+
+@layopt layer=message0 visible=true
+[position left=0 top=526 width=1280 height=194]
+[position layer=message0 page=fore frame="texyuragi.png" margint="41" marginl="240" marginr="190" marginb="46"]
+[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+[chara_config ptext="chara_name_area"]
+
 [mask_off effect="fadeOut"]
 
 真っ暗闇。[lrcm]
@@ -555,7 +604,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 #【ユラギ】
 「うわっ！？」[lrcm]
 #
-こちらの布団を引っ剥がして、お付きが現れた。[lrcm]
+こちらの布団を引っ剥がして、おつきが現れた。[lrcm]
 #【おつき】
 「おねーちゃんみつけた！」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
@@ -563,7 +612,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 「おつき……その……すまない……私は……」[lrcm]
 #
 おつきは、こちらをこちらにギューっと抱きついてきた。[lrcm]
-;抱きつく
+[playse storage="抱きつく.ogg"]
 #【ユラギ】
 「……よしよし。だいじょーぶだいじょーぶ」[lrcm]
 「おにーちゃんはせいれいさんとけっこんしたわけじゃないからへいきだよ！」[lrcm]
@@ -648,7 +697,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 #【ユラギ】
 「……ごめん。おつき」[lrcm]
 
-;抱きしめる
+[playse storage="抱きつく.ogg"]
 #
 ぎゅっと抱きしめる。[lrcm]
 
@@ -660,7 +709,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 [chara_mod name="yuragi" face="emi" time="0"]
 #【ユラギ】
 「はは、そっかいけないのか」[lrcm]
-＃
+#
 小さな断定。[lrcm]
 きっとこれに逆らえる人間は人でなしだろうさ。[lrcm]
 あ、私は人間じゃないけど逆らえないから……きっと意志ある全ての物には無理だな。[lrcm]
@@ -734,10 +783,20 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
+
+
+@layopt layer=message0 visible=true
+[plugin name="message_edge" edge="true" edge_color="0x1A237E" edge_blur="1" edge_offset="1" shadow="true" shadow_color="0x000000" shadow_blur="5" shadow_offset="1"]
+[position left=0 top=526 width=1280 height=194]
+[position layer=message0 page=fore frame="TextFrame.png" margint="41" marginl="240" marginr="190" marginb="46"]
+[ptext name="chara_name_area" layer=message0 width="200" color=white x=240 y=545 size=23] 
+[chara_config ptext="chara_name_area"]
+
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 
 [chara_show name="yuragi" top="50" face="sekimen" time="0" top="150"]
-;バン！
+[playse storage="ドアが開く.ogg"]
 #
 バンッ！[lrcm]
 とユラギが勢いよくドアを開けてやってきた。[lrcm]
@@ -773,28 +832,29 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 #【ユラギ】
 「言うぞ……つたえたいときに……つたえたいときに……」[lrcm]
 
-＃
+#
 もじもじもじもじ……としていたユラギが、意を決する気配がした。[lrcm]
 
 #【ユラギ】
 「……くぅ無理……！」[lrcm]
 
-;ダダっ走る
+[playse storage="run_yuragi.ogg"]
 #
 だだだっっと、言う足音と共に、ユラギがこちらに接近。[lrcm]
 こちらに密着し、そして、精一杯に背伸びをして。[lrcm]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[bg layer=base storage=bg.png time="1"]
+[bg layer=base storage=bg.jpg time="1"]
 [mask_off effect="fadeOut"]
+[playse storage="kiss.ogg"]
 #【ユラギ】
 「……んっ……」[lrcm]
-
-[mask effect="fadeIn"]
-[chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
+#
 [bg layer=base storage=ログハウス.png time="1"]
+[mask effect="fadeIn"]
+[mask_off effect="fadeOut"]
+
 [chara_show name="yuragi" top="50" face="sekimen" time="0" top="150"]
 
 #
@@ -865,6 +925,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 #【ユラギ】
 「……あ！　[chara_mod name="yuragi" face="emi_m" time="0"]そうだおつき。私達からもこれをプレゼントだ」[lrcm]
 
+[playse storage="ゴソゴソ.ogg"]
 #
 ユラギは棚の方から今まで作っていたプレゼンを灯ってくる。[lrcm]
 それをユラギはおつきの首にぶら下げさせてあげた。[lrcm]
@@ -923,15 +984,19 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #
 ──扉を開いた。[lrcm]
-[layermode graphic=blood.jpg mode=overlay]
+[layermode graphic=blood.jpg mode=overlay name=yuragi]
+
 
 ;食われる音
 ;流れる血
+[stopbgm]
+[quake count=5 time=100]
+[playse storage="血が出る打撃.ogg"]
 #【？？？】
 『──■■■■■■■■■■■■■■■■■■■■■■■！』[lrcm]
-
 #【一】
 「え…………？」[lrcm]
+[playse storage="血が流れる.ogg"]
 
 #
 それはなんの前触れもなく、おつきを喰らった。[lrcm]
@@ -940,12 +1005,14 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #【？？？】
 「──────────！！！」[lrcm]
+[playse storage="血がポタポタ.ogg"]
 
 #
 そして、獣はおつきを咥えたまま外へ逃げ出して行く。[lrcm]
 [free_layermode]
 [chara_mod name="yuragi" face="odoroki" time="0"]
 [odoroku layer="0"]
+[fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
 #【ユラギ】
 「お、おつきいいいいいいいいいい！！！」[lrcm]
 
@@ -965,7 +1032,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 #【一】
 「……ッ！　落ち着け……落ち着けユラギ！」[lrcm]
 
-;抱きしめる音
+[playse storage="抱きつく.ogg"]
 [quake count=5 time=100]
 #
 ぎゅっとその身を抱きしめる。[lrcm]
@@ -973,6 +1040,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #【一】
 「大丈夫だ。あの獣はまだ人を殺してない。それにあの子には加護がある……だから、大丈夫！　そうだろ？」[lrcm]
+[chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「……あ……」[lrcm]
 
@@ -981,7 +1049,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 
 #【ユラギ】
 「そ、そうだ……縁は……ああ、ああ……大丈夫だ……まだ、まだ生きてる……」[lrcm]
-;抱きしめる
+[playse storage="抱きつく.ogg"]
 #
 ギュッとユラギがこちらを抱きしめ返してきた。[lrcm]
 
@@ -989,6 +1057,7 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 「ああ……泣いてる暇はない……でも、追っても俺たちの足じゃ間違いなく追いつかないか……」[lrcm]
 「くそっ、とにかく足跡でもなんでも追うしか無いぞ！」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「待ってくれ……！　もしかしたらおつきの縁なら……追えるかもしれない……」[lrcm]
 「ハジメと同じぐらい、あの子と一緒に居たんだ。それに……」[lrcm]
@@ -1002,22 +1071,27 @@ BLマンガを平積みして隠しておいたはずの、私の少女漫画コ
 「わかった……こうか？」[lrcm]
 
 ;キーンとなにかがシンクロする音
+[playse storage="bell魔法.ogg"]
 #
 ユラギに近づき、おでことおでこをくっつけた。[lrcm]
 
 [chara_mod name="yuragi" face="fukigen" time="0"]
+
 #【ユラギ】
 「うん、そうだ……これで……」[lrcm]
 
+[playse storage="魔術起動音_bell.ogg"]
 ;魔法の起動音
 #
 ユラギの体が少しだけ光り、光の玉がいくつも放出される。[lrcm]
 そのたまは、四方八方へ飛んでいき、森じゅうを駆け巡る。[lrcm]
 しばらくするとユラギが目を開き……。[lrcm]
 
+[chara_mod name="yuragi" face="odoroki" time="0"]
 #【ユラギ】
 「……ここは……」
 
+[fadeoutse]
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
