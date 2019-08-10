@@ -244,9 +244,7 @@
 「はあ…」[lrcm]
 #【坂本宗介】
 俺にできることは、災害のごとき幼馴染たちの相手をしながら事件解決を祈ることだけらしい。ちくしょうめ。[lrcm]
-*test
-[start_template]
-[set_default_message_window]
+
 ;放課後 通学路夕方
 [scene_change situation="放課後" bgstorage="通学路夕方.jpg"]
 #【坂本宗介】
@@ -387,56 +385,101 @@
 [chara_hide name=tubaki]
 #【坂本宗介】
 言葉を交わして別れる俺たち。まだドキドキ言っている胸を押さえつつ、俺はなんともいえない顔をして帰路についた。[lrcm]
+*test
+[start_template]
+[set_default_message_window]
 ;【市役所】bg
 [scene_change situation="市役所"]
 #【坂本宗介】
 「父さん、少しやつれてたな…。仕事人間だから本人は平気なつもりなんだろうけど」[lrcm]
 ;【時任勢一の立ち絵登場】
+[chara_show name="toki" face="black" top="30" width=500]
 ;【宗介と時任が激突】
+[playse storage="trial/人にぶつかる音.ogg"]
+[quake time=300 count=2]
+[stopse]
+[chara_mod name='toki' face='def' time='0']
 #【？？？】
 「おっと、こりゃ失礼。ムシャムシャ…」[lrcm]
 #【坂本宗介】
 「いえ、こちらこそすいません…」[lrcm]
+[hop_revert name=toki time=500]
+[chara_mod name='toki' face='def2' time='0']
 #【？？？】
-「これ、君の持ち物じゃない？ぶつかった時に落としたみたいだね。あ、司馬遼太郎の『燃えよ剣』だ！」[lrcm]
+「これ、君の持ち物じゃない？ぶつかった時に落としたみたいだね。
+[chara_mod name='toki' face='smile2' time='0']
+[hop name=toki time=400]
+あ、司馬遼太郎の『燃えよ剣』だ！」[lrcm]
 #【坂本宗介】
 「あ、俺のです。…お好きなんですか？司馬遼太郎」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop name=toki time=300]
 #【？？？】
 「大好きだよ！子どもの頃彼の本が家に置いてあってさ、もう何度読み返したかわからないぐらいで…」[lrcm]
 #【坂本宗介】
-熱く語りだしてから数秒で、その男の人は申し訳なさそうな顔をして口を閉じた。[lrcm]
+熱く語りだしてから数秒で、
+[chara_mod name='toki' face='sad' time='0']
+その男の人は申し訳なさそうな顔をして口を閉じた。[lrcm]
 #【？？？】
-「ごめんごめん。見知らぬおじさん…いや、まだお兄さんか。僕まだお兄さんでイケるよね？見知らぬお兄さんに司馬遼太郎愛を語られても困るよね」[lrcm]
+「ごめんごめん。見知らぬおじさん…いや、まだお兄さんか。
+[chara_mod name='toki' face='sad2' time='0']
+僕まだお兄さんでイケるよね？
+[manpu layer='0' name='toki' type='hatena' x='50' y='50' width='80']
+[wait time=1000]
+[chara_mod name='toki' face='sad' time='0']
+見知らぬお兄さんに司馬遼太郎愛を語られても困るよね」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name=toki time=400]
 #【時任勢一】
 「僕は時任勢一。本土からこの島に遊びに来てるんだ。よろしくね」[lrcm]
 #【坂本宗介】
 「あ、俺は坂本宗介って言います。高校生です」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[hop name=toki time=500]
 #【時任勢一】
 「まだ高校生かー！その年で司馬遼太郎をたしなんでるなんて、なかなか通だねえ」[lrcm]
 #【坂本宗介】
 「まあ、司馬遼太郎は歴史小説の雄ですから…」[lrcm]
+[vShake name=toki time=900]
 #【時任勢一】
-「あははは、そいつはその通りだね！僕が最近の高校生を舐めてただけかぁ！バクッ、もぐもぐ…」[lrcm]
+「あははは、そいつはその通りだね！僕が最近の高校生を舐めてただけかぁ！
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name=toki time=300]
+バクッ、もぐもぐ…」[lrcm]
 #【坂本宗介】
 からからと笑う時任さん。明朗快活な感じはどこか桂に似てる気もする。…さっきからずっと何か食べてるのが気になるけど。[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[manpu layer='0' name='toki' type='hatena' x='50' y='50' width='80']
 #【時任勢一】
 「あ、これ食べる？ワックのポテトだよ。Lサイズの」[lrcm]
 #【坂本宗介】
 「いえ、結構です…。すいません」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
 #【時任勢一】
 「どうも何か食べてないと落ち着かなくてねえ。お陰で食費がかさんでかさんで…」[lrcm]
 #【坂本宗介】
 「でも、その割には痩せてますね」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[hop_revert name=toki time=400]
 #【時任勢一】
-「そういう体質みたいでね。もし太りやすい体質だったら今頃は肉団子だよ、あはははは！」[lrcm]
+「そういう体質みたいでね。もし太りやすい体質だったら今頃は肉団子だよ、
+[hop name=toki time=400]
+あはははは！」[lrcm]
 #【坂本宗介】
 椿が羨ましがりそうだな…。[lrcm]
+[chara_mod name='toki' face='def' time='0']
+[manpu layer='0' name='toki' type='oya' x='50' y='50' width='80']
 #【時任勢一】
-「…っと、こんなことしてる場合じゃないんだった。ごめん、僕はそろそろ行かないと」[lrcm]
+「…っと、こんなことしてる場合じゃないんだった。
+[chara_mod name='toki' face='smile' time='0']
+ごめん、僕はそろそろ行かないと」[lrcm]
 #【坂本宗介】
 「あっ、わかりました。それでは」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[hop_revert name=toki time=400]
 #【時任勢一】
 「うんうん！縁があったらまた会おうね、坂本君！」[lrcm]
+[chara_hide name=toki]
 #【坂本宗介】
 時任さんは手をぶんぶんと振りながら去っていった。…縁、か。なんだか、あの人にはまた会えそうな気がするな。ただの勘だけど。[lrcm]
 #【坂本宗介】

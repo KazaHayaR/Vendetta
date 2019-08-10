@@ -301,6 +301,19 @@ $(".message0_fore>.message_inner").css({
 [chara_face name="katura" face="oko"    storage="chara/katura/oko.png"]
 [chara_face name="katura" face="smile"  storage="chara/katura/smile.png"]
 
+;キャラセットアップ
+;【時任】
+[chara_new  name="toki" storage="chara/toki/def.png" jname="時任" width="500"]
+[chara_face name="toki" face="black"    storage="chara/toki/black.png"]
+[chara_face name="toki" face="def"    storage="chara/toki/def.png"]
+[chara_face name="toki" face="def2"   storage="chara/toki/def2.png"]
+[chara_face name="toki" face="oko"    storage="chara/toki/oko.png"]
+[chara_face name="toki" face="oko2"   storage="chara/toki/oko2.png"]
+[chara_face name="toki" face="sad"    storage="chara/toki/sad.png"]
+[chara_face name="toki" face="sad2"   storage="chara/toki/sad2.png"]
+[chara_face name="toki" face="smile"  storage="chara/toki/smile.png"]
+[chara_face name="toki" face="smile2" storage="chara/toki/smile2.png"]
+
 [bg layer=base storage=%bgstorage|black.png time="1"]
 [mask_off effect="fadeOut"]
 [if exp="mp.bgmstorage?true:false"]
