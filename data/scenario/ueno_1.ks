@@ -31,7 +31,7 @@
 「ねえったら！」[lrcm]
 #
 ;（椿の立ち絵登場）
-[chara_show name="tubaki" top="100" face="Sangry" top="200"]
+[chara_show name="tubaki" face="Sangry" top="100"]
 #【坂本宗介】
 教室で読書している俺に遠慮も躊躇もなく言葉をぶん投げてくるようなヤツは一人しかいない。[lrcm]
 #【坂本宗介】
@@ -143,7 +143,7 @@
 
 ;放課後
 [scene_change bgstorage="ストリート.jpg" situation="放課後"]
-[chara_show name="tubaki" top="100" face="Sdef" top="200"]
+[chara_show name="tubaki" face="Sdef" top="100"]
 [tilt layer=0 time=1000]
 #【夕陽椿】
 「それにしても、毎日毎日読書しててよく飽きないね」[lrcm]
@@ -234,7 +234,7 @@
 「死亡が確認されたのは、その家に住んでいた松岡洋二さんとその妻・みのりさん。警察は、遺体の状況から見て何か大きな動物による食害事件ではないかとして捜査本部を…」[lrcm]
 #【坂本宗介】
 「アレはこの事件のことだったのか…。怖いな」[lrcm]
-[chara_show name="yuragi" top="100" face="def" top="200"]
+[chara_show name="yuragi" face="def" top="200"]
 #【坂本ゆらぎ】
 「食害って、初めて聞く…」[lrcm]
 #【坂本宗介】
@@ -242,7 +242,7 @@
 [hop_revert name=yuragi time=400]
 #【坂本ゆらぎ】
 「いる…。[chara_mod name='yuragi' face='emi_m' time='0']ありがとう、お兄ちゃん」[lrcm]
-[chara_show name="tubaki" top="100" face="cry" top="200"]
+[chara_show name="tubaki" face="cry" top="100"]
 [hop_revert name=tubaki time=400]
 #【夕陽椿】
 「あ、あの…」[lrcm]

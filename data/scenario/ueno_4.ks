@@ -76,7 +76,7 @@
 ;居間夜 bg
 [scene_change situation="坂本家"] 
 ;smile
-[chara_show name="tubaki" top="100" face="Sdef" top="200"]
+[chara_show name="tubaki" face="Sdef" top="100"]
 #【坂本宗介】
 帰ってきて、いつもみたいに笑顔で出迎えてくれた椿を見て、俺はすぐに気づいた。[lrcm]
 #【坂本宗介】

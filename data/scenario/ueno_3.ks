@@ -145,10 +145,10 @@
 [scene_change situation="坂本家"]
 #【坂本宗介】
 「ただいまー」[lrcm]
-[chara_show name="tubaki" top="100" face="Sdef" top="200"]
+[chara_show name="tubaki" face="Sdef" top="100"]
 #【夕陽椿】
 「おかえり、宗介」[lrcm]
-[chara_show name="yuragi" top="100" face="Sdef" top="200"]
+[chara_show name="yuragi" face="Sdef" top="200"]
 #【坂本ゆらぎ】
 「おかえりなさい…」[lrcm]
 #【坂本宗介】

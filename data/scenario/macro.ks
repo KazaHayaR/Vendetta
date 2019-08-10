@@ -252,7 +252,7 @@ $(".message0_fore>.message_inner").css({
 [deffont facce=web_noto_m]
 ;キャラセットアップ
 ;【ユラギ】
-[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="350"]
 [chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
 [chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
 [chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
@@ -274,7 +274,7 @@ $(".message0_fore>.message_inner").css({
 
 ;キャラセットアップ
 ;【椿】
-[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="400" top="50"]
+[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="400"]
 [chara_face name="tubaki" face="def" storage="chara/tubaki/T-def.png"]
 [chara_face name="tubaki" face="angry" storage="chara/tubaki/T-angry.png"]
 [chara_face name="tubaki" face="blush" storage="chara/tubaki/T-blush.png"]
