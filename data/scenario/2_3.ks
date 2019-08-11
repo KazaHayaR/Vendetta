@@ -198,7 +198,6 @@
 [mask effect="fadeIn"]
 [bg layer=base storage=ログハウス.png time="1"]
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
-;[filter layer="all" sepia=0]
 [mask_off effect="fadeOut"]
 #【一】
 『ん？　でも全住人の状況を把握できるなら、その場所も特定できるはずじゃないのか？』[lrcm]
@@ -211,7 +210,6 @@
 #【ユラギ】
 『そうそう、神格か、それに近い妖物の類だろうなぁ……』[lrcm]
 [mask effect="fadeIn"]
-;[free_filter layer="all"]
 [bg layer=base storage=forest.png time="1"]
 [chara_hide name="yuragi"]
 [mask_off effect="fadeOut"]
@@ -520,6 +518,7 @@
 迫る獣を見据えながら、意識はゆっくりと途切れた。[lrcm]
 
 [mask effect="fadeIn"]
+[free_filter]
 [free_layermode]
 [fadeinbgm storage="night.ogg" time="1000" loop="true"]
 [filter layer="base" blur=30]

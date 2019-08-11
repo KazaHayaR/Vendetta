@@ -449,6 +449,7 @@
 
 [mask effect="fadeIn" time="3000"]
 [fadeoutse]
-[mask_off effect="fadeOut"]
-
-@jump storage=ending.ks target=*ending
+[fadeoutbgm]
+[bg storage="bg.jpg" time="1"]
+[clearfix]
+@jump storage="first.ks" target="*start"

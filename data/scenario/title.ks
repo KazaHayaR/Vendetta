@@ -3,7 +3,7 @@
 @layopt layer=message1 visible=false
 [call storage="macro.ks"]
 ; @maki: bgimage
-[image layer="base" page="fore" storage=rouka.jpg]
+[image layer="base" page="fore" storage=title_default.png]
 ; @maki: logo image
 ;[image layer="1" storage="../image/logo_hoshifuri_3.png" width=254 height=144 visible=true top=28 left=32]
 
@@ -116,3 +116,4 @@ if (!(document.getElementById("title_base") != null || document.getElementsByCla
   base.appendChild(div);
 }
 [endscript]
+[mask_off effect="fadeOut"]

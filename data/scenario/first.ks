@@ -24,6 +24,8 @@ TYRANO.kag.menu.displayLoad();
 [plugin name="glyph"]
 [glyph line="glyph.png" anime="hamon" fix="true" bottom="40" right="205"]
 [loadcss file="data/others/glink/glink.css"]
+[deffont size=23 face=web_noto_r]
+[resetfont]
 
 ;マクロ呼出し
 [call storage="macro.ks"]
@@ -39,9 +41,8 @@ TYRANO.kag.menu.displayLoad();
 [role_open]
 
 @jump storage=plolog_hosi.ks target=*plolog
-;@jump storage="epilogue.ks" target=*epilogue
+;@jump storage="3_4.ks" target=*3_4g
 ;@jump storage="test.ks" target=*test
-
 ;@jump storage="senden.ks" target=*senden
 
 *trial

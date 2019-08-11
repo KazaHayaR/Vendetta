@@ -259,5 +259,4 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[mask_off effect="fadeOut"]
 @jump storage=3_2.ks target=*3_2

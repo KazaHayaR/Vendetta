@@ -756,10 +756,10 @@
 
 ──一瞬の静謐に、願いを込めて言葉を放つ。[lrcm]
 
-[playse storage="craphand.ogg" buf="5" volume="100"]
+
 #【一】
 「──星山式『大祓』〝星降ノ山(ほしふりのやま)〟」[lrcm]
-
+[playse storage="craphand.ogg" buf="5" volume="100"]
 [playbgm storage="決意_last.ogg"]
 [playse storage="魔術起動音_bell.ogg" buf="1"]
 [playse storage="bell魔法.ogg" buf="2"]
