@@ -231,7 +231,7 @@
 #【夕陽椿】
 「照れなくてもいいのにー！」[lrcm]
 [hop name=yuragi time=400]
-#【夕陽ゆらぎ】
+#【坂本ゆらぎ】
 「私、お鍋…見てくる」[lrcm]
 [run_right name=yuragi time=2000]
 [chara_hide name=yuragi]
