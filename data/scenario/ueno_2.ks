@@ -25,7 +25,7 @@
 「還ノ島伝説（晴明社文庫）より抜粋」[lrcm]
 ;坂本家
 
-[scene_change situation="坂本家"]
+[scene_change situation="坂本家" bgstorage="heya.jpg"]
 #【坂本宗介】
 「む…ううん…」[lrcm]
 [chara_show name="tubaki" face="def" top="50" width=600 reflect=true]
@@ -83,7 +83,7 @@
 #【坂本宗介】
 そんなやりとりをしながら朝食をかきこみに向かった俺たちを待っていたのは、更なる凶報だった。[lrcm]
 ;居間
-[scene_change]
+[scene_change bgstorage="living_noon.jpg"]
 #【アナウンサー】
 「今日未明に発見された二つの遺体は、現場に落ちていた遺留物から市内に住む高校三年生たちのものではないかと見て警察は捜査を進めています。還ノ島では昨日も松岡さん一家の遺体が発見されたばかりで…」[lrcm]
 #【坂本宗介】
@@ -387,7 +387,7 @@
 言葉を交わして別れる俺たち。まだドキドキ言っている胸を押さえつつ、俺はなんともいえない顔をして帰路についた。[lrcm]
 
 ;【市役所】bg
-[scene_change situation="市役所"]
+[scene_change situation="市役所" bgstorage="office.jpg"]
 #【坂本宗介】
 「父さん、少しやつれてたな…。仕事人間だから本人は平気なつもりなんだろうけど」[lrcm]
 ;【時任勢一の立ち絵登場】

@@ -74,7 +74,7 @@
 そのツケがどんな形で回ってくるかも知らずに。[lrcm]
 ;坂本家
 ;居間夜 bg
-[scene_change situation="坂本家"] 
+[scene_change situation="坂本家" bgstorage="living_evening.jpg"] 
 ;smile
 [chara_show name="tubaki" face="Sdef" top="100"]
 #【坂本宗介】
@@ -134,7 +134,7 @@
 #【坂本宗介】
 しかし、それから数日たっても、翔さんが帰ってくることはなかった。[lrcm]
 ;玄関bg?
-[scene_change]
+[scene_change bgstorage="living_noon.jpg"]
 #【坂本宗介】
 「…行ってきます」[lrcm]
 #【夕陽椿】

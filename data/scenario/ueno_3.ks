@@ -193,7 +193,7 @@
 #【後輩刑事】
 「承知したっす！」[lrcm]
 ;警察署 bg
-[scene_change situation="警察署"]
+[scene_change situation="警察署" bgstorage="office.jpg"]
 #【狼狽した男】
 「だから！自分でも信じられないんですって！」[lrcm]
 #【後輩刑事】
@@ -204,7 +204,7 @@
 「本当なんですって！見たんですよ！半透明の怪物が人を襲ってるのを!!」[lrcm]
 
 ;坂本家 居間夜 bg
-[scene_change situation="坂本家"]
+[scene_change situation="坂本家" bgstorage="living_evening.jpg"]
 #【坂本宗介】
 「ただいまー」[lrcm]
 [chara_show name="tubaki" face="giggle" top="100"]
@@ -290,9 +290,7 @@
 「お父さん…」[lrcm]
 #【坂本宗介】
 のどかな島で始まった事件が他人事ではなくなってきているような気配を、俺は肌で感じ始めていた。…それでも、危機感と呼べるほどのレベルではなかったのだが。[lrcm]
-*test
-[start_template]
-[set_default_message_window]
+
 ;教室
 [scene_change situation="教室" bgstorage="room.jpg"]
 #【担任教師】
@@ -303,14 +301,20 @@
 「やった、休みだってよ！」[lrcm]
 #【坂本宗介】
 「あの事件のせいか。いつかはこうなると思ってたけど…」[lrcm]
+[chara_show name="katura" face="majime" top=50]
+[hop name=katura time=400]
 #【桂慎太郎】
 「自宅待機を命じたところでどうなるというのだろうな。犠牲者の中には自宅で襲われた者たちもいたのだろう？」[lrcm]
 #【坂本宗介】
 「確かにな。まあ、下手に外出しているよりは安全なんじゃないか」[lrcm]
+[chara_mod name='katura' face='oko' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「それも結局気休めにしかならんがな。しかし、これだけ犠牲者が出ているのにまだ獣の正体すらつかめていないとは、警察が怠惰なのか獣が利口なのか…」[lrcm]
 #【坂本宗介】
 「椿に聞こえるぞ。…警察は連日連夜働いてるさ。俺たちがとやかく言うことじゃない」[lrcm]
+[chara_mod name='katura' face='majime' time='0']
+[hShake name=katura time=900]
 #【桂慎太郎】
 「…そうだな。椿もいるのに悪かった。しかし、となると犯人はどれだけ巧妙なのだろう？知性なき獣に出し抜かれるほど日本の警察は馬鹿ではあるまい」[lrcm]
 #【坂本宗介】
@@ -321,6 +325,8 @@
 今この島を騒がせているのは、その伝説の獣だったりするのかもしれない。伝説として伝わってるような存在なら、警察に捉えられないのも無理はない。[lrcm]
 #【坂本宗介】
 「なんて、まさかな…」[lrcm]
+[chara_mod name='katura' face='smile' time='0']
+[hop_revert name=katura time=300]
 #【桂慎太郎】
 「どうかしたか？」[lrcm]
 #【坂本宗介】
@@ -329,12 +335,16 @@
 さすがに、本当に伝説の獣が存在しているとは思えない。どんなに不可解なことでも、これが現実の出来事である以上は科学的な説明がつけられる事象なのは間違いないのだから。[lrcm]
 #【坂本宗介】
 「まあ、休みの間俺は図書館にでも行こうかなあ」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[vShake name=katura time=900]
 #【桂慎太郎】
 「おいおい、下手に外出するよりは家にいたほうが安全だと言い放ったのはお前だろう」[lrcm]
 #【坂本宗介】
 「大丈夫、いつもみたいに入り浸ったりはしないさ。本を借りたらすぐ帰るよ」[lrcm]
 #【坂本宗介】
 ゆらぎと椿にも心配かけちゃうだろうしな。この分だと、ゆらぎの通ってる小学校も休みになるだろうし。[lrcm]
+[chara_mod name='katura' face='majime' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「そうか。くれぐれも気を付けてくれ。お前がいなくなると寂しくなる」[lrcm]
 #【坂本宗介】
@@ -343,8 +353,9 @@
 …朝の言葉を訂正しよう。こんな会話を違和感なく繰り広げてしまった時点で、俺はまだまだこの事件を他人事だと捉えていたのだろう。[lrcm]
 #【坂本宗介】
 この後、どんな運命が待ち受けているのか。それを知っていたら、俺はこんなに呑気ではいられなかったに違いない。[lrcm]
+
 ;森
-[scene_change situation="森" bgstorage="郊外.png"]
+[scene_change situation="森" bgstorage="郊外.jpg"]
 #【後輩刑事】
 「翔さん、あの証言…どこまで信用できますかね」[lrcm]
 #【夕陽翔】
@@ -411,8 +422,11 @@
 「嫌なら来なくていいぞ」[lrcm]
 #【後輩刑事】
 「んなことしたら後でぶっ飛ばされそうなんでやめときますよ」[lrcm]
+*test
+[start_template]
+[set_default_message_window]
 ;morinaka? bg
-[scene_change bgstorage="森中.jpg"]
+[scene_change bgstorage="山中.jpg"]
 #【夕陽翔】
 「進めども進めども毒ガスのどの字もないな」[lrcm]
 #【後輩刑事】
@@ -424,16 +438,34 @@
 #【夕陽翔】
 「とんでもないモン見つけちまったな…。さて…」[lrcm]
 ;唸り声 se
+#
+[playse storage="trial/唸り声.ogg"][lrcm]
+[stopse]
 #【後輩刑事】
 「ッ！わあああっ!!」[lrcm]
 #【夕陽翔】
 「出やがったか！」[lrcm]
 ;銃声×2 se
+#
+[playse storage="trial/銃声.ogg" buf="0"]
+[wait time=200]
+[playse storage="trial/銃声.ogg" buf="1"][lrcm]
+[stopse buf="0"]
+[stopse buf="1"]
 #【夕陽翔】
 「弾丸がすり抜けやがる…！」[lrcm]
 #【後輩刑事】
 「マジでいたのかよ！半透明の怪物…！」[lrcm]
 ;銃声×3 se
+#
+[playse storage="trial/銃声.ogg" buf="0"]
+[wait time=300]
+[playse storage="trial/銃声.ogg" buf="1"]
+[wait time=200]
+[playse storage="trial/銃声.ogg" buf="2"][lrcm]
+[stopse buf="0"]
+[stopse buf="1"]
+[stopse buf="2"]
 #【後輩刑事】
 「ダメだ、ダメだ、ダメだ…！助けて翔さん…!!」[lrcm]
 #【夕陽翔】
@@ -451,10 +483,15 @@
 #【夕陽翔】
 「おらよ、こっちだバケモノ！」[lrcm]
 ;走る音 se
-
+#
+[playse storage="trial/走る音.ogg"][lrcm]
+[stopse]
 #【夕陽翔】
 「アイツは…行ったか。さて、どうしたもんかねこの状況…」[lrcm]
 #【夕陽翔】
 咄嗟に浮かんだのは、やっぱり娘の顔だった。…帰りてえなあ。まだ死ぬわけにはいかないよなあ。[lrcm]
 ;【獣の咆哮】
+#
+[playse storage="trial/唸り声.ogg"][lrcm]
+[stopse]
 [end_template jumpstorage="ueno_4.ks" jumptarget="*ueno_4"]
