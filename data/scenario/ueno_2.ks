@@ -11,6 +11,7 @@
 日に日にやせ細っていく母の姿をしっかり見ていれば、そんなはずがないとすぐに分かったはずなのに。…いや。[lrcm]
 #【？】
 もしかしたら私にはとっくに分かっていたのかもしれない。母が命を賭して、私の命を繋いでくれていたこと。[lrcm]
+#
 [bg layer=base storage="book.jpg" time="1000"]
 #
 『還ノ島に伝わる獣の伝説』[lrcm]
@@ -67,7 +68,7 @@
 [hShake name=tubaki time=400]
 #【夕陽椿】
 「ええーっ、ケチー」[lrcm]
-[chara_move name=tubaki width=400 left=700 time=1000]
+[chara_move name=tubaki width=400 left=700 top=100 time=1000]
 [chara_mod name='tubaki' face='def' time='0']
 #【坂本宗介】
 「朝から楽しそうだなお前は…」[lrcm]
@@ -89,7 +90,7 @@
 「今日未明に発見された二つの遺体は、現場に落ちていた遺留物から市内に住む高校三年生たちのものではないかと見て警察は捜査を進めています。還ノ島では昨日も松岡さん一家の遺体が発見されたばかりで…」[lrcm]
 #【坂本宗介】
 「おいおい…また犠牲者が出たのか」[lrcm]
-[chara_show name="tubaki" face="Scry" top="100" reflect=true]
+[chara_show name="tubaki" face="Scry" top="100" width=400 reflect=true]
 [hop_revert name=tubaki time=300]
 #【夕陽椿】
 「お父さん、大丈夫かな…」[lrcm]

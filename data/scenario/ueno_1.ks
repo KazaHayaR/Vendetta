@@ -97,6 +97,7 @@
 #【坂本宗介】
 「自分でそれを言うかね…」[lrcm]
 [chara_mod name='tubaki' face='Ssmile' time='0']
+[hop_revert name='tubaki' time='400']
 #【夕陽椿】
 「君ももう少しぐらい嬉しそうにしてくれたっていいのに」[lrcm]
 #【坂本宗介】
@@ -119,7 +120,6 @@
 #【坂本宗介】
 …なんだかんだ、自分が好きな本をコイツが気に入ってくれるのは悪い気はしない。読書家冥利に尽きるというものだ。[lrcm]
 [chara_mod name='tubaki' face='Sdef' time='0']
-[manpu sound="" layer='0' name=tubaki type='hatena' x='50' y='50' width='80']
 [tilt layer=0 time=1000]
 #【夕陽椿】
 「また何か読ませてくれる？」[lrcm]

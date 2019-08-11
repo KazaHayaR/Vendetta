@@ -13,6 +13,7 @@
 だが、私はまだ死んでいない。「あれ」は、生存を放棄した私に牙を剥くことはなかったのだ。[lrcm]
 #【？】
 もしかしたら、この状況は失敗ではないのかもしれない。再試行に移るのは――私が死んでからで十分だ。[lrcm]
+#
 [bg layer=base storage="book.jpg" time="1000"]
 #
 『天岩戸計画 第2フェーズ』[lrcm]
@@ -187,10 +188,13 @@
 [scene_change bgstorage="living_noon.jpg"]
 #【坂本宗介】
 「…行ってきます」[lrcm]
+[chara_show name="tubaki" face="cry" top="100" width=400]
+[hop_revert name='tubaki' time='400']
 #【夕陽椿】
 「また外出？外に出るのはまだ危ないって…」[lrcm]
 #【坂本宗介】
 「大丈夫、すぐ帰るよ。それに、家にいるからって安全なわけじゃないし。何かあったらすぐ連絡しろよ」[lrcm]
+[hop_revert name='tubaki' time='400']
 #【夕陽椿】
 「うん…」[lrcm]
 #【坂本宗介】
