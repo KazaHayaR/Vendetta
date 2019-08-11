@@ -1,6 +1,6 @@
 *ueno_0
 ;序章背景は真っ黒[lrcm]
-[start_template bgmstorage="不穏な空気.ogg"]
+[start_template]
 [set_default_message_window]
 [wait time=500]
 #【？】

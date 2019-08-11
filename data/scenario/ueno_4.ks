@@ -1,5 +1,5 @@
 *ueno_4
-[start_template]
+[start_template title="第四章"]
 [set_default_message_window]
 ;第四章[lrcm]
 ;【背景は真っ黒】

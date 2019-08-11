@@ -1,7 +1,7 @@
 ;第五章[lrcm]
 ;#【背景は真っ黒】
 *ueno_5
-[start_template]
+[start_template title="第五章"]
 [set_default_message_window]
 #【？】
 「科学」と「宗教」――もっと詳しく言うなら「信仰」は決して相容れないものである、と言っていたのは中学の教師だっただろうか。[lrcm]

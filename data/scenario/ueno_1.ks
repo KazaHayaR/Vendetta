@@ -1,6 +1,6 @@
 *ueno_1
 ;序章背景は真っ黒[lrcm]
-[start_template bgstorage="book.jpg"]
+[start_template bgstorage="book.jpg" title="第一章"]
 [set_default_message_window]
 ;第一章
 #

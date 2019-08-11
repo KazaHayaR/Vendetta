@@ -1,7 +1,7 @@
 *ueno_2
 ;第二章[lrcm]
 ;【背景は真っ黒】
-[start_template]
+[start_template title="第二章"]
 [set_default_message_window]
 #【？】
 幼かった私は、母が自分の分の食事まで私に分け与えてくれていることを当然のことだと認識していたし、それ故彼女を慮ることもしなかった。[lrcm]

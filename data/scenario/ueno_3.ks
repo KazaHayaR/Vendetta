@@ -1,6 +1,6 @@
 
 *ueno_3
-[start_template]
+[start_template title="第三章"]
 [set_default_message_window]
 ;第三章[lrcm]
 #【？】

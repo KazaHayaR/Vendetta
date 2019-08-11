@@ -247,6 +247,36 @@ $(".message0_fore>.message_inner").css({
 [wait time="500"]
 [endmacro]
 
+;章表示用
+[macro name="display_section_title"]
+	[iscript]
+		var base = document.createElement("div");
+		base.setAttribute("id", "section_title_base");
+		base.setAttribute('style', 'z-index:100000001; width:100%; height:100%; position:relative; background-color:#000;');
+		var textContainer = document.createElement("div");
+		textContainer.setAttribute("id", "section_title");
+		textContainer.setAttribute('style', 'transition:3s; opacity:0; color:#fff; -webkit-filter:drop-shadow(0 0 7px #fff); font-size:140px; font-weight:bold; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);');
+		var text = document.createTextNode(mp.text);
+		textContainer.appendChild(text);
+		base.appendChild(textContainer);
+		document.getElementById("tyrano_base").appendChild(base);
+	[endscript]
+	[wait time=300]
+	[iscript]	
+		document.getElementById("section_title").style.opacity= "1";
+		document.getElementById("section_title").style.transition = "2s";
+	[endscript]
+	[wait time=2100]
+	[iscript]	
+		document.getElementById("section_title").style.opacity= "0";
+	[endscript]
+	[wait time=2100]
+	[iscript]	
+		document.getElementById("section_title_base").remove();
+	[endscript]
+	[wait time=300]
+[endmacro]
+
 ;bgstorage,bgmstorage
 [macro name="start_template"] 
 [deffont facce=web_noto_m]
@@ -315,6 +345,9 @@ $(".message0_fore>.message_inner").css({
 [chara_face name="toki" face="smile2" storage="chara/toki/smile2.png"]
 
 [bg layer=base storage=%bgstorage|black.png time="1"]
+[if exp="mp.title?true:false"]
+[display_section_title text=%title]
+[endif]
 [mask_off effect="fadeOut"]
 [if exp="mp.bgmstorage?true:false"]
 [fadeinbgm storage=%bgmstorage time="1000" loop="true"]
