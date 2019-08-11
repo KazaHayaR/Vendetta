@@ -2,7 +2,7 @@
 
 ;キャラセットアップ
 ;【ユラギ】
-[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="350" top="50"]
+[chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="400" top="50"]
 [chara_face name="yuragi" face="Sdef" storage="chara/yuragi/C2-1.png"]
 [chara_face name="yuragi" face="Semi_m" storage="chara/yuragi/C2-2.png"]
 [chara_face name="yuragi" face="Sfukigen" storage="/chara/yuragi/C2-3.png"]
@@ -24,7 +24,7 @@
 
 ;キャラセットアップ
 ;【椿】
-[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="300"]
+[chara_new name="tubaki" storage="chara/tubaki/T-def.png" jname="椿" width="450"]
 [chara_face name="tubaki" face="def" storage="chara/tubaki/T-def.png"]
 [chara_face name="tubaki" face="angry" storage="chara/tubaki/T-angry.png"]
 [chara_face name="tubaki" face="blush" storage="chara/tubaki/T-blush.png"]
@@ -95,8 +95,9 @@
 「おいおい、なんの話だ？　俺も混ぜてくれると嬉しい」[lrcm]
 #【？？？】
 「私も私もー、混ぜてよ？」[lrcm]
+[chara_show name="tubaki" top="50" face="Ssmile" time="0" top="150"]
 #【女子生徒A】
-「げ、戸伏」[lrcm]
+「げ、戸伏と夕陽……」[lrcm]
 #
 二人の男女があらわれ、女子たちが引き気味に顔をしかめる。[lrcm]
 男の方は戸伏正行、女の方は夕陽椿。[lrcm]
@@ -107,6 +108,7 @@
 若干慌てつつ、顔を引きつりながらながら女子たちが言葉を紡ぐ。[lrcm]
 ……それもそのはず。
 なぜならこの二人は、校内厄介事を持ってくるランキングの２トップなのである。[lrcm]
+[chara_mod name="tubaki" face="Sdef" time="0"]
 #【椿】
 「うーん、私は見たことないわねー」[lrcm]
 「でも最近オカ研はネタなさすぎて週間デブ特集と銘打って、代謝の良い学生時代にいかにデブになるかっていうコラム書きまくってたわよ。はいこれ」[lrcm]
@@ -135,6 +137,7 @@
 #【女子生徒B】
 「やかましいわっ！」[lrcm]
 [playse storage="ツッコミ_dova.ogg"]
+[quake count=5 time=100]
 
 #
 この女子、ツッコミのキレがいいな。名前知らないけど。[lrcm]
@@ -164,9 +167,12 @@
 #【正行】
 「幽霊だろ？　それなら丁度、そこにいるぞ」[lrcm]
 [stopbgm]
+[chara_mod name="tubaki" face="Shopeless" time="0"]
+[odoroku layer="0"]
 #【約全員】
 「「「「えっ」」」」[lrcm]
 [fadeinbgm storage="不穏な空気.ogg" time="1000" loop="true"]
+[chara_hide name="tubaki"]
 
 #
 全員の声が重なった。[lrcm]
@@ -175,8 +181,8 @@
 「ほら、お前らが取り囲んでる机の上で、でろーんとしてるのが一人」[lrcm]
 
 [chara_show name="yuragi" top="100" face="Sodoroki" top="200"]
+[manpu layer=0 name=yuragi type=bikkuri x="30" y="80" width="80"]
 [odoroku layer="0"]
-[manpu layer=0 name=yuragi type=bikkuri x="100" y="230" width="80"]
 #【幽霊？】
 『──！！』[lrcm]
 
@@ -199,7 +205,7 @@
 「……ああ、今立ち上がったけど大体、椿の肩ぐらいの大きさだな」[lrcm]
 
 [chara_mod name="yuragi" face="Sodoroki" time="0"]
-[manpu layer=0 name=yuragi type=bikkuri2 x="100" y="180" width="80"]
+[manpu layer=0 name=yuragi type=bikkuri2 x="30" y="80" width="80"]
 #【幽霊？】
 『……！？』[lrcm]
 
@@ -215,10 +221,10 @@
 
 #【女子生徒A】
 「え、ちょ、え、えっ！？　わ、わたしの筆箱になにする……」[lrcm]
-[playse storage="浮遊_魔法.ogg"]
 [chara_mod name="yuragi" face="Semi_m" time="0" top="70"]
-[manpu layer=0 name=yuragi type=bikkuri2 x="200" y="210" width="80"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 
+[playse storage="bell魔法.ogg"]
 #
 筆箱が、浮いた。[lrcm]
 
@@ -231,6 +237,7 @@
 
 [chara_mod name="yuragi" face="Sdef" time="0"]
 
+
 #
 一目散に机から離れていく椿と女子生徒たち。[lrcm]
 正行に関しては、筆箱がちょっと浮いた時点で、すでに遥か彼方へと消えていた。[lrcm]
@@ -239,7 +246,6 @@
 
 #【椿】
 「は、一！　ちゃ、ちゃんと祓っといてよねっ！」[lrcm]
-
 #
 ピシャリとドアをしめ、教室には誰もいなくなった。[lrcm]
 @jump storage="1_2.ks" target=*1_2
