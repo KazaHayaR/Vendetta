@@ -41,4 +41,16 @@ TYRANO.kag.menu.displayLoad();
 @jump storage=plolog_hosi.ks target=*plolog
 ;@jump storage="epilogue.ks" target=*epilogue
 ;@jump storage="test.ks" target=*test
+
 ;@jump storage="senden.ks" target=*senden
+
+*trial
+;--------------
+;初期化処理
+;--------------
+;プラグインの導入
+[plugin name=manpu]
+[plugin name="kanimMacro"]
+[loadcss file="data/others/glink/glink.css"]
+
+@jump storage="ueno_0.ks" target=*ueno_0

@@ -715,3 +715,33 @@ body {
 }
 /* .chara_name_area {
 } */
+
+.situationOuter {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 25%;
+}
+.situationInner {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 58px;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-family: "Yu Gothic", 游ゴシック, YuGothic, 游ゴシック体, "ヒラギノ角ゴ Pro W3",メイリオ,sans-serif;
+}
+@keyframes displaySectionTitle {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
