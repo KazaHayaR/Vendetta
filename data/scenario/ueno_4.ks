@@ -39,7 +39,7 @@
 #【坂本宗介】
 「言ってることには同意なんだが、少し声のボリュームを落としてくれ」[lrcm]
 [chara_mod name='katura' face='def' time='0']
-[manpu layer='0' name='katura' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「失敬失敬。興奮すると周りが見えなくなるのが俺の悪い癖だな」[lrcm]
 #【坂本宗介】
@@ -79,13 +79,13 @@
 「こっちこそ」[lrcm]
 [chara_mod name='katura' face='def' time='0']
 [hop name=katura time=400]
-[manpu layer='0' name='katura' type='bikkuri' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='katura' type='bikkuri' x='50' y='50' width='80']
 #【桂慎太郎】
 「ああ、そうだ」[lrcm]
 #【坂本宗介】
 「どうした？」[lrcm]
 [chara_mod name='katura' face='hera' time='0']
-[manpu layer='0' name='katura' type='kiran' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='katura' type='kiran' x='50' y='50' width='80']
 #【桂慎太郎】
 「避妊はしろよ」[lrcm]
 #【坂本宗介】

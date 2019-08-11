@@ -30,14 +30,14 @@
 #【坂本宗介】
 「む…ううん…」[lrcm]
 [chara_show name="tubaki" face="def" top="50" width=600 reflect=true]
-[manpu layer='0' name='tubaki' top=100 type='oya' x='80' y='50' width='100']
+[manpu sound="" layer='0' name='tubaki' top=100 type='oya' x='80' y='50' width='100']
 #【夕陽椿】
 「あっ、起きた？」[lrcm]
 #【坂本宗介】
 「…は？え？なんでベッドの中に…」[lrcm]
 [chara_mod name='tubaki' face='giggle' time='0']
 [hop_revert name=tubaki time=300]
-[manpu layer='0' name='tubaki' type='heart3' x='70' y='50' width='100']
+[manpu sound="" layer='0' name='tubaki' type='heart3' x='70' y='50' width='100']
 #【夕陽椿】
 「来ちゃった♡」[lrcm]
 #【坂本宗介】
@@ -48,7 +48,7 @@
 「…何してんの？」[lrcm]
 [chara_mod name='tubaki' face='def' time='0']
 [tilt name=tubaki time=1000]
-[manpu layer='0' name=tubaki type='hatena' x='80' y='50' width='100']
+[manpu sound="" layer='0' name=tubaki type='hatena' x='80' y='50' width='100']
 #【夕陽椿】
 「…夜這い？」[lrcm]
 #【坂本宗介】
@@ -106,7 +106,7 @@
 #【坂本宗介】
 我が妹ながら恐ろしいヤツだ。この前も「私…違う世界だったら神様になれるぐらいの逸材なんだよ」とかゆらぎ以外が言ってたら黄色い救急車を呼ぶレベルの発言をかましていたが、なぜか冗談に聞こえなかったし。[lrcm]
 [chara_mod name='tubaki' face='Ssurprised' time='0']
-[manpu layer='0' name='tubaki' type='hatena' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='hatena' x='50' y='50' width='80']
 #【夕陽椿】
 「悪いのって…どんなの？」[lrcm]
 [chara_mod name='yuragi' face='Sdef' time='0']
@@ -145,7 +145,7 @@
 ;学校
 [scene_change bgstorage=room.jpg]
 [chara_show name="tubaki" face="Ssurprised" top="100"]
-[manpu layer='0' name='tubaki' type='bikkuri' x='40' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='bikkuri' x='40' y='50' width='80']
 [hop name=tubaki time=300]
 #【夕陽椿】
 「登校して5秒で本と合体…さすがだね宗介」[lrcm]
@@ -186,7 +186,7 @@
 はっはっは！」[lrcm]
 #【坂本宗介】
 「お前といい椿といい、どうして俺の幼馴染たちはみんな俺に静かな読書空間を提供する気がないんだ？」[lrcm]
-[manpu layer='0' name='katura' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「竹馬の友たる俺たちに遠慮がいるか？」[lrcm]
 #【坂本宗介】
@@ -195,7 +195,7 @@
 [hop name=katura time=700]
 #【桂慎太郎】
 「そんなもの、調べなくても知っているさ」[lrcm]
-[manpu layer='0' name='katura' type='waiwai' x='140' y='70' width='80']
+[manpu sound="" layer='0' name='katura' type='waiwai' x='140' y='70' width='80']
 #【坂本宗介】
 あっはっは、と爽やかに笑う桂。コイツも昔から変わらない。騒がしいヤツで、俺に静かな学園生活を遅らせる気がない。これで神社の神主の息子なんだから世の中分からない。[lrcm]
 #【坂本宗介】
@@ -205,7 +205,7 @@
 #【坂本宗介】
 下らないので俺はそんなに乗り気ではないのだが、桂はお構いなしに俺の性癖を掘り下げにかかってくるのだから厄介だ。[lrcm]
 [chara_mod name='katura' face='def' time='0']
-[manpu layer='0' name='katura' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「そう言うな。もしかしたら、しばらくはそのくだらない話もろくにできなくなるかもしれんのだから」[lrcm]
 #【坂本宗介】
@@ -217,7 +217,7 @@
 #【坂本宗介】
 「ああ…。今朝からその話題でみんな持ちきりみたいだな」[lrcm]
 [chara_mod name='katura' face='hera' time='0']
-[manpu layer='0' name='katura' type='mojamoja' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='katura' type='mojamoja' x='50' y='50' width='80']
 #【桂慎太郎】
 「さっさと下手人が捕まってくれれば問題はないのだが…そうならなかった場合、休校や外出制限もあり得る。というわけで…」[lrcm]
 #【坂本宗介】
@@ -311,7 +311,7 @@
 #【坂本宗介】
 「ここは日本だ！」[lrcm]
 [chara_mod name='tubaki' face='Ssmile' time='0']
-[manpu layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
 #【夕陽椿】
 「それはそうだね！ごめんごめん。…ただ私がこうしたくなっただけ、だよ」[lrcm]
 #【坂本宗介】
@@ -362,7 +362,7 @@
 [quake time=2000 wmax=0 count=3]
 なるほどな」[lrcm]
 [chara_mod name='tubaki' face='Sdef' time='0']
-[manpu layer='0' name='tubaki' type='hatena' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='hatena' x='50' y='50' width='80']
 #【夕陽椿】
 「宗介パパ、なんだって？」[lrcm]
 #【坂本宗介】
@@ -388,7 +388,7 @@
 言葉を交わして別れる俺たち。まだドキドキ言っている胸を押さえつつ、俺はなんともいえない顔をして帰路についた。[lrcm]
 
 ;【市役所】bg
-[scene_change situation="市役所" bgstorage="office.jpg"]
+[scene_change situation="市役所" bgstorage="警察署.jpg"]
 #【坂本宗介】
 「父さん、少しやつれてたな…。仕事人間だから本人は平気なつもりなんだろうけど」[lrcm]
 ;【時任勢一の立ち絵登場】
@@ -423,7 +423,7 @@
 「ごめんごめん。見知らぬおじさん…いや、まだお兄さんか。
 [chara_mod name='toki' face='sad2' time='0']
 僕まだお兄さんでイケるよね？
-[manpu layer='0' name='toki' type='hatena' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='toki' type='hatena' x='50' y='50' width='80']
 [wait time=1000]
 [chara_mod name='toki' face='sad' time='0']
 見知らぬお兄さんに司馬遼太郎愛を語られても困るよね」[lrcm]
@@ -448,7 +448,7 @@
 #【坂本宗介】
 からからと笑う時任さん。明朗快活な感じはどこか桂に似てる気もする。…さっきからずっと何か食べてるのが気になるけど。[lrcm]
 [chara_mod name='toki' face='smile2' time='0']
-[manpu layer='0' name='toki' type='hatena' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='toki' type='hatena' x='50' y='50' width='80']
 #【時任勢一】
 「あ、これ食べる？ワックのポテトだよ。Lサイズの」[lrcm]
 #【坂本宗介】
@@ -467,7 +467,7 @@
 #【坂本宗介】
 椿が羨ましがりそうだな…。[lrcm]
 [chara_mod name='toki' face='def' time='0']
-[manpu layer='0' name='toki' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='toki' type='oya' x='50' y='50' width='80']
 #【時任勢一】
 「…っと、こんなことしてる場合じゃないんだった。
 [chara_mod name='toki' face='smile' time='0']

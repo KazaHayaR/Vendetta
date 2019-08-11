@@ -9,6 +9,7 @@
 今までは、そんなことは当然だと割り切っていた。宗教は科学の範疇では推し量れるものではないし、そもそも信仰の対象が科学によってその正体を詳らかにされることなどその信者からすればたまったものではないだろう。[lrcm]
 #【？】
 だが、我々は…私は確かに観測したのである。宗教の世界で描かれるような、神話の一端を。科学の力によって。[lrcm]
+
 ;図書館
 ;図書館bg
 [scene_change situation="図書館" bgstorage="図書館.jpg"]
@@ -96,118 +97,180 @@
 「で、次はどうすんの？相手がこの世のもんじゃなさそうってことは分かったけど、余計にどうしようもなくなった気しかしねえ」[lrcm]
 #【坂本宗介】
 「正直俺もです。でも、相手がこの世のものじゃないのなら、そういうのに詳しそうなヤツから話を聞いてみるしかないでしょう」[lrcm]
+*test
+[start_template]
+[set_default_message_window]
 ;還ノ島神社
 [scene_change situation="還ノ島神社" bgstorage="skche神社.jpg"]
+[chara_show name="katura" face="majime" top=50]
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「…で、俺のところに来たと」[lrcm]
 #【坂本宗介】
 「無茶な頼みだとは分かってるんだが、お前の意見が聞きたい。由緒正しき還ノ島神社の神主なら、何か知ってるんじゃないか」[lrcm]
 #【石田修星】
 「ごめんな。こっちは藁にも縋りたい気分なんだ」[lrcm]
+[chara_mod name='katura' face='def' time='0']
+[manpu sound="" layer='0' name='katura' type='mojamoja' x='50' y='50' width='80']
 #【桂慎太郎】
 「一つ訂正させてもらうと、俺はまだ神主ではない。それを踏まえた上で言わせてもらうが…」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「確かに、俺の神社にもそういった獣の伝説が遺っている。先祖代々伝わっているものでな、俺もじっくり目を通したことはないのだが、神主を襲名する際史料も譲り受けることになっているのだ」[lrcm]
 #【坂本宗介】
 「その史料を見せてもらう訳には…？」[lrcm]
+[chara_mod name='katura' face='smile' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「構わんさ。別に秘密にしておくようなものでもない。PDFでデータ化されているから、後で送っておいてやろう」[lrcm]
 #【石田修星】
 「え、PDFデータになってんの？先祖代々伝わる史料が？」[lrcm]
+[chara_mod name='katura' face='def' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「俺の父がデータ化したのです。今時紙媒体だけとかありえないと」[lrcm]
 #【石田修星】
 「正しいんだろうけどロマンはないな…」[lrcm]
 #【坂本宗介】
 「…ありがとう、桂。俺たちの荒唐無稽な話を聞いてくれて」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
 #【桂慎太郎】
 「笑わんさ。正体不明の超自然的な化物など、俺たちの界隈では珍しくもない」[lrcm]
 #【坂本宗介】
 「は？珍しくない？伝説の怪物やら何やらが？」[lrcm]
+[chara_mod name='katura' face='def' time='0']
 #【桂慎太郎】
-「そりゃあ、現代において普通の人間には伝説も神秘も縁遠いものにはなってしまっているがな。[lrcm]
+「そりゃあ、現代において普通の人間には伝説も神秘も縁遠いものにはなってしまっているがな。」[lrcm]
+[chara_mod name='katura' face='smile' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
-俺たち信仰を生業とするものにとって、『この世のものではない何か』が存在し、それがたまに善行を成したり悪行を働いたりするなんてのは俺たちの世界では常識なのだ」[lrcm]
+「俺たち信仰を生業とするものにとって、『この世のものではない何か』が存在し、それがたまに善行を成したり悪行を働いたりするなんてのは俺たちの世界では常識なのだ」[lrcm]
 #【坂本宗介】
 「マジか…。そんな素振り一度も…」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[manpu sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「言ったところで信じまい？一応守秘義務のようなものもあるしな」[lrcm]
 #【石田修星】
 「いいの？俺たちには暴露っちまったけど」[lrcm]
+[chara_mod name='katura' face='def' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「そこまで調べを付けてきている以上ははぐらかすわけにもいかないでしょう。現に犠牲者も出ている訳ですし」[lrcm]
 #【石田修星】
 「そこまで言うなら…アンタは何故何もしなかった？その口ぶりじゃ大体予想がついてたんじゃないの？今この島で悪さをしてるのは、超自然的な何かだって」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「ついていましたとも。俺がそれでいて何も行動を起こしていないのは、やったところで意味がないからです」[lrcm]
 #【坂本宗介】
 「意味がないって、それはやってみなきゃ…」[lrcm]
+[chara_mod name='katura' face='oko' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「分からない、とでもいう気か？言い方はきついかもしれんがな、俺の方にも事情というものがある」[lrcm]
 #【坂本宗介】
 そう口走る桂の顔は、今まで見たことがないほどに歪んでいた。歯痒さと怒りが同居した、やり場のない感情にぐちゃぐちゃにかき回された表情。[lrcm]
+[chara_mod name='katura' face='majime' time='0']
 #【桂慎太郎】
-「当然、俺…というかこの神社だってただ手をこまねいていたわけじゃない。俺たちの手に負える相手だとは思えなかったから、本土に連絡して専門家をよこすよう進言したさ」[lrcm]
+「当然、俺…というかこの神社だってただ手をこまねいていたわけじゃない。
+[hop_revert name=katura time=400]
+俺たちの手に負える相手だとは思えなかったから、本土に連絡して専門家をよこすよう進言したさ」[lrcm]
 #【坂本宗介】
 「専門家？」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[hop_revert name=katura time=500]
 #【桂慎太郎】
 「お前たち風に言うならば、霊媒師・退魔師…かな？まあ、そういったことを生業としている方々さ」[lrcm]
 #【石田修星】
 「霊媒師に退魔師!?フィクションの中だけの存在かと思ってたよ」[lrcm]
+[chara_mod name='katura' face='def' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「先ほど『言ったところで信じまい』と申し上げた意味も分かるでしょう？霊媒師だとか退魔師だとか、そういう言葉は今じゃどうしても陳腐に聞こえてしまうものですから」[lrcm]
 #【石田修星】
 「まあ、ここまで来て揚げ足をとるような真似はしないよ。先を続けてくれ」[lrcm]
 #【桂慎太郎】
-「ありがたい。…ところが、我々の応援要請は受理されなかった。今こちらに送れる専門家はいないというのだ」[lrcm]
+「ありがたい。
+[chara_mod name='katura' face='majime' time='0']
+[hop_revert name=katura time=400]
+…ところが、我々の応援要請は受理されなかった。今こちらに送れる専門家はいないというのだ」[lrcm]
 #【石田修星】
 「なんだよそりゃ…霊能者の方も人手が足りてないのか？」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「それも可能性としては当然ありえます。少なくとも奈良時代からいるような怪異を退治できるような専門家は少ない。昔に比べ怪異が格段に減っているとはいえ、祓いは一朝一夕で終わるものではありませんし。ですが…」[lrcm]
 #【石田修星】
 「ですが？」[lrcm]
+[chara_mod name='katura' face='def' time='0']
+[hop_revert name=katura time=500]
 #【桂慎太郎】
 「他の可能性も考えられるのです。例えば…」[lrcm]
 #【坂本宗介】
 「…怪異…“マガツヒサ”を退治されたくない何者かが邪魔をしている、とか？」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[manpu sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
-「さすがはお前だな、その通りだ。無論、これも憶測の一部にすぎないがな」[lrcm]
+「さすがはお前だな、その通りだ。
+[hop_revert name=katura time=400]
+無論、これも憶測の一部にすぎないがな」[lrcm]
 #【石田修星】
 「おいおい、どういうことだ？人命を脅かす化物を敢えて見逃そうとしてるヤツがいるって？」[lrcm]
 #【坂本宗介】
 「可能性の一つってだけです」[lrcm]
 #【坂本宗介】
 本土への要請を握りつぶせるような人間などそうはいないだろう。俺としてもそんな可能性は考えたくなかった。[lrcm]
+[chara_mod name='katura' face='majime' time='0']
 #【桂慎太郎】
-「それで…これからどうするつもりなのだ？」[lrcm]
+「それで…
+[manpu sound="" layer='0' name='katura' type='hatena' x='50' y='50' width='80']
+これからどうするつもりなのだ？」[lrcm]
 #【坂本宗介】
 「どうするって？」[lrcm]
+[hop_revert name=katura time=400]
 #【桂慎太郎】
-「マガツヒサの情報を手に入れた後、お前たちが何をするかという話さ。まさかとは思うが…自分たちでなんとかしようとでも思っているのか？」[lrcm]
+「マガツヒサの情報を手に入れた後、お前たちが何をするかという話さ。まさかとは思うが…
+[chara_mod name='katura' face='oko' time='0']
+自分たちでなんとかしようとでも思っているのか？」[lrcm]
 #【坂本宗介】
 「…桂なら分かるだろ？長い付き合いなんだから」[lrcm]
+[chara_mod name='katura' face='majime' time='0']
+[hShake name=katura time=900]
 #【桂慎太郎】
 「…分かりたくはなかったよ。長い付き合いの友人がこれだけ阿呆だったとは」[lrcm]
 #【坂本宗介】
 「……」[lrcm]
+[chara_mod name='katura' face='oko' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
-「この世のものかも分からない相手なのだぞ？人間を躊躇なく食い荒らす怪物なのだぞ？本職の俺たちですら手を出しあぐねているヤツなのだぞ？何の力も持たないお前がそれを相手取って何ができるというのだ!?」[lrcm]
+「この世のものかも分からない相手なのだぞ？人間を躊躇なく食い荒らす怪物なのだぞ？本職の俺たちですら手を出しあぐねているヤツなのだぞ？
+[manpu sound="" layer='0' name='katura' type='nami2' x='50' y='50' width='80']
+何の力も持たないお前がそれを相手取って何ができるというのだ!?」[lrcm]
 #【坂本宗介】
 厳しい言葉だったが、侮蔑の響きも、怒りの響きもなかった。[lrcm]
 #【坂本宗介】
 「だったらなんで俺たちに史料を見せてくれるんだ？最初から追い返せばよかっただろうに」[lrcm]
+[vShake name=katura time=400]
+[manpu sound="" layer='0' name='katura' type='muka' x='50' y='50' width='80']
 #【桂慎太郎】
 「腹立たしいのはそこだ！付き合いが長いからこそわかる。俺が史料を見せようが見せまいが、お前は…お前たちは、怪物に背を向けるような選択はすまい。実に阿呆だ、愚かだ！命を溝に捨てるようなものだ。なのに…」[lrcm]
 #【坂本宗介】
 「…そうだな。俺たちは逃げない。目は背けられない。“他人事”じゃないからな」[lrcm]
 #【桂慎太郎】
-「――ッ、バカ者め！だからといって、人間には限界がある！どうしてそこまで…！」[lrcm]
+「――ッ、バカ者め！
+[manpu sound="" layer='0' name='katura' type='nami2' x='50' y='50' width='80']
+だからといって、人間には限界がある！どうしてそこまで…！」[lrcm]
 #【坂本宗介】
 「椿が」[lrcm]
+[chara_mod name='katura' face='majime' time='0']
+[manpu sound="" layer='0' name='katura' type='bikkuri' x='50' y='50' width='80']
 #【桂慎太郎】
 「！」[lrcm]
 #【坂本宗介】
 「泣いたんだよ。椿が。母親を失ってから、何があっても泣かなくなった椿が」[lrcm]
+[hop_revert name=katura time=500]
 #【桂慎太郎】
 「お前は…」[lrcm]
 #【坂本宗介】
@@ -216,26 +279,39 @@
 （こいつ…何か、雰囲気が…）[lrcm]
 #【坂本宗介】
 「お前だったらそんなことが許せるか？俺には…たとえ得体の知れないバケモノを相手にしなきゃいけなくなったとしても、椿を泣かせたままにはできない」[lrcm]
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「……」[lrcm]
 #【坂本宗介】
-桂はしばし目を閉じ、心を落ち着けているようだった。やがて目を開けた桂は、苦虫をたっぷり百匹は噛み潰したような顔をしていた。[lrcm]
+桂はしばし目を閉じ、心を落ち着けているようだった。
+[chara_mod name='katura' face='oko' time='0']
+やがて目を開けた桂は、苦虫をたっぷり百匹は噛み潰したような顔をしていた。[lrcm]
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「…はあ。結局俺も…お前を止められるとは思っていなかったのだ。阿呆はお互い様だな」[lrcm]
 #【坂本宗介】
 「ありがとう、桂」[lrcm]
+[chara_mod name='katura' face='majime' time='0']
+[manpu sound="" layer='0' name='katura' type='hatena' x='50' y='50' width='80']
 #【桂慎太郎】
 「何がだ？礼を言われるようなことは…」[lrcm]
 #【坂本宗介】
 「最初からあっさり史料を渡してくれたのは、俺を止められないと分かったうえで、俺の危険を減らそうとしてくれた結果だろ？どうせ止まらないのなら、少しでも助けになれるよう計らってくれたわけだ」[lrcm]
 #【桂慎太郎】
-「…当たり前だろう。黙って見過ごすわけにもいかん」[lrcm]
+「…当たり前だろう。
+[chara_mod name='katura' face='hera' time='0']
+[hop_revert name=katura time=400]
+黙って見過ごすわけにもいかん」[lrcm]
 #【坂本宗介】
 「はは。…さて、俺たちはもう行くよ。重ね重ね色々ありがとうな、桂」[lrcm]
+[chara_mod name='katura' face='majime' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「無事を祈る。俺も、もっと本土に助力を乞えないか父に働きかけてみるさ」[lrcm]
 #【坂本宗介】
 「ああ。…また、学校でな」[lrcm]
+[chara_mod name='katura' face='hera' time='0']
+[hop_revert name=katura time=400]
 #【桂慎太郎】
 「うむ」[lrcm]
 [scene_change]

@@ -54,13 +54,13 @@
 #【坂本宗介】
 「幼馴染だからってなんでも許されると思うなよ…。で、用件は？」[lrcm]
 [chara_mod name='tubaki' face='Ssmile' time='0']
-[manpu layer='0' name=tubaki type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name=tubaki type='oya' x='50' y='50' width='80']
 #【夕陽椿】
 「この前借りた本を返しに来たの。ありがとうね」[lrcm]
 #【坂本宗介】
 「あ、ああ。だが返すタイミングなんて今じゃなくても…」[lrcm]
 [tilt layer=0 time=1000]
-[manpu layer='0' name=tubaki type='hatena' x='50' y='50' width='80']
+[manpu sound="" layer='0' name=tubaki type='hatena' x='50' y='50' width='80']
 #【夕陽椿】
 「後じゃなくたっていいでしょ？」[lrcm]
 #【坂本宗介】
@@ -89,7 +89,7 @@
 #【坂本宗介】
 「もう少し俺の平穏を考えてくれると嬉しいんだが。そろそろカミソリが仕込まれた封筒とか下駄箱にぶち込まれてもおかしくないぞ」[lrcm]
 [chara_mod name='tubaki' face='Sgiggle' time='0']
-[manpu layer='0' name=tubaki type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name=tubaki type='oya' x='50' y='50' width='80']
 #【夕陽椿】
 「可愛い幼馴染がいるってことはそれだけで罪なんだよ」[lrcm]
 #【坂本宗介】
@@ -111,7 +111,7 @@
 [chara_mod name='tubaki' face='Scry' time='0']
 「むう…。
 [chara_mod name='tubaki' face='Sgiggle' time='0']
-[manpu layer='0' name=tubaki type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name=tubaki type='oya' x='50' y='50' width='80']
 [wait time=1000]
 あ、借りてた本は面白かったよ！やっぱり宗介のおすすめに外れはないね」[lrcm]
 #【坂本宗介】
@@ -119,7 +119,7 @@
 #【坂本宗介】
 …なんだかんだ、自分が好きな本をコイツが気に入ってくれるのは悪い気はしない。読書家冥利に尽きるというものだ。[lrcm]
 [chara_mod name='tubaki' face='Sdef' time='0']
-[manpu layer='0' name=tubaki type='hatena' x='50' y='50' width='80']
+[manpu sound="" layer='0' name=tubaki type='hatena' x='50' y='50' width='80']
 [tilt layer=0 time=1000]
 #【夕陽椿】
 「また何か読ませてくれる？」[lrcm]
@@ -150,7 +150,7 @@
 #【坂本宗介】
 「飽きるもんか。この世にはまだまだ俺が読めてない本がいっぱい転がってるって言うのに」[lrcm]
 [chara_mod name='tubaki' face='Sgiggle' time='0']
-[manpu layer='0' name=tubaki type='waiwai' x='130' y='70' width='80']
+[manpu sound="" layer='0' name=tubaki type='waiwai' x='130' y='70' width='80']
 #【夕陽椿】
 「そんなに毎日読んでたら、いずれ読む本なくなっちゃいそうだけどね」[lrcm]
 #【坂本宗介】
@@ -166,7 +166,7 @@
 #【夕陽椿】
 「そうみたいだね。あんなに警察の人が集まってるの、初めて見たかも。
 [chara_mod name='tubaki' face='Sgiggle' time='0']
-[manpu layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
 [hop time=300]
 …あ！お父さんだ！お父さーん！」[lrcm]
 #【夕陽翔】
@@ -184,7 +184,7 @@
 #【夕陽翔】
 「詳しくは言えないんだが、人死にだ。夜にはニュースになってるだろう」[lrcm]
 [chara_mod name='tubaki' face='Ssurprised' time='0']
-[manpu layer='0' name='tubaki' type='bikkuri' x='40' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='bikkuri' x='40' y='50' width='80']
 #【夕陽椿】
 「人死に、って…」[lrcm]
 #【夕陽翔】
@@ -248,7 +248,7 @@
 「あ、あの…」[lrcm]
 #【坂本宗介】
 「どうした？」[lrcm]
-[manpu layer='0' name='tubaki' type='ase2' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='ase2' x='50' y='50' width='80']
 #【夕陽椿】
 「ごめんね、お世話になっちゃって…」[lrcm]
 #【坂本宗介】

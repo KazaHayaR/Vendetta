@@ -26,7 +26,7 @@
 ;図書館 bg
 [scene_change situation="図書館" bgstorage="図書館.jpg"]
 [chara_show name="toki" face="def" top="30" width=500]
-[manpu layer='0' name='toki' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='toki' type='oya' x='50' y='50' width='80']
 #【時任勢一】
 「縁があったらまた会おうねとは言ったけど、
 [chara_mod name='toki' face='smile' time='0']
@@ -55,7 +55,7 @@
 #【坂本宗介】
 「この島の伝説…俺も、軽い知識だけはありますけど」[lrcm]
 [chara_mod name='toki' face='smile2' time='0']
-[manpu layer='0' name='toki' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='toki' type='oya' x='50' y='50' width='80']
 #【時任勢一】
 「博識だね。今やこの島に住んでる人間でも、知ってる人はだいぶ少なくなってきているみたいだけれど」[lrcm]
 #【坂本宗介】
@@ -210,7 +210,7 @@
 「ただいまー」[lrcm]
 [chara_show name="tubaki" face="giggle" top="100"]
 [hop name=tubaki time=300]
-[manpu layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='oya' x='50' y='50' width='80']
 #【夕陽椿】
 「おかえり、宗介」[lrcm]
 [chara_show name="yuragi" face="emi_m" top="200"]
@@ -279,7 +279,7 @@
 #【坂本宗介】
 つけっぱなしだったテレビが吐き出した知らせが、穏やかだった俺たちの空気を蹂躙する。
 [chara_mod name='tubaki' face='surprised' time='0']
-[manpu layer='0' name='tubaki' type='bikkuri' x='50' y='50' width='80']
+[manpu sound="" layer='0' name='tubaki' type='bikkuri' x='50' y='50' width='80']
 椿の表情がこわばったのが、見なくても分かった。[lrcm]
 #【夕陽椿】
 「また…犠牲者が…」[lrcm]
