@@ -1,6 +1,7 @@
 *ueno_1
 ;序章背景は真っ黒[lrcm]
-[start_template bgstorage="book.jpg" bgmstorage="失った悲しみ_意気消沈.ogg" title="第一章"]
+[start_template bgstorage="book.jpg" title="第一章"]
+[fadeinbgm storage="失った悲しみ_意気消沈.ogg" time="1000" loop="true"]
 [set_default_message_window]
 ;第一章
 #

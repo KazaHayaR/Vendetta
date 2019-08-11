@@ -1,5 +1,6 @@
 *ueno_4
-[start_template title="第四章" bgmstorage="失った悲しみ_意気消沈.ogg"]
+[start_template title="第四章"]
+[fadeinbgm storage="失った悲しみ_意気消沈.ogg" time="1000" loop="true"]
 [set_default_message_window]
 ;第四章[lrcm]
 ;【背景は真っ黒】

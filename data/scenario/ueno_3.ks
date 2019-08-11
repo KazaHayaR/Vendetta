@@ -1,6 +1,7 @@
 
 *ueno_3
-[start_template title="第三章" bgmstorage="失った悲しみ_意気消沈.ogg"]
+[start_template title="第三章"]
+[fadeinbgm storage="失った悲しみ_意気消沈.ogg" time="1000" loop="true"]
 [set_default_message_window]
 ;第三章[lrcm]
 #【？】
@@ -141,7 +142,7 @@
 そう言って時任さんは笑顔で手を振りつつ、積み上げられた本を抱えて去っていった。…また会えるといいな。[lrcm]
 
 ;郊外・森近く bg
-[scene_change bgmstorage="music.ogg" situation="郊外" bgstorage="郊外.jpg" bgmstorage="このままでは危ない.ogg"]
+[scene_change situation="郊外" bgstorage="郊外.jpg" bgmstorage="このままでは危ない.ogg"]
 #【後輩刑事】
 「翔さーん、もう帰りましょうよー。森は今猟友会の人たちと協力して手掛かりを探してるみたいですし、事件現場からは離れてるし…」[lrcm]
 #【夕陽翔】
@@ -194,7 +195,7 @@
 #【後輩刑事】
 「承知したっす！」[lrcm]
 ;警察署 bg
-[scene_change bgmstorage="music.ogg" situation="警察署" bgstorage="office.jpg"]
+[scene_change bgmstorage="このままでは危ない.ogg" situation="警察署" bgstorage="office.jpg"]
 #【狼狽した男】
 「だから！自分でも信じられないんですって！」[lrcm]
 #【後輩刑事】
