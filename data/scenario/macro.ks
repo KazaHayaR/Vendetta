@@ -114,7 +114,7 @@
 [clearfix]
 [ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="185" y="480" color="0xffffff" edge="0x000000"]
 [chara_config ptext="chara_name_area"]
-[deffont size="26" color="0xffffff" edge="0x000000" face="web_noto_el"]
+[deffont size="26" color="0xffffff" edge="0x000000" face="web_noto_r"]
 [resetfont]
 ; @maki: tyrano.cssに書くと読み込み時おかしな挙動をするためここに。
 ; 			 .message0_fore>.message_innerは別のmessage_windowマクロから移動させるときに挙動がおかしくなるため分からせしてます。
