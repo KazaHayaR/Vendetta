@@ -4,7 +4,6 @@
 ;マクロ呼出し
 [call storage="macro.ks"]
 
-
 *plolog
 
 ;古き良き住宅の中or空の下⇢少しずつpan
@@ -12,6 +11,7 @@
 [camera layer="base" zoom="2" time="1" y="100" x="100" ease_type="linear"]
 [mask_off effect="fadeOut"]
 [camera layer="base" wait="false" zoom="2" time="50000"  y="-100" x="-100" ease_type="linear"]
+
 [fadeinbgm storage="mornig.ogg" time="1000" loop="true"]
 #？？？
 「そうだ！　『星降り』を3人で見に行きましょう！」[lrcm]
@@ -110,7 +110,7 @@
 
 [bgmovie storage="hosihuri.webm"]
 [image  layer="1" time="1" storage="saku.png" top="607" visible="true"]
-[image  layer="2" time="1" storage="logo.png" top="64" left="360" width="560" height="318" visible="true"]
+[image  layer="2" time="1" storage="logo.png" top="64" left="340" width="560" height="318" visible="true"]
 
 [locate x="538" y="500"]
 [button name="startbutton" graphic="button/Title_Start.png" width="197" height="55" target="*setup"]
@@ -138,4 +138,4 @@
 [layopt layer="message0" visible="true"]
 [chara_config ptext="chara_name_area"]
 
-@jump storage=1-1.ks target=*1_1
+@jump storage=1_1.ks target=*1_1
