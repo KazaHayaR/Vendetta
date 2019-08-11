@@ -1,5 +1,5 @@
 *ueno_4
-[start_template title="第四章"]
+[start_template title="第四章" bgmstorage="失った悲しみ_意気消沈.ogg"]
 [set_default_message_window]
 ;第四章[lrcm]
 ;【背景は真っ黒】
@@ -26,7 +26,7 @@
 
 ;カフェ[lrcm]
 ;カフェ昼 bg
-[scene_change situation="カフェ" bgstorage="喫茶店.png"]
+[scene_change bgmstorage="music.ogg" situation="カフェ" bgstorage="喫茶店.png"]
 [chara_show name="katura" face="def" top=50]
 [hop name=katura time=400]
 #【桂慎太郎】
@@ -104,7 +104,7 @@
 
 ;坂本家
 ;居間夜 bg
-[scene_change situation="坂本家" bgstorage="living_evening.jpg"] 
+[scene_change bgmstorage="music.ogg" situation="坂本家" bgstorage="living_evening.jpg"] 
 ;smile
 [chara_show name="tubaki" face="smile" top="100"]
 #【坂本宗介】
@@ -185,7 +185,7 @@
 #【坂本宗介】
 しかし、それから数日たっても、翔さんが帰ってくることはなかった。[lrcm]
 ;玄関bg?
-[scene_change bgstorage="living_noon.jpg"]
+[scene_change bgmstorage="music.ogg" bgstorage="living_noon.jpg"]
 #【坂本宗介】
 「…行ってきます」[lrcm]
 [chara_show name="tubaki" face="cry" top="100" width=400]
@@ -201,7 +201,7 @@
 心配をかけているのは分かっている。だが、それでも俺には行かなければならない場所があった。[lrcm]
 
 
-[scene_change bgstorage="sky.png"]
+[scene_change bgmstorage="music.ogg" bgstorage="sky.png"]
 #【坂本宗介】
 「ここか…」[lrcm]
 ;【呼び鈴の音】
@@ -218,7 +218,7 @@
 #【坂本宗介】
 「お邪魔します…」[lrcm]
 ;アパート部屋
-[scene_change situation="石田家" bgstorage="アパート.jpg"]
+[scene_change bgmstorage="music.ogg" situation="石田家" bgstorage="アパート.jpg"]
 #【坂本宗介】
 足を踏み入れたアパートの一室。床には飲み終わったペットボトルと脱ぎ散らかされた衣服が散乱していた。元々汚かったのか、ここ数日で荒れたのかは分からない。[lrcm]
 #【坂本宗介】

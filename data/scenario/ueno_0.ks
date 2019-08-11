@@ -1,6 +1,6 @@
 *ueno_0
 ;序章背景は真っ黒[lrcm]
-[start_template]
+[start_template bgmstorage="失った悲しみ_意気消沈.ogg"]
 [set_default_message_window]
 [wait time=500]
 #【？】

@@ -1,6 +1,6 @@
 *ueno_1
 ;序章背景は真っ黒[lrcm]
-[start_template bgstorage="book.jpg" title="第一章"]
+[start_template bgstorage="book.jpg" bgmstorage="失った悲しみ_意気消沈.ogg" title="第一章"]
 [set_default_message_window]
 ;第一章
 #
@@ -14,7 +14,7 @@
 #
 「1923年7月 還ノ島島内新聞より抜粋」[lrcm]
 ;教室
-[scene_change bgstorage="room.jpg" situation="教室"]
+[scene_change bgstorage="room.jpg" situation="教室" bgmstorage="いつもの日常-dova.ogg"]
 #【坂本宗介】
 ぱらり、と俺はページをめくる。読んでいるのはよくあるテンプレの冒険活劇。主人公が格好良く啖呵を切って悪役にとどめを刺すシーンだ。[lrcm]
 #【坂本宗介】
@@ -142,7 +142,7 @@
 
 
 ;放課後
-[scene_change bgstorage="通学路夕方.jpg" situation="放課後"]
+[scene_change bgstorage="通学路夕方.jpg" situation="放課後" bgmstorage="music.ogg"]
 [chara_show name="tubaki" face="Sdef" top="100"]
 [tilt layer=0 time=1000]
 #【夕陽椿】
@@ -229,7 +229,7 @@
 「了解っす。…身元の方はあの分だと時間かかりそうっすね」[lrcm]
 ;坂本家
 
-[scene_change situation="坂本家" bgstorage="living_evening.jpg"]
+[scene_change situation="坂本家" bgstorage="living_evening.jpg" bgmstorage="music.ogg"]
 #【アナウンサー】
 「死亡が確認されたのは、その家に住んでいた松岡洋二さんとその妻・みのりさん。警察は、遺体の状況から見て何か大きな動物による食害事件ではないかとして捜査本部を…」[lrcm]
 #【坂本宗介】
@@ -288,7 +288,7 @@
 #【坂本宗介】
 椿だぞ？幾度となく俺の邪魔をしてはけらけら笑っていたあの椿だ。今更意識するなんてそんなことが起こるはずがない。…起こってはならない。危なくなったら翔さんの顔を思い浮かべることにしよう。[lrcm]
 ;警察署
-[scene_change situation="警察署" bgstorage="office.jpg"]
+[scene_change bgmstorage="このままでは危ない.ogg" situation="警察署" bgstorage="office.jpg"]
 #【夕陽翔】
 「やはり妙だな…。なぜあの夫婦だけが襲われた？下手人が森から現れたとして、森の周辺にある民家を襲わずいきなり街まで出てくるものか？そもそも目撃証言の一つもないのは…」[lrcm]
 #【後輩刑事】

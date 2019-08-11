@@ -1,7 +1,7 @@
 ;第五章[lrcm]
 ;#【背景は真っ黒】
 *ueno_5
-[start_template title="第五章"]
+[start_template title="第五章" bgmstorage="失った悲しみ_意気消沈.ogg"]
 [set_default_message_window]
 #【？】
 「科学」と「宗教」――もっと詳しく言うなら「信仰」は決して相容れないものである、と言っていたのは中学の教師だっただろうか。[lrcm]
@@ -12,7 +12,7 @@
 
 ;図書館
 ;図書館bg
-[scene_change situation="図書館" bgstorage="図書館.jpg"]
+[scene_change bgmstorage="ボナペティ_カフェ案_dova.ogg" situation="図書館" bgstorage="図書館.jpg"]
 #【石田修星】
 「それでやってきたのが図書館ねえ…。動物図鑑でも探しに来たのか？」[lrcm]
 #【坂本宗介】
@@ -99,7 +99,7 @@
 「正直俺もです。でも、相手がこの世のものじゃないのなら、そういうのに詳しそうなヤツから話を聞いてみるしかないでしょう」[lrcm]
 
 ;還ノ島神社
-[scene_change situation="還ノ島神社" bgstorage="skche神社.jpg"]
+[scene_change situation="還ノ島神社" bgstorage="skche神社.jpg" bgmstorage="神域.ogg"]
 [chara_show name="katura" face="majime" top=50]
 [hop_revert name=katura time=400]
 #【桂慎太郎】
@@ -330,7 +330,7 @@
 
 ;石田家
 ;アパート夜
-[scene_change situation="石田家" bgstorage="アパート.jpg"]
+[scene_change bgmstorage="music.ogg" situation="石田家" bgstorage="アパート.jpg"]
 #【石田修星】
 「経験済み、か…」[lrcm]
 #【石田修星】
@@ -350,7 +350,7 @@
 ;翌日図書館
 ;図書館
 
-[scene_change situation="翌日　図書館" bgstorage="図書館.jpg"]
+[scene_change bgmstorage="ボナペティ_カフェ案_dova.ogg" situation="翌日　図書館" bgstorage="図書館.jpg"]
 #【坂本宗介】
 「…良かった。やっぱりいらっしゃいましたか」[lrcm]
 [chara_show name="toki" face="smile2" top="30" width=500]

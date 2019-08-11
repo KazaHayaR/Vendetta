@@ -1,7 +1,7 @@
 *ueno_2
 ;第二章[lrcm]
 ;【背景は真っ黒】
-[start_template title="第二章"]
+[start_template title="第二章"  bgmstorage="失った悲しみ_意気消沈.ogg"]
 [set_default_message_window]
 #【？】
 幼かった私は、母が自分の分の食事まで私に分け与えてくれていることを当然のことだと認識していたし、それ故彼女を慮ることもしなかった。[lrcm]
@@ -27,7 +27,7 @@
 「還ノ島伝説（晴明社文庫）より抜粋」[lrcm]
 ;坂本家
 
-[scene_change situation="坂本家" bgstorage="heya.jpg"]
+[scene_change bgmstorage="music.ogg" situation="坂本家" bgstorage="heya.jpg"]
 #【坂本宗介】
 「む…ううん…」[lrcm]
 [chara_show name="tubaki" face="def" top="50" width=600 reflect=true]
@@ -85,7 +85,7 @@
 #【坂本宗介】
 そんなやりとりをしながら朝食をかきこみに向かった俺たちを待っていたのは、更なる凶報だった。[lrcm]
 ;居間
-[scene_change bgstorage="living_noon.jpg"]
+[scene_change bgmstorage="music.ogg" bgstorage="living_noon.jpg"]
 #【アナウンサー】
 「今日未明に発見された二つの遺体は、現場に落ちていた遺留物から市内に住む高校三年生たちのものではないかと見て警察は捜査を進めています。還ノ島では昨日も松岡さん一家の遺体が発見されたばかりで…」[lrcm]
 #【坂本宗介】
@@ -144,7 +144,7 @@
 そう。俺たちがこんなことを考えたところで意味はない。こういうのは警察か猟友会の領分だ。俺たちは微妙な雰囲気のまま朝食を済ませると、各々学校へ向かった。[lrcm]
 
 ;学校
-[scene_change bgstorage=room.jpg]
+[scene_change bgmstorage="いつもの日常-dova.ogg" bgstorage=room.jpg]
 [chara_show name="tubaki" face="Ssurprised" top="100"]
 [manpu sound="" layer='0' name='tubaki' type='bikkuri' x='40' y='50' width='80']
 [hop name=tubaki time=300]
@@ -248,7 +248,7 @@
 俺にできることは、災害のごとき幼馴染たちの相手をしながら事件解決を祈ることだけらしい。ちくしょうめ。[lrcm]
 
 ;放課後 通学路夕方
-[scene_change situation="放課後" bgstorage="通学路夕方.jpg"]
+[scene_change bgmstorage="music.ogg" situation="放課後" bgstorage="通学路夕方.jpg"]
 #【坂本宗介】
 「やっぱり、事件の経過によってはしばらく休校になるのもあり得るらしいな。職員室で先生たちがひそひそと話してた」[lrcm]
 [chara_show name="tubaki" face="Scry" top="100"]
@@ -389,7 +389,7 @@
 言葉を交わして別れる俺たち。まだドキドキ言っている胸を押さえつつ、俺はなんともいえない顔をして帰路についた。[lrcm]
 
 ;【市役所】bg
-[scene_change situation="市役所" bgstorage="警察署.jpg"]
+[scene_change bgmstorage="music.ogg" situation="市役所" bgstorage="警察署.jpg"]
 #【坂本宗介】
 「父さん、少しやつれてたな…。仕事人間だから本人は平気なつもりなんだろうけど」[lrcm]
 ;【時任勢一の立ち絵登場】
@@ -486,7 +486,7 @@
 「さて、帰るか…」[lrcm]
 ;第一の事件・現場
 ;夜の街 bg
-[scene_change situation="第一の事件・現場" bgstorage="夜道.jpg"] 
+[scene_change bgmstorage="このままでは危ない.ogg" situation="第一の事件・現場" bgstorage="夜道.jpg"] 
 #【後輩刑事】
 「翔さーん、もう戻りましょうよ。鑑識が調べても何も出てこなかったんですから」[lrcm]
 #【夕陽翔】

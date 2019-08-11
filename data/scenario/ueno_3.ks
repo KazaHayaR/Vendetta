@@ -1,6 +1,6 @@
 
 *ueno_3
-[start_template title="第三章"]
+[start_template title="第三章" bgmstorage="失った悲しみ_意気消沈.ogg"]
 [set_default_message_window]
 ;第三章[lrcm]
 #【？】
@@ -24,7 +24,7 @@
 「1965年8月 還ノ島島内新聞より抜粋」[lrcm]
 
 ;図書館 bg
-[scene_change situation="図書館" bgstorage="図書館.jpg"]
+[scene_change bgmstorage="ボナペティ_カフェ案_dova.ogg" situation="図書館" bgstorage="図書館.jpg"]
 [chara_show name="toki" face="def" top="30" width=500]
 [manpu sound="" layer='0' name='toki' type='oya' x='50' y='50' width='80']
 #【時任勢一】
@@ -141,7 +141,7 @@
 そう言って時任さんは笑顔で手を振りつつ、積み上げられた本を抱えて去っていった。…また会えるといいな。[lrcm]
 
 ;郊外・森近く bg
-[scene_change situation="郊外" bgstorage="郊外.jpg"]
+[scene_change bgmstorage="music.ogg" situation="郊外" bgstorage="郊外.jpg" bgmstorage="このままでは危ない.ogg"]
 #【後輩刑事】
 「翔さーん、もう帰りましょうよー。森は今猟友会の人たちと協力して手掛かりを探してるみたいですし、事件現場からは離れてるし…」[lrcm]
 #【夕陽翔】
@@ -194,7 +194,7 @@
 #【後輩刑事】
 「承知したっす！」[lrcm]
 ;警察署 bg
-[scene_change situation="警察署" bgstorage="office.jpg"]
+[scene_change bgmstorage="music.ogg" situation="警察署" bgstorage="office.jpg"]
 #【狼狽した男】
 「だから！自分でも信じられないんですって！」[lrcm]
 #【後輩刑事】
@@ -205,7 +205,7 @@
 「本当なんですって！見たんですよ！半透明の怪物が人を襲ってるのを!!」[lrcm]
 
 ;坂本家 居間夜 bg
-[scene_change situation="坂本家" bgstorage="living_evening.jpg"]
+[scene_change bgmstorage="music.ogg" situation="坂本家" bgstorage="living_evening.jpg"]
 #【坂本宗介】
 「ただいまー」[lrcm]
 [chara_show name="tubaki" face="giggle" top="100"]
@@ -293,7 +293,7 @@
 のどかな島で始まった事件が他人事ではなくなってきているような気配を、俺は肌で感じ始めていた。…それでも、危機感と呼べるほどのレベルではなかったのだが。[lrcm]
 
 ;教室
-[scene_change situation="教室" bgstorage="room.jpg"]
+[scene_change bgmstorage="いつもの日常-dova.ogg" situation="教室" bgstorage="room.jpg"]
 #【担任教師】
 「えー、警察からの要請で明日からしばらく休校になる。各自、極力外には出ずに自宅学習に励むこと！」[lrcm]
 #【生徒A】
@@ -356,7 +356,7 @@
 この後、どんな運命が待ち受けているのか。それを知っていたら、俺はこんなに呑気ではいられなかったに違いない。[lrcm]
 
 ;森
-[scene_change situation="森" bgstorage="郊外.jpg"]
+[scene_change situation="森" bgstorage="郊外.jpg" bgmstorage="このままでは危ない.ogg"]
 #【後輩刑事】
 「翔さん、あの証言…どこまで信用できますかね」[lrcm]
 #【夕陽翔】
@@ -425,7 +425,7 @@
 「んなことしたら後でぶっ飛ばされそうなんでやめときますよ」[lrcm]
 
 ;morinaka? bg
-[scene_change bgstorage="山中.jpg"]
+[scene_change bgstorage="山中.jpg" bgmstorage="このままでは危ない.ogg"]
 #【夕陽翔】
 「進めども進めども毒ガスのどの字もないな」[lrcm]
 #【後輩刑事】
