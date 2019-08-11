@@ -114,7 +114,7 @@
 [clearfix]
 [ptext name="chara_name_area" layer="message0" zindex="102" size="26" x="185" y="480" color="0xffffff" edge="0x000000"]
 [chara_config ptext="chara_name_area"]
-[deffont size="26" color="0xffffff" edge="0x000000" face="web_noto_m"]
+[deffont size="26" color="0xffffff" edge="0x000000" face="web_noto_l"]
 [resetfont]
 ; @maki: tyrano.cssに書くと読み込み時おかしな挙動をするためここに。
 ; 			 .message0_fore>.message_innerは別のmessage_windowマクロから移動させるときに挙動がおかしくなるため分からせしてます。
@@ -279,7 +279,6 @@ $(".message0_fore>.message_inner").css({
 
 ;bgstorage,bgmstorage
 [macro name="start_template"] 
-[deffont facce=web_noto_m]
 ;キャラセットアップ
 ;【ユラギ】
 [chara_new name="yuragi" storage="chara/yuragi/C2-1.png" jname="ユラギ" width="350"]
