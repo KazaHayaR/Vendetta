@@ -11,6 +11,7 @@
 そして、終わりの見えない再試行の果て、遂に我々は辿り着いた。私たちの世界の法則を丸ごと塗り替える発見。なにものにも転用しうる新たな道。[lrcm]
 #【？】
 我々は辿り着いた。辿り着いた、はずだった。[lrcm]
+[bg layer=base storage="book.jpg" time="1000"]
 #
 『山中から遺体発見　行方不明の60代男性か　遺体には無数の咬み傷』[lrcm]
 #
@@ -422,9 +423,7 @@
 「嫌なら来なくていいぞ」[lrcm]
 #【後輩刑事】
 「んなことしたら後でぶっ飛ばされそうなんでやめときますよ」[lrcm]
-*test
-[start_template]
-[set_default_message_window]
+
 ;morinaka? bg
 [scene_change bgstorage="山中.jpg"]
 #【夕陽翔】
