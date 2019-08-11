@@ -38,7 +38,7 @@ TYRANO.kag.menu.displayLoad();
 ;ロールボタン等の配置
 [role_open]
 
-;@jump storage=plolog_hosi.ks target=*plolog
-;@jump storage="2_2.ks" target=*2_2
+@jump storage=plolog_hosi.ks target=*plolog
+;@jump storage="epilogue.ks" target=*epilogue
 ;@jump storage="test.ks" target=*test
-@jump storage="senden.ks" target=*senden
+;@jump storage="senden.ks" target=*senden

@@ -21,10 +21,9 @@
 [chara_face name="yuragi" face="emi" storage="/chara/yuragi/C1-8.png"]
 [chara_face name="yuragi" face="terewara" storage="/chara/yuragi/C1-9.png"]
 
-[bg layer=base storage=morinaka.png time="1"]
+[bg layer=base storage=ログハウス.png time="1"]
 [mask_off effect="fadeOut"]
 [fadeinbgm storage="神域.ogg" time="1000" loop="true"]
-
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 
 #
@@ -32,27 +31,27 @@
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
 「……封妖刀『軛』、それに『演筒』一式、うわ『環幣』とかこれ蔵に眠ってたやつか？　火薬が湿気てないか？」[lrcm]
-#【ハジメ】
+#【一】
 「いや、作り方の書物を見ながら俺が作った。攻撃性の高い妖物なんて見たこと無いから動作確認はできてないが……」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「そうなのか！　いやぁだが、全部よくできてる。ハジメは器用だなぁ」[lrcm]
-#【ハジメ】
+#【一】
 「……必死だっただけだよ」[lrcm]
 
 #
 谷垣さんが襲われてから一夜明け、俺は大荷物を持ってユラギの家を訪れていた。[lrcm]
 自作の祓具と蔵にあった骨董品を持ち込み、妖物に対抗できる効のかユラギに確かめてもらっている。[lrcm]
 
-#【ハジメ】
+#【一】
 「……これだけ準備したとしても、あいつの攻撃を防げるかどうかわからないからな……」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
-「そうだなぁ。そもそも道具が扱えても、降山の妖物退治は狩りの形態に近い」
+「そうだなぁ。そもそも道具が扱えても、降山の妖物退治は狩りの形態に近い」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 「訓練というか、実際に戦えた人間から教えを受けなきゃあっという間に倒されてしまうだろうなぁ……」[lrcm]
-#【ハジメ】
+#【一】
 「……だろうな」[lrcm]
 #
 その必死さも昨日の時点で無に返したわけだが。[lrcm]
@@ -63,7 +62,7 @@
 [manpu layer=0 name=yuragi type=tameiki x="75" y="0" width="80"]
 #【ユラギ】
 「うーん。だがまあ、仕方ない……アイツら等の手を借りるのは立場上気がひけるんだが……」[lrcm]
-#【ハジメ】
+#【一】
 「あいつら……？」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
@@ -73,7 +72,7 @@
 そういうとユラギはちらり、とこちらを見る。[lrcm]
 そして何故か顔を赤くしてそっぽを向くと。[lrcm]
 
-[manpu layer=0 name=yuragi type=ase x="150" y="70" width="80"]
+[manpu layer=0 name=yuragi type=ase x="50" y="70" width="80"]
 [chara_mod name="yuragi" face="sekimen" time="0"]
 #【ユラギ】
 「あ、あるがっ、そ、それはまだ駄目だっ！」[lrcm]
@@ -81,7 +80,7 @@
 #
 何故かもじもじしているユラギ。[lrcm]
 
-#【ハジメ】
+#【一】
 「？」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 #【ユラギ】
@@ -90,7 +89,8 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
+[bg layer=base storage=morinaka2.jpg time="1"]
+[mask_off effect="fadeOut"]
 
 #
 森の奥。[lrcm]
@@ -101,7 +101,7 @@
 穴蔵や巣とは異なる、森というその領域をそれごと自分たちの住む場所に変えてしまったような、そんな気配。[lrcm]
 そしてさらに……どこか、異国に居るかのような空気が漂っている。[lrcm]
 
-;(鈴の音みたいなSE)
+[playse storage="bell.ogg"]
 #【？？？】
 『？』[lrcm]
 
@@ -111,20 +111,20 @@
 その光をよく見れば、それは羽を持った小さな”人”だった。[lrcm]
 それは、西洋のおとぎ話に出てくる、時に人を惑わし、時に人を助ける、いたずら好きの小さなファンタジー。[lrcm]
 
-#【ハジメ】
+#【一】
 「……あ、あれって……」[lrcm]
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 [manpu layer=0 name=yuragi type=tameiki x="75" y="0" width="80"]
 #【ユラギ】
 「……風、もしくは森の妖精、シルフィードだ」[lrcm]
-#【ハジメ】
+#【一】
 「国違くない！？　一応この森、お前の依り代じゃないのか！？」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 #【ユラギ】
 「いやぁ……ね？　船舶とかの発展で、なんでもない人が国の間を行き来きできるどころか、異国に住み着けるわけだろう？」[lrcm]
 [chara_mod name="yuragi" face="def" time="0"]
 「それでそういうのに便乗して世界中に神格やら霊格やらも旅をするようになったわけで……つまり、グローバル化だな」[lrcm]
-#【ハジメ】
+#【一】
 「……ちゃんとファンタジーしろよ……」[lrcm]
 
 #
@@ -135,7 +135,7 @@
 「いや、でも鹿島電力とかも発電に他国の神様とか妖物雇っているらしいぞぉ。[chara_mod name="yuragi" face="fukigen" time="0"]電圧と周波数合わせるのが大変だが、やりがいはある」[lrcm]
 「この時代、日本だけの考え方では、世界は平定できない、[chara_mod name="yuragi" face="emi_m" time="0"]
 とか言ってた」[lrcm]
-#【ハジメ】
+#【一】
 「鹿島電力って……いや、それより神世界でも電気インフラあるのかよ」[lrcm]
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
@@ -159,25 +159,30 @@
 それはつまり、人と長い間話していない。触れ合っていない。[lrcm]
 かつて、共に行きた隣人たちと、触れ合えないと、そういう感情だろうか。[lrcm]
 
-#【ハジメ】
+#【一】
 「……や、どうも、こんにちわ」[lrcm]
 #
 おそるおそる、シルフに話しかける。[lrcm]
-シルフは驚いたような評定をするとこちらの周囲をくるくると回り始める。[lrcm]
+[playse storage="bell.ogg"]
+シルフは驚いたような表情をするとこちらの周囲をくるくると回り始める。[lrcm]
+[playse storage="bell.ogg"]
 それを目で追う自分に更にびっくりして、ニコニコしながら、おでこをペシペシと叩いてきた。[lrcm]
 
+[chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
 [manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【ユラギ】
 「『すごーい！　また私達が見える人間が居る！』……だと？」[lrcm]
-#【ハジメ】
+#【一】
 「……また？」[lrcm]
 
 #
+[playse storage="bell.ogg"]
 シルフィードはくるくるとこちらをの周りを興味深そうに旋回している。[lrcm]
 
 [chara_mod name="yuragi" face="fukigen" time="0"]
 #【ユラギ】
-「『わーっ、うんうん、やっぱあっちの島の男より線が細そうなのがいいわ～！　特にそこそこに鍛えられてる感じの筋肉がいい感じ！　私あなたのこと気に入っちゃったわ！』……だ、そうだぞ」[lrcm]
+「『わーっ、うんうん、やっぱあっちの島の男より線が細そうなのがいいわ～！』」[lrcm]
+「『特にそこそこに鍛えられてる感じの筋肉がいい感じ！　私あなたのこと気に入っちゃったわ！』……だ、そうだぞ』」[lrcm]
 
 #【ユラギ】
 「はは……そりゃどうも」[lrcm]
@@ -194,22 +199,24 @@
 #
 何故かユラギが不機嫌そうなかおでこちらを見ている。[lrcm]
 
-#【ハジメ】
+#【一】
 「ん？　どうした？」[lrcm]
 [chara_mod name="yuragi" face="fukigen" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「……ふんっ、なんでもない！」[lrcm]
+
 
 #
 何故かプイ、と向こうを向いてしまうユラギ。[lrcm]
 まあ、ともかく先に状況確認だ。[lrcm]
-#【ハジメ】
+#【一】
 「なあシルフ、さっき『また見える人間が居る』って言ってたが」[lrcm]
 
 #
 そう言うとシルフはこっちこっち、と手をちょいちょいとして、こちらをいざなっていく。[lrcm]
 
-#【ハジメ】
+#【一】
 「……よし、ユラギ、行ってみよう！」[lrcm]
 [manpu layer=0 name=yuragi type=mojamoja x="80" y="80" width="80"]
 #【ユラギ】
@@ -220,8 +227,8 @@
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
+[fadeinbgm storage="おつきorユラギ.ogg" time="1000" loop="true"]
 #【妖精】
 『──♪』[lrcm]
 
@@ -237,23 +244,24 @@
 くるくると、回ると同時に妖精たちも踊り、各々が持つ〝光〟を空間に解き放つ。[lrcm]
 それは幻想的で、この世のものとは思えない美しさが、空間を支配していた。[lrcm]
 
-#【ハジメ】
+#【一】
 「これは……すごいな」[lrcm]
 
 #
 [chara_show name="yuragi" top="50" face="def" time="0" top="150"]
 ユラギは横でおどろいた顔でぼーっとしている。[lrcm]
 
-#【ハジメ】
+#【一】
 「ユラギ、確か妖精は、人間の子供をさらったりするんだよな……？　もしかして……」[lrcm]
 #【ユラギ】
 「いや、これはちがうな……あの子は、二柱の強い神に護られてるみたいだ。そして、その力は、この場を支配できるような素養として露出している」[lrcm]
-#【ハジメ】
+#【一】
 「……つまり？」[lrcm]
 #【ユラギ】
 「あの子は……この場に妖精の女王として君臨しているということだな」[lrcm]
 #
 先程のシルフィードが他の妖精たちのもとに言って言伝をすると、精霊たちが一斉にこっちを見た。それは、その場に居た少女も同じく。[lrcm]
+[chara_mod name="yuragi" face="emi_m" time="0"]
 #【おつき】
 「……！　こんにちわー！」[lrcm]
 
@@ -262,11 +270,11 @@
 元気な声、少し長めの黒と、活発そうにむんと開かれた瞳。[lrcm]
 [chara_hide name="yuragi"]
 
-#【ハジメ】
+#【一】
 「こんにちわ。お名前は？」[lrcm]
 #【おつき】
 「『おつき』です！」[lrcm]
-#【ハジメ】
+#【一】
 「おつき……？」[lrcm]
 
 #
@@ -274,7 +282,7 @@
 
 #【おつき】
 「おにーちゃんは？」[lrcm]
-#【ハジメ】
+#【一】
 「ああ、おれは一。降山一だよ」[lrcm]
 #【おつき】
 「はじめおにーちゃんだね！」[lrcm]
@@ -291,6 +299,7 @@
 #【おつき】
 「おねーちゃんのおなまえは！？」[lrcm]
 [chara_show name="yuragi" top="50" face="odoroki" time="0" top="150"]
+[manpu layer=0 name=yuragi type=nanto x="50" y="100" width="80"]
 #【ユラギ】
 「……なッ……まて、君、私のことが見えるのか！！？」[lrcm]
 #【おつき】
@@ -300,8 +309,9 @@
 ぱあっっと、ユラギが顔を明るくさせた。[lrcm]
 
 [chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=onpu x="40" y="90" width="80"]
 #【おつき】
-「おお、おおーー！　すごいな『おつき』！　私は『ユラギ』！　神様だぞー！」[lrcm]
+「おお、おおーー！　すごいなおつき！　私は『ユラギ』！　神様だぞー！」[lrcm]
 #【おつき】
 「ええーーかみさまなのーー！　おねーちゃんすごい！」[lrcm]
 
@@ -310,11 +320,11 @@
 なんとも微笑ましい。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
-#【ハジメ】
+#【一】
 「なあおつき、君はどうしてこんなところに？」[lrcm]
 #【おつき】
 「んーとね、みんなと遊んでたんだけど、はぐれちゃって、森のなかでかくれんぼしてるかなーって」[lrcm]
-#【ハジメ】
+#【一】
 「それで迷い込んできたのか……」[lrcm]
 
 #
@@ -325,6 +335,7 @@
 #【おつき】
 「そしたらねー、せいれいさんたちとおともだちになったの！　おつきともだちつくるのじょうずなんだ！」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
+[manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
 「そうかー、すごいなおつきは！」[lrcm]
 #【おつき】
@@ -335,11 +346,11 @@
 そこに抱きついたきり、よしよしとおつきを撫でまくったりするユラギ。[lrcm]
 
 [chara_mod name="yuragi" face="emi_m" time="0"]
-#【ハジメ】
+#【一】
 「でもおつき、そろそろお家に帰らないとじゃないか？」[lrcm]
 #【おつき】
 「えー……おうちにかえってもだれもいないから……つまんない……」[lrcm]
-#【ハジメ】
+#【一】
 「んー？　パパとママはいないのか？」[lrcm]
 #【おつき】
 「おとーさんとおかーさんは、いまはとおくにいるからあえないの」[lrcm]
@@ -347,7 +358,7 @@
 #
 なるほど、だからこんな時間まで外で遊んでいるのか。[lrcm]
 
-#【ハジメ】
+#【一】
 「で、でもそろそろ帰らないとお腹好かない？」[lrcm]
 #【おつき】
 「んーでもなー……おうちにあるおべんとうあきちゃった。こんびにのやつ」[lrcm]
@@ -374,6 +385,7 @@
 「よしっ！　おつき！　私達は友達だ。私のお家でご飯食べよう！」[lrcm]
 [chara_mod name="yuragi" face="emi" time="0"]
 「友達の友達だ、妖精たちも来るがいい今日ばかりは神域を開くぞっ！」[lrcm]
+[odoroku layer="0"]
 
 #
 びっくりしながら顔を合わせる妖精たち。[lrcm]
@@ -390,15 +402,15 @@
 [chara_mod name="yuragi" face="emi_m" time="0"]
 [manpu layer=0 name=yuragi type=oya x="50" y="100" width="80"]
 #【ユラギ】
-「ああ、まかせておけ！　料理は……は、はじめぇ……」[lrcm]
+「ああ、まかせておけ！　料理は……[chara_mod name="yuragi" face="odoroki" time="0"]は、はじめぇ……」[lrcm]
 
 #
 先程の威勢とは一転、うるうるとした目で、どうしよう？[lrcm]
 という表情を向けてくるユラギ。[lrcm]
 
-#【ハジメ】
+#【一】
 「……わかったよ。ただ、材料がないから買い出しに行かないと」[lrcm]
-
+[chara_mod name="yuragi" face="emi" time="0"]
 #
 そんな二人の双眸に、見つめられたら嫌だとはいえないだろう。[lrcm]
 
@@ -406,6 +418,7 @@
 「おかいものー？　いくー！」[lrcm]
 
 [chara_mod name="yuragi" face="emi" time="0"]
+[odoroku layer="0"]
 #【ユラギ】
 「いっしょに、買い物……だと？　私も、行く！」[lrcm]
 
@@ -413,13 +426,12 @@
 さらに目の輝度を上げてくる二人。[lrcm]
 その二人にどこか心が和やかになるのを感じながら。[lrcm]
 
-#【ハジメ】
+#【一】
 「じゃあ、街に行くか」[lrcm]
 #
 いつの間にか張り詰めていた気分はどこかにいってしまった。[lrcm]
 
 [mask effect="fadeIn"]
 [chara_hide name="yuragi"]
-[fadeoutbgm]
-
+[mask_off effect="fadeOut"]
 @jump storage=2_5.ks target=*2_5
