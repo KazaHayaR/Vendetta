@@ -52,4 +52,4 @@ TYRANO.kag.menu.displayLoad();
 [plugin name="kanimMacro"]
 [loadcss file="data/others/glink/glink.css"]
 
-@jump storage="ueno_5.ks" target=*test
+@jump storage="ueno_0.ks" target=*ueno_0

@@ -97,9 +97,7 @@
 「で、次はどうすんの？相手がこの世のもんじゃなさそうってことは分かったけど、余計にどうしようもなくなった気しかしねえ」[lrcm]
 #【坂本宗介】
 「正直俺もです。でも、相手がこの世のものじゃないのなら、そういうのに詳しそうなヤツから話を聞いてみるしかないでしょう」[lrcm]
-*test
-[start_template]
-[set_default_message_window]
+
 ;還ノ島神社
 [scene_change situation="還ノ島神社" bgstorage="skche神社.jpg"]
 [chara_show name="katura" face="majime" top=50]
@@ -111,7 +109,7 @@
 #【石田修星】
 「ごめんな。こっちは藁にも縋りたい気分なんだ」[lrcm]
 [chara_mod name='katura' face='def' time='0']
-[manpu sound="" layer='0' name='katura' type='mojamoja' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='mojamoja' x='50' y='50' width='80']
 #【桂慎太郎】
 「一つ訂正させてもらうと、俺はまだ神主ではない。それを踏まえた上で言わせてもらうが…」[lrcm]
 [chara_mod name='katura' face='hera' time='0']
@@ -149,7 +147,7 @@
 #【坂本宗介】
 「マジか…。そんな素振り一度も…」[lrcm]
 [chara_mod name='katura' face='hera' time='0']
-[manpu sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「言ったところで信じまい？一応守秘義務のようなものもあるしな」[lrcm]
 #【石田修星】
@@ -211,7 +209,7 @@
 #【坂本宗介】
 「…怪異…“マガツヒサ”を退治されたくない何者かが邪魔をしている、とか？」[lrcm]
 [chara_mod name='katura' face='hera' time='0']
-[manpu sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='oya' x='50' y='50' width='80']
 #【桂慎太郎】
 「さすがはお前だな、その通りだ。
 [hop_revert name=katura time=400]
@@ -225,7 +223,7 @@
 [chara_mod name='katura' face='majime' time='0']
 #【桂慎太郎】
 「それで…
-[manpu sound="" layer='0' name='katura' type='hatena' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='hatena' x='50' y='50' width='80']
 これからどうするつもりなのだ？」[lrcm]
 #【坂本宗介】
 「どうするって？」[lrcm]
@@ -246,26 +244,26 @@
 [hop_revert name=katura time=400]
 #【桂慎太郎】
 「この世のものかも分からない相手なのだぞ？人間を躊躇なく食い荒らす怪物なのだぞ？本職の俺たちですら手を出しあぐねているヤツなのだぞ？
-[manpu sound="" layer='0' name='katura' type='nami2' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='nami2' x='50' y='50' width='80']
 何の力も持たないお前がそれを相手取って何ができるというのだ!?」[lrcm]
 #【坂本宗介】
 厳しい言葉だったが、侮蔑の響きも、怒りの響きもなかった。[lrcm]
 #【坂本宗介】
 「だったらなんで俺たちに史料を見せてくれるんだ？最初から追い返せばよかっただろうに」[lrcm]
 [vShake name=katura time=400]
-[manpu sound="" layer='0' name='katura' type='muka' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='muka' x='50' y='50' width='80']
 #【桂慎太郎】
 「腹立たしいのはそこだ！付き合いが長いからこそわかる。俺が史料を見せようが見せまいが、お前は…お前たちは、怪物に背を向けるような選択はすまい。実に阿呆だ、愚かだ！命を溝に捨てるようなものだ。なのに…」[lrcm]
 #【坂本宗介】
 「…そうだな。俺たちは逃げない。目は背けられない。“他人事”じゃないからな」[lrcm]
 #【桂慎太郎】
 「――ッ、バカ者め！
-[manpu sound="" layer='0' name='katura' type='nami2' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='nami2' x='50' y='50' width='80']
 だからといって、人間には限界がある！どうしてそこまで…！」[lrcm]
 #【坂本宗介】
 「椿が」[lrcm]
 [chara_mod name='katura' face='majime' time='0']
-[manpu sound="" layer='0' name='katura' type='bikkuri' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='bikkuri' x='50' y='50' width='80']
 #【桂慎太郎】
 「！」[lrcm]
 #【坂本宗介】
@@ -292,7 +290,7 @@
 #【坂本宗介】
 「ありがとう、桂」[lrcm]
 [chara_mod name='katura' face='majime' time='0']
-[manpu sound="" layer='0' name='katura' type='hatena' x='50' y='50' width='80']
+[manpu sound="" sound="" layer='0' name='katura' type='hatena' x='50' y='50' width='80']
 #【桂慎太郎】
 「何がだ？礼を言われるようなことは…」[lrcm]
 #【坂本宗介】
@@ -314,7 +312,7 @@
 [hop_revert name=katura time=400]
 #【桂慎太郎】
 「うむ」[lrcm]
-[scene_change]
+[chara_hide name=katura]
 #【石田修星】
 「しっかし分からないねえ」[lrcm]
 #【坂本宗介】
@@ -327,6 +325,7 @@
 「おう」[lrcm]
 #【坂本宗介】
 「もう経験済みなんですよ、それは」[lrcm]
+
 ;石田家
 ;アパート夜
 [scene_change situation="石田家" bgstorage="アパート.jpg"]
@@ -348,117 +347,183 @@
 何があろうと、あの子は守る。俺の命に代えてもだ。[lrcm]
 ;翌日図書館
 ;図書館
+*test
+[start_template]
+[set_default_message_window]
 [scene_change situation="翌日　図書館" bgstorage="図書館.jpg"]
 #【坂本宗介】
 「…良かった。やっぱりいらっしゃいましたか」[lrcm]
+[chara_show name="toki" face="smile2" top="30" width=500]
+[manpu sound="" layer='0' name='toki' type='oya' x='50' y='50' width='80']
 #【時任勢一】
 「おや、坂本君。なんかやつれた？」[lrcm]
 #【坂本宗介】
 「いえ、すこぶる元気ですよ！それより貴方とお話ししたいことがあるんです」[lrcm]
 #【時任勢一】
-「ん、なんだい？あむっ…」[lrcm]
+「ん、なんだい？
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name=toki time=400]
+あむっ…」[lrcm]
 #【坂本宗介】
 「ここ、飲食禁止ですよ。いっつも何か食べてるなこの人…」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[manpu sound="" layer='0' name='toki' type='waiwai' x='170' y='70' width='80']
 #【時任勢一】
-「あっはっはっ、バレなければセーフだよ！それで？話したいこととは？」[lrcm]
+「あっはっはっ、バレなければセーフだよ！
+[hop name=toki time=400]
+それで？話したいこととは？」[lrcm]
 #【坂本宗介】
 「“マガツヒサ”という名前を聞いたことは？」[lrcm]
+[chara_mod name='toki' face='def2' time='0']
 #【時任勢一】
-「この島に伝わる伝説の怪物だろう？当然知ってるとも」[lrcm]
+「この島に伝わる伝説の怪物だろう？
+[chara_mod name='toki' face='def' time='0']
+[hop_revert name=toki time=400]
+当然知ってるとも」[lrcm]
 #【坂本宗介】
 「マガツヒサの伝承についてはいくつも文献が残っていますが、時任さんは…どの結末が本当のものだと思いますか？」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name=toki time=400]
 #【時任勢一】
-「フフフ…あははは！妙なことを言うね?まるで…マガツヒサという怪物が本当にいたとでも言わんばかりじゃないか」[lrcm]
+「フフフ…
+[chara_mod name='toki' face='smile2' time='0']
+[hop name=toki time=400]
+あははは！妙なことを言うね?まるで…マガツヒサという怪物が本当にいたとでも言わんばかりじゃないか」[lrcm]
 #【坂本宗介】
 「本当にいた、と仮定しての話ですよ。そもそも、時任さんだって『火のない所に煙は立たぬ』って…」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hShake name=toki time=900]
 #【時任勢一】
-「ああ、ごめんごめん。君を嘲笑った訳じゃないんだよ。前も話した通り、僕は伝承否定派じゃない。[lrcm]
+「ああ、ごめんごめん。君を嘲笑った訳じゃないんだよ。前も話した通り、僕は伝承否定派じゃない」[lrcm]
 #【時任勢一】
-伝承には必ず、伝えていかなければならなかった理由がある。それは教訓であったり、畏怖であったり、警告であったりするものなんだけど…」[lrcm]
+「伝承には必ず、伝えていかなければならなかった理由がある。それは教訓であったり、畏怖であったり、警告であったりするものなんだけど…」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[hop_revert name=toki time=400]
 #【時任勢一】
-「本当にあったとは限らない、というのが伝承のミソだ。例えば、ギリシャ神話の内容を、過去に真実としてあった出来事だと信じている人間はそう多くはあるまい？[lrcm]
+「本当にあったとは限らない、というのが伝承のミソだ。例えば、ギリシャ神話の内容を、過去に真実としてあった出来事だと信じている人間はそう多くはあるまい？」[lrcm]
 #【時任勢一】
-伝承は歴史ではない。ゼウスがクロノスを打ち倒したのも、須佐之男命が八岐大蛇を退治したのもフィクションである可能性が高い」[lrcm]
+「伝承は歴史ではない。ゼウスがクロノスを打ち倒したのも、須佐之男命が八岐大蛇を退治したのもフィクションである可能性が高い」[lrcm]
 #【時任勢一】
 「だからこそ…現代人の目から見れば荒唐無稽に映る伝承の中に真実が混じっているとするならば…」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop name='toki' time='400']
 #【時任勢一】
 「それほど面白いことはないだろう？」[lrcm]
 #【坂本宗介】
 その時の時任さんは…なんというか、今までに見たこともないほど楽しそうな顔をしていた。「伝承の中に真実があったらいいな」という願望を超えた、何かを称えた表情だった。[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[hop_revert name='toki' time='400']
 #【時任勢一】
 「さて、君の質問は『マガツヒサの結末』についてだったっけ？結論から言ってしまうと、僕はマガツヒサが完全に倒されたという結末はあまり好かないね」[lrcm]
 #【坂本宗介】
 「好かない…」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name='toki' time='400']
 #【時任勢一】
-「うん、飽くまでぼくの意見だがね。英雄譚でも史実の記録でもないただの怪物退治物語が、ここまでの時を超えて語り継がれていくとは考えづらいんだよ。[lrcm]
+「うん、飽くまでぼくの意見だがね。英雄譚でも史実の記録でもないただの怪物退治物語が、ここまでの時を超えて語り継がれていくとは考えづらいんだよ」[lrcm]
 #【時任勢一】
-マガツヒサに関しては、『退治された』『封印された』『今もどこかで何かを喰らっている』と色々な結末が用意されているけれど][lrcm]
-#【坂本宗介】
-それらが今もなお残されているのは、マガツヒサによる脅威が消えていないから…もしくはそれに準ずる理由があるからだと僕は思ってる」[lrcm]
+「マガツヒサに関しては、『退治された』『封印された』『今もどこかで何かを喰らっている』と色々な結末が用意されているけれど」[lrcm]
 #【時任勢一】
-「それに、そっちの方がロマンがあるしね！」[lrcm]
+「それらが今もなお残されているのは、マガツヒサによる脅威が消えていないから…もしくはそれに準ずる理由があるからだと僕は思ってる」[lrcm]
+#【時任勢一】
+「それに、
+[chara_mod name='toki' face='smile2' time='0']
+[hop_revert name='toki' time='400']
+そっちの方がロマンがあるしね！」[lrcm]
 #【坂本宗介】
 「はは…」[lrcm]
 #【坂本宗介】
 ロマンどころか人が死んでいるのだが、そこまで時任さんに話すことはない。この人なら、事情を説明したら『僕も行く』なんて言い出しかねない。[lrcm]
 #【坂本宗介】
 「…もう一つ質問しても？」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[hop name='toki' time='400']
 #【時任勢一】
 「なんなりと」[lrcm]
 #【坂本宗介】
 「もし…現実に、現代に、マガツヒサなんて化物が存在していたとしたら…そしてそれを退治しなければならないとしたら…時任さんはどうしますか？」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name='toki' time='400']
 #【時任勢一】
 「…面白いことを聞くなあ。桃太郎や俵藤太よろしく、本当に怪物退治にでも行くのかい？」[lrcm]
 #【坂本宗介】
 「もしもの話ですよ。ちょっと小説を書く題材にしようと思ってて」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[manpu sound="" layer='0' name='toki' type='oya' x='50' y='50' width='80']
 #【時任勢一】
-「なるほど！読むほうだけじゃなくて書く方もやってるんだね。大したもんだ」[lrcm]
+「なるほど！読むほうだけじゃなくて書く方もやってるんだね。
+[chara_mod name='toki' face='smile' time='0']
+[hop name='toki' time='400']
+大したもんだ」[lrcm]
 #【坂本宗介】
 「そんな大したことじゃないですよ…」[lrcm]
 #【坂本宗介】
 嘘だし。[lrcm]
+[chara_mod name='toki' face='def' time='0']
+[hop_revert name='toki' time='400']
 #【時任勢一】
 「そうだねえ、史料を見るに、マガツヒサには剣や弓と言った攻撃が全く通用せず、時の朝廷にも打つ手がなかったそうだ。最終的に怪物を退治しているのは、大体陰陽師とか祈祷師とか、そういった類の人たちなんだよね」[lrcm]
 #【坂本宗介】
 「ですよね…」[lrcm]
 #【坂本宗介】
 やはり、確実なのは桂に増援を頼むことなのだろうか。いや、そもそも増援が来るかもわからないし、アイツの話を聞く限り本土側の動きも妙にきな臭い。とても確実な手段とは言い難いだろう。[lrcm]
+[chara_mod name='toki' face='smile' time='0']
 #【時任勢一】
-「だけど、そう言った超自然的な要素を極力絡めたくないのなら、一つだけマガツヒサをそういった超能力なしに――[lrcm]
+「だけど、そう言った超自然的な要素を極力絡めたくないのなら、一つだけマガツヒサをそういった超能力なしに――」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
+[hop_revert name='toki' time='400']
 #【時任勢一】
-物理的に、と言った方がいいのかな？――[lrcm]
+「物理的に、と言った方がいいのかな？」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
 #【時任勢一】
-追い払った者がいたそうだから、それを参考にするのもいいんじゃないかな」[lrcm]
+「――追い払った者がいたそうだから、それを参考にするのもいいんじゃないかな」[lrcm]
 #【坂本宗介】
 「物理的にマガツヒサを…？どの史料です？」[lrcm]
+[chara_mod name='toki' face='def2' time='0']
 #【時任勢一】
-「僕も流し見しただけだからタイトルは記憶してないんだけど、ええっと、確かこの辺りに…。[lrcm]
+「僕も流し見しただけだからタイトルは記憶してないんだけど、
+[chara_mod name='toki' face='def' time='0']
+[hop_revert name='toki' time='400']
+ええっと、確かこの辺りに…」[lrcm]
+[hop name='toki' time='400']
 #【時任勢一】
-あった、これだよ。『大日本東南圏古文書』。[lrcm]
+「あった、これだよ。『大日本東南圏古文書』」[lrcm]
+[chara_mod name='toki' face='smile2' time='0']
 #【時任勢一】
-主に日本の東南部の古文書をまとめたもので還ノ島の史料ではないけど、明らかに還ノ島とマガツヒサのことを示唆している思われる記述が一か所あったんだ」[lrcm]
+「主に日本の東南部の古文書をまとめたもので還ノ島の史料ではないけど、明らかに還ノ島とマガツヒサのことを示唆している思われる記述が一か所あったんだ」[lrcm]
 #【坂本宗介】
 「ありがとうございます！見てみます」[lrcm]
 #【坂本宗介】
 還ノ島に関する文献をあさるのに夢中で、島に限らず様々な文書をまとめている本は盲点だった。にしても、流し読みしただけの文献をちゃんと記憶している時任さんは凄い。[lrcm]
+[hop_revert name='toki' time='400']
 #【時任勢一】
-「うん、お役に立てたなら幸いだ。さて、僕はそろそろ行くとするよ。人の目を盗んで食事をするのにも疲れてきたしね」[lrcm]
+「うん、お役に立てたなら幸いだ。
+[chara_mod name='toki' face='smile2' time='0']
+さて、僕はそろそろ行くとするよ。人の目を盗んで食事をするのにも疲れてきたしね」[lrcm]
 #【坂本宗介】
 「食べるのを我慢するという選択肢はないんですね…」[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name='toki' time='400']
 #【時任勢一】
 「我慢してどうなる？限られた一生、好きなものを好きなだけ食べておくべきだろう」[lrcm]
 #【坂本宗介】
 なるほど。ちょっと俺の読書スタンスと似ていて思わず納得してしまった。だけど気になるのは、それだけ飯を腹に入れているのになんでこの人は痩せ型なんだろうということである。食べたものはどこに行ってるんだ。[lrcm]
 #【時任勢一】
-「んじゃ、執筆作業頑張ってね！完成したら是非僕にも読ませておくれよ」[lrcm]
+「んじゃ、執筆作業頑張ってね！
+[chara_mod name='toki' face='smile2' time='0']
+[hop name='toki' time='400']
+完成したら是非僕にも読ませておくれよ」[lrcm]
 #【坂本宗介】
 「は、はい！ありがとうございました」[lrcm]
 #【坂本宗介】
 嘘なだけにキッパリとした返事はしづらい。ことが終わってもし俺が無事だったら、本当に書いてみるのもいいかもしれない。[lrcm]
+[chara_mod name='toki' face='smile' time='0']
+[hop_revert name='toki' time='400']
 #【時任勢一】
 「また会おう」[lrcm]
 #【坂本宗介】
 「はい、また…」[lrcm]
+[chara_hide name=toki]
 #【坂本宗介】
 会えたらいい、と思う。連絡先すら交換していないのに次に会う約束をしているあたり、かなり奇妙な関係だとは思うけれど。[lrcm]
 #【坂本宗介】
