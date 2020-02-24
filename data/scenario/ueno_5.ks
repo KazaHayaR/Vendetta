@@ -532,4 +532,4 @@
 #【坂本宗介】
 時任さんを見送った後、俺は『大日本東南圏古文書』に向き直った。まだあの山に潜んでいるのがマガツヒサと決まったわけではないが、手掛かりは多い方がいい。俺はいそいそと本を開くと、その中身に没頭していった。[lrcm]
 
-[end_template jumpstorage="ueno_end.ks" jumptarget="*ueno_end"]
+[end_template jumpstorage="ueno_6.ks" jumptarget="*ueno_6"]
